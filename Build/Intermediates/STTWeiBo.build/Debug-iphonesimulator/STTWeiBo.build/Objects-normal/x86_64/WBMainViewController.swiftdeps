@@ -7,35 +7,36 @@ provides-member:
 - ["C8STTWeiBo20WBMainViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "composeStatus"
 - "supportedInterfaceOrientations"
+- "composeStatus"
 depends-top-level:
-- !private "UIFont"
-- !private "print"
-- !private "StringLiteralType"
-- !private "CGFloat"
-- !private "String"
-- !private "NSBundle"
+- !private "UIColor"
 - !private "UIImage"
-- "UIInterfaceOrientationMask"
+- !private "/"
+- !private "StringLiteralType"
+- !private "-"
 - !private "UIViewController"
 - !private "+"
-- !private "NSFontAttributeName"
-- "WBMainViewController"
 - !private "AnyObject"
-- !private "NSClassFromString"
 - !private "UINavigationController"
-- !private "-"
-- !private "WBNavigationController"
+- "WBMainViewController"
 - "UITabBarController"
-- !private "/"
-- !private "UnicodeScalarType"
-- !private "UIColor"
-- !private "BooleanLiteralType"
 - !private "NSForegroundColorAttributeName"
-- "UIButton"
-- !private "*"
+- "UIInterfaceOrientationMask"
+- !private "NSFontAttributeName"
+- !private "BooleanLiteralType"
+- !private "print"
+- !private "UIFont"
+- !private "UnicodeScalarType"
 - !private "Dictionary"
+- !private "CGFloat"
+- !private "NSBundle"
+- !private "String"
+- !private "*"
+- !private "NSArray"
+- !private "NSClassFromString"
+- !private "WBNavigationController"
+- "UIButton"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -84,6 +85,7 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "viewControllers"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "writeToFile"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -91,6 +93,7 @@ depends-member:
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
 - !private ["Sa", "init"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Highlighted"]
@@ -103,6 +106,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "append"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
 - !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "writeToFile"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
@@ -163,6 +167,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "view"]
 - !private ["Ps11CVarArgType", "viewControllers"]
 - ["Ps11CVarArgType", "viewDidLoad"]
+- !private ["Ps11CVarArgType", "writeToFile"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -232,6 +237,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewControllers"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "writeToFile"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
@@ -289,6 +295,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewControllers"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "writeToFile"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs10Dictionary", "Index"]
 - !private ["Vs10Dictionary", "Key"]
@@ -354,6 +361,7 @@ depends-member:
 - !private ["Ps9Equatable", "viewControllers"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "writeToFile"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
@@ -410,6 +418,7 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewControllers"]
 - ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "writeToFile"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Generator"]
@@ -461,6 +470,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "append"]
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "init"]
+- !private ["CSo7NSArray", "writeToFile"]
 - !private ["CSo8NSBundle", "mainBundle"]
 - !private ["CSo8NSBundle", "namespace"]
 - !private ["PSo8NSCoding", "CGFloat"]
@@ -504,11 +514,13 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewControllers"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "writeToFile"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "cz_randomColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "orangeColor"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
+- !private ["PSo9NSCopying", "writeToFile"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "NSBundle"]
 - !private ["PSo26NSExtensionRequestHandling", "NSClassFromString"]
@@ -539,9 +551,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "viewControllers"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "writeToFile"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "writeToFile"]
 - !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSBundle"]
 - !private ["CSo8NSObject", "NSClassFromString"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
@@ -587,6 +602,7 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "viewControllers"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "writeToFile"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSClassFromString"]
@@ -631,11 +647,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewControllers"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "writeToFile"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "cz_randomColor"]
 - !private ["PSo14NSSecureCoding", "imageWithRenderingMode"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "orangeColor"]
+- !private ["PSo14NSSecureCoding", "writeToFile"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["Ps21NilLiteralConvertible", "Some"]
@@ -671,6 +689,7 @@ depends-member:
 - !private ["Ps12SequenceType", "count"]
 - !private ["Ps12SequenceType", "init"]
 - !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps12SequenceType", "writeToFile"]
 - !private ["Ps14SetAlgebraType", "Highlighted"]
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "Portrait"]
@@ -850,6 +869,7 @@ depends-member:
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "NSArray"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSClassFromString"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
@@ -920,6 +940,7 @@ depends-member:
 - !private ["CSo8UITabBar", "bounds"]
 - !private ["CSo18UITabBarController", "AnyObject"]
 - !private ["CSo18UITabBarController", "CGFloat"]
+- !private ["CSo18UITabBarController", "NSArray"]
 - !private ["CSo18UITabBarController", "NSBundle"]
 - !private ["CSo18UITabBarController", "NSClassFromString"]
 - !private ["CSo18UITabBarController", "NSFontAttributeName"]
@@ -1022,6 +1043,7 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "CGFloat"]
+- !private ["CSo16UIViewController", "NSArray"]
 - !private ["CSo16UIViewController", "NSBundle"]
 - !private ["CSo16UIViewController", "NSClassFromString"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
@@ -1061,6 +1083,7 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["C8STTWeiBo20WBMainViewController", "AnyObject"]
 - !private ["C8STTWeiBo20WBMainViewController", "CGFloat"]
+- !private ["C8STTWeiBo20WBMainViewController", "NSArray"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSBundle"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSClassFromString"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSFontAttributeName"]
@@ -1160,6 +1183,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "insetBy"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "width"]
+- !private ["Ps12_Reflectable", "writeToFile"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
@@ -1207,10 +1231,12 @@ depends-nominal:
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
+- !private "CSo7NSArray"
 - !private "CSo8NSBundle"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"

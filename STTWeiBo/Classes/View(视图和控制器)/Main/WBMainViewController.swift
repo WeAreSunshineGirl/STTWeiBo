@@ -94,11 +94,14 @@ extension WBMainViewController{
     private func setupChildControllers(){
         //在现在很多应用程序中 界面的创建都依赖网络的json
         let array:[[String:AnyObject]] = [
-            ["clsName":"WBHomeViewController","title":"首页","imageName":"home","visitorInfo":["imageName":"","message":"哈哈"]],
-               ["clsName":"WBMessageViewController","title":"消息","imageName":"message_center"],
+            ["clsName":"WBHomeViewController","title":"首页","imageName":"home","visitorInfo":["imageName":"","message":"关注一些人，回这里看看有什么惊喜"]],
+               ["clsName":"WBMessageViewController","title":"消息","imageName":"message_center","visitorInfo":["imageName":"visitordiscover_image_message","message":"登陆后，别人评论你的微博，发给你的消息，都会在这里收到通知"]],
                ["clsName":"XXX"],
-               ["clsName":"WBDiscoverViewController","title":"发现","imageName":"home"],
-               ["clsName":"WBProfileViewController","title":"个人","imageName":"discover"]]
+               ["clsName":"WBDiscoverViewController","title":"发现","imageName":"discover","visitorInfo":["imageName":"visitordiscover_image_message","message":"登陆后，最新最热微博尽在掌握，不再会与事实潮流擦肩而过"]],
+               ["clsName":"WBProfileViewController","title":"个人","imageName":"discover","visitorInfo":["imageName":"visitordiscover_image_profile","message":"登陆后，你的微薄相册个人资料会显示在这里，展示给别人"]]]
+        //测试数据格式是否正确 - 转换成 plist 数据更加直观
+//        (array as NSArray).writeToFile("/Users/user/Desktop/demo.plist", atomically: true)
+        
         
         var arrayM = [UIViewController]()
         
@@ -111,7 +114,7 @@ extension WBMainViewController{
     /**
      使用字典创建一个子控制器
      
-     - parameter dict: 信息字典[clsName,title,imageName]
+     - parameter dict: 信息字典[clsName,title,imageName,"visitorInfo"]
      
      - returns: 子控制器
      */
