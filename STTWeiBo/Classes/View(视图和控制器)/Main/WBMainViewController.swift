@@ -99,8 +99,19 @@ extension WBMainViewController{
                ["clsName":"XXX"],
                ["clsName":"WBDiscoverViewController","title":"发现","imageName":"discover","visitorInfo":["imageName":"visitordiscover_image_message","message":"登陆后，最新最热微博尽在掌握，不再会与事实潮流擦肩而过"]],
                ["clsName":"WBProfileViewController","title":"个人","imageName":"discover","visitorInfo":["imageName":"visitordiscover_image_profile","message":"登陆后，你的微薄相册个人资料会显示在这里，展示给别人"]]]
+        
         //测试数据格式是否正确 - 转换成 plist 数据更加直观
 //        (array as NSArray).writeToFile("/Users/user/Desktop/demo.plist", atomically: true)
+        
+        //数组 到 json 序列化
+        
+        let data = try? NSJSONSerialization.dataWithJSONObject(array, options: [.PrettyPrinted])
+//        
+        let fileUrl = NSURL(fileURLWithPath: "/Users/user/Desktop/demo.json")
+        data?.writeToURL(fileUrl, atomically: true)
+        
+//        data?.writeToFile("/Users/user/Desktop/demooo.json", atomically: true)
+        
         
         
         var arrayM = [UIViewController]()
