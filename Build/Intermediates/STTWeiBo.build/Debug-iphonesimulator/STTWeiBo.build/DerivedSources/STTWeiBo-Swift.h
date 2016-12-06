@@ -300,4 +300,20 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+
+/// 访客视图
+SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
+@interface WBVisitorView : UIView
+
+/// 构造函数
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WBVisitorView (SWIFT_EXTENSION(STTWeiBo))
+- (void)setupUI;
+@end
+
 #pragma clang diagnostic pop

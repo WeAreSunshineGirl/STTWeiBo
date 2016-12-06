@@ -117,9 +117,7 @@ extension WBBaseViewController{
      */
     private func setupVisitorView(){
         
-        let visitorView = UIView(frame: view.bounds)
-        
-        visitorView.backgroundColor = UIColor.cz_randomColor()
+        let visitorView = WBVisitorView(frame: view.bounds)
         
         view.insertSubview(visitorView, belowSubview: navigationBar)
         

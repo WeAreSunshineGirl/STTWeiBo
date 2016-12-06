@@ -31,6 +31,7 @@
 		CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843B91DEFCC8200BD8168 /* UIView+CZAddition.m */; };
 		CE0843C71DEFCC8200BD8168 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */; };
 		CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */; };
+		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
@@ -78,6 +79,7 @@
 		CE0843C81DEFCC8E00BD8168 /* UIColor+Backcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Backcolor.h"; sourceTree = "<group>"; };
 		CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Backcolor.m"; sourceTree = "<group>"; };
 		CE0843CC1DEFCDA900BD8168 /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
+		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
 		CE8454CB1DF008E40062478F /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				CE08438E1DEFCA6100BD8168 /* WBMainViewController.swift */,
 				CE0843901DEFCA8300BD8168 /* WBNavigationController.swift */,
+				CE4315A91DF66353005F7199 /* VisitorView */,
 			);
 			name = "主控制器";
 			sourceTree = "<group>";
@@ -253,6 +256,14 @@
 			children = (
 			);
 			path = "ViewModel(视图模型)";
+			sourceTree = "<group>";
+		};
+		CE4315A91DF66353005F7199 /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */,
+			);
+			path = VisitorView;
 			sourceTree = "<group>";
 		};
 		CE8454C51DEFF8A70062478F /* Extensions */ = {
@@ -358,6 +369,7 @@
 				CE08438F1DEFCA6100BD8168 /* WBMainViewController.swift in Sources */,
 				CE0843951DEFCAD100BD8168 /* WBHomeViewController.swift in Sources */,
 				CE0843C21DEFCC8200BD8168 /* UIButton+CZAddition.m in Sources */,
+				CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */,
 				CE0843C51DEFCC8200BD8168 /* UIScreen+CZAddition.m in Sources */,
 				CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */,
 				CE0843BE1DEFCC8200BD8168 /* NSObject+CZRuntime.m in Sources */,
