@@ -47,7 +47,8 @@ class WBVisitorView: UIView {
 extension WBVisitorView{
     
     func setupUI() {
-        backgroundColor = UIColor.whiteColor()
+        //在开发的时候 如果能够使用颜色 就不要使用图像 效率会更高
+        backgroundColor = UIColor.cz_colorWithHex(0xEDEDED)
         
         ///1 添加控件
         addSubview(iconView)
@@ -168,7 +169,7 @@ extension WBVisitorView{
         //metrics 定义 VFL 中（） 指定的常数映射关系
         let viewDict = ["maskIconView":maskIconView,"registerButton":registerButton]
         
-        let metrics = ["spacing":-20]
+        let metrics = ["spacing":10]
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[maskIconView]-0-|", options: [], metrics: nil, views: viewDict))
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[maskIconView]-(spacing)-[registerButton]", options: [], metrics:metrics, views: viewDict))
         
