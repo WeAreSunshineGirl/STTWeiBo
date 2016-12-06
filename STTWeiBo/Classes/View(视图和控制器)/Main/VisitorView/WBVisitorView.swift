@@ -59,14 +59,106 @@ extension WBVisitorView{
         }
         
         ///3 自动布局
+        let margin:CGFloat = 20.0
+        
         //1 图像视图
-        addConstraint(NSLayoutConstraint(item: iconView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        addConstraint(NSLayoutConstraint(item: iconView,
+            attribute: .CenterX,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: .CenterX,
+            multiplier: 1.0,
+            constant: 0))
         
-        addConstraint(NSLayoutConstraint(item: iconView, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1.0, constant: -60))
+        addConstraint(NSLayoutConstraint(item: iconView,
+            attribute: .CenterY,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: .CenterY,
+            multiplier: 1.0,
+            constant: -60))
         //2 小房子
-        addConstraint(NSLayoutConstraint(item: houseIconView, attribute: .CenterX, relatedBy: .Equal, toItem: iconView, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        addConstraint(NSLayoutConstraint(item: houseIconView,
+            attribute: .CenterX,
+            relatedBy: .Equal,
+            toItem: iconView,
+            attribute: .CenterX,
+            multiplier: 1.0,
+            constant: 0))
         
-        addConstraint(NSLayoutConstraint(item: houseIconView, attribute: .CenterY, relatedBy: .Equal, toItem: iconView, attribute: .CenterY, multiplier: 1.0, constant: -60))
+        addConstraint(NSLayoutConstraint(item: houseIconView,
+            attribute: .CenterY,
+            relatedBy: .Equal,
+            toItem: iconView,
+            attribute: .CenterY,
+            multiplier: 1.0,
+            constant: 0))
+        //3 提示标签
+        addConstraint(NSLayoutConstraint(item: tipLabel,
+            attribute: .CenterX,
+            relatedBy: .Equal,
+            toItem: iconView,
+            attribute: .CenterX,
+            multiplier: 1.0,
+            constant: 0))
+        addConstraint(NSLayoutConstraint(item: tipLabel,
+            attribute: .Top,
+            relatedBy: .Equal,
+            toItem: iconView,
+            attribute: .Bottom,
+            multiplier: 1.0,
+            constant: margin))
+        addConstraint(NSLayoutConstraint(item: tipLabel,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: .NotAnAttribute,
+            multiplier: 1.0,
+            constant: 236))
+        //4 注册按钮
+        addConstraint(NSLayoutConstraint(item: registerButton,
+            attribute: .Left,
+            relatedBy: .Equal,
+            toItem: tipLabel,
+            attribute: .Left,
+            multiplier: 1.0,
+            constant: 0))
+        addConstraint(NSLayoutConstraint(item: registerButton,
+            attribute: .Top,
+            relatedBy: .Equal,
+            toItem: tipLabel,
+            attribute: .Bottom,
+            multiplier: 1.0,
+            constant: margin))
+        addConstraint(NSLayoutConstraint(item: registerButton,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: nil,
+            attribute: .NotAnAttribute,
+            multiplier: 1.0,
+            constant: 100))
+        //5 登录按钮
+        addConstraint(NSLayoutConstraint(item: loginButton,
+            attribute: .Right,
+            relatedBy: .Equal,
+            toItem: tipLabel,
+            attribute: .Right,
+            multiplier: 1.0,
+            constant: 0))
+        addConstraint(NSLayoutConstraint(item: loginButton,
+            attribute: .Top,
+            relatedBy: .Equal,
+            toItem: tipLabel,
+            attribute: .Bottom,
+            multiplier: 1.0,
+            constant: margin))
+        addConstraint(NSLayoutConstraint(item: loginButton,
+            attribute: .Width,
+            relatedBy: .Equal,
+            toItem: registerButton,
+            attribute: .Width,
+            multiplier: 1.0,
+            constant: 0))
         
         
     }
