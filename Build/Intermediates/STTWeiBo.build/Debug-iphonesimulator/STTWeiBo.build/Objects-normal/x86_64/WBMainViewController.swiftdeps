@@ -6,40 +6,43 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo20WBMainViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "composeStatus"
+- "viewDidLoad"
 - "supportedInterfaceOrientations"
 depends-top-level:
-- !private "NSFontAttributeName"
-- !private "UIViewController"
-- !private "NSBundle"
-- !private "Array"
-- !private "StringLiteralType"
+- "UITabBarController"
 - !private "print"
+- !private "StringLiteralType"
+- !private "UIFont"
+- !private "UnicodeScalarType"
 - "WBMainViewController"
 - !private "*"
-- !private "AnyObject"
-- !private "UnicodeScalarType"
-- !private "WBNavigationController"
-- !private "UIColor"
-- !private "Dictionary"
-- !private "-"
+- !private "UIViewController"
 - "UIButton"
-- !private "String"
-- !private "BooleanLiteralType"
-- !private "UINavigationController"
-- !private "NSForegroundColorAttributeName"
-- "UITabBarController"
-- !private "UIFont"
-- "UIInterfaceOrientationMask"
+- !private "AnyObject"
+- !private "NSFontAttributeName"
+- !private "=="
+- !private "NSString"
+- !private "NSClassFromString"
 - !private "NSData"
-- !private "/"
+- !private "-"
+- !private "WBNavigationController"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "NSJSONSerialization"
+- !private "+"
+- !private "Dictionary"
+- !private "BooleanLiteralType"
+- !private "String"
+- !private "UIColor"
+- !private "UIImage"
+- !private "NSForegroundColorAttributeName"
 - !private "WBBaseViewController"
 - !private "CGFloat"
-- !private "+"
-- !private "UIImage"
-- !private "NSClassFromString"
-- !private "NSJSONSerialization"
+- !private "UINavigationController"
+- !private "NSBundle"
+- "UIInterfaceOrientationMask"
+- !private "/"
+- !private "Array"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -50,6 +53,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "NSJSONSerialization"]
+- !private ["Ps9AnyObject", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps9AnyObject", "UIButton"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
@@ -82,6 +86,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
 - ["Ps9AnyObject", "setupChildControllers"]
 - ["Ps9AnyObject", "setupComposeButton"]
+- !private ["Ps9AnyObject", "stringByAppendingPathComponent"]
 - ["Ps9AnyObject", "supportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "systemFontOfSize"]
 - !private ["Ps9AnyObject", "tabBar"]
@@ -98,7 +103,9 @@ depends-member:
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
 - !private ["Sa", "init"]
+- !private ["Sa", "subscript"]
 - !private ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Highlighted"]
@@ -107,10 +114,12 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Portrait"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
+- !private ["Ps23ArrayLiteralConvertible", "UserDomainMask"]
 - !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "append"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
 - !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
@@ -135,6 +144,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSFontAttributeName"]
 - !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["Ps11CVarArgType", "NSJSONSerialization"]
+- !private ["Ps11CVarArgType", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps11CVarArgType", "UIButton"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIFont"]
@@ -167,6 +177,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "setTitleTextAttributes"]
 - ["Ps11CVarArgType", "setupChildControllers"]
 - ["Ps11CVarArgType", "setupComposeButton"]
+- !private ["Ps11CVarArgType", "stringByAppendingPathComponent"]
 - ["Ps11CVarArgType", "supportedInterfaceOrientations"]
 - !private ["Ps11CVarArgType", "systemFontOfSize"]
 - !private ["Ps11CVarArgType", "tabBar"]
@@ -202,6 +213,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "NSJSONSerialization"]
+- !private ["Ps28CustomDebugStringConvertible", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIButton"]
@@ -240,6 +252,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
 - ["Ps28CustomDebugStringConvertible", "setupChildControllers"]
 - ["Ps28CustomDebugStringConvertible", "setupComposeButton"]
+- !private ["Ps28CustomDebugStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "supportedInterfaceOrientations"]
 - !private ["Ps28CustomDebugStringConvertible", "systemFontOfSize"]
@@ -264,6 +277,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps23CustomStringConvertible", "NSJSONSerialization"]
+- !private ["Ps23CustomStringConvertible", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIButton"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
@@ -302,6 +316,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
 - ["Ps23CustomStringConvertible", "setupChildControllers"]
 - ["Ps23CustomStringConvertible", "setupComposeButton"]
+- !private ["Ps23CustomStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "supportedInterfaceOrientations"]
 - !private ["Ps23CustomStringConvertible", "systemFontOfSize"]
@@ -326,6 +341,7 @@ depends-member:
 - !private ["Ps9Equatable", "AlwaysOriginal"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "DocumentDirectory"]
 - !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "Highlighted"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -336,6 +352,7 @@ depends-member:
 - !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "NSJSONSerialization"]
+- !private ["Ps9Equatable", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "Portrait"]
 - !private ["Ps9Equatable", "TouchUpInside"]
@@ -345,6 +362,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UINavigationController"]
 - !private ["Ps9Equatable", "UIViewController"]
+- !private ["Ps9Equatable", "UserDomainMask"]
 - !private ["Ps9Equatable", "WBNavigationController"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -373,6 +391,7 @@ depends-member:
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
 - ["Ps9Equatable", "setupChildControllers"]
 - ["Ps9Equatable", "setupComposeButton"]
+- !private ["Ps9Equatable", "stringByAppendingPathComponent"]
 - ["Ps9Equatable", "supportedInterfaceOrientations"]
 - !private ["Ps9Equatable", "systemFontOfSize"]
 - !private ["Ps9Equatable", "tabBar"]
@@ -385,6 +404,7 @@ depends-member:
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByAppendingPathComponent"]
 - !private ["Sf", "deinit"]
 - !private ["Ps23FloatLiteralConvertible", "init"]
 - !private ["Ps17FloatingPointType", "init"]
@@ -394,6 +414,7 @@ depends-member:
 - !private ["Ps8Hashable", "AlwaysOriginal"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "DocumentDirectory"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSONObjectWithData"]
 - !private ["Ps8Hashable", "NSBundle"]
@@ -402,6 +423,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "NSJSONSerialization"]
+- !private ["Ps8Hashable", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps8Hashable", "UIButton"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
@@ -435,6 +457,7 @@ depends-member:
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
 - ["Ps8Hashable", "setupChildControllers"]
 - ["Ps8Hashable", "setupComposeButton"]
+- !private ["Ps8Hashable", "stringByAppendingPathComponent"]
 - ["Ps8Hashable", "supportedInterfaceOrientations"]
 - !private ["Ps8Hashable", "systemFontOfSize"]
 - !private ["Ps8Hashable", "tabBar"]
@@ -481,6 +504,7 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "append"]
 - !private ["Ps21MutableCollectionType", "count"]
 - !private ["Ps21MutableCollectionType", "init"]
+- !private ["Ps21MutableCollectionType", "subscript"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
@@ -488,6 +512,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "subscript"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
@@ -495,6 +520,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "append"]
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "init"]
+- !private ["Ps16MutableSliceable", "subscript"]
 - !private ["CSo8NSBundle", "mainBundle"]
 - !private ["CSo8NSBundle", "namespace"]
 - !private ["CSo8NSBundle", "pathForResource"]
@@ -505,6 +531,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
+- !private ["PSo8NSCoding", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo8NSCoding", "UIButton"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
@@ -534,6 +561,7 @@ depends-member:
 - !private ["PSo8NSCoding", "setTitleTextAttributes"]
 - ["PSo8NSCoding", "setupChildControllers"]
 - ["PSo8NSCoding", "setupComposeButton"]
+- !private ["PSo8NSCoding", "stringByAppendingPathComponent"]
 - ["PSo8NSCoding", "supportedInterfaceOrientations"]
 - !private ["PSo8NSCoding", "tabBar"]
 - !private ["PSo8NSCoding", "tabBarItem"]
@@ -546,6 +574,7 @@ depends-member:
 - !private ["PSo9NSCopying", "cz_randomColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "orangeColor"]
+- !private ["PSo9NSCopying", "stringByAppendingPathComponent"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["CSo6NSData", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
@@ -555,6 +584,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
+- !private ["PSo26NSExtensionRequestHandling", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo26NSExtensionRequestHandling", "UIButton"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
@@ -584,6 +614,7 @@ depends-member:
 - !private ["VSC20NSJSONReadingOptions", "Element"]
 - !private ["CSo19NSJSONSerialization", "JSONObjectWithData"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "stringByAppendingPathComponent"]
 - !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "JSONObjectWithData"]
@@ -593,6 +624,8 @@ depends-member:
 - !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
+- !private ["CSo8NSObject", "NSSearchPathForDirectoriesInDomains"]
+- !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -628,6 +661,7 @@ depends-member:
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
 - ["CSo8NSObject", "setupChildControllers"]
 - ["CSo8NSObject", "setupComposeButton"]
+- !private ["CSo8NSObject", "stringByAppendingPathComponent"]
 - ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
 - !private ["CSo8NSObject", "tabBar"]
@@ -645,6 +679,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
@@ -677,6 +712,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
 - ["PSo16NSObjectProtocol", "setupChildControllers"]
 - ["PSo16NSObjectProtocol", "setupComposeButton"]
+- !private ["PSo16NSObjectProtocol", "stringByAppendingPathComponent"]
 - ["PSo16NSObjectProtocol", "supportedInterfaceOrientations"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - !private ["PSo16NSObjectProtocol", "tabBar"]
@@ -687,18 +723,23 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "visitorInfoDictionary"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["OSC21NSSearchPathDirectory", "DocumentDirectory"]
+- !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
 - !private ["PSo14NSSecureCoding", "cz_randomColor"]
 - !private ["PSo14NSSecureCoding", "imageWithRenderingMode"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "orangeColor"]
+- !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "stringByAppendingPathComponent"]
 - !private ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "Element"]
 - !private ["Ps13OptionSetType", "Highlighted"]
 - !private ["Ps13OptionSetType", "Normal"]
 - !private ["Ps13OptionSetType", "Portrait"]
 - !private ["Ps13OptionSetType", "TouchUpInside"]
+- !private ["Ps13OptionSetType", "UserDomainMask"]
 - !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
@@ -711,12 +752,15 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "append"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
 - !private ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "AlwaysOriginal"]
+- !private ["Ps16RawRepresentable", "DocumentDirectory"]
 - !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "Highlighted"]
 - !private ["Ps16RawRepresentable", "Normal"]
 - !private ["Ps16RawRepresentable", "Portrait"]
 - !private ["Ps16RawRepresentable", "TouchUpInside"]
+- !private ["Ps16RawRepresentable", "UserDomainMask"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
@@ -733,6 +777,7 @@ depends-member:
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "Portrait"]
 - !private ["Ps14SetAlgebraType", "TouchUpInside"]
+- !private ["Ps14SetAlgebraType", "UserDomainMask"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Distance"]
@@ -746,9 +791,11 @@ depends-member:
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "init"]
+- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "stringByAppendingPathComponent"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -776,6 +823,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
+- !private ["PSo21UIAppearanceContainer", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -824,6 +872,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
+- !private ["PSo18UIContentContainer", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo18UIContentContainer", "UIButton"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
@@ -876,6 +925,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UIFocusEnvironment", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -922,6 +972,8 @@ depends-member:
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
+- !private ["CSo11UIResponder", "NSSearchPathForDirectoriesInDomains"]
+- !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -967,6 +1019,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
+- !private ["PSo16UIStateRestoring", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16UIStateRestoring", "UIButton"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
@@ -1003,6 +1056,8 @@ depends-member:
 - !private ["CSo18UITabBarController", "NSFontAttributeName"]
 - !private ["CSo18UITabBarController", "NSForegroundColorAttributeName"]
 - !private ["CSo18UITabBarController", "NSJSONSerialization"]
+- !private ["CSo18UITabBarController", "NSSearchPathForDirectoriesInDomains"]
+- !private ["CSo18UITabBarController", "NSString"]
 - !private ["CSo18UITabBarController", "String"]
 - ["CSo18UITabBarController", "UIButton"]
 - !private ["CSo18UITabBarController", "UIColor"]
@@ -1035,6 +1090,7 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "NSFontAttributeName"]
 - !private ["PSo16UITabBarDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo16UITabBarDelegate", "NSJSONSerialization"]
+- !private ["PSo16UITabBarDelegate", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16UITabBarDelegate", "UIButton"]
 - !private ["PSo16UITabBarDelegate", "UIColor"]
 - !private ["PSo16UITabBarDelegate", "UIFont"]
@@ -1075,6 +1131,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UITraitEnvironment", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -1121,6 +1178,8 @@ depends-member:
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
+- !private ["CSo16UIViewController", "NSSearchPathForDirectoriesInDomains"]
+- !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -1156,6 +1215,7 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAppendingPathComponent"]
 - !private ["C8STTWeiBo20WBBaseViewController", "init"]
 - !private ["C8STTWeiBo20WBBaseViewController", "tabBarItem"]
 - !private ["C8STTWeiBo20WBBaseViewController", "title"]
@@ -1168,6 +1228,8 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "NSFontAttributeName"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSForegroundColorAttributeName"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSJSONSerialization"]
+- !private ["C8STTWeiBo20WBMainViewController", "NSSearchPathForDirectoriesInDomains"]
+- !private ["C8STTWeiBo20WBMainViewController", "NSString"]
 - !private ["C8STTWeiBo20WBMainViewController", "String"]
 - ["C8STTWeiBo20WBMainViewController", "UIButton"]
 - !private ["C8STTWeiBo20WBMainViewController", "UIColor"]
@@ -1201,6 +1263,7 @@ depends-member:
 - !private ["Ps10_ArrayType", "append"]
 - !private ["Ps10_ArrayType", "count"]
 - !private ["Ps10_ArrayType", "init"]
+- !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -1219,6 +1282,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps24_ImageLiteralConvertible", "imageWithRenderingMode"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
@@ -1240,6 +1304,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Distance"]
@@ -1262,6 +1327,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "frame"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "insetBy"]
+- !private ["Ps12_Reflectable", "stringByAppendingPathComponent"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "width"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
@@ -1321,6 +1387,8 @@ depends-nominal:
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "OSC21NSSearchPathDirectory"
+- !private "VSC22NSSearchPathDomainMask"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "Ps21NilLiteralConvertible"
@@ -1396,6 +1464,7 @@ depends-nominal:
 - !private "Ps22_IntegerArithmeticType"
 - !private "Ps12_IntegerType"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
 - !private "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
