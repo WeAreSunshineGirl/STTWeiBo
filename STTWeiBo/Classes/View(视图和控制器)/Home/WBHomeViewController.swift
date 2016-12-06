@@ -37,7 +37,7 @@ class WBHomeViewController: WBBaseViewController {
                  self.statusList.insert(i.description, atIndex: 0)
             }
         }
-          print("刷新表格")
+          print("数据加载完成")
             //结束刷新控件
             self.refreshControl?.endRefreshing()
                 
