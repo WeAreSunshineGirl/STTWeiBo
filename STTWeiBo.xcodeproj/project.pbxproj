@@ -128,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				CE0843871DEFCA2800BD8168 /* View(视图和控制器) */,
+				CE4315A71DF65C70005F7199 /* Model(模型) */,
+				CE4315A81DF65C7C005F7199 /* ViewModel(视图模型) */,
 				CE0843861DEFCA2800BD8168 /* Tools(工具) */,
 			);
 			path = Classes;
@@ -237,6 +239,20 @@
 				CE0843901DEFCA8300BD8168 /* WBNavigationController.swift */,
 			);
 			name = "主控制器";
+			sourceTree = "<group>";
+		};
+		CE4315A71DF65C70005F7199 /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model(模型)";
+			sourceTree = "<group>";
+		};
+		CE4315A81DF65C7C005F7199 /* ViewModel(视图模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ViewModel(视图模型)";
 			sourceTree = "<group>";
 		};
 		CE8454C51DEFF8A70062478F /* Extensions */ = {
