@@ -92,7 +92,18 @@ extension WBMainViewController{
     
     ///设置所有子控制器
     private func setupChildControllers(){
+        
+        //从Bundle加载配置的json
+        //1 路径 2 加载NSData 3 反序列化
+       guard let path = NSBundle.mainBundle().pathForResource("demo.json", ofType: nil),
+        data = NSData(contentsOfFile: path),
+        array = try? NSJSONSerialization.JSONObjectWithData(data, options: []) as? [[String:AnyObject]]
+        else{
+            return
+        }
+        
         //在现在很多应用程序中 界面的创建都依赖网络的json
+        /*
         let array:[[String:AnyObject]] = [
             ["clsName":"WBHomeViewController","title":"首页","imageName":"home","visitorInfo":["imageName":"","message":"关注一些人，回这里看看有什么惊喜"]],
                ["clsName":"WBMessageViewController","title":"消息","imageName":"message_center","visitorInfo":["imageName":"visitordiscover_image_message","message":"登陆后，别人评论你的微博，发给你的消息，都会在这里收到通知"]],
@@ -105,20 +116,22 @@ extension WBMainViewController{
         
         //数组 到 json 序列化
         
-        let data = try? NSJSONSerialization.dataWithJSONObject(array, options: [.PrettyPrinted])
-//        
-        let fileUrl = NSURL(fileURLWithPath: "/Users/user/Desktop/demo.json")
-        data?.writeToURL(fileUrl, atomically: true)
+//        let data = try? NSJSONSerialization.dataWithJSONObject(array, options: [.PrettyPrinted])
+////        
+//        let fileUrl = NSURL(fileURLWithPath: "/Users/user/Desktop/demo.json")
+//        data?.writeToURL(fileUrl, atomically: true)
         
 //        data?.writeToFile("/Users/user/Desktop/demooo.json", atomically: true)
         
+        */
         
-        
+        /// 遍历数组 循环创建控制器数组
         var arrayM = [UIViewController]()
         
-        for dict in array {
+        for dict in array! {
             arrayM.append(controller(dict))
         }
+        //设置 tabBar子控制器
         viewControllers = arrayM
     }
     ///使用字典创建一个子控制器
