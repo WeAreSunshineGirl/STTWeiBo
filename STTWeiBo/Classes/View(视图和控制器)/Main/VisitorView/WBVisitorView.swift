@@ -29,6 +29,10 @@ class WBVisitorView: UIView {
                 return
             }
             iconView.image = UIImage(named: imageName)
+            
+            //其他控制器不需要显示小房子
+            houseIconView.hidden = true
+            maskIconView.hidden = true
         }
     }
     
@@ -79,6 +83,7 @@ extension WBVisitorView{
         addSubview(tipLabel)
         addSubview(registerButton)
         addSubview(loginButton)
+        
         //      文本居中
         tipLabel.textAlignment = .Center
         
@@ -105,7 +110,7 @@ extension WBVisitorView{
             toItem: self,
             attribute: .CenterY,
             multiplier: 1.0,
-            constant: -60))
+            constant: -100))
         //2 小房子
         addConstraint(NSLayoutConstraint(item: houseIconView,
             attribute: .CenterX,
