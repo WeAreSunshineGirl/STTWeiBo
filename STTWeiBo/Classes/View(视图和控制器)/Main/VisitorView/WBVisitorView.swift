@@ -45,5 +45,29 @@ extension WBVisitorView{
     
     func setupUI() {
         backgroundColor = UIColor.whiteColor()
+        
+        ///1 添加控件
+        addSubview(iconView)
+        addSubview(houseIconView)
+        addSubview(tipLabel)
+        addSubview(registerButton)
+        addSubview(loginButton)
+        
+        ///2 取消autoresizing   纯代码 默认 autoresizing xib 默认 autoLayout
+        for v in subviews {
+            v.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
+        ///3 自动布局
+        //1 图像视图
+        addConstraint(NSLayoutConstraint(item: iconView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        
+        addConstraint(NSLayoutConstraint(item: iconView, attribute: .CenterY, relatedBy: .Equal, toItem: self, attribute: .CenterY, multiplier: 1.0, constant: -60))
+        //2 小房子
+        addConstraint(NSLayoutConstraint(item: houseIconView, attribute: .CenterX, relatedBy: .Equal, toItem: iconView, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        
+        addConstraint(NSLayoutConstraint(item: houseIconView, attribute: .CenterY, relatedBy: .Equal, toItem: iconView, attribute: .CenterY, multiplier: 1.0, constant: -60))
+        
+        
     }
 }
