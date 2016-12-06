@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "STTWeiBo/Classes/View(&#x89c6;&#x56fe;&#x548c;&#x63a7;&#x5236;&#x5668;)/Home/WBHomeViewController.swift"
-            timestampString = "502601170.144419"
+            filePath = "STTWeiBo/Classes/View(&#x89c6;&#x56fe;&#x548c;&#x63a7;&#x5236;&#x5668;)/Main/WBBaseViewController.swift"
+            timestampString = "502686125.552134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "loadData()"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

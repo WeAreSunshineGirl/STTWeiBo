@@ -20,6 +20,10 @@ import UIKit
 
 /// 所有主控制器的基类控制器
 class WBBaseViewController: UIViewController{
+    
+    /// 用户登录标记
+    var userLogin = false
+    
     /// 表格视图 - 如果用户没有登录,就不创建
     var tableView:UITableView?
     /// 刷新控件
@@ -66,14 +70,19 @@ extension WBBaseViewController{
      设置界面
      */
     func setupUI(){
-        view.backgroundColor = UIColor.cz_randomColor()
+        
+        /**
+         用不到随机色了 UIColor.cz_randomColor() 设成白色
+         */
+        view.backgroundColor = UIColor.whiteColor()
         
         //取消自动缩进 - 如果隐藏导航栏会缩进 20 个点
         automaticallyAdjustsScrollViewInsets = false
         
         
         setupNavigationBar()
-        setupTableView()
+        
+        userLogin ? setupTableView() : setupVisitorView()
     }
     
     /**
@@ -102,6 +111,20 @@ extension WBBaseViewController{
         //3 添加监听方法
         refreshControl?.addTarget(self, action: #selector(loadData), forControlEvents: .ValueChanged)
     }
+    
+    /**
+     设置访客视图
+     */
+    private func setupVisitorView(){
+        
+        let visitorView = UIView(frame: view.bounds)
+        
+        visitorView.backgroundColor = UIColor.cz_randomColor()
+        
+        view.insertSubview(visitorView, belowSubview: navigationBar)
+        
+    }
+    
     
     /**
      设置导航条

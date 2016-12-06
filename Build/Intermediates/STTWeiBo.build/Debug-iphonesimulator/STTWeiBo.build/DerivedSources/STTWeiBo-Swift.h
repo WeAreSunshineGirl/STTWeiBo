@@ -151,6 +151,9 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 @interface WBBaseViewController : UIViewController
 
+/// 用户登录标记
+@property (nonatomic) BOOL userLogin;
+
 /// 表格视图 - 如果用户没有登录,就不创建
 @property (nonatomic, strong) UITableView * _Nullable tableView;
 
@@ -176,13 +179,6 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-@interface WBBaseViewController (SWIFT_EXTENSION(STTWeiBo))
-
-/// 设置界面
-- (void)setupUI;
-@end
-
 @class NSIndexPath;
 @class UITableViewCell;
 
@@ -198,6 +194,13 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 ///
 /// \param indexPath <#indexPath description#>
 - (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+@interface WBBaseViewController (SWIFT_EXTENSION(STTWeiBo))
+
+/// 设置界面
+- (void)setupUI;
 @end
 
 

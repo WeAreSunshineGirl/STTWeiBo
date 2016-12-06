@@ -30,7 +30,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="39DA0BE5-94A1-477A-8FC7-53FB775764EF" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-Aa-ize">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="5C8AB263-F183-43E7-8A8A-7F64369E218D" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-Aa-ize">
                                 <rect key="frame" x="0.0" y="20" width="600" height="539"/>
                             </imageView>
                         </subviews>
@@ -55,7 +55,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="39DA0BE5-94A1-477A-8FC7-53FB775764EF" width="414" height="736">
+        <image name="5C8AB263-F183-43E7-8A8A-7F64369E218D" width="414" height="736">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

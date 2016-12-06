@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo22WBNavigationController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "popToParent"
 - "pushViewController"
+- "viewDidLoad"
 depends-top-level:
-- "UINavigationController"
-- !private "BooleanLiteralType"
 - !private "??"
 - !private "UIBarButtonItem"
-- "WBNavigationController"
 - "UIViewController"
-- !private "=="
-- !private "WBBaseViewController"
 - "Bool"
-- !private "StringLiteralType"
+- !private "BooleanLiteralType"
+- !private "WBBaseViewController"
+- "WBNavigationController"
+- !private "=="
+- "UINavigationController"
 - !private ">"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "childViewControllers"]
