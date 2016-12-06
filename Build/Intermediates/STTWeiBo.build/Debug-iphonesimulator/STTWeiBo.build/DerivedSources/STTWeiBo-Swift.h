@@ -154,6 +154,9 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 /// 用户登录标记
 @property (nonatomic) BOOL userLogin;
 
+/// 访客视图字典信息
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable visitorInfoDictionary;
+
 /// 表格视图 - 如果用户没有登录,就不创建
 @property (nonatomic, strong) UITableView * _Nullable tableView;
 
@@ -306,7 +309,8 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 @interface WBVisitorView : UIView
 
-/// 构造函数
+/// 访客视图的信息字典 [imageName / message] 如果是首页 imageName == ""
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable visitorInfo;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

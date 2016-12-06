@@ -10,32 +10,32 @@ provides-dynamic-lookup:
 - "composeStatus"
 - "supportedInterfaceOrientations"
 depends-top-level:
-- !private "NSBundle"
-- !private "*"
-- !private "Dictionary"
-- !private "NSForegroundColorAttributeName"
-- "WBMainViewController"
-- !private "UIViewController"
-- !private "BooleanLiteralType"
 - !private "UIFont"
-- !private "NSFontAttributeName"
-- !private "UnicodeScalarType"
-- !private "/"
-- !private "WBNavigationController"
-- !private "Array"
-- !private "StringLiteralType"
-- "UIInterfaceOrientationMask"
-- !private "CGFloat"
-- "UIButton"
-- !private "UIColor"
 - !private "print"
-- "UITabBarController"
+- !private "StringLiteralType"
+- !private "CGFloat"
+- !private "String"
+- !private "NSBundle"
+- !private "UIImage"
+- "UIInterfaceOrientationMask"
+- !private "UIViewController"
+- !private "+"
+- !private "NSFontAttributeName"
+- "WBMainViewController"
+- !private "AnyObject"
 - !private "NSClassFromString"
 - !private "UINavigationController"
 - !private "-"
-- !private "+"
-- !private "String"
-- !private "UIImage"
+- !private "WBNavigationController"
+- "UITabBarController"
+- !private "/"
+- !private "UnicodeScalarType"
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- !private "NSForegroundColorAttributeName"
+- "UIButton"
+- !private "*"
+- !private "Dictionary"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -49,6 +49,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UINavigationController"]
 - !private ["Ps9AnyObject", "UIViewController"]
+- !private ["Ps9AnyObject", "Value"]
 - !private ["Ps9AnyObject", "WBNavigationController"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
@@ -61,6 +62,7 @@ depends-member:
 - ["Ps9AnyObject", "controller"]
 - !private ["Ps9AnyObject", "cz_imageButton"]
 - !private ["Ps9AnyObject", "cz_randomColor"]
+- !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "imageWithRenderingMode"]
@@ -83,7 +85,6 @@ depends-member:
 - !private ["Ps9AnyObject", "viewControllers"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
@@ -91,7 +92,6 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
-- !private ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Highlighted"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
@@ -165,7 +165,6 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
-- !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "Key"]
@@ -180,7 +179,6 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
@@ -237,7 +235,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
-- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
@@ -415,7 +412,6 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "Key"]
@@ -444,7 +440,6 @@ depends-member:
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
-- !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "SubSequence"]
@@ -452,7 +447,6 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "append"]
 - !private ["Ps21MutableCollectionType", "count"]
 - !private ["Ps21MutableCollectionType", "init"]
-- !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
@@ -460,7 +454,6 @@ depends-member:
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "init"]
-- !private ["Ps16MutableSliceable", "Element"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
@@ -547,6 +540,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "NSBundle"]
 - !private ["CSo8NSObject", "NSClassFromString"]
@@ -654,7 +648,6 @@ depends-member:
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
@@ -695,6 +688,7 @@ depends-member:
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "init"]
+- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
@@ -854,6 +848,7 @@ depends-member:
 - !private ["OSC20UIImageRenderingMode", "AlwaysOriginal"]
 - !private ["VSC26UIInterfaceOrientationMask", "Portrait"]
 - !private ["CSo22UINavigationController", "init"]
+- !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSClassFromString"]
@@ -923,6 +918,7 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo8UITabBar", "addSubview"]
 - !private ["CSo8UITabBar", "bounds"]
+- !private ["CSo18UITabBarController", "AnyObject"]
 - !private ["CSo18UITabBarController", "CGFloat"]
 - !private ["CSo18UITabBarController", "NSBundle"]
 - !private ["CSo18UITabBarController", "NSClassFromString"]
@@ -1024,6 +1020,7 @@ depends-member:
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "cz_imageButton"]
 - !private ["CSo6UIView", "frame"]
+- !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "NSBundle"]
 - !private ["CSo16UIViewController", "NSClassFromString"]
@@ -1062,6 +1059,7 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["C8STTWeiBo20WBMainViewController", "AnyObject"]
 - !private ["C8STTWeiBo20WBMainViewController", "CGFloat"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSBundle"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSClassFromString"]
@@ -1092,7 +1090,6 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "viewControllers"]
 - ["C8STTWeiBo20WBMainViewController", "viewDidLoad"]
 - !private ["C8STTWeiBo22WBNavigationController", "init"]
-- !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -1111,7 +1108,6 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "cz_randomColor"]
 - !private ["Ps24_ColorLiteralConvertible", "orangeColor"]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
@@ -1128,7 +1124,6 @@ depends-member:
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
@@ -1144,7 +1139,6 @@ depends-member:
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Distance"]
-- !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
@@ -1317,4 +1311,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
-interface-hash: "55b127ca08a276ad5c885545769f310d"
+interface-hash: "2915d45d2ef37fbbd9cd17ee7207f179"

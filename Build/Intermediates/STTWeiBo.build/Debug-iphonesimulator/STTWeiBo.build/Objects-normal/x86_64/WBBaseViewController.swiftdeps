@@ -7,50 +7,51 @@ provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
 - ["C8STTWeiBo20WBBaseViewController", "setupUI"]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "viewDidLoad"
+- "refreshControl"
+- "loadData"
+- "navItem"
 - "navigationBar"
 - "title"
-- "navItem"
-- "viewDidLoad"
-- "loadData"
-- "refreshControl"
 - "userLogin"
-- "isPullup"
 - "setupUI"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "isPullup"
+- "visitorInfoDictionary"
 depends-top-level:
-- !private "UIColor"
 - "UITableViewDataSource"
-- !private "print"
-- !private "=="
-- "UITableViewDelegate"
-- !private "&&"
-- !private "!"
 - "WBBaseViewController"
-- !private "-"
-- !private "??"
-- "CGRect"
-- "NSIndexPath"
-- !private "StringLiteralType"
-- !private "Array"
-- "UINavigationItem"
-- "UITableViewCell"
-- !private "NSForegroundColorAttributeName"
-- "UIViewController"
-- !private "<"
-- !private "WBVisitorView"
-- !private "Dictionary"
-- !private "||"
-- "String"
-- "UIScreen"
 - !private "UIEdgeInsets"
-- "BooleanLiteralType"
-- "Int"
-- "UIRefreshControl"
-- "UINavigationBar"
+- "UITableViewDelegate"
+- "UIScreen"
 - "UITableView"
+- "BooleanLiteralType"
+- !private "WBVisitorView"
+- "UINavigationItem"
+- !private "!"
+- "UINavigationBar"
+- !private "print"
+- "CGRect"
+- !private "??"
+- !private "-"
+- "NSIndexPath"
+- !private "Array"
+- !private "StringLiteralType"
+- !private "&&"
+- "UITableViewCell"
+- "UIRefreshControl"
+- !private "NSForegroundColorAttributeName"
+- !private "||"
+- "Int"
+- !private "Dictionary"
+- !private "UIColor"
+- !private "<"
+- !private "=="
+- "UIViewController"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
@@ -118,6 +119,8 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
+- !private ["Ps9AnyObject", "visitorInfo"]
+- ["Ps9AnyObject", "visitorInfoDictionary"]
 - !private ["Ps9AnyObject", "whiteColor"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
@@ -196,6 +199,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
+- !private ["Ps11CVarArgType", "visitorInfo"]
+- ["Ps11CVarArgType", "visitorInfoDictionary"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
@@ -272,6 +277,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
+- !private ["Ps28CustomDebugStringConvertible", "visitorInfo"]
+- ["Ps28CustomDebugStringConvertible", "visitorInfoDictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "CGRect"]
@@ -344,6 +351,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
+- !private ["Ps23CustomStringConvertible", "visitorInfo"]
+- ["Ps23CustomStringConvertible", "visitorInfoDictionary"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Vs10Dictionary", "Key"]
@@ -421,6 +430,8 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
+- !private ["Ps9Equatable", "visitorInfo"]
+- ["Ps9Equatable", "visitorInfoDictionary"]
 - !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -493,6 +504,8 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
+- !private ["Ps8Hashable", "visitorInfo"]
+- ["Ps8Hashable", "visitorInfoDictionary"]
 - !private ["Ps8Hashable", "whiteColor"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Element"]
@@ -572,6 +585,8 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
+- !private ["PSo8NSCoding", "visitorInfo"]
+- ["PSo8NSCoding", "visitorInfoDictionary"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "cz_colorWithHex"]
@@ -627,6 +642,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
+- ["PSo26NSExtensionRequestHandling", "visitorInfoDictionary"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -699,6 +715,8 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- !private ["CSo8NSObject", "visitorInfo"]
+- ["CSo8NSObject", "visitorInfoDictionary"]
 - !private ["CSo8NSObject", "whiteColor"]
 - ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
@@ -766,6 +784,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- !private ["PSo16NSObjectProtocol", "visitorInfo"]
+- ["PSo16NSObjectProtocol", "visitorInfoDictionary"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "cz_colorWithHex"]
@@ -804,6 +824,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "numberOfRowsInSection"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfSections"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo29UIAccessibilityIdentification", "visitorInfo"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -819,6 +840,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "numberOfRowsInSection"]
 - !private ["PSo12UIAppearance", "numberOfSections"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "visitorInfo"]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -881,6 +903,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
+- !private ["PSo21UIAppearanceContainer", "visitorInfo"]
+- ["PSo21UIAppearanceContainer", "visitorInfoDictionary"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "barTintColor"]
 - !private ["PSo16UIBarPositioning", "bounds"]
@@ -938,6 +962,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
+- ["PSo18UIContentContainer", "visitorInfoDictionary"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "endRefreshing"]
@@ -958,6 +983,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "numberOfRowsInSection"]
 - !private ["PSo17UICoordinateSpace", "numberOfSections"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo17UICoordinateSpace", "visitorInfo"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
@@ -973,6 +999,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "numberOfRowsInSection"]
 - !private ["PSo13UIDynamicItem", "numberOfSections"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "visitorInfo"]
 - !private ["VSC12UIEdgeInsets", "init"]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
@@ -1036,6 +1063,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- !private ["PSo18UIFocusEnvironment", "visitorInfo"]
+- ["PSo18UIFocusEnvironment", "visitorInfoDictionary"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
 - !private ["CSo15UINavigationBar", "barTintColor"]
@@ -1113,6 +1142,8 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- !private ["CSo11UIResponder", "visitorInfo"]
+- ["CSo11UIResponder", "visitorInfoDictionary"]
 - ["CSo8UIScreen", "cz_screenWidth"]
 - !private ["CSo12UIScrollView", "addSubview"]
 - !private ["CSo12UIScrollView", "contentInset"]
@@ -1164,6 +1195,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "userLogin"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo20UIScrollViewDelegate", "visitorInfoDictionary"]
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
@@ -1213,6 +1245,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
+- ["PSo16UIStateRestoring", "visitorInfoDictionary"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo8UITabBar", "bounds"]
 - !private ["CSo18UITabBarController", "tabBar"]
@@ -1268,6 +1301,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "userLogin"]
 - !private ["PSo21UITableViewDataSource", "view"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
+- !private ["PSo21UITableViewDataSource", "visitorInfoDictionary"]
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "CGRect"]
 - !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
@@ -1312,6 +1346,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "userLogin"]
 - !private ["PSo19UITableViewDelegate", "view"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
+- !private ["PSo19UITableViewDelegate", "visitorInfoDictionary"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["OSC16UITableViewStyle", "Plain"]
 - ["PSo18UITraitEnvironment", "CGRect"]
@@ -1377,6 +1412,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
+- !private ["PSo18UITraitEnvironment", "visitorInfo"]
+- ["PSo18UITraitEnvironment", "visitorInfoDictionary"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
@@ -1393,6 +1430,7 @@ depends-member:
 - !private ["CSo6UIView", "numberOfRowsInSection"]
 - !private ["CSo6UIView", "numberOfSections"]
 - !private ["CSo6UIView", "titleTextAttributes"]
+- !private ["CSo6UIView", "visitorInfo"]
 - ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
@@ -1444,6 +1482,7 @@ depends-member:
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
+- ["CSo16UIViewController", "visitorInfoDictionary"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
@@ -1503,7 +1542,9 @@ depends-member:
 - !private ["C8STTWeiBo20WBBaseViewController", "view"]
 - ["C8STTWeiBo20WBBaseViewController", "viewDidLoad"]
 - ["C8STTWeiBo20WBBaseViewController", "viewForZoomingInScrollView"]
+- ["C8STTWeiBo20WBBaseViewController", "visitorInfoDictionary"]
 - !private ["C8STTWeiBo13WBVisitorView", "init"]
+- !private ["C8STTWeiBo13WBVisitorView", "visitorInfo"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -1539,6 +1580,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "numberOfRowsInSection"]
 - !private ["Ps12_Reflectable", "numberOfSections"]
 - !private ["Ps12_Reflectable", "titleTextAttributes"]
+- !private ["Ps12_Reflectable", "visitorInfo"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
@@ -1665,4 +1707,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
-interface-hash: "5af3cdc16a7e57387b1bc27c61fc45d3"
+interface-hash: "e8d8834a525560041c7d7b291eb2ae33"

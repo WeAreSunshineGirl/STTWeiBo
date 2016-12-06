@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
+- "applicationWillResignActive"
 - "applicationWillTerminate"
+- "applicationDidEnterBackground"
+- "window"
+- "application"
 - "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
-- "application"
-- "applicationWillResignActive"
-- "window"
 depends-top-level:
+- !private "WBMainViewController"
 - "NSObject"
 - "AppDelegate"
-- "UIApplication"
-- "UIWindow"
+- !private "UIColor"
+- "UIResponder"
+- "UIApplicationDelegate"
 - "Bool"
 - !private "BooleanLiteralType"
-- "UIResponder"
-- !private "UIColor"
-- "UIApplicationDelegate"
+- "UIApplication"
+- "UIWindow"
 - "AnyObject"
-- !private "WBMainViewController"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIWindow"]

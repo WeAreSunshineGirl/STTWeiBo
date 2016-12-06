@@ -24,6 +24,9 @@ class WBBaseViewController: UIViewController{
     /// 用户登录标记
     var userLogin = false
     
+    /// 访客视图字典信息
+    var visitorInfoDictionary:[String:String]?
+    
     /// 表格视图 - 如果用户没有登录,就不创建
     var tableView:UITableView?
     /// 刷新控件
@@ -122,6 +125,8 @@ extension WBBaseViewController{
         view.insertSubview(visitorView, belowSubview: navigationBar)
         
         print("访客视图\(visitorView)")
+        ///设置访客视图信息
+        visitorView.visitorInfo = visitorInfoDictionary
     }
     
     

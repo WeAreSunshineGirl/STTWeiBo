@@ -92,10 +92,14 @@ extension WBMainViewController{
     
     ///设置所有子控制器
     private func setupChildControllers(){
-        let array = [
-            ["clsName":"WBHomeViewController","title":"首页","imageName":"home"],["clsName":"WBMessageViewController","title":"消息","imageName":"message_center"],
-            ["clsName":"XXX"],
-               ["clsName":"WBDiscoverViewController","title":"发现","imageName":"home"],["clsName":"WBProfileViewController","title":"个人","imageName":"discover"]]
+        //在现在很多应用程序中 界面的创建都依赖网络的json
+        let array:[[String:AnyObject]] = [
+            ["clsName":"WBHomeViewController","title":"首页","imageName":"home","visitorInfo":["imageName":"","message":"哈哈"]],
+               ["clsName":"WBMessageViewController","title":"消息","imageName":"message_center"],
+               ["clsName":"XXX"],
+               ["clsName":"WBDiscoverViewController","title":"发现","imageName":"home"],
+               ["clsName":"WBProfileViewController","title":"个人","imageName":"discover"]]
+        
         var arrayM = [UIViewController]()
         
         for dict in array {
@@ -111,10 +115,10 @@ extension WBMainViewController{
      
      - returns: 子控制器
      */
-    private func controller(dict:[String:String])->UIViewController{
+    private func controller(dict:[String:AnyObject])->UIViewController{
         
         //1 取得字典内容
-        guard let clsName = dict["clsName"],title = dict["title"],imageName = dict["imageName"],let cls = NSClassFromString(NSBundle.mainBundle().namespace + "." + clsName) as? UIViewController.Type
+        guard let clsName = dict["clsName"] as? String,title = dict["title"] as? String,imageName = dict["imageName"] as? String,let cls = NSClassFromString(NSBundle.mainBundle().namespace + "." + clsName) as? UIViewController.Type
             else{
                 
             return UIViewController()
