@@ -1,0 +1,295 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo15UIBarButtonItem", ""]
+- ["CSo15UIBarButtonItem", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "UIImage"
+- "Bool"
+- "CGFloat"
+- "BooleanLiteralType"
+- "String"
+- !private "StringLiteralType"
+- !private "+"
+- "Selector"
+- "AnyObject"
+- !private "UIButton"
+- !private "UIColor"
+- "UIBarButtonItem"
+depends-member:
+- !private ["Ps9AnyObject", "UIButton"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "addTarget"]
+- !private ["Ps9AnyObject", "cz_textButton"]
+- !private ["Ps9AnyObject", "darkGrayColor"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "orangeColor"]
+- !private ["Ps9AnyObject", "setImage"]
+- !private ["Ps9AnyObject", "sizeToFit"]
+- !private ["Ps23ArrayLiteralConvertible", "Highlighted"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "UIButton"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "addTarget"]
+- !private ["Ps11CVarArgType", "cz_textButton"]
+- !private ["Ps11CVarArgType", "darkGrayColor"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "orangeColor"]
+- !private ["Ps11CVarArgType", "setImage"]
+- !private ["Ps11CVarArgType", "sizeToFit"]
+- !private ["Ps28CustomDebugStringConvertible", "UIButton"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "addTarget"]
+- !private ["Ps28CustomDebugStringConvertible", "cz_textButton"]
+- !private ["Ps28CustomDebugStringConvertible", "darkGrayColor"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "orangeColor"]
+- !private ["Ps28CustomDebugStringConvertible", "setImage"]
+- !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
+- !private ["Ps23CustomStringConvertible", "UIButton"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addTarget"]
+- !private ["Ps23CustomStringConvertible", "cz_textButton"]
+- !private ["Ps23CustomStringConvertible", "darkGrayColor"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "orangeColor"]
+- !private ["Ps23CustomStringConvertible", "setImage"]
+- !private ["Ps23CustomStringConvertible", "sizeToFit"]
+- !private ["Ps9Equatable", "Highlighted"]
+- !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "TouchUpInside"]
+- !private ["Ps9Equatable", "UIButton"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addTarget"]
+- !private ["Ps9Equatable", "cz_textButton"]
+- !private ["Ps9Equatable", "darkGrayColor"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "orangeColor"]
+- !private ["Ps9Equatable", "setImage"]
+- !private ["Ps9Equatable", "sizeToFit"]
+- !private ["Ps8Hashable", "UIButton"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addTarget"]
+- !private ["Ps8Hashable", "cz_textButton"]
+- !private ["Ps8Hashable", "darkGrayColor"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "orangeColor"]
+- !private ["Ps8Hashable", "setImage"]
+- !private ["Ps8Hashable", "sizeToFit"]
+- !private ["PSo8NSCoding", "UIButton"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "addTarget"]
+- !private ["PSo8NSCoding", "cz_textButton"]
+- !private ["PSo8NSCoding", "darkGrayColor"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "orangeColor"]
+- !private ["PSo8NSCoding", "setImage"]
+- !private ["PSo8NSCoding", "sizeToFit"]
+- !private ["PSo9NSCopying", "darkGrayColor"]
+- !private ["PSo9NSCopying", "orangeColor"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "addTarget"]
+- !private ["CSo8NSObject", "cz_textButton"]
+- !private ["CSo8NSObject", "darkGrayColor"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "orangeColor"]
+- !private ["CSo8NSObject", "setImage"]
+- !private ["CSo8NSObject", "sizeToFit"]
+- !private ["PSo16NSObjectProtocol", "UIButton"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
+- !private ["PSo16NSObjectProtocol", "cz_textButton"]
+- !private ["PSo16NSObjectProtocol", "darkGrayColor"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "orangeColor"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
+- !private ["PSo16NSObjectProtocol", "sizeToFit"]
+- !private ["PSo14NSSecureCoding", "darkGrayColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "orangeColor"]
+- !private ["Ps13OptionSetType", "Highlighted"]
+- !private ["Ps13OptionSetType", "Normal"]
+- !private ["Ps13OptionSetType", "TouchUpInside"]
+- !private ["Ps16RawRepresentable", "Highlighted"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps16RawRepresentable", "TouchUpInside"]
+- !private ["Ps14SetAlgebraType", "Highlighted"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["Ps14SetAlgebraType", "TouchUpInside"]
+- !private ["PSo29UIAccessibilityIdentification", "UIButton"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "cz_textButton"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
+- !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
+- !private ["PSo12UIAppearance", "UIButton"]
+- !private ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "UIImage"]
+- !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "cz_textButton"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "setImage"]
+- !private ["PSo12UIAppearance", "sizeToFit"]
+- !private ["PSo21UIAppearanceContainer", "addTarget"]
+- !private ["PSo21UIAppearanceContainer", "cz_textButton"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
+- !private ["PSo21UIAppearanceContainer", "sizeToFit"]
+- ["CSo15UIBarButtonItem", "AnyObject"]
+- ["CSo15UIBarButtonItem", "Bool"]
+- ["CSo15UIBarButtonItem", "CGFloat"]
+- ["CSo15UIBarButtonItem", "Selector"]
+- ["CSo15UIBarButtonItem", "String"]
+- !private ["CSo15UIBarButtonItem", "UIButton"]
+- !private ["CSo15UIBarButtonItem", "UIColor"]
+- !private ["CSo15UIBarButtonItem", "UIImage"]
+- ["CSo15UIBarButtonItem", "init"]
+- ["CSo9UIBarItem", "AnyObject"]
+- ["CSo9UIBarItem", "Bool"]
+- ["CSo9UIBarItem", "CGFloat"]
+- ["CSo9UIBarItem", "Selector"]
+- ["CSo9UIBarItem", "String"]
+- !private ["CSo9UIBarItem", "UIButton"]
+- !private ["CSo9UIBarItem", "UIColor"]
+- !private ["CSo9UIBarItem", "UIImage"]
+- ["CSo9UIBarItem", "init"]
+- !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "cz_textButton"]
+- !private ["CSo8UIButton", "setImage"]
+- !private ["CSo8UIButton", "sizeToFit"]
+- !private ["CSo7UIColor", "darkGrayColor"]
+- !private ["CSo7UIColor", "orangeColor"]
+- !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "cz_textButton"]
+- !private ["CSo9UIControl", "setImage"]
+- !private ["CSo9UIControl", "sizeToFit"]
+- !private ["VSC15UIControlEvents", "TouchUpInside"]
+- !private ["VSC14UIControlState", "Highlighted"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "cz_textButton"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
+- !private ["PSo17UICoordinateSpace", "sizeToFit"]
+- !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "cz_textButton"]
+- !private ["PSo13UIDynamicItem", "setImage"]
+- !private ["PSo13UIDynamicItem", "sizeToFit"]
+- !private ["PSo18UIFocusEnvironment", "addTarget"]
+- !private ["PSo18UIFocusEnvironment", "cz_textButton"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
+- !private ["PSo18UIFocusEnvironment", "sizeToFit"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIResponder", "addTarget"]
+- !private ["CSo11UIResponder", "cz_textButton"]
+- !private ["CSo11UIResponder", "setImage"]
+- !private ["CSo11UIResponder", "sizeToFit"]
+- !private ["PSo18UITraitEnvironment", "addTarget"]
+- !private ["PSo18UITraitEnvironment", "cz_textButton"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
+- !private ["PSo18UITraitEnvironment", "sizeToFit"]
+- !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "cz_textButton"]
+- !private ["CSo6UIView", "setImage"]
+- !private ["CSo6UIView", "sizeToFit"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps24_ColorLiteralConvertible", "darkGrayColor"]
+- !private ["Ps24_ColorLiteralConvertible", "orangeColor"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addTarget"]
+- !private ["Ps12_Reflectable", "cz_textButton"]
+- !private ["Ps12_Reflectable", "setImage"]
+- !private ["Ps12_Reflectable", "sizeToFit"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps13OptionSetType"
+- !private "Ps16RawRepresentable"
+- !private "Ps14SetAlgebraType"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- "CSo15UIBarButtonItem"
+- "CSo9UIBarItem"
+- !private "CSo8UIButton"
+- !private "CSo7UIColor"
+- !private "CSo9UIControl"
+- !private "VSC15UIControlEvents"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
+- !private "CSo11UIResponder"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/WeiBo-Bridge.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/CZAdditions.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/UILabel+CZAddition.h"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/UIButton+CZAddition.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/UIColor+CZAddition.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/UIView+CZAddition.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/UIScreen+CZAddition.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/UIViewController+CZAddition.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSObject+CZRuntime.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSAttributedString+CZAdditon.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
+- "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
+interface-hash: "7695d913b97dd69101a88de9c1ced037"
