@@ -121,6 +121,7 @@ extension WBBaseViewController{
         
         view.insertSubview(visitorView, belowSubview: navigationBar)
         
+        print("访客视图\(visitorView)")
     }
     
     

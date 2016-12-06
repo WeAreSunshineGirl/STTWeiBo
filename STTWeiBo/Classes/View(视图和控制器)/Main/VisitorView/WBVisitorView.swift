@@ -22,6 +22,30 @@ class WBVisitorView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    //MARK: 设置访客视图信息
+    /**
+     使用字典设置访客视图的信息
+     
+     - parameter dict: [imageName / message]
+     */
+    ///提示如果是首页 imageName == ""
+    func setupInfo(dict:[String:String]){
+        
+        //1 取字典信息
+        guard let imageName = dict["imageName"],message = dict["message"]
+            else{
+            return
+        }
+        //2 设置消息
+        tipLabel.text = message
+        
+        //3 设置图像 首页不需要设置
+        if imageName == "" {
+            return
+        }
+        iconView.image = UIImage(named: imageName)
+    }
+        
     //MARK:私有控件
     ///懒加载属性只有调用 UIKit 控件的指定函数 其他都需要使用类型
     /// 图像视图

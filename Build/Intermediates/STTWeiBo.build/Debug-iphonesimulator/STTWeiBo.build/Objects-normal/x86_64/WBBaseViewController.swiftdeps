@@ -7,50 +7,50 @@ provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
 - ["C8STTWeiBo20WBBaseViewController", "setupUI"]
 provides-dynamic-lookup:
-- "refreshControl"
-- "setupUI"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "viewDidLoad"
-- "loadData"
+- "navigationBar"
 - "title"
 - "navItem"
-- "isPullup"
+- "viewDidLoad"
+- "loadData"
+- "refreshControl"
 - "userLogin"
-- "navigationBar"
+- "isPullup"
+- "setupUI"
 depends-top-level:
+- !private "UIColor"
+- "UITableViewDataSource"
 - !private "print"
-- !private "NSForegroundColorAttributeName"
-- "UIRefreshControl"
-- !private "Array"
+- !private "=="
+- "UITableViewDelegate"
+- !private "&&"
+- !private "!"
+- "WBBaseViewController"
 - !private "-"
-- !private "StringLiteralType"
+- !private "??"
+- "CGRect"
 - "NSIndexPath"
+- !private "StringLiteralType"
+- !private "Array"
+- "UINavigationItem"
+- "UITableViewCell"
+- !private "NSForegroundColorAttributeName"
 - "UIViewController"
 - !private "<"
-- "UITableView"
-- "UIScreen"
-- !private "UIColor"
-- !private "||"
-- !private "=="
-- "UITableViewDataSource"
-- "String"
-- "WBBaseViewController"
-- "UITableViewDelegate"
-- "UINavigationBar"
-- "UINavigationItem"
-- !private "UIEdgeInsets"
-- "BooleanLiteralType"
-- "CGRect"
-- "Int"
 - !private "WBVisitorView"
 - !private "Dictionary"
-- !private "&&"
-- !private "??"
-- "UITableViewCell"
-- !private "!"
+- !private "||"
+- "String"
+- "UIScreen"
+- !private "UIEdgeInsets"
+- "BooleanLiteralType"
+- "Int"
+- "UIRefreshControl"
+- "UINavigationBar"
+- "UITableView"
 depends-member:
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
@@ -124,6 +124,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -197,9 +198,11 @@ depends-member:
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "Value"]
+- !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
@@ -347,6 +350,7 @@ depends-member:
 - !private ["Vs10Dictionary", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Sd", "deinit"]
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "Plain"]
@@ -419,6 +423,8 @@ depends-member:
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "Plain"]
@@ -492,6 +498,12 @@ depends-member:
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableSliceable", "Element"]
@@ -564,6 +576,7 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "cz_colorWithHex"]
 - !private ["PSo9NSCopying", "darkGrayColor"]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "whiteColor"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
@@ -616,6 +629,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
@@ -756,10 +770,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "cz_colorWithHex"]
 - !private ["PSo14NSSecureCoding", "darkGrayColor"]
+- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps16RawRepresentable", "Plain"]
 - !private ["Ps16RawRepresentable", "ValueChanged"]
@@ -767,6 +785,10 @@ depends-member:
 - !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "Value"]
 - !private ["Ps14SetAlgebraType", "ValueChanged"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1423,6 +1445,13 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - ["C8STTWeiBo20WBBaseViewController", "CGRect"]
 - ["C8STTWeiBo20WBBaseViewController", "Int"]
 - !private ["C8STTWeiBo20WBBaseViewController", "NSForegroundColorAttributeName"]
@@ -1477,6 +1506,10 @@ depends-member:
 - !private ["C8STTWeiBo13WBVisitorView", "init"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "cz_colorWithHex"]
 - !private ["Ps24_ColorLiteralConvertible", "darkGrayColor"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
@@ -1485,6 +1518,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Key"]
 - !private ["Ps12_Reflectable", "Value"]
@@ -1515,14 +1549,25 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - !private "Ps14CollectionType"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
@@ -1530,15 +1575,22 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Ps13OptionSetType"
 - !private "Sq"
+- !private "Ps16OutputStreamType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1571,10 +1623,21 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
 - "C8STTWeiBo20WBBaseViewController"
 - !private "C8STTWeiBo13WBVisitorView"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps21_ObjectiveCBridgeable"
