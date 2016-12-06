@@ -56,7 +56,7 @@ class WBVisitorView: UIView {
     private lazy var houseIconView:UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
     
     /// 提示标签
-    private lazy var tipLabel:UILabel = UILabel.cz_labelWithText("关注一些人，回这里看看有什么惊喜,关注一些人，回这里看看有什么惊喜", fontSize: 14, color: UIColor.darkGrayColor())
+    private lazy var tipLabel:UILabel = UILabel.cz_labelWithText("关注一些人，回这里看看有什么惊喜", fontSize: 14, color: UIColor.darkGrayColor())
     
     /// 注册按钮
     private lazy var registerButton:UIButton = UIButton.cz_textButton("注册", fontSize: 16, normalColor: UIColor.orangeColor(), highlightedColor: UIColor.blackColor(), backgroundImageName: "common_button_white_disable")
@@ -79,6 +79,8 @@ extension WBVisitorView{
         addSubview(tipLabel)
         addSubview(registerButton)
         addSubview(loginButton)
+        //      文本居中
+        tipLabel.textAlignment = .Center
         
         ///2 取消autoresizing   纯代码 默认 autoresizing xib 默认 autoLayout
         for v in subviews {
@@ -191,7 +193,7 @@ extension WBVisitorView{
         //metrics 定义 VFL 中（） 指定的常数映射关系
         let viewDict = ["maskIconView":maskIconView,"registerButton":registerButton]
         
-        let metrics = ["spacing":10]
+        let metrics = ["spacing":15]
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[maskIconView]-0-|", options: [], metrics: nil, views: viewDict))
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[maskIconView]-(spacing)-[registerButton]", options: [], metrics:metrics, views: viewDict))
         
