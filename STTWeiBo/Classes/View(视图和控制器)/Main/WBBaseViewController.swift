@@ -22,7 +22,7 @@ import UIKit
 class WBBaseViewController: UIViewController{
     
     /// 用户登录标记
-    var userLogin = false
+    var userLogin = true
     
     /// 访客视图字典信息
     var visitorInfoDictionary:[String:String]?
@@ -172,6 +172,25 @@ extension WBBaseViewController:UITableViewDelegate,UITableViewDataSource{
      - parameter indexPath: <#indexPath description#>
      */
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        /*
+        /**
+         *  有种动画效果
+         *
+         *  @param 0.1 <#0.1 description#>
+         *  @param 0.1 <#0.1 description#>
+         *  @param 1   <#1 description#>
+         *
+         *  @return <#return value description#>
+         */
+        //设置cell的显示动画为3D缩放
+        //xy方向缩放的初始值为0.1
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1)
+        //设置动画时间为0.25秒，xy方向缩放的最终值为1
+        UIView.animateWithDuration(0.25, animations: {
+            cell.layer.transform=CATransform3DMakeScale(1, 1, 1)
+        })
+        */
         
         //1 判断indexPath是否是最后一行(indexPath.section(最大)/indexPath.row（最后一行）)
          // 1row

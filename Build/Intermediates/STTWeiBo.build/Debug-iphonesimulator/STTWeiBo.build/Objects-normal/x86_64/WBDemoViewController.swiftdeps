@@ -7,17 +7,17 @@ provides-member:
 - ["C8STTWeiBo20WBDemoViewController", ""]
 - ["C8STTWeiBo20WBDemoViewController", "setupUI"]
 provides-dynamic-lookup:
-- "setupUI"
 - "showNext"
+- "setupUI"
 - "viewDidLoad"
 depends-top-level:
 - "WBBaseViewController"
 - !private "BooleanLiteralType"
-- !private "??"
 - "WBDemoViewController"
 - !private "UIBarButtonItem"
-- !private "StringLiteralType"
+- !private "??"
 - !private "UnicodeScalarType"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "WBDemoViewController"]
