@@ -151,7 +151,7 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 @interface WBBaseViewController : UIViewController
 
-/// 用户登录标记
+/// 用户登录标记  为 true 时 显示数据 否则是访问视图页面
 @property (nonatomic) BOOL userLogin;
 
 /// 访客视图字典信息
