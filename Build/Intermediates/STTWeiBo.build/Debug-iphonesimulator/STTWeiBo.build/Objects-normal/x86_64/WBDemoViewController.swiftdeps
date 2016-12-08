@@ -5,18 +5,18 @@ provides-nominal:
 - "C8STTWeiBo20WBDemoViewController"
 provides-member:
 - ["C8STTWeiBo20WBDemoViewController", ""]
-- ["C8STTWeiBo20WBDemoViewController", "setupUI"]
+- ["C8STTWeiBo20WBDemoViewController", "setupTableView"]
 provides-dynamic-lookup:
 - "showNext"
-- "setupUI"
 - "viewDidLoad"
+- "setupTableView"
 depends-top-level:
-- "WBBaseViewController"
 - !private "BooleanLiteralType"
+- !private "UnicodeScalarType"
+- !private "??"
 - "WBDemoViewController"
 - !private "UIBarButtonItem"
-- !private "??"
-- !private "UnicodeScalarType"
+- "WBBaseViewController"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
@@ -27,7 +27,7 @@ depends-member:
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "pushViewController"]
 - !private ["Ps9AnyObject", "rightBarButtonItem"]
-- ["Ps9AnyObject", "setupUI"]
+- ["Ps9AnyObject", "setupTableView"]
 - ["Ps9AnyObject", "showNext"]
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -57,7 +57,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "navigationController"]
 - !private ["Ps11CVarArgType", "pushViewController"]
 - !private ["Ps11CVarArgType", "rightBarButtonItem"]
-- ["Ps11CVarArgType", "setupUI"]
+- ["Ps11CVarArgType", "setupTableView"]
 - ["Ps11CVarArgType", "showNext"]
 - !private ["Ps11CVarArgType", "title"]
 - ["Ps11CVarArgType", "viewDidLoad"]
@@ -81,7 +81,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
-- ["Ps28CustomDebugStringConvertible", "setupUI"]
+- ["Ps28CustomDebugStringConvertible", "setupTableView"]
 - ["Ps28CustomDebugStringConvertible", "showNext"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -100,7 +100,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
 - !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
-- ["Ps23CustomStringConvertible", "setupUI"]
+- ["Ps23CustomStringConvertible", "setupTableView"]
 - ["Ps23CustomStringConvertible", "showNext"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -116,7 +116,7 @@ depends-member:
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "pushViewController"]
 - !private ["Ps9Equatable", "rightBarButtonItem"]
-- ["Ps9Equatable", "setupUI"]
+- ["Ps9Equatable", "setupTableView"]
 - ["Ps9Equatable", "showNext"]
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -135,7 +135,7 @@ depends-member:
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "pushViewController"]
 - !private ["Ps8Hashable", "rightBarButtonItem"]
-- ["Ps8Hashable", "setupUI"]
+- ["Ps8Hashable", "setupTableView"]
 - ["Ps8Hashable", "showNext"]
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -180,7 +180,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "rightBarButtonItem"]
-- ["PSo8NSCoding", "setupUI"]
+- ["PSo8NSCoding", "setupTableView"]
 - ["PSo8NSCoding", "showNext"]
 - !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -193,7 +193,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navItem"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
-- ["PSo26NSExtensionRequestHandling", "setupUI"]
+- ["PSo26NSExtensionRequestHandling", "setupTableView"]
 - ["PSo26NSExtensionRequestHandling", "showNext"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -207,7 +207,7 @@ depends-member:
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "rightBarButtonItem"]
-- ["CSo8NSObject", "setupUI"]
+- ["CSo8NSObject", "setupTableView"]
 - ["CSo8NSObject", "showNext"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -219,7 +219,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
-- ["PSo16NSObjectProtocol", "setupUI"]
+- ["PSo16NSObjectProtocol", "setupTableView"]
 - ["PSo16NSObjectProtocol", "showNext"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -257,7 +257,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navItem"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
-- ["PSo21UIAppearanceContainer", "setupUI"]
+- ["PSo21UIAppearanceContainer", "setupTableView"]
 - ["PSo21UIAppearanceContainer", "showNext"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
@@ -271,7 +271,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navItem"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
-- ["PSo18UIContentContainer", "setupUI"]
+- ["PSo18UIContentContainer", "setupTableView"]
 - ["PSo18UIContentContainer", "showNext"]
 - !private ["PSo18UIContentContainer", "title"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
@@ -283,7 +283,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navItem"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
-- ["PSo18UIFocusEnvironment", "setupUI"]
+- ["PSo18UIFocusEnvironment", "setupTableView"]
 - ["PSo18UIFocusEnvironment", "showNext"]
 - !private ["PSo18UIFocusEnvironment", "title"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
@@ -298,7 +298,7 @@ depends-member:
 - !private ["CSo11UIResponder", "navItem"]
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "pushViewController"]
-- ["CSo11UIResponder", "setupUI"]
+- ["CSo11UIResponder", "setupTableView"]
 - ["CSo11UIResponder", "showNext"]
 - !private ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "viewDidLoad"]
@@ -307,7 +307,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "init"]
 - !private ["PSo20UIScrollViewDelegate", "navItem"]
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
-- ["PSo20UIScrollViewDelegate", "setupUI"]
+- ["PSo20UIScrollViewDelegate", "setupTableView"]
 - ["PSo20UIScrollViewDelegate", "showNext"]
 - !private ["PSo20UIScrollViewDelegate", "title"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
@@ -319,7 +319,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navItem"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
-- ["PSo16UIStateRestoring", "setupUI"]
+- ["PSo16UIStateRestoring", "setupTableView"]
 - ["PSo16UIStateRestoring", "showNext"]
 - !private ["PSo16UIStateRestoring", "title"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -329,7 +329,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "init"]
 - !private ["PSo21UITableViewDataSource", "navItem"]
 - !private ["PSo21UITableViewDataSource", "navigationController"]
-- ["PSo21UITableViewDataSource", "setupUI"]
+- ["PSo21UITableViewDataSource", "setupTableView"]
 - ["PSo21UITableViewDataSource", "showNext"]
 - !private ["PSo21UITableViewDataSource", "title"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
@@ -339,7 +339,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "init"]
 - !private ["PSo19UITableViewDelegate", "navItem"]
 - !private ["PSo19UITableViewDelegate", "navigationController"]
-- ["PSo19UITableViewDelegate", "setupUI"]
+- ["PSo19UITableViewDelegate", "setupTableView"]
 - ["PSo19UITableViewDelegate", "showNext"]
 - !private ["PSo19UITableViewDelegate", "title"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
@@ -351,7 +351,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navItem"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
-- ["PSo18UITraitEnvironment", "setupUI"]
+- ["PSo18UITraitEnvironment", "setupTableView"]
 - ["PSo18UITraitEnvironment", "showNext"]
 - !private ["PSo18UITraitEnvironment", "title"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
@@ -363,7 +363,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navItem"]
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "pushViewController"]
-- ["CSo16UIViewController", "setupUI"]
+- ["CSo16UIViewController", "setupTableView"]
 - ["CSo16UIViewController", "showNext"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -378,7 +378,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "init"]
 - !private ["C8STTWeiBo20WBBaseViewController", "navItem"]
 - !private ["C8STTWeiBo20WBBaseViewController", "navigationController"]
-- ["C8STTWeiBo20WBBaseViewController", "setupUI"]
+- ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 - ["C8STTWeiBo20WBBaseViewController", "showNext"]
 - !private ["C8STTWeiBo20WBBaseViewController", "title"]
 - ["C8STTWeiBo20WBBaseViewController", "viewDidLoad"]
@@ -389,7 +389,7 @@ depends-member:
 - ["C8STTWeiBo20WBDemoViewController", "init"]
 - !private ["C8STTWeiBo20WBDemoViewController", "navItem"]
 - !private ["C8STTWeiBo20WBDemoViewController", "navigationController"]
-- ["C8STTWeiBo20WBDemoViewController", "setupUI"]
+- ["C8STTWeiBo20WBDemoViewController", "setupTableView"]
 - !private ["C8STTWeiBo20WBDemoViewController", "showNext"]
 - !private ["C8STTWeiBo20WBDemoViewController", "title"]
 - ["C8STTWeiBo20WBDemoViewController", "viewDidLoad"]
@@ -544,4 +544,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
-interface-hash: "4666a0a18c4a0863739bca4f2e441b39"
+interface-hash: "2fda956319441c6e4764d2b06452f58f"

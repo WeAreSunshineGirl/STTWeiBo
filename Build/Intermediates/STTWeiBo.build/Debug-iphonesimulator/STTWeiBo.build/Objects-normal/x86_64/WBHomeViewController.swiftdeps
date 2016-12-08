@@ -7,34 +7,34 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", ""]
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
-- ["C8STTWeiBo20WBHomeViewController", "setupUI"]
+- ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 provides-dynamic-lookup:
+- "setupTableView"
 - "showFriends"
 - "loadData"
-- "setupUI"
 - "tableView"
 - "tableView"
 depends-top-level:
-- !private "dispatch_get_main_queue"
-- "NSIndexPath"
-- "UITableView"
-- "WBBaseViewController"
-- !private "UIBarButtonItem"
-- !private "WBDemoViewController"
-- !private "Int64"
-- !private "cellId"
-- !private "..<"
-- "UITableViewCell"
-- !private "NSEC_PER_SEC"
 - "WBHomeViewController"
 - "String"
-- "Int"
-- !private "dispatch_after"
-- !private "dispatch_time"
-- "StringLiteralType"
-- !private "DISPATCH_TIME_NOW"
-- !private "*"
+- !private "UIBarButtonItem"
 - !private "print"
+- !private "*"
+- !private "Int64"
+- !private "..<"
+- "UITableViewCell"
+- "WBBaseViewController"
+- !private "NSEC_PER_SEC"
+- "NSIndexPath"
+- !private "dispatch_get_main_queue"
+- !private "WBDemoViewController"
+- !private "DISPATCH_TIME_NOW"
+- !private "cellId"
+- !private "dispatch_time"
+- "Int"
+- "UITableView"
+- "StringLiteralType"
+- !private "dispatch_after"
 depends-member:
 - !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
 - !private ["Ps9AnyObject", "Int64"]
@@ -61,7 +61,7 @@ depends-member:
 - !private ["Ps9AnyObject", "registerClass"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "row"]
-- ["Ps9AnyObject", "setupUI"]
+- ["Ps9AnyObject", "setupTableView"]
 - ["Ps9AnyObject", "showFriends"]
 - ["Ps9AnyObject", "statusList"]
 - ["Ps9AnyObject", "tableView"]
@@ -132,7 +132,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "registerClass"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "row"]
-- ["Ps11CVarArgType", "setupUI"]
+- ["Ps11CVarArgType", "setupTableView"]
 - ["Ps11CVarArgType", "showFriends"]
 - ["Ps11CVarArgType", "statusList"]
 - ["Ps11CVarArgType", "tableView"]
@@ -186,7 +186,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "registerClass"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
-- ["Ps28CustomDebugStringConvertible", "setupUI"]
+- ["Ps28CustomDebugStringConvertible", "setupTableView"]
 - ["Ps28CustomDebugStringConvertible", "showFriends"]
 - ["Ps28CustomDebugStringConvertible", "statusList"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -231,7 +231,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "registerClass"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "row"]
-- ["Ps23CustomStringConvertible", "setupUI"]
+- ["Ps23CustomStringConvertible", "setupTableView"]
 - ["Ps23CustomStringConvertible", "showFriends"]
 - ["Ps23CustomStringConvertible", "statusList"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -271,7 +271,7 @@ depends-member:
 - !private ["Ps9Equatable", "registerClass"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
-- ["Ps9Equatable", "setupUI"]
+- ["Ps9Equatable", "setupTableView"]
 - ["Ps9Equatable", "showFriends"]
 - ["Ps9Equatable", "statusList"]
 - ["Ps9Equatable", "tableView"]
@@ -317,7 +317,7 @@ depends-member:
 - !private ["Ps8Hashable", "registerClass"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
-- ["Ps8Hashable", "setupUI"]
+- ["Ps8Hashable", "setupTableView"]
 - ["Ps8Hashable", "showFriends"]
 - ["Ps8Hashable", "statusList"]
 - ["Ps8Hashable", "tableView"]
@@ -417,7 +417,7 @@ depends-member:
 - !private ["PSo8NSCoding", "registerClass"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
-- ["PSo8NSCoding", "setupUI"]
+- ["PSo8NSCoding", "setupTableView"]
 - ["PSo8NSCoding", "showFriends"]
 - ["PSo8NSCoding", "statusList"]
 - ["PSo8NSCoding", "tableView"]
@@ -445,7 +445,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "refreshControl"]
-- ["PSo26NSExtensionRequestHandling", "setupUI"]
+- ["PSo26NSExtensionRequestHandling", "setupTableView"]
 - ["PSo26NSExtensionRequestHandling", "showFriends"]
 - ["PSo26NSExtensionRequestHandling", "statusList"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
@@ -480,7 +480,7 @@ depends-member:
 - !private ["CSo8NSObject", "registerClass"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
-- ["CSo8NSObject", "setupUI"]
+- ["CSo8NSObject", "setupTableView"]
 - ["CSo8NSObject", "showFriends"]
 - ["CSo8NSObject", "statusList"]
 - ["CSo8NSObject", "tableView"]
@@ -511,7 +511,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "registerClass"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
-- ["PSo16NSObjectProtocol", "setupUI"]
+- ["PSo16NSObjectProtocol", "setupTableView"]
 - ["PSo16NSObjectProtocol", "showFriends"]
 - ["PSo16NSObjectProtocol", "statusList"]
 - ["PSo16NSObjectProtocol", "tableView"]
@@ -608,7 +608,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "refreshControl"]
 - !private ["PSo21UIAppearanceContainer", "registerClass"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
-- ["PSo21UIAppearanceContainer", "setupUI"]
+- ["PSo21UIAppearanceContainer", "setupTableView"]
 - ["PSo21UIAppearanceContainer", "showFriends"]
 - ["PSo21UIAppearanceContainer", "statusList"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -636,7 +636,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
 - !private ["PSo18UIContentContainer", "refreshControl"]
-- ["PSo18UIContentContainer", "setupUI"]
+- ["PSo18UIContentContainer", "setupTableView"]
 - ["PSo18UIContentContainer", "showFriends"]
 - ["PSo18UIContentContainer", "statusList"]
 - ["PSo18UIContentContainer", "tableView"]
@@ -677,7 +677,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "refreshControl"]
 - !private ["PSo18UIFocusEnvironment", "registerClass"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
-- ["PSo18UIFocusEnvironment", "setupUI"]
+- ["PSo18UIFocusEnvironment", "setupTableView"]
 - ["PSo18UIFocusEnvironment", "showFriends"]
 - ["PSo18UIFocusEnvironment", "statusList"]
 - ["PSo18UIFocusEnvironment", "tableView"]
@@ -715,7 +715,7 @@ depends-member:
 - !private ["CSo11UIResponder", "refreshControl"]
 - !private ["CSo11UIResponder", "registerClass"]
 - !private ["CSo11UIResponder", "reloadData"]
-- ["CSo11UIResponder", "setupUI"]
+- ["CSo11UIResponder", "setupTableView"]
 - ["CSo11UIResponder", "showFriends"]
 - ["CSo11UIResponder", "statusList"]
 - ["CSo11UIResponder", "tableView"]
@@ -742,7 +742,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "refreshControl"]
-- ["PSo20UIScrollViewDelegate", "setupUI"]
+- ["PSo20UIScrollViewDelegate", "setupTableView"]
 - ["PSo20UIScrollViewDelegate", "showFriends"]
 - ["PSo20UIScrollViewDelegate", "statusList"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
@@ -766,7 +766,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
 - !private ["PSo16UIStateRestoring", "refreshControl"]
-- ["PSo16UIStateRestoring", "setupUI"]
+- ["PSo16UIStateRestoring", "setupTableView"]
 - ["PSo16UIStateRestoring", "showFriends"]
 - ["PSo16UIStateRestoring", "statusList"]
 - ["PSo16UIStateRestoring", "tableView"]
@@ -793,7 +793,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "refreshControl"]
-- ["PSo21UITableViewDataSource", "setupUI"]
+- ["PSo21UITableViewDataSource", "setupTableView"]
 - ["PSo21UITableViewDataSource", "showFriends"]
 - ["PSo21UITableViewDataSource", "statusList"]
 - ["PSo21UITableViewDataSource", "tableView"]
@@ -816,7 +816,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "refreshControl"]
-- ["PSo19UITableViewDelegate", "setupUI"]
+- ["PSo19UITableViewDelegate", "setupTableView"]
 - ["PSo19UITableViewDelegate", "showFriends"]
 - ["PSo19UITableViewDelegate", "statusList"]
 - ["PSo19UITableViewDelegate", "tableView"]
@@ -844,7 +844,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "refreshControl"]
 - !private ["PSo18UITraitEnvironment", "registerClass"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
-- ["PSo18UITraitEnvironment", "setupUI"]
+- ["PSo18UITraitEnvironment", "setupTableView"]
 - ["PSo18UITraitEnvironment", "showFriends"]
 - ["PSo18UITraitEnvironment", "statusList"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -879,7 +879,7 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
 - !private ["CSo16UIViewController", "refreshControl"]
-- ["CSo16UIViewController", "setupUI"]
+- ["CSo16UIViewController", "setupTableView"]
 - ["CSo16UIViewController", "showFriends"]
 - ["CSo16UIViewController", "statusList"]
 - ["CSo16UIViewController", "tableView"]
@@ -911,7 +911,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBBaseViewController", "navigationController"]
 - !private ["C8STTWeiBo20WBBaseViewController", "print"]
 - !private ["C8STTWeiBo20WBBaseViewController", "refreshControl"]
-- ["C8STTWeiBo20WBBaseViewController", "setupUI"]
+- ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 - ["C8STTWeiBo20WBBaseViewController", "showFriends"]
 - ["C8STTWeiBo20WBBaseViewController", "statusList"]
 - ["C8STTWeiBo20WBBaseViewController", "tableView"]
@@ -939,7 +939,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBHomeViewController", "navigationController"]
 - !private ["C8STTWeiBo20WBHomeViewController", "print"]
 - !private ["C8STTWeiBo20WBHomeViewController", "refreshControl"]
-- ["C8STTWeiBo20WBHomeViewController", "setupUI"]
+- ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 - !private ["C8STTWeiBo20WBHomeViewController", "showFriends"]
 - !private ["C8STTWeiBo20WBHomeViewController", "statusList"]
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
@@ -1168,4 +1168,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
-interface-hash: "7d3ffdacb98e878e4599d5d366221dbb"
+interface-hash: "b1cc9a5c22352b7e58c542bc212031c6"

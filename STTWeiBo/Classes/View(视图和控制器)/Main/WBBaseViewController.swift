@@ -22,7 +22,7 @@ import UIKit
 class WBBaseViewController: UIViewController{
     
     /// 用户登录标记
-    var userLogin = true
+    var userLogin = false
     
     /// 访客视图字典信息
     var visitorInfoDictionary:[String:String]?
@@ -91,7 +91,7 @@ extension WBBaseViewController{
     /**
      设置界面
      */
-    func setupUI(){
+   private func setupUI(){
         
         /**
          用不到随机色了 UIColor.cz_randomColor() 设成白色
@@ -108,9 +108,9 @@ extension WBBaseViewController{
     }
     
     /**
-     设置表格视图
+     设置表格视图 只有用户登录之后 执行（子类重写此方法）因为子类不需要关心用户登录之前的逻辑
      */
-    private func setupTableView(){
+     func setupTableView(){
         
        tableView = UITableView(frame: view.bounds, style: .Plain)
         
@@ -144,14 +144,17 @@ extension WBBaseViewController{
         view.insertSubview(visitorView, belowSubview: navigationBar)
         
         print("访客视图\(visitorView)")
-        ///设置访客视图信息
+        /// 1设置访客视图信息
         visitorView.visitorInfo = visitorInfoDictionary
         
         
-        //添加访客视图的监听方法
+        // 2 添加访客视图的监听方法
         visitorView.registerButton.addTarget(self, action: #selector(register), forControlEvents: .TouchUpInside)
         visitorView.loginButton.addTarget(self, action: #selector(login), forControlEvents: .TouchUpInside)
         
+        // 3 设置导航条按钮
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .Plain, target: self, action: #selector(register))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .Plain, target: self, action: #selector(login))
     }
     
     

@@ -5,56 +5,60 @@ provides-nominal:
 - "C8STTWeiBo20WBBaseViewController"
 provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
-- ["C8STTWeiBo20WBBaseViewController", "setupUI"]
+- ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 provides-dynamic-lookup:
-- "isPullup"
 - "visitorInfoDictionary"
-- "navItem"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "viewDidLoad"
-- "userLogin"
-- "loadData"
-- "navigationBar"
-- "title"
-- "setupUI"
+- "navItem"
 - "refreshControl"
+- "setupTableView"
+- "userLogin"
+- "title"
+- "navigationBar"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "register"
+- "loadData"
+- "isPullup"
+- "login"
 depends-top-level:
-- !private "-"
-- "UITableView"
-- !private "NSForegroundColorAttributeName"
-- !private "!"
-- !private "StringLiteralType"
-- !private "&&"
-- "String"
-- "NSIndexPath"
-- "UIScreen"
+- !private "print"
+- "UITableViewDelegate"
 - !private "??"
-- !private "Array"
-- "WBBaseViewController"
+- "UINavigationBar"
+- "UITableView"
+- !private "Dictionary"
+- !private "UIColor"
+- !private "StringLiteralType"
+- !private "UIBarButtonItem"
 - !private "=="
-- "UIRefreshControl"
-- "CGRect"
+- "NSIndexPath"
 - "UINavigationItem"
 - !private "||"
-- "UITableViewCell"
-- "Int"
-- "UITableViewDelegate"
-- "BooleanLiteralType"
-- !private "print"
 - "UITableViewDataSource"
-- !private "UIColor"
-- !private "<"
-- !private "Dictionary"
+- "CGRect"
 - !private "WBVisitorView"
+- "BooleanLiteralType"
+- "UITableViewCell"
 - !private "UIEdgeInsets"
-- "UINavigationBar"
+- !private "NSForegroundColorAttributeName"
+- "UIRefreshControl"
+- !private "<"
+- "Int"
+- "String"
+- !private "!"
+- !private "&&"
+- "UIScreen"
+- !private "Array"
+- !private "-"
 - "UIViewController"
+- "WBBaseViewController"
 depends-member:
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIEdgeInsets"]
 - ["Ps9AnyObject", "UINavigationBar"]
@@ -82,7 +86,10 @@ depends-member:
 - !private ["Ps9AnyObject", "insertSubview"]
 - ["Ps9AnyObject", "isPullup"]
 - !private ["Ps9AnyObject", "items"]
+- !private ["Ps9AnyObject", "leftBarButtonItem"]
 - ["Ps9AnyObject", "loadData"]
+- ["Ps9AnyObject", "login"]
+- !private ["Ps9AnyObject", "loginButton"]
 - ["Ps9AnyObject", "navItem"]
 - ["Ps9AnyObject", "navItem.storage"]
 - ["Ps9AnyObject", "navigationBar"]
@@ -92,6 +99,9 @@ depends-member:
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "refreshControl"]
+- ["Ps9AnyObject", "register"]
+- !private ["Ps9AnyObject", "registerButton"]
+- !private ["Ps9AnyObject", "rightBarButtonItem"]
 - !private ["Ps9AnyObject", "row"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -125,6 +135,7 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["Ps23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
@@ -135,6 +146,7 @@ depends-member:
 - ["VSC6CGRect", "init"]
 - ["Ps11CVarArgType", "CGRect"]
 - !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
+- !private ["Ps11CVarArgType", "UIBarButtonItem"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIEdgeInsets"]
 - ["Ps11CVarArgType", "UINavigationBar"]
@@ -162,7 +174,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "insertSubview"]
 - ["Ps11CVarArgType", "isPullup"]
 - !private ["Ps11CVarArgType", "items"]
+- !private ["Ps11CVarArgType", "leftBarButtonItem"]
 - ["Ps11CVarArgType", "loadData"]
+- ["Ps11CVarArgType", "login"]
+- !private ["Ps11CVarArgType", "loginButton"]
 - ["Ps11CVarArgType", "navItem"]
 - ["Ps11CVarArgType", "navItem.storage"]
 - ["Ps11CVarArgType", "navigationBar"]
@@ -172,6 +187,9 @@ depends-member:
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "refreshControl"]
+- ["Ps11CVarArgType", "register"]
+- !private ["Ps11CVarArgType", "registerButton"]
+- !private ["Ps11CVarArgType", "rightBarButtonItem"]
 - !private ["Ps11CVarArgType", "row"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["Ps11CVarArgType", "scrollViewDidEndDragging"]
@@ -212,6 +230,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsets"]
 - ["Ps28CustomDebugStringConvertible", "UINavigationBar"]
@@ -240,7 +259,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "insertSubview"]
 - ["Ps28CustomDebugStringConvertible", "isPullup"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
+- !private ["Ps28CustomDebugStringConvertible", "leftBarButtonItem"]
 - ["Ps28CustomDebugStringConvertible", "loadData"]
+- ["Ps28CustomDebugStringConvertible", "login"]
+- !private ["Ps28CustomDebugStringConvertible", "loginButton"]
 - ["Ps28CustomDebugStringConvertible", "navItem"]
 - ["Ps28CustomDebugStringConvertible", "navItem.storage"]
 - ["Ps28CustomDebugStringConvertible", "navigationBar"]
@@ -250,6 +272,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "refreshControl"]
+- ["Ps28CustomDebugStringConvertible", "register"]
+- !private ["Ps28CustomDebugStringConvertible", "registerButton"]
+- !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -285,6 +310,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsets"]
 - ["Ps23CustomStringConvertible", "UINavigationBar"]
@@ -314,7 +340,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "insertSubview"]
 - ["Ps23CustomStringConvertible", "isPullup"]
 - !private ["Ps23CustomStringConvertible", "items"]
+- !private ["Ps23CustomStringConvertible", "leftBarButtonItem"]
 - ["Ps23CustomStringConvertible", "loadData"]
+- ["Ps23CustomStringConvertible", "login"]
+- !private ["Ps23CustomStringConvertible", "loginButton"]
 - ["Ps23CustomStringConvertible", "navItem"]
 - ["Ps23CustomStringConvertible", "navItem.storage"]
 - ["Ps23CustomStringConvertible", "navigationBar"]
@@ -324,6 +353,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "refreshControl"]
+- ["Ps23CustomStringConvertible", "register"]
+- !private ["Ps23CustomStringConvertible", "registerButton"]
+- !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -363,6 +395,8 @@ depends-member:
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "Plain"]
+- !private ["Ps9Equatable", "TouchUpInside"]
+- !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIEdgeInsets"]
 - ["Ps9Equatable", "UINavigationBar"]
@@ -393,7 +427,10 @@ depends-member:
 - !private ["Ps9Equatable", "insertSubview"]
 - ["Ps9Equatable", "isPullup"]
 - !private ["Ps9Equatable", "items"]
+- !private ["Ps9Equatable", "leftBarButtonItem"]
 - ["Ps9Equatable", "loadData"]
+- ["Ps9Equatable", "login"]
+- !private ["Ps9Equatable", "loginButton"]
 - ["Ps9Equatable", "navItem"]
 - ["Ps9Equatable", "navItem.storage"]
 - ["Ps9Equatable", "navigationBar"]
@@ -403,6 +440,9 @@ depends-member:
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "refreshControl"]
+- ["Ps9Equatable", "register"]
+- !private ["Ps9Equatable", "registerButton"]
+- !private ["Ps9Equatable", "rightBarButtonItem"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -439,6 +479,7 @@ depends-member:
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "Plain"]
+- !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIEdgeInsets"]
 - ["Ps8Hashable", "UINavigationBar"]
@@ -467,7 +508,10 @@ depends-member:
 - !private ["Ps8Hashable", "insertSubview"]
 - ["Ps8Hashable", "isPullup"]
 - !private ["Ps8Hashable", "items"]
+- !private ["Ps8Hashable", "leftBarButtonItem"]
 - ["Ps8Hashable", "loadData"]
+- ["Ps8Hashable", "login"]
+- !private ["Ps8Hashable", "loginButton"]
 - ["Ps8Hashable", "navItem"]
 - ["Ps8Hashable", "navItem.storage"]
 - ["Ps8Hashable", "navigationBar"]
@@ -477,6 +521,9 @@ depends-member:
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "refreshControl"]
+- ["Ps8Hashable", "register"]
+- !private ["Ps8Hashable", "registerButton"]
+- !private ["Ps8Hashable", "rightBarButtonItem"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -522,6 +569,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "Element"]
 - ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
+- !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIEdgeInsets"]
 - ["PSo8NSCoding", "UINavigationBar"]
@@ -548,7 +596,10 @@ depends-member:
 - !private ["PSo8NSCoding", "insertSubview"]
 - ["PSo8NSCoding", "isPullup"]
 - !private ["PSo8NSCoding", "items"]
+- !private ["PSo8NSCoding", "leftBarButtonItem"]
 - ["PSo8NSCoding", "loadData"]
+- ["PSo8NSCoding", "login"]
+- !private ["PSo8NSCoding", "loginButton"]
 - ["PSo8NSCoding", "navItem"]
 - ["PSo8NSCoding", "navItem.storage"]
 - ["PSo8NSCoding", "navigationBar"]
@@ -558,6 +609,9 @@ depends-member:
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "refreshControl"]
+- ["PSo8NSCoding", "register"]
+- !private ["PSo8NSCoding", "registerButton"]
+- !private ["PSo8NSCoding", "rightBarButtonItem"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -596,6 +650,7 @@ depends-member:
 - !private ["PSo9NSCopying", "whiteColor"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIEdgeInsets"]
 - ["PSo26NSExtensionRequestHandling", "UINavigationBar"]
@@ -610,6 +665,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "isPullup"]
 - ["PSo26NSExtensionRequestHandling", "loadData"]
+- ["PSo26NSExtensionRequestHandling", "login"]
 - ["PSo26NSExtensionRequestHandling", "navItem"]
 - ["PSo26NSExtensionRequestHandling", "navItem.storage"]
 - ["PSo26NSExtensionRequestHandling", "navigationBar"]
@@ -617,6 +673,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "refreshControl"]
+- ["PSo26NSExtensionRequestHandling", "register"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -651,6 +708,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIEdgeInsets"]
 - ["CSo8NSObject", "UINavigationBar"]
@@ -678,7 +736,10 @@ depends-member:
 - !private ["CSo8NSObject", "insertSubview"]
 - ["CSo8NSObject", "isPullup"]
 - !private ["CSo8NSObject", "items"]
+- !private ["CSo8NSObject", "leftBarButtonItem"]
 - ["CSo8NSObject", "loadData"]
+- ["CSo8NSObject", "login"]
+- !private ["CSo8NSObject", "loginButton"]
 - ["CSo8NSObject", "navItem"]
 - ["CSo8NSObject", "navItem.storage"]
 - ["CSo8NSObject", "navigationBar"]
@@ -688,6 +749,9 @@ depends-member:
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "refreshControl"]
+- ["CSo8NSObject", "register"]
+- !private ["CSo8NSObject", "registerButton"]
+- !private ["CSo8NSObject", "rightBarButtonItem"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -720,6 +784,7 @@ depends-member:
 - !private ["CSo8NSObject", "whiteColor"]
 - ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsets"]
 - ["PSo16NSObjectProtocol", "UINavigationBar"]
@@ -747,7 +812,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "insertSubview"]
 - ["PSo16NSObjectProtocol", "isPullup"]
 - !private ["PSo16NSObjectProtocol", "items"]
+- !private ["PSo16NSObjectProtocol", "leftBarButtonItem"]
 - ["PSo16NSObjectProtocol", "loadData"]
+- ["PSo16NSObjectProtocol", "login"]
+- !private ["PSo16NSObjectProtocol", "loginButton"]
 - ["PSo16NSObjectProtocol", "navItem"]
 - ["PSo16NSObjectProtocol", "navItem.storage"]
 - ["PSo16NSObjectProtocol", "navigationBar"]
@@ -757,6 +825,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "refreshControl"]
+- ["PSo16NSObjectProtocol", "register"]
+- !private ["PSo16NSObjectProtocol", "registerButton"]
+- !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -795,15 +866,18 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- !private ["Ps13OptionSetType", "TouchUpInside"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps16RawRepresentable", "Plain"]
+- !private ["Ps16RawRepresentable", "TouchUpInside"]
 - !private ["Ps16RawRepresentable", "ValueChanged"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "Value"]
+- !private ["Ps14SetAlgebraType", "TouchUpInside"]
 - !private ["Ps14SetAlgebraType", "ValueChanged"]
 - !private ["Ps10Streamable", "init"]
 - !private ["SS", "init"]
@@ -821,8 +895,10 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "insertSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "items"]
+- !private ["PSo29UIAccessibilityIdentification", "loginButton"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfRowsInSection"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfSections"]
+- !private ["PSo29UIAccessibilityIdentification", "registerButton"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo29UIAccessibilityIdentification", "visitorInfo"]
 - !private ["PSo12UIAppearance", "addSubview"]
@@ -837,12 +913,15 @@ depends-member:
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "insertSubview"]
 - !private ["PSo12UIAppearance", "items"]
+- !private ["PSo12UIAppearance", "loginButton"]
 - !private ["PSo12UIAppearance", "numberOfRowsInSection"]
 - !private ["PSo12UIAppearance", "numberOfSections"]
+- !private ["PSo12UIAppearance", "registerButton"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "visitorInfo"]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsets"]
 - ["PSo21UIAppearanceContainer", "UINavigationBar"]
@@ -868,6 +947,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "isPullup"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - ["PSo21UIAppearanceContainer", "loadData"]
+- ["PSo21UIAppearanceContainer", "login"]
+- !private ["PSo21UIAppearanceContainer", "loginButton"]
 - ["PSo21UIAppearanceContainer", "navItem"]
 - ["PSo21UIAppearanceContainer", "navItem.storage"]
 - ["PSo21UIAppearanceContainer", "navigationBar"]
@@ -877,6 +958,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "refreshControl"]
+- ["PSo21UIAppearanceContainer", "register"]
+- !private ["PSo21UIAppearanceContainer", "registerButton"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -906,16 +989,21 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "visitorInfo"]
 - ["PSo21UIAppearanceContainer", "visitorInfoDictionary"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo15UIBarButtonItem", "init"]
+- !private ["OSC20UIBarButtonItemStyle", "Plain"]
+- !private ["CSo9UIBarItem", "init"]
 - !private ["PSo16UIBarPositioning", "barTintColor"]
 - !private ["PSo16UIBarPositioning", "bounds"]
 - ["PSo16UIBarPositioning", "init"]
 - !private ["PSo16UIBarPositioning", "items"]
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
+- !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo7UIColor", "cz_colorWithHex"]
 - !private ["CSo7UIColor", "darkGrayColor"]
 - !private ["CSo7UIColor", "whiteColor"]
 - ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIEdgeInsets"]
 - ["PSo18UIContentContainer", "UINavigationBar"]
@@ -930,6 +1018,7 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "isPullup"]
 - ["PSo18UIContentContainer", "loadData"]
+- ["PSo18UIContentContainer", "login"]
 - ["PSo18UIContentContainer", "navItem"]
 - ["PSo18UIContentContainer", "navItem.storage"]
 - ["PSo18UIContentContainer", "navigationBar"]
@@ -937,6 +1026,7 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "refreshControl"]
+- ["PSo18UIContentContainer", "register"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -967,6 +1057,7 @@ depends-member:
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "endRefreshing"]
 - !private ["CSo9UIControl", "init"]
+- !private ["VSC15UIControlEvents", "TouchUpInside"]
 - !private ["VSC15UIControlEvents", "ValueChanged"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
@@ -980,8 +1071,10 @@ depends-member:
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "insertSubview"]
 - !private ["PSo17UICoordinateSpace", "items"]
+- !private ["PSo17UICoordinateSpace", "loginButton"]
 - !private ["PSo17UICoordinateSpace", "numberOfRowsInSection"]
 - !private ["PSo17UICoordinateSpace", "numberOfSections"]
+- !private ["PSo17UICoordinateSpace", "registerButton"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo17UICoordinateSpace", "visitorInfo"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
@@ -996,13 +1089,16 @@ depends-member:
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "insertSubview"]
 - !private ["PSo13UIDynamicItem", "items"]
+- !private ["PSo13UIDynamicItem", "loginButton"]
 - !private ["PSo13UIDynamicItem", "numberOfRowsInSection"]
 - !private ["PSo13UIDynamicItem", "numberOfSections"]
+- !private ["PSo13UIDynamicItem", "registerButton"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "visitorInfo"]
 - !private ["VSC12UIEdgeInsets", "init"]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsets"]
 - ["PSo18UIFocusEnvironment", "UINavigationBar"]
@@ -1028,6 +1124,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "isPullup"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - ["PSo18UIFocusEnvironment", "loadData"]
+- ["PSo18UIFocusEnvironment", "login"]
+- !private ["PSo18UIFocusEnvironment", "loginButton"]
 - ["PSo18UIFocusEnvironment", "navItem"]
 - ["PSo18UIFocusEnvironment", "navItem.storage"]
 - ["PSo18UIFocusEnvironment", "navigationBar"]
@@ -1037,6 +1135,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "refreshControl"]
+- ["PSo18UIFocusEnvironment", "register"]
+- !private ["PSo18UIFocusEnvironment", "registerButton"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1073,6 +1173,8 @@ depends-member:
 - !private ["CSo15UINavigationBar", "items"]
 - !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - ["CSo16UINavigationItem", "init"]
+- !private ["CSo16UINavigationItem", "leftBarButtonItem"]
+- !private ["CSo16UINavigationItem", "rightBarButtonItem"]
 - !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo16UIRefreshControl", "addTarget"]
 - !private ["CSo16UIRefreshControl", "endRefreshing"]
@@ -1082,6 +1184,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIEdgeInsets"]
 - ["CSo11UIResponder", "UINavigationBar"]
@@ -1107,6 +1210,8 @@ depends-member:
 - ["CSo11UIResponder", "isPullup"]
 - !private ["CSo11UIResponder", "items"]
 - ["CSo11UIResponder", "loadData"]
+- ["CSo11UIResponder", "login"]
+- !private ["CSo11UIResponder", "loginButton"]
 - ["CSo11UIResponder", "navItem"]
 - ["CSo11UIResponder", "navItem.storage"]
 - ["CSo11UIResponder", "navigationBar"]
@@ -1116,6 +1221,8 @@ depends-member:
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "refreshControl"]
+- ["CSo11UIResponder", "register"]
+- !private ["CSo11UIResponder", "registerButton"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1154,6 +1261,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIEdgeInsets"]
 - ["PSo20UIScrollViewDelegate", "UINavigationBar"]
@@ -1167,11 +1275,13 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "isPullup"]
 - !private ["PSo20UIScrollViewDelegate", "loadData"]
+- !private ["PSo20UIScrollViewDelegate", "login"]
 - !private ["PSo20UIScrollViewDelegate", "navItem"]
 - !private ["PSo20UIScrollViewDelegate", "navigationBar"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "refreshControl"]
+- !private ["PSo20UIScrollViewDelegate", "register"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1199,6 +1309,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
+- !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIEdgeInsets"]
 - ["PSo16UIStateRestoring", "UINavigationBar"]
@@ -1213,6 +1324,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "isPullup"]
 - ["PSo16UIStateRestoring", "loadData"]
+- ["PSo16UIStateRestoring", "login"]
 - ["PSo16UIStateRestoring", "navItem"]
 - ["PSo16UIStateRestoring", "navItem.storage"]
 - ["PSo16UIStateRestoring", "navigationBar"]
@@ -1220,6 +1332,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "refreshControl"]
+- ["PSo16UIStateRestoring", "register"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1260,6 +1373,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "init"]
 - ["PSo21UITableViewDataSource", "CGRect"]
 - !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
+- !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIEdgeInsets"]
 - ["PSo21UITableViewDataSource", "UINavigationBar"]
@@ -1273,11 +1387,13 @@ depends-member:
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "isPullup"]
 - !private ["PSo21UITableViewDataSource", "loadData"]
+- !private ["PSo21UITableViewDataSource", "login"]
 - !private ["PSo21UITableViewDataSource", "navItem"]
 - !private ["PSo21UITableViewDataSource", "navigationBar"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - !private ["PSo21UITableViewDataSource", "refreshControl"]
+- !private ["PSo21UITableViewDataSource", "register"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -1305,6 +1421,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "CGRect"]
 - !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIEdgeInsets"]
 - ["PSo19UITableViewDelegate", "UINavigationBar"]
@@ -1318,11 +1435,13 @@ depends-member:
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "isPullup"]
 - !private ["PSo19UITableViewDelegate", "loadData"]
+- !private ["PSo19UITableViewDelegate", "login"]
 - !private ["PSo19UITableViewDelegate", "navItem"]
 - !private ["PSo19UITableViewDelegate", "navigationBar"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - !private ["PSo19UITableViewDelegate", "refreshControl"]
+- !private ["PSo19UITableViewDelegate", "register"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1351,6 +1470,7 @@ depends-member:
 - !private ["OSC16UITableViewStyle", "Plain"]
 - ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsets"]
 - ["PSo18UITraitEnvironment", "UINavigationBar"]
@@ -1377,6 +1497,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "isPullup"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - ["PSo18UITraitEnvironment", "loadData"]
+- ["PSo18UITraitEnvironment", "login"]
+- !private ["PSo18UITraitEnvironment", "loginButton"]
 - ["PSo18UITraitEnvironment", "navItem"]
 - ["PSo18UITraitEnvironment", "navItem.storage"]
 - ["PSo18UITraitEnvironment", "navigationBar"]
@@ -1386,6 +1508,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "refreshControl"]
+- ["PSo18UITraitEnvironment", "register"]
+- !private ["PSo18UITraitEnvironment", "registerButton"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1427,8 +1551,10 @@ depends-member:
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "insertSubview"]
 - !private ["CSo6UIView", "items"]
+- !private ["CSo6UIView", "loginButton"]
 - !private ["CSo6UIView", "numberOfRowsInSection"]
 - !private ["CSo6UIView", "numberOfSections"]
+- !private ["CSo6UIView", "registerButton"]
 - !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["CSo6UIView", "visitorInfo"]
 - ["CSo16UIViewController", "CGRect"]
@@ -1436,6 +1562,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIEdgeInsets"]
 - ["CSo16UIViewController", "UINavigationBar"]
@@ -1450,6 +1577,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "isPullup"]
 - ["CSo16UIViewController", "loadData"]
+- ["CSo16UIViewController", "login"]
 - ["CSo16UIViewController", "navItem"]
 - ["CSo16UIViewController", "navItem.storage"]
 - ["CSo16UIViewController", "navigationBar"]
@@ -1457,6 +1585,7 @@ depends-member:
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "refreshControl"]
+- ["CSo16UIViewController", "register"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1496,6 +1625,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBBaseViewController", "NSForegroundColorAttributeName"]
 - ["C8STTWeiBo20WBBaseViewController", "NSIndexPath"]
 - ["C8STTWeiBo20WBBaseViewController", "String"]
+- !private ["C8STTWeiBo20WBBaseViewController", "UIBarButtonItem"]
 - !private ["C8STTWeiBo20WBBaseViewController", "UIColor"]
 - !private ["C8STTWeiBo20WBBaseViewController", "UIEdgeInsets"]
 - ["C8STTWeiBo20WBBaseViewController", "UINavigationBar"]
@@ -1511,6 +1641,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "init"]
 - ["C8STTWeiBo20WBBaseViewController", "isPullup"]
 - ["C8STTWeiBo20WBBaseViewController", "loadData"]
+- !private ["C8STTWeiBo20WBBaseViewController", "login"]
 - ["C8STTWeiBo20WBBaseViewController", "navItem"]
 - !private ["C8STTWeiBo20WBBaseViewController", "navItem.storage"]
 - ["C8STTWeiBo20WBBaseViewController", "navigationBar"]
@@ -1518,6 +1649,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "numberOfSectionsInTableView"]
 - !private ["C8STTWeiBo20WBBaseViewController", "print"]
 - ["C8STTWeiBo20WBBaseViewController", "refreshControl"]
+- !private ["C8STTWeiBo20WBBaseViewController", "register"]
 - ["C8STTWeiBo20WBBaseViewController", "scrollViewDidEndDecelerating"]
 - ["C8STTWeiBo20WBBaseViewController", "scrollViewDidEndDragging"]
 - ["C8STTWeiBo20WBBaseViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1532,8 +1664,8 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "scrollViewWillEndDragging"]
 - ["C8STTWeiBo20WBBaseViewController", "sectionIndexTitlesForTableView"]
 - !private ["C8STTWeiBo20WBBaseViewController", "setupNavigationBar"]
-- !private ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
-- ["C8STTWeiBo20WBBaseViewController", "setupUI"]
+- ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
+- !private ["C8STTWeiBo20WBBaseViewController", "setupUI"]
 - !private ["C8STTWeiBo20WBBaseViewController", "setupVisitorView"]
 - !private ["C8STTWeiBo20WBBaseViewController", "tabBarController"]
 - ["C8STTWeiBo20WBBaseViewController", "tableView"]
@@ -1544,6 +1676,8 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "viewForZoomingInScrollView"]
 - ["C8STTWeiBo20WBBaseViewController", "visitorInfoDictionary"]
 - !private ["C8STTWeiBo13WBVisitorView", "init"]
+- !private ["C8STTWeiBo13WBVisitorView", "loginButton"]
+- !private ["C8STTWeiBo13WBVisitorView", "registerButton"]
 - !private ["C8STTWeiBo13WBVisitorView", "visitorInfo"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -1577,8 +1711,10 @@ depends-member:
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "insertSubview"]
 - !private ["Ps12_Reflectable", "items"]
+- !private ["Ps12_Reflectable", "loginButton"]
 - !private ["Ps12_Reflectable", "numberOfRowsInSection"]
 - !private ["Ps12_Reflectable", "numberOfSections"]
+- !private ["Ps12_Reflectable", "registerButton"]
 - !private ["Ps12_Reflectable", "titleTextAttributes"]
 - !private ["Ps12_Reflectable", "visitorInfo"]
 depends-nominal:
@@ -1636,7 +1772,11 @@ depends-nominal:
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "OSC20UIBarButtonItemStyle"
+- !private "CSo9UIBarItem"
 - "PSo16UIBarPositioning"
+- !private "CSo8UIButton"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
@@ -1707,4 +1847,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
-interface-hash: "408c8795cae453db5e8ec2d16f3c348c"
+interface-hash: "4f0c8b2488c1fb54c48be209d041f028"

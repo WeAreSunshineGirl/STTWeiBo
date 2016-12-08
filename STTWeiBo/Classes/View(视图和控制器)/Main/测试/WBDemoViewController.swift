@@ -29,9 +29,12 @@ class WBDemoViewController: WBBaseViewController {
 }
 extension WBDemoViewController{
     // 重写父类方法
-    override func setupUI() {
-        super.setupUI()
-        // 设置右侧的控制器
+    
+        
+        
+    override func setupTableView() {
+        super.setupTableView()
+           // 设置右侧的控制器
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", style: .Plain, target: self, action: #selector(showNext))
 //        let btn:UIButton = UIButton.cz_textButton("下一个", fontSize: 16, normalColor: UIColor.darkGrayColor(), highlightedColor: UIColor.orangeColor())
 //        btn.addTarget(self, action: #selector(showNext), forControlEvents: .TouchUpInside)
@@ -39,4 +42,6 @@ extension WBDemoViewController{
         
         navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(showNext))
     }
+     
+    
 }

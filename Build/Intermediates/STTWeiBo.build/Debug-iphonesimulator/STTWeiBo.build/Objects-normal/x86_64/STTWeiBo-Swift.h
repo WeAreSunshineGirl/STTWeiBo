@@ -181,6 +181,10 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface WBBaseViewController (SWIFT_EXTENSION(STTWeiBo))
+@end
+
 @class NSIndexPath;
 @class UITableViewCell;
 
@@ -201,8 +205,8 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 
 @interface WBBaseViewController (SWIFT_EXTENSION(STTWeiBo))
 
-/// 设置界面
-- (void)setupUI;
+/// 设置表格视图 只有用户登录之后 执行（子类重写此方法）因为子类不需要关心用户登录之前的逻辑
+- (void)setupTableView;
 @end
 
 
@@ -215,7 +219,7 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBDemoViewController")
 
 
 @interface WBDemoViewController (SWIFT_EXTENSION(STTWeiBo))
-- (void)setupUI;
+- (void)setupTableView;
 @end
 
 
@@ -241,7 +245,7 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBHomeViewController")
 @interface WBHomeViewController (SWIFT_EXTENSION(STTWeiBo))
 
 /// 重写父类方法
-- (void)setupUI;
+- (void)setupTableView;
 @end
 
 
@@ -302,11 +306,18 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 
 /// 访客视图
 SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 @interface WBVisitorView : UIView
+
+/// 注册按钮
+@property (nonatomic, strong) UIButton * _Nonnull registerButton;
+
+/// 登录按钮
+@property (nonatomic, strong) UIButton * _Nonnull loginButton;
 
 /// 访客视图的信息字典 [imageName / message] 如果是首页 imageName == ""
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable visitorInfo;
