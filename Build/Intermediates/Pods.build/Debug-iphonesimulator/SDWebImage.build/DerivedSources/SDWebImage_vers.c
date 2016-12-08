@@ -1,0 +1,1 @@
+ const unsigned char SDWebImageVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:SDWebImage  PROJECT:Pods-1" "\n"; const double SDWebImageVersionNumber __attribute__ ((used)) = (double)1.;
