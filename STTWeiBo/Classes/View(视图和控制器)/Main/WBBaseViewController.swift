@@ -165,7 +165,6 @@ extension WBBaseViewController{
         //添加导航条
         view.addSubview(navigationBar)
         
-        
         //将item设置给bar
         navigationBar.items = [navItem]
         
@@ -180,9 +179,9 @@ extension WBBaseViewController{
         navigationBar.tintColor = UIColor.orangeColor()
     }
 }
+
 //MARK:UITableViewDelegate,UITableViewDataSource
 extension WBBaseViewController:UITableViewDelegate,UITableViewDataSource{
-    
     
     //基类只是准备方法 子类负责具体的实现
     //子类的数据源方法不需要 super

@@ -58,3 +58,23 @@ extension AppDelegate{
         }
     }
 }
+
+
+//测试工具 的 token 2.00mqiHMEXmKOnDdeff3a547e9YmKFD
+
+
+
+//微博 home  url https://api.weibo.com/2/statuses/home_timeline.json?access_token=2.00mqiHMEXmKOnDdeff3a547e9YmKFD
+//get
+
+
+
+
+
+
+
+
+
+
+
+

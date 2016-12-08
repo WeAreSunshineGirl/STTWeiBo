@@ -10,17 +10,17 @@ provides-dynamic-lookup:
 - "pushViewController"
 - "popToParent"
 depends-top-level:
+- !private "StringLiteralType"
+- !private "WBBaseViewController"
 - !private "UIBarButtonItem"
+- "WBNavigationController"
+- "UIViewController"
+- "UINavigationController"
+- !private "=="
+- "Bool"
+- !private "BooleanLiteralType"
 - !private ">"
 - !private "??"
-- !private "StringLiteralType"
-- !private "=="
-- "UINavigationController"
-- "UIViewController"
-- !private "BooleanLiteralType"
-- "Bool"
-- "WBNavigationController"
-- !private "WBBaseViewController"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "childViewControllers"]
