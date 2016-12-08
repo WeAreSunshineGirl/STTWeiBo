@@ -67,6 +67,25 @@ class WBBaseViewController: UIViewController{
     
 
 }
+
+//MARK: 访客视图监听方法
+extension WBBaseViewController{
+    
+    @objc private func login(){
+        
+        print("用户登录")
+    }
+    
+    @objc private func register(){
+        
+        print("用户注册")
+    }
+    
+    
+    
+}
+
+
 //MARK:- 设置界面
 extension WBBaseViewController{
     /**
@@ -127,6 +146,11 @@ extension WBBaseViewController{
         print("访客视图\(visitorView)")
         ///设置访客视图信息
         visitorView.visitorInfo = visitorInfoDictionary
+        
+        
+        //添加访客视图的监听方法
+        visitorView.registerButton.addTarget(self, action: #selector(register), forControlEvents: .TouchUpInside)
+        visitorView.loginButton.addTarget(self, action: #selector(login), forControlEvents: .TouchUpInside)
         
     }
     
