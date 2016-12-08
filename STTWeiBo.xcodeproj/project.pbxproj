@@ -32,6 +32,7 @@
 		CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843B91DEFCC8200BD8168 /* UIView+CZAddition.m */; };
 		CE0843C71DEFCC8200BD8168 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */; };
 		CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */; };
+		CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15262E1DF94A0800149510 /* WBNetworkManager.swift */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
 		CE4315AD1DF6AB3E005F7199 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4315AC1DF6AB3D005F7199 /* demo.json */; };
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
@@ -84,6 +85,7 @@
 		CE0843C81DEFCC8E00BD8168 /* UIColor+Backcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Backcolor.h"; sourceTree = "<group>"; };
 		CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Backcolor.m"; sourceTree = "<group>"; };
 		CE0843CC1DEFCDA900BD8168 /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
+		CE15262E1DF94A0800149510 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
 		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
 		CE4315AC1DF6AB3D005F7199 /* demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CE15262D1DF949BF00149510 /* Network */,
 				CE8454C51DEFF8A70062478F /* Extensions */,
 				CE0843C81DEFCC8E00BD8168 /* UIColor+Backcolor.h */,
 				CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */,
@@ -259,6 +262,14 @@
 				CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		CE15262D1DF949BF00149510 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE15262E1DF94A0800149510 /* WBNetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		CE3AE2E61DF159960082A19E /* 主控制器 */ = {
@@ -435,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0843C31DEFCC8200BD8168 /* UIColor+CZAddition.m in Sources */,
+				CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */,
 				CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */,
 				CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,

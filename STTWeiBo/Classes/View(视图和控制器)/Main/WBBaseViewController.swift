@@ -21,8 +21,8 @@ import UIKit
 /// 所有主控制器的基类控制器
 class WBBaseViewController: UIViewController{
     
-    /// 用户登录标记
-    var userLogin = false
+    /// 用户登录标记  为 true 时 显示数据 否则是访问视图页面 
+    var userLogin = true
     
     /// 访客视图字典信息
     var visitorInfoDictionary:[String:String]?

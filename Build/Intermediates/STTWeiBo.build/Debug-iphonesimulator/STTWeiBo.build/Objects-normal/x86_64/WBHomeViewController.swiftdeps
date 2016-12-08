@@ -9,33 +9,36 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
 - ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 provides-dynamic-lookup:
+- "showFriends"
 - "setupTableView"
 - "tableView"
 - "tableView"
-- "showFriends"
 - "loadData"
 depends-top-level:
-- "NSIndexPath"
-- !private "Int64"
-- "StringLiteralType"
-- "UITableViewCell"
-- !private "..<"
+- !private "NSEC_PER_SEC"
+- !private "*"
+- "WBHomeViewController"
+- !private "WBNetworkManager"
 - !private "DISPATCH_TIME_NOW"
-- !private "dispatch_time"
-- !private "cellId"
-- "Int"
-- !private "dispatch_after"
+- !private "..<"
 - !private "print"
+- "UITableViewCell"
+- "String"
+- !private "Int64"
+- !private "UIBarButtonItem"
+- !private "cellId"
 - !private "WBDemoViewController"
+- "NSIndexPath"
+- !private "dispatch_time"
+- !private "dispatch_after"
+- "StringLiteralType"
+- "WBBaseViewController"
+- "Int"
 - "UITableView"
 - !private "dispatch_get_main_queue"
-- !private "UIBarButtonItem"
-- "WBBaseViewController"
-- !private "NSEC_PER_SEC"
-- "String"
-- "WBHomeViewController"
-- !private "*"
 depends-member:
+- !private ["CSo20AFHTTPSessionManager", "shared"]
+- !private ["CSo19AFURLSessionManager", "shared"]
 - !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
 - !private ["Ps9AnyObject", "Int64"]
 - !private ["Ps9AnyObject", "NSEC_PER_SEC"]
@@ -43,6 +46,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UITableViewCell"]
 - !private ["Ps9AnyObject", "WBDemoViewController"]
+- !private ["Ps9AnyObject", "WBNetworkManager"]
 - !private ["Ps9AnyObject", "cellId"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9AnyObject", "dispatch_after"]
@@ -62,6 +66,7 @@ depends-member:
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "row"]
 - ["Ps9AnyObject", "setupTableView"]
+- !private ["Ps9AnyObject", "shared"]
 - ["Ps9AnyObject", "showFriends"]
 - ["Ps9AnyObject", "statusList"]
 - ["Ps9AnyObject", "tableView"]
@@ -112,6 +117,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
 - !private ["Ps11CVarArgType", "UITableViewCell"]
 - !private ["Ps11CVarArgType", "WBDemoViewController"]
+- !private ["Ps11CVarArgType", "WBNetworkManager"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
 - !private ["Ps11CVarArgType", "cellId"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
@@ -133,6 +139,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "row"]
 - ["Ps11CVarArgType", "setupTableView"]
+- !private ["Ps11CVarArgType", "shared"]
 - ["Ps11CVarArgType", "showFriends"]
 - ["Ps11CVarArgType", "statusList"]
 - ["Ps11CVarArgType", "tableView"]
@@ -164,6 +171,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
 - !private ["Ps28CustomDebugStringConvertible", "WBDemoViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "cellId"]
@@ -187,6 +195,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "setupTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
 - ["Ps28CustomDebugStringConvertible", "showFriends"]
 - ["Ps28CustomDebugStringConvertible", "statusList"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -206,6 +215,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
 - !private ["Ps23CustomStringConvertible", "WBDemoViewController"]
+- !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -232,6 +242,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "setupTableView"]
+- !private ["Ps23CustomStringConvertible", "shared"]
 - ["Ps23CustomStringConvertible", "showFriends"]
 - ["Ps23CustomStringConvertible", "statusList"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -250,6 +261,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UITableViewCell"]
 - !private ["Ps9Equatable", "WBDemoViewController"]
+- !private ["Ps9Equatable", "WBNetworkManager"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "cellId"]
@@ -272,6 +284,7 @@ depends-member:
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "setupTableView"]
+- !private ["Ps9Equatable", "shared"]
 - ["Ps9Equatable", "showFriends"]
 - ["Ps9Equatable", "statusList"]
 - ["Ps9Equatable", "tableView"]
@@ -296,6 +309,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UITableViewCell"]
 - !private ["Ps8Hashable", "WBDemoViewController"]
+- !private ["Ps8Hashable", "WBNetworkManager"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "cellId"]
@@ -318,6 +332,7 @@ depends-member:
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "setupTableView"]
+- !private ["Ps8Hashable", "shared"]
 - ["Ps8Hashable", "showFriends"]
 - ["Ps8Hashable", "statusList"]
 - ["Ps8Hashable", "tableView"]
@@ -399,6 +414,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
 - !private ["PSo8NSCoding", "WBDemoViewController"]
+- !private ["PSo8NSCoding", "WBNetworkManager"]
 - !private ["PSo8NSCoding", "cellId"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo8NSCoding", "dispatch_after"]
@@ -418,6 +434,7 @@ depends-member:
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "setupTableView"]
+- !private ["PSo8NSCoding", "shared"]
 - ["PSo8NSCoding", "showFriends"]
 - ["PSo8NSCoding", "statusList"]
 - ["PSo8NSCoding", "tableView"]
@@ -426,6 +443,7 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
+- !private ["PSo9NSCopying", "shared"]
 - !private ["PSo26NSExtensionRequestHandling", "DISPATCH_TIME_NOW"]
 - !private ["PSo26NSExtensionRequestHandling", "Int64"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEC_PER_SEC"]
@@ -433,6 +451,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
 - !private ["PSo26NSExtensionRequestHandling", "WBDemoViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
 - !private ["PSo26NSExtensionRequestHandling", "cellId"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_after"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -462,6 +481,7 @@ depends-member:
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "WBDemoViewController"]
+- !private ["CSo8NSObject", "WBNetworkManager"]
 - !private ["CSo8NSObject", "cellId"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo8NSObject", "dispatch_after"]
@@ -481,6 +501,7 @@ depends-member:
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "setupTableView"]
+- !private ["CSo8NSObject", "shared"]
 - ["CSo8NSObject", "showFriends"]
 - ["CSo8NSObject", "statusList"]
 - ["CSo8NSObject", "tableView"]
@@ -493,6 +514,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
 - !private ["PSo16NSObjectProtocol", "WBDemoViewController"]
+- !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
 - !private ["PSo16NSObjectProtocol", "cellId"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "dispatch_after"]
@@ -512,6 +534,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "setupTableView"]
+- !private ["PSo16NSObjectProtocol", "shared"]
 - ["PSo16NSObjectProtocol", "showFriends"]
 - ["PSo16NSObjectProtocol", "statusList"]
 - ["PSo16NSObjectProtocol", "tableView"]
@@ -520,7 +543,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "row"]
+- !private ["PSo14NSSecureCoding", "shared"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- !private ["PSo24NSURLSessionDataDelegate", "shared"]
+- !private ["PSo20NSURLSessionDelegate", "shared"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "shared"]
+- !private ["PSo24NSURLSessionTaskDelegate", "shared"]
 - !private ["Ps16OutputStreamType", "init"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -592,6 +621,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
 - !private ["PSo21UIAppearanceContainer", "WBDemoViewController"]
+- !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
 - !private ["PSo21UIAppearanceContainer", "cellId"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_after"]
@@ -624,6 +654,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
 - !private ["PSo18UIContentContainer", "WBDemoViewController"]
+- !private ["PSo18UIContentContainer", "WBNetworkManager"]
 - !private ["PSo18UIContentContainer", "cellId"]
 - !private ["PSo18UIContentContainer", "dispatch_after"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -661,6 +692,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
 - !private ["PSo18UIFocusEnvironment", "WBDemoViewController"]
+- !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
 - !private ["PSo18UIFocusEnvironment", "cellId"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_after"]
@@ -699,6 +731,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "WBDemoViewController"]
+- !private ["CSo11UIResponder", "WBNetworkManager"]
 - !private ["CSo11UIResponder", "cellId"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UIResponder", "dispatch_after"]
@@ -731,6 +764,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "WBDemoViewController"]
+- !private ["PSo20UIScrollViewDelegate", "WBNetworkManager"]
 - !private ["PSo20UIScrollViewDelegate", "cellId"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_after"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
@@ -754,6 +788,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
 - !private ["PSo16UIStateRestoring", "WBDemoViewController"]
+- !private ["PSo16UIStateRestoring", "WBNetworkManager"]
 - !private ["PSo16UIStateRestoring", "cellId"]
 - !private ["PSo16UIStateRestoring", "dispatch_after"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -782,6 +817,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "WBDemoViewController"]
+- !private ["PSo21UITableViewDataSource", "WBNetworkManager"]
 - !private ["PSo21UITableViewDataSource", "cellId"]
 - !private ["PSo21UITableViewDataSource", "dispatch_after"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
@@ -805,6 +841,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "WBDemoViewController"]
+- !private ["PSo19UITableViewDelegate", "WBNetworkManager"]
 - !private ["PSo19UITableViewDelegate", "cellId"]
 - !private ["PSo19UITableViewDelegate", "dispatch_after"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
@@ -828,6 +865,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
 - !private ["PSo18UITraitEnvironment", "WBDemoViewController"]
+- !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
 - !private ["PSo18UITraitEnvironment", "cellId"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "dispatch_after"]
@@ -867,6 +905,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "WBDemoViewController"]
+- !private ["CSo16UIViewController", "WBNetworkManager"]
 - !private ["CSo16UIViewController", "cellId"]
 - !private ["CSo16UIViewController", "dispatch_after"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
@@ -900,6 +939,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "UITableView"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableViewCell"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBDemoViewController"]
+- !private ["C8STTWeiBo20WBBaseViewController", "WBNetworkManager"]
 - !private ["C8STTWeiBo20WBBaseViewController", "cellId"]
 - !private ["C8STTWeiBo20WBBaseViewController", "dispatch_after"]
 - !private ["C8STTWeiBo20WBBaseViewController", "dispatch_get_main_queue"]
@@ -927,6 +967,7 @@ depends-member:
 - ["C8STTWeiBo20WBHomeViewController", "UITableView"]
 - ["C8STTWeiBo20WBHomeViewController", "UITableViewCell"]
 - !private ["C8STTWeiBo20WBHomeViewController", "WBDemoViewController"]
+- !private ["C8STTWeiBo20WBHomeViewController", "WBNetworkManager"]
 - !private ["C8STTWeiBo20WBHomeViewController", "cellId"]
 - ["C8STTWeiBo20WBHomeViewController", "deinit"]
 - !private ["C8STTWeiBo20WBHomeViewController", "dispatch_after"]
@@ -943,6 +984,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBHomeViewController", "showFriends"]
 - !private ["C8STTWeiBo20WBHomeViewController", "statusList"]
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
+- !private ["C8STTWeiBo16WBNetworkManager", "shared"]
 - ["Ps10_ArrayType", "Generator"]
 - ["Ps10_ArrayType", "Index"]
 - ["Ps10_ArrayType", "SubSequence"]
@@ -1032,6 +1074,8 @@ depends-member:
 - !private ["Ps18_SignedIntegerType", "description"]
 - !private ["Ps18_SignedIntegerType", "init"]
 depends-nominal:
+- !private "CSo20AFHTTPSessionManager"
+- !private "CSo19AFURLSessionManager"
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23ArrayLiteralConvertible"
@@ -1079,6 +1123,10 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "PSo24NSURLSessionDataDelegate"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
 - !private "Ps16OutputStreamType"
 - "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
@@ -1129,6 +1177,7 @@ depends-nominal:
 - "C8STTWeiBo20WBBaseViewController"
 - !private "C8STTWeiBo20WBDemoViewController"
 - "C8STTWeiBo20WBHomeViewController"
+- !private "C8STTWeiBo16WBNetworkManager"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -1168,4 +1217,24 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZHash.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZBase64.h"
 - "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Additions/NSString+CZPath.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIWebView+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImage+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules/module.modulemap"
 interface-hash: "b1cc9a5c22352b7e58c542bc212031c6"

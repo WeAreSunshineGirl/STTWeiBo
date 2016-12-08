@@ -96,6 +96,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import CoreGraphics;
 @import ObjectiveC;
+@import AFNetworking;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -294,6 +295,21 @@ SWIFT_CLASS("_TtC8STTWeiBo22WBNavigationController")
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURL;
+@class NSURLSessionConfiguration;
+
+
+/// 网络管理工具
+SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
+@interface WBNetworkManager : AFHTTPSessionManager
+
+/// 静态区（常量区）
+静态区/常量/闭包/在第一次访问时执行闭包 并且将结果保存在 shared 常量中
++ (WBNetworkManager * _Nonnull)shared;
+- (nonnull instancetype)initWithBaseURL:(NSURL * _Nullable)url sessionConfiguration:(NSURLSessionConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
