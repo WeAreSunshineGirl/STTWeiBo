@@ -310,7 +310,7 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 静态区/常量/闭包/在第一次访问时执行闭包 并且将结果保存在 shared 常量中
 + (WBNetworkManager * _Nonnull)shared;
 
-/// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
+/// 访问令牌 所有的网络请求 都基于此令牌（登录除外） 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
 @property (nonatomic, copy) NSString * _Nullable accessToken;
 - (nonnull instancetype)initWithBaseURL:(NSURL * _Nullable)url sessionConfiguration:(NSURLSessionConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
