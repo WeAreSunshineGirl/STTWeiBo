@@ -23,6 +23,7 @@ class WBStatus: NSObject {
     
     /// 重写 description 的计算型属性
     override var description: String{
+        
         return yy_modelDescription()
     }
 }

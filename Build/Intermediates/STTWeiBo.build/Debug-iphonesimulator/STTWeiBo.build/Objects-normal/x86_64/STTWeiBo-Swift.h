@@ -335,8 +335,19 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 @end
 
 
+
+/// 微博数据模型
 SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 @interface WBStatus : NSObject
+
+/// Int 类型 在64位的机器是 64 位 在 32 为 机器是 32位 如果不写 Int64 在Ipad 2、iPhone 5、5c、4s、4 都无法正常运行
+@property (nonatomic) int64_t id;
+
+/// 微博信息内容
+@property (nonatomic, copy) NSString * _Nullable text;
+
+/// 重写 description 的计算型属性
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
