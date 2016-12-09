@@ -13,8 +13,11 @@ private let cellId = "cellId"
 
 class WBHomeViewController: WBBaseViewController {
 
-    /// 微博数据数组
-    private var statusList = [String]()
+//    /// 微博数据数组
+//    private var statusList = [String]()
+    
+    /// 列表视图模型
+    private lazy var listViewModel = WBStatusListViewModel()
     
     /**
      加载数据
@@ -36,6 +39,22 @@ class WBHomeViewController: WBBaseViewController {
             print(json)
         }
         */
+        
+        listViewModel.loadStatus { (isSuccess) in
+            
+            print("数据加载完成")
+            //结束刷新控件
+            self.refreshControl?.endRefreshing()
+            
+            //恢复上拉刷新标记
+            self.isPullup = false
+            //刷新表格
+            self.tableView?.reloadData()
+
+        }
+        
+        
+       /*
         //用网络工具加载微博数据
         WBNetworkManager.shared.statusList({ (list, isSuccess) in
             print(list)
@@ -66,8 +85,9 @@ class WBHomeViewController: WBBaseViewController {
            //刷新表格
             self.tableView?.reloadData()
             
-        }
-    }
+        }*/
+    } 
+    
     
     //MARK: -监听方法
     /**
@@ -87,7 +107,7 @@ class WBHomeViewController: WBBaseViewController {
 extension WBHomeViewController{
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return statusList.count
+        return listViewModel.statusList.count
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -95,7 +115,7 @@ extension WBHomeViewController{
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
         
         // 2 设置cell
-        cell.textLabel?.text = statusList[indexPath.row]
+        cell.textLabel?.text = listViewModel.statusList[indexPath.row].text
         
         //3 返回 cell
         return cell
