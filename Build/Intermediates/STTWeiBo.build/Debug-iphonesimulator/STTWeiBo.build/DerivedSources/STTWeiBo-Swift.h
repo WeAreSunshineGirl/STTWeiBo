@@ -334,6 +334,12 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
+@interface WBStatus : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 
 
