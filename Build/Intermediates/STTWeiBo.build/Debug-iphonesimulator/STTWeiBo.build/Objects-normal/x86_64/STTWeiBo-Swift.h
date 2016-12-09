@@ -302,15 +302,27 @@ SWIFT_CLASS("_TtC8STTWeiBo22WBNavigationController")
 @class NSURLSessionConfiguration;
 
 
-/// 网络管理工具
+/// 网络管理工具 封装 AFN 的
 SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 @interface WBNetworkManager : AFHTTPSessionManager
 
 /// 静态区（常量区）
 静态区/常量/闭包/在第一次访问时执行闭包 并且将结果保存在 shared 常量中
 + (WBNetworkManager * _Nonnull)shared;
+
+/// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
+@property (nonatomic, copy) NSString * _Nullable accessToken;
 - (nonnull instancetype)initWithBaseURL:(NSURL * _Nullable)url sessionConfiguration:(NSURLSessionConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
+/// 加载微博数据字典数组
+///
+/// \param completion 完成回调[list:微博字典数组，是否成功]
+- (void)statusList:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable list, BOOL isSuccess))completion;
 @end
 
 

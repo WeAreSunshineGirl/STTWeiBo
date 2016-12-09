@@ -9,39 +9,38 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
 - ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 provides-dynamic-lookup:
+- "tableView"
+- "tableView"
 - "setupTableView"
-- "showFriends"
 - "loadData"
-- "tableView"
-- "tableView"
+- "showFriends"
 depends-top-level:
-- "UITableView"
-- !private "dispatch_get_main_queue"
-- !private "print"
-- "WBBaseViewController"
-- !private "UIBarButtonItem"
 - "Int"
-- !private "cellId"
-- !private "WBDemoViewController"
+- !private "dispatch_time"
+- !private "print"
+- !private "dispatch_after"
+- !private "UIBarButtonItem"
 - !private "..<"
-- "String"
-- !private "Int64"
 - "WBHomeViewController"
-- !private "NSEC_PER_SEC"
+- !private "WBNetworkManager"
+- !private "Int64"
+- !private "DISPATCH_TIME_NOW"
+- "String"
 - "UITableViewCell"
 - !private "*"
+- !private "NSEC_PER_SEC"
+- !private "WBDemoViewController"
+- "UITableView"
 - "StringLiteralType"
 - "NSIndexPath"
-- !private "WBNetworkManager"
-- !private "dispatch_time"
-- !private "Dictionary"
-- !private "dispatch_after"
-- !private "DISPATCH_TIME_NOW"
+- !private "dispatch_get_main_queue"
+- "WBBaseViewController"
+- !private "cellId"
 depends-member:
-- !private ["CSo20AFHTTPSessionManager", "request"]
 - !private ["CSo20AFHTTPSessionManager", "shared"]
-- !private ["CSo19AFURLSessionManager", "request"]
+- !private ["CSo20AFHTTPSessionManager", "statusList"]
 - !private ["CSo19AFURLSessionManager", "shared"]
+- !private ["CSo19AFURLSessionManager", "statusList"]
 - !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
 - !private ["Ps9AnyObject", "Int64"]
 - !private ["Ps9AnyObject", "NSEC_PER_SEC"]
@@ -67,7 +66,6 @@ depends-member:
 - !private ["Ps9AnyObject", "refreshControl"]
 - !private ["Ps9AnyObject", "registerClass"]
 - !private ["Ps9AnyObject", "reloadData"]
-- !private ["Ps9AnyObject", "request"]
 - !private ["Ps9AnyObject", "row"]
 - ["Ps9AnyObject", "setupTableView"]
 - !private ["Ps9AnyObject", "shared"]
@@ -141,7 +139,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "refreshControl"]
 - !private ["Ps11CVarArgType", "registerClass"]
 - !private ["Ps11CVarArgType", "reloadData"]
-- !private ["Ps11CVarArgType", "request"]
 - !private ["Ps11CVarArgType", "row"]
 - ["Ps11CVarArgType", "setupTableView"]
 - !private ["Ps11CVarArgType", "shared"]
@@ -154,9 +151,7 @@ depends-member:
 - !private ["Vs9Character", "deinit"]
 - ["Ps14CollectionType", "Generator"]
 - ["Ps14CollectionType", "Index"]
-- !private ["Ps14CollectionType", "Key"]
 - ["Ps14CollectionType", "SubSequence"]
-- !private ["Ps14CollectionType", "Value"]
 - ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "count"]
@@ -172,13 +167,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Int64"]
-- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEC_PER_SEC"]
 - ["Ps28CustomDebugStringConvertible", "String"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
-- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "WBDemoViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
@@ -202,7 +195,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "refreshControl"]
 - !private ["Ps28CustomDebugStringConvertible", "registerClass"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
-- !private ["Ps28CustomDebugStringConvertible", "request"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "setupTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
@@ -219,13 +211,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "Int64"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSEC_PER_SEC"]
 - ["Ps23CustomStringConvertible", "String"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
-- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "WBDemoViewController"]
 - !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
@@ -252,7 +242,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "refreshControl"]
 - !private ["Ps23CustomStringConvertible", "registerClass"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
-- !private ["Ps23CustomStringConvertible", "request"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "setupTableView"]
 - !private ["Ps23CustomStringConvertible", "shared"]
@@ -263,10 +252,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Vs10Dictionary", "Key"]
-- !private ["Vs10Dictionary", "Value"]
-- !private ["Ps28DictionaryLiteralConvertible", "Key"]
-- !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "DISPATCH_TIME_NOW"]
 - ["Ps9Equatable", "Distance"]
@@ -299,7 +284,6 @@ depends-member:
 - !private ["Ps9Equatable", "refreshControl"]
 - !private ["Ps9Equatable", "registerClass"]
 - !private ["Ps9Equatable", "reloadData"]
-- !private ["Ps9Equatable", "request"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "setupTableView"]
 - !private ["Ps9Equatable", "shared"]
@@ -348,7 +332,6 @@ depends-member:
 - !private ["Ps8Hashable", "refreshControl"]
 - !private ["Ps8Hashable", "registerClass"]
 - !private ["Ps8Hashable", "reloadData"]
-- !private ["Ps8Hashable", "request"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "setupTableView"]
 - !private ["Ps8Hashable", "shared"]
@@ -361,9 +344,7 @@ depends-member:
 - !private ["SQ", "deinit"]
 - ["Ps9Indexable", "Generator"]
 - ["Ps9Indexable", "Index"]
-- !private ["Ps9Indexable", "Key"]
 - ["Ps9Indexable", "SubSequence"]
-- !private ["Ps9Indexable", "Value"]
 - ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
@@ -453,7 +434,6 @@ depends-member:
 - !private ["PSo8NSCoding", "refreshControl"]
 - !private ["PSo8NSCoding", "registerClass"]
 - !private ["PSo8NSCoding", "reloadData"]
-- !private ["PSo8NSCoding", "request"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "setupTableView"]
 - !private ["PSo8NSCoding", "shared"]
@@ -464,9 +444,9 @@ depends-member:
 - !private ["PSo8NSCoding", "textLabel"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "request"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "shared"]
+- !private ["PSo9NSCopying", "statusList"]
 - !private ["PSo26NSExtensionRequestHandling", "DISPATCH_TIME_NOW"]
 - !private ["PSo26NSExtensionRequestHandling", "Int64"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEC_PER_SEC"]
@@ -522,7 +502,6 @@ depends-member:
 - !private ["CSo8NSObject", "refreshControl"]
 - !private ["CSo8NSObject", "registerClass"]
 - !private ["CSo8NSObject", "reloadData"]
-- !private ["CSo8NSObject", "request"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "setupTableView"]
 - !private ["CSo8NSObject", "shared"]
@@ -556,7 +535,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "refreshControl"]
 - !private ["PSo16NSObjectProtocol", "registerClass"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
-- !private ["PSo16NSObjectProtocol", "request"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "setupTableView"]
 - !private ["PSo16NSObjectProtocol", "shared"]
@@ -567,19 +545,19 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textLabel"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "request"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "shared"]
+- !private ["PSo14NSSecureCoding", "statusList"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
-- !private ["PSo24NSURLSessionDataDelegate", "request"]
 - !private ["PSo24NSURLSessionDataDelegate", "shared"]
-- !private ["PSo20NSURLSessionDelegate", "request"]
+- !private ["PSo24NSURLSessionDataDelegate", "statusList"]
 - !private ["PSo20NSURLSessionDelegate", "shared"]
-- !private ["PSo28NSURLSessionDownloadDelegate", "request"]
+- !private ["PSo20NSURLSessionDelegate", "statusList"]
 - !private ["PSo28NSURLSessionDownloadDelegate", "shared"]
-- !private ["PSo24NSURLSessionTaskDelegate", "request"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "statusList"]
 - !private ["PSo24NSURLSessionTaskDelegate", "shared"]
+- !private ["PSo24NSURLSessionTaskDelegate", "statusList"]
 - !private ["Ps16OutputStreamType", "init"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -600,9 +578,7 @@ depends-member:
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
-- !private ["Ps12SequenceType", "Key"]
 - ["Ps12SequenceType", "SubSequence"]
-- !private ["Ps12SequenceType", "Value"]
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
@@ -1016,8 +992,8 @@ depends-member:
 - !private ["C8STTWeiBo20WBHomeViewController", "showFriends"]
 - !private ["C8STTWeiBo20WBHomeViewController", "statusList"]
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
-- !private ["C8STTWeiBo16WBNetworkManager", "request"]
 - !private ["C8STTWeiBo16WBNetworkManager", "shared"]
+- !private ["C8STTWeiBo16WBNetworkManager", "statusList"]
 - ["Ps10_ArrayType", "Generator"]
 - ["Ps10_ArrayType", "Index"]
 - ["Ps10_ArrayType", "SubSequence"]
@@ -1066,9 +1042,7 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "Generator"]
 - ["Ps21_ObjectiveCBridgeable", "Index"]
 - ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -1087,9 +1061,7 @@ depends-member:
 - ["Ps12_Reflectable", "Generator"]
 - ["Ps12_Reflectable", "Index"]
 - ["Ps12_Reflectable", "IntegerLiteralType"]
-- !private ["Ps12_Reflectable", "Key"]
 - ["Ps12_Reflectable", "SubSequence"]
-- !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
 - ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
@@ -1128,8 +1100,6 @@ depends-nominal:
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
-- !private "Vs10Dictionary"
-- !private "Ps28DictionaryLiteralConvertible"
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
