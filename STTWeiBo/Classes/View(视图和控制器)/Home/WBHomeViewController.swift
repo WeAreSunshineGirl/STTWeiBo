@@ -55,7 +55,7 @@ class WBHomeViewController: WBBaseViewController {
         
         
        /*
-        //用网络工具加载微博数据
+        //用网络工具加载微博数据 测试使用
         WBNetworkManager.shared.statusList({ (list, isSuccess) in
             print(list)
         })

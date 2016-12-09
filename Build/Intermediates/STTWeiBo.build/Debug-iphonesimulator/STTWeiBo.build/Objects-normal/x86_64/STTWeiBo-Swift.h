@@ -321,8 +321,12 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 /// 加载微博数据字典数组
 ///
+/// \param since _id:   返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0
+///
+/// \param max _id:     返回ID小于或等于max_id的微博，默认为0
+///
 /// \param completion 完成回调[list:微博字典数组，是否成功]
-- (void)statusList:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable list, BOOL isSuccess))completion;
+- (void)statusList:(int64_t)since_id max_id:(int64_t)max_id completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable list, BOOL isSuccess))completion;
 @end
 
 
