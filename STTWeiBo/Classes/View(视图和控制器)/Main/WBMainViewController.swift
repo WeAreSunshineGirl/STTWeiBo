@@ -81,10 +81,32 @@ extension WBMainViewController:UITabBarControllerDelegate{
      - returns: 是否切换到目标控制器
      */
     func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+        
         print("将要切换到\(viewController)")
         
-        //判断目标控制器是否是 UIViewController
+    // 1 获取控制器在数组中的索引 将要跳转的索引
+        let idx = (childViewControllers as NSArray).indexOfObject(viewController)
+        // 2 获取当前索引是首页 同时 idx 也是首页 重复点击首页的按钮
+        if selectedIndex == 0 && idx == selectedIndex {
+            
+            print("点击首页")
+            // 3 让表格滚动到顶部
+            // a 获取到控制器
+            let nav = childViewControllers[0] as! UINavigationController
+            let vc = nav.childViewControllers[0] as! WBHomeViewController
+            
+            // b 滚动到顶部
+            vc.tableView?.setContentOffset(CGPoint(x: 0,y: -64), animated: true)
+            
+            //4 刷新数据 增加延迟 是保证表格先滚动到顶部再刷新
+            let when = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * NSEC_PER_SEC))
+            dispatch_after(when, dispatch_get_main_queue(), {
+                vc.loadData()
+            })
+            
+        }
         
+        //判断目标控制器是否是 UIViewController
         return !viewController.isMemberOfClass(UIViewController.self)
     }
 }
