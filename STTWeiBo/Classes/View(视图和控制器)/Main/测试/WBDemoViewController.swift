@@ -26,6 +26,7 @@ class WBDemoViewController: WBBaseViewController {
         
         navigationController?.pushViewController(vc, animated: true)
     }
+    
 }
 extension WBDemoViewController{
     // 重写父类方法
@@ -42,6 +43,6 @@ extension WBDemoViewController{
         
         navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", target: self, action: #selector(showNext))
     }
-     
+    
     
 }

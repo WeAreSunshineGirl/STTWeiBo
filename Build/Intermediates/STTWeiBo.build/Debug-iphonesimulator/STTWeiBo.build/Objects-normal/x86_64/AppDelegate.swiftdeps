@@ -9,26 +9,26 @@ provides-dynamic-lookup:
 - "application"
 - "window"
 depends-top-level:
-- !private "WBMainViewController"
-- !private "dispatch_get_global_queue"
+- !private "Array"
 - "NSObject"
+- !private "WBMainViewController"
+- !private "print"
 - "UIWindow"
-- !private "dispatch_async"
 - !private "NSString"
-- "UIApplicationDelegate"
+- !private "UIColor"
 - !private "NSData"
 - "UIApplication"
-- !private "print"
 - !private "BooleanLiteralType"
 - "UIResponder"
-- !private "UIColor"
 - !private "NSBundle"
 - !private "NSSearchPathForDirectoriesInDomains"
+- "UIApplicationDelegate"
+- !private "dispatch_get_global_queue"
 - "AnyObject"
 - "Bool"
-- "StringLiteralType"
+- !private "dispatch_async"
 - !private "UIUserNotificationSettings"
-- !private "Array"
+- "StringLiteralType"
 - "AppDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
@@ -62,6 +62,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "registerUserNotificationSettings"]
 - !private ["Ps9AnyObject", "rootViewController"]
+- ["Ps9AnyObject", "setupAdditions"]
 - !private ["Ps9AnyObject", "sharedApplication"]
 - !private ["Ps9AnyObject", "stringByAppendingPathComponent"]
 - !private ["Ps9AnyObject", "whiteColor"]
@@ -98,6 +99,7 @@ depends-member:
 - ["C8STTWeiBo11AppDelegate", "init"]
 - !private ["C8STTWeiBo11AppDelegate", "loadAppInfo"]
 - !private ["C8STTWeiBo11AppDelegate", "print"]
+- !private ["C8STTWeiBo11AppDelegate", "setupAdditions"]
 - ["C8STTWeiBo11AppDelegate", "window"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "deinit"]
@@ -141,6 +143,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
 - !private ["Ps11CVarArgType", "rootViewController"]
+- ["Ps11CVarArgType", "setupAdditions"]
 - !private ["Ps11CVarArgType", "sharedApplication"]
 - !private ["Ps11CVarArgType", "stringByAppendingPathComponent"]
 - !private ["Ps11CVarArgType", "whiteColor"]
@@ -186,6 +189,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
+- ["Ps28CustomDebugStringConvertible", "setupAdditions"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -225,6 +229,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
+- ["Ps23CustomStringConvertible", "setupAdditions"]
 - !private ["Ps23CustomStringConvertible", "sharedApplication"]
 - !private ["Ps23CustomStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -270,6 +275,7 @@ depends-member:
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "registerUserNotificationSettings"]
 - !private ["Ps9Equatable", "rootViewController"]
+- ["Ps9Equatable", "setupAdditions"]
 - !private ["Ps9Equatable", "sharedApplication"]
 - !private ["Ps9Equatable", "stringByAppendingPathComponent"]
 - !private ["Ps9Equatable", "whiteColor"]
@@ -312,6 +318,7 @@ depends-member:
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "registerUserNotificationSettings"]
 - !private ["Ps8Hashable", "rootViewController"]
+- ["Ps8Hashable", "setupAdditions"]
 - !private ["Ps8Hashable", "sharedApplication"]
 - !private ["Ps8Hashable", "stringByAppendingPathComponent"]
 - !private ["Ps8Hashable", "whiteColor"]
@@ -391,6 +398,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "registerUserNotificationSettings"]
 - !private ["CSo8NSObject", "rootViewController"]
+- ["CSo8NSObject", "setupAdditions"]
 - !private ["CSo8NSObject", "sharedApplication"]
 - !private ["CSo8NSObject", "stringByAppendingPathComponent"]
 - !private ["CSo8NSObject", "whiteColor"]
@@ -427,6 +435,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
+- ["PSo16NSObjectProtocol", "setupAdditions"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
 - !private ["PSo16NSObjectProtocol", "stringByAppendingPathComponent"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
@@ -516,6 +525,7 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "dispatch_get_global_queue"]
 - !private ["PSo21UIApplicationDelegate", "loadAppInfo"]
 - !private ["PSo21UIApplicationDelegate", "print"]
+- !private ["PSo21UIApplicationDelegate", "setupAdditions"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - !private ["CSo7UIColor", "whiteColor"]
@@ -565,11 +575,13 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "registerUserNotificationSettings"]
 - !private ["CSo11UIResponder", "rootViewController"]
+- ["CSo11UIResponder", "setupAdditions"]
 - !private ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["CSo18UITabBarController", "init"]
+- !private ["PSo26UITabBarControllerDelegate", "init"]
 - !private ["PSo16UITabBarDelegate", "init"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -685,6 +697,7 @@ depends-nominal:
 - "CSo11UIResponder"
 - !private "PSo16UIStateRestoring"
 - !private "CSo18UITabBarController"
+- !private "PSo26UITabBarControllerDelegate"
 - !private "PSo16UITabBarDelegate"
 - !private "PSo18UITraitEnvironment"
 - !private "CSo26UIUserNotificationSettings"
@@ -758,4 +771,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
-interface-hash: "4ee52173a6d7cf78c29cbcd14317dff0"
+interface-hash: "3541bfa178b1e90c8834ff9fd0816483"

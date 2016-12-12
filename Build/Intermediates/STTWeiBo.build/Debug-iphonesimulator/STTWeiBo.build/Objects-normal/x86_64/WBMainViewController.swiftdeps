@@ -6,48 +6,51 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo20WBMainViewController", ""]
 provides-dynamic-lookup:
-- "supportedInterfaceOrientations"
-- "viewDidLoad"
-- "composeStatus"
 - "updateTimer"
+- "supportedInterfaceOrientations"
+- "composeStatus"
+- "viewDidLoad"
+- "tabBarController"
 depends-top-level:
-- !private "NSFontAttributeName"
-- !private "/"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "NSTimer"
-- !private "WBNavigationController"
-- !private "AnyObject"
-- !private "print"
-- !private "NSString"
-- !private "WBBaseViewController"
-- !private "BooleanLiteralType"
-- !private "UIViewController"
-- !private "NSForegroundColorAttributeName"
-- !private "NSData"
-- !private "+"
-- !private "Array"
-- !private "UIFont"
-- !private "NSClassFromString"
-- "WBMainViewController"
-- !private ">"
-- !private "CGFloat"
-- "UIButton"
-- !private "=="
-- !private "String"
-- !private "-"
-- !private "WBNetworkManager"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
-- !private "UIColor"
-- !private "UIApplication"
-- !private "UIImage"
-- "UITabBarController"
-- !private "Dictionary"
-- !private "*"
-- "UIInterfaceOrientationMask"
 - !private "NSJSONSerialization"
-- !private "NSBundle"
+- !private "UIColor"
+- !private "NSForegroundColorAttributeName"
+- "Bool"
+- "UIInterfaceOrientationMask"
+- !private "UIImage"
+- !private "NSData"
 - !private "UINavigationController"
+- !private "String"
+- !private "WBNetworkManager"
+- !private "NSBundle"
+- "WBMainViewController"
+- !private "BooleanLiteralType"
+- !private "Array"
+- !private "NSFontAttributeName"
+- !private "NSClassFromString"
+- !private "UIApplication"
+- !private "print"
+- "UITabBarController"
+- !private "UnicodeScalarType"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "!"
+- "NSTimer"
+- !private "UIFont"
+- !private "WBNavigationController"
+- !private "=="
+- "UITabBarControllerDelegate"
+- !private ">"
+- !private "/"
+- !private "WBBaseViewController"
+- "UIButton"
+- !private "StringLiteralType"
+- !private "*"
+- !private "CGFloat"
+- !private "Dictionary"
+- "UIViewController"
+- !private "AnyObject"
+- !private "+"
+- !private "NSString"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "unreadCount"]
@@ -86,11 +89,13 @@ depends-member:
 - ["Ps9AnyObject", "controller"]
 - !private ["Ps9AnyObject", "cz_imageButton"]
 - !private ["Ps9AnyObject", "cz_randomColor"]
+- !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "imageWithRenderingMode"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "invalidate"]
+- !private ["Ps9AnyObject", "isMemberOfClass"]
 - !private ["Ps9AnyObject", "items"]
 - !private ["Ps9AnyObject", "mainBundle"]
 - !private ["Ps9AnyObject", "namespace"]
@@ -110,6 +115,9 @@ depends-member:
 - ["Ps9AnyObject", "supportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "systemFontOfSize"]
 - !private ["Ps9AnyObject", "tabBar"]
+- ["Ps9AnyObject", "tabBarController"]
+- ["Ps9AnyObject", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps9AnyObject", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "tabBarItem"]
 - ["Ps9AnyObject", "timer"]
 - !private ["Ps9AnyObject", "title"]
@@ -193,11 +201,13 @@ depends-member:
 - ["Ps11CVarArgType", "controller"]
 - !private ["Ps11CVarArgType", "cz_imageButton"]
 - !private ["Ps11CVarArgType", "cz_randomColor"]
+- !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "frame"]
 - !private ["Ps11CVarArgType", "image"]
 - !private ["Ps11CVarArgType", "imageWithRenderingMode"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "invalidate"]
+- !private ["Ps11CVarArgType", "isMemberOfClass"]
 - !private ["Ps11CVarArgType", "items"]
 - !private ["Ps11CVarArgType", "mainBundle"]
 - !private ["Ps11CVarArgType", "namespace"]
@@ -217,6 +227,9 @@ depends-member:
 - ["Ps11CVarArgType", "supportedInterfaceOrientations"]
 - !private ["Ps11CVarArgType", "systemFontOfSize"]
 - !private ["Ps11CVarArgType", "tabBar"]
+- ["Ps11CVarArgType", "tabBarController"]
+- ["Ps11CVarArgType", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps11CVarArgType", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["Ps11CVarArgType", "tabBarItem"]
 - ["Ps11CVarArgType", "timer"]
 - !private ["Ps11CVarArgType", "title"]
@@ -283,11 +296,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "cz_imageButton"]
 - !private ["Ps28CustomDebugStringConvertible", "cz_randomColor"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "imageWithRenderingMode"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "invalidate"]
+- !private ["Ps28CustomDebugStringConvertible", "isMemberOfClass"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "namespace"]
@@ -308,6 +323,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "supportedInterfaceOrientations"]
 - !private ["Ps28CustomDebugStringConvertible", "systemFontOfSize"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBar"]
+- ["Ps28CustomDebugStringConvertible", "tabBarController"]
+- ["Ps28CustomDebugStringConvertible", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps28CustomDebugStringConvertible", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBarItem"]
 - ["Ps28CustomDebugStringConvertible", "timer"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
@@ -361,11 +379,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "cz_imageButton"]
 - !private ["Ps23CustomStringConvertible", "cz_randomColor"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "imageWithRenderingMode"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "invalidate"]
+- !private ["Ps23CustomStringConvertible", "isMemberOfClass"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - !private ["Ps23CustomStringConvertible", "mainBundle"]
 - !private ["Ps23CustomStringConvertible", "namespace"]
@@ -386,6 +406,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "supportedInterfaceOrientations"]
 - !private ["Ps23CustomStringConvertible", "systemFontOfSize"]
 - !private ["Ps23CustomStringConvertible", "tabBar"]
+- ["Ps23CustomStringConvertible", "tabBarController"]
+- ["Ps23CustomStringConvertible", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps23CustomStringConvertible", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["Ps23CustomStringConvertible", "tabBarItem"]
 - ["Ps23CustomStringConvertible", "timer"]
 - !private ["Ps23CustomStringConvertible", "title"]
@@ -449,12 +472,14 @@ depends-member:
 - ["Ps9Equatable", "controller"]
 - !private ["Ps9Equatable", "cz_imageButton"]
 - !private ["Ps9Equatable", "cz_randomColor"]
+- !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "frame"]
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "imageWithRenderingMode"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "insetBy"]
 - !private ["Ps9Equatable", "invalidate"]
+- !private ["Ps9Equatable", "isMemberOfClass"]
 - !private ["Ps9Equatable", "items"]
 - !private ["Ps9Equatable", "mainBundle"]
 - !private ["Ps9Equatable", "namespace"]
@@ -474,6 +499,9 @@ depends-member:
 - ["Ps9Equatable", "supportedInterfaceOrientations"]
 - !private ["Ps9Equatable", "systemFontOfSize"]
 - !private ["Ps9Equatable", "tabBar"]
+- ["Ps9Equatable", "tabBarController"]
+- ["Ps9Equatable", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps9Equatable", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["Ps9Equatable", "tabBarItem"]
 - ["Ps9Equatable", "timer"]
 - !private ["Ps9Equatable", "title"]
@@ -530,11 +558,13 @@ depends-member:
 - ["Ps8Hashable", "controller"]
 - !private ["Ps8Hashable", "cz_imageButton"]
 - !private ["Ps8Hashable", "cz_randomColor"]
+- !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "imageWithRenderingMode"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "invalidate"]
+- !private ["Ps8Hashable", "isMemberOfClass"]
 - !private ["Ps8Hashable", "items"]
 - !private ["Ps8Hashable", "mainBundle"]
 - !private ["Ps8Hashable", "namespace"]
@@ -554,6 +584,9 @@ depends-member:
 - ["Ps8Hashable", "supportedInterfaceOrientations"]
 - !private ["Ps8Hashable", "systemFontOfSize"]
 - !private ["Ps8Hashable", "tabBar"]
+- ["Ps8Hashable", "tabBarController"]
+- ["Ps8Hashable", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps8Hashable", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["Ps8Hashable", "tabBarItem"]
 - ["Ps8Hashable", "timer"]
 - !private ["Ps8Hashable", "title"]
@@ -655,10 +688,12 @@ depends-member:
 - ["PSo8NSCoding", "controller"]
 - !private ["PSo8NSCoding", "cz_imageButton"]
 - !private ["PSo8NSCoding", "cz_randomColor"]
+- !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "imageWithRenderingMode"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isMemberOfClass"]
 - !private ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "orangeColor"]
 - !private ["PSo8NSCoding", "presentViewController"]
@@ -672,6 +707,9 @@ depends-member:
 - !private ["PSo8NSCoding", "stringByAppendingPathComponent"]
 - ["PSo8NSCoding", "supportedInterfaceOrientations"]
 - !private ["PSo8NSCoding", "tabBar"]
+- ["PSo8NSCoding", "tabBarController"]
+- ["PSo8NSCoding", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo8NSCoding", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo8NSCoding", "tabBarItem"]
 - ["PSo8NSCoding", "timer"]
 - !private ["PSo8NSCoding", "title"]
@@ -713,7 +751,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "composeButton.storage"]
 - ["PSo26NSExtensionRequestHandling", "composeStatus"]
 - ["PSo26NSExtensionRequestHandling", "controller"]
+- !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "isMemberOfClass"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "setupChildControllers"]
@@ -721,6 +761,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "setupTimer"]
 - ["PSo26NSExtensionRequestHandling", "supportedInterfaceOrientations"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBar"]
+- ["PSo26NSExtensionRequestHandling", "tabBarController"]
+- ["PSo26NSExtensionRequestHandling", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo26NSExtensionRequestHandling", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBarItem"]
 - ["PSo26NSExtensionRequestHandling", "timer"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
@@ -735,6 +778,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "stringByAppendingPathComponent"]
 - !private ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "JSONObjectWithData"]
 - !private ["CSo8NSObject", "NSBundle"]
@@ -754,7 +798,8 @@ depends-member:
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIInterfaceOrientationMask"]
 - !private ["CSo8NSObject", "UINavigationController"]
-- !private ["CSo8NSObject", "UIViewController"]
+- ["CSo8NSObject", "UITabBarController"]
+- ["CSo8NSObject", "UIViewController"]
 - !private ["CSo8NSObject", "WBBaseViewController"]
 - !private ["CSo8NSObject", "WBNavigationController"]
 - !private ["CSo8NSObject", "WBNetworkManager"]
@@ -771,11 +816,13 @@ depends-member:
 - ["CSo8NSObject", "controller"]
 - !private ["CSo8NSObject", "cz_imageButton"]
 - !private ["CSo8NSObject", "cz_randomColor"]
+- !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "imageWithRenderingMode"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "invalidate"]
+- !private ["CSo8NSObject", "isMemberOfClass"]
 - !private ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "mainBundle"]
 - !private ["CSo8NSObject", "namespace"]
@@ -795,6 +842,9 @@ depends-member:
 - ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
 - !private ["CSo8NSObject", "tabBar"]
+- ["CSo8NSObject", "tabBarController"]
+- ["CSo8NSObject", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo8NSObject", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "tabBarItem"]
 - ["CSo8NSObject", "timer"]
 - !private ["CSo8NSObject", "title"]
@@ -836,11 +886,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "controller"]
 - !private ["PSo16NSObjectProtocol", "cz_imageButton"]
 - !private ["PSo16NSObjectProtocol", "cz_randomColor"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "imageWithRenderingMode"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "invalidate"]
+- !private ["PSo16NSObjectProtocol", "isMemberOfClass"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - !private ["PSo16NSObjectProtocol", "namespace"]
@@ -860,6 +912,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "supportedInterfaceOrientations"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - !private ["PSo16NSObjectProtocol", "tabBar"]
+- ["PSo16NSObjectProtocol", "tabBarController"]
+- ["PSo16NSObjectProtocol", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo16NSObjectProtocol", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo16NSObjectProtocol", "tabBarItem"]
 - ["PSo16NSObjectProtocol", "timer"]
 - !private ["PSo16NSObjectProtocol", "title"]
@@ -1009,8 +1064,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "composeStatus"]
 - ["PSo21UIAppearanceContainer", "controller"]
 - !private ["PSo21UIAppearanceContainer", "cz_imageButton"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isMemberOfClass"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -1019,6 +1076,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setupTimer"]
 - ["PSo21UIAppearanceContainer", "supportedInterfaceOrientations"]
 - !private ["PSo21UIAppearanceContainer", "tabBar"]
+- ["PSo21UIAppearanceContainer", "tabBarController"]
+- ["PSo21UIAppearanceContainer", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo21UIAppearanceContainer", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo21UIAppearanceContainer", "tabBarItem"]
 - ["PSo21UIAppearanceContainer", "timer"]
 - !private ["PSo21UIAppearanceContainer", "title"]
@@ -1063,7 +1123,9 @@ depends-member:
 - ["PSo18UIContentContainer", "composeButton.storage"]
 - ["PSo18UIContentContainer", "composeStatus"]
 - ["PSo18UIContentContainer", "controller"]
+- !private ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "isMemberOfClass"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "setupChildControllers"]
@@ -1071,6 +1133,9 @@ depends-member:
 - ["PSo18UIContentContainer", "setupTimer"]
 - ["PSo18UIContentContainer", "supportedInterfaceOrientations"]
 - !private ["PSo18UIContentContainer", "tabBar"]
+- ["PSo18UIContentContainer", "tabBarController"]
+- ["PSo18UIContentContainer", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo18UIContentContainer", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UIContentContainer", "tabBarItem"]
 - ["PSo18UIContentContainer", "timer"]
 - !private ["PSo18UIContentContainer", "title"]
@@ -1129,8 +1194,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "composeStatus"]
 - ["PSo18UIFocusEnvironment", "controller"]
 - !private ["PSo18UIFocusEnvironment", "cz_imageButton"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isMemberOfClass"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1139,6 +1206,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "setupTimer"]
 - ["PSo18UIFocusEnvironment", "supportedInterfaceOrientations"]
 - !private ["PSo18UIFocusEnvironment", "tabBar"]
+- ["PSo18UIFocusEnvironment", "tabBarController"]
+- ["PSo18UIFocusEnvironment", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo18UIFocusEnvironment", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UIFocusEnvironment", "tabBarItem"]
 - ["PSo18UIFocusEnvironment", "timer"]
 - !private ["PSo18UIFocusEnvironment", "title"]
@@ -1155,6 +1225,7 @@ depends-member:
 - !private ["VSC26UIInterfaceOrientationMask", "Portrait"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSClassFromString"]
@@ -1173,7 +1244,8 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIInterfaceOrientationMask"]
 - !private ["CSo11UIResponder", "UINavigationController"]
-- !private ["CSo11UIResponder", "UIViewController"]
+- ["CSo11UIResponder", "UITabBarController"]
+- ["CSo11UIResponder", "UIViewController"]
 - !private ["CSo11UIResponder", "WBBaseViewController"]
 - !private ["CSo11UIResponder", "WBNavigationController"]
 - !private ["CSo11UIResponder", "WBNetworkManager"]
@@ -1188,8 +1260,10 @@ depends-member:
 - ["CSo11UIResponder", "composeStatus"]
 - ["CSo11UIResponder", "controller"]
 - !private ["CSo11UIResponder", "cz_imageButton"]
+- !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isMemberOfClass"]
 - !private ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
@@ -1199,6 +1273,9 @@ depends-member:
 - !private ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "tabBar"]
+- ["CSo11UIResponder", "tabBarController"]
+- ["CSo11UIResponder", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo11UIResponder", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "tabBarItem"]
 - ["CSo11UIResponder", "timer"]
 - !private ["CSo11UIResponder", "title"]
@@ -1234,7 +1311,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "composeButton.storage"]
 - ["PSo16UIStateRestoring", "composeStatus"]
 - ["PSo16UIStateRestoring", "controller"]
+- !private ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "isMemberOfClass"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "setupChildControllers"]
@@ -1242,6 +1321,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "setupTimer"]
 - ["PSo16UIStateRestoring", "supportedInterfaceOrientations"]
 - !private ["PSo16UIStateRestoring", "tabBar"]
+- ["PSo16UIStateRestoring", "tabBarController"]
+- ["PSo16UIStateRestoring", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo16UIStateRestoring", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo16UIStateRestoring", "tabBarItem"]
 - ["PSo16UIStateRestoring", "timer"]
 - !private ["PSo16UIStateRestoring", "title"]
@@ -1255,6 +1337,7 @@ depends-member:
 - !private ["CSo8UITabBar", "bounds"]
 - !private ["CSo8UITabBar", "items"]
 - !private ["CSo18UITabBarController", "AnyObject"]
+- ["CSo18UITabBarController", "Bool"]
 - !private ["CSo18UITabBarController", "CGFloat"]
 - !private ["CSo18UITabBarController", "NSBundle"]
 - !private ["CSo18UITabBarController", "NSClassFromString"]
@@ -1273,7 +1356,8 @@ depends-member:
 - !private ["CSo18UITabBarController", "UIImage"]
 - ["CSo18UITabBarController", "UIInterfaceOrientationMask"]
 - !private ["CSo18UITabBarController", "UINavigationController"]
-- !private ["CSo18UITabBarController", "UIViewController"]
+- ["CSo18UITabBarController", "UITabBarController"]
+- ["CSo18UITabBarController", "UIViewController"]
 - !private ["CSo18UITabBarController", "WBBaseViewController"]
 - !private ["CSo18UITabBarController", "WBNavigationController"]
 - !private ["CSo18UITabBarController", "WBNetworkManager"]
@@ -1282,6 +1366,7 @@ depends-member:
 - ["CSo18UITabBarController", "composeButton.storage"]
 - ["CSo18UITabBarController", "composeStatus"]
 - ["CSo18UITabBarController", "controller"]
+- !private ["CSo18UITabBarController", "delegate"]
 - ["CSo18UITabBarController", "init"]
 - !private ["CSo18UITabBarController", "presentViewController"]
 - !private ["CSo18UITabBarController", "print"]
@@ -1290,11 +1375,50 @@ depends-member:
 - ["CSo18UITabBarController", "setupTimer"]
 - ["CSo18UITabBarController", "supportedInterfaceOrientations"]
 - !private ["CSo18UITabBarController", "tabBar"]
+- ["CSo18UITabBarController", "tabBarController"]
+- ["CSo18UITabBarController", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo18UITabBarController", "tabBarControllerSupportedInterfaceOrientations"]
 - ["CSo18UITabBarController", "timer"]
 - ["CSo18UITabBarController", "updateTimer"]
 - !private ["CSo18UITabBarController", "viewControllers"]
 - ["CSo18UITabBarController", "viewDidLoad"]
 - ["CSo18UITabBarController", ""]
+- !private ["PSo26UITabBarControllerDelegate", "CGFloat"]
+- !private ["PSo26UITabBarControllerDelegate", "NSBundle"]
+- !private ["PSo26UITabBarControllerDelegate", "NSClassFromString"]
+- !private ["PSo26UITabBarControllerDelegate", "NSData"]
+- !private ["PSo26UITabBarControllerDelegate", "NSFontAttributeName"]
+- !private ["PSo26UITabBarControllerDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo26UITabBarControllerDelegate", "NSJSONSerialization"]
+- !private ["PSo26UITabBarControllerDelegate", "NSSearchPathForDirectoriesInDomains"]
+- !private ["PSo26UITabBarControllerDelegate", "NSTimer"]
+- !private ["PSo26UITabBarControllerDelegate", "UIApplication"]
+- !private ["PSo26UITabBarControllerDelegate", "UIButton"]
+- !private ["PSo26UITabBarControllerDelegate", "UIColor"]
+- !private ["PSo26UITabBarControllerDelegate", "UIFont"]
+- !private ["PSo26UITabBarControllerDelegate", "UIImage"]
+- !private ["PSo26UITabBarControllerDelegate", "UINavigationController"]
+- !private ["PSo26UITabBarControllerDelegate", "UIViewController"]
+- !private ["PSo26UITabBarControllerDelegate", "WBNavigationController"]
+- !private ["PSo26UITabBarControllerDelegate", "WBNetworkManager"]
+- !private ["PSo26UITabBarControllerDelegate", "childViewControllers"]
+- !private ["PSo26UITabBarControllerDelegate", "composeButton"]
+- !private ["PSo26UITabBarControllerDelegate", "composeStatus"]
+- !private ["PSo26UITabBarControllerDelegate", "controller"]
+- !private ["PSo26UITabBarControllerDelegate", "delegate"]
+- !private ["PSo26UITabBarControllerDelegate", "presentViewController"]
+- !private ["PSo26UITabBarControllerDelegate", "print"]
+- !private ["PSo26UITabBarControllerDelegate", "setupChildControllers"]
+- !private ["PSo26UITabBarControllerDelegate", "setupComposeButton"]
+- !private ["PSo26UITabBarControllerDelegate", "setupTimer"]
+- !private ["PSo26UITabBarControllerDelegate", "tabBar"]
+- ["PSo26UITabBarControllerDelegate", "tabBarController"]
+- ["PSo26UITabBarControllerDelegate", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo26UITabBarControllerDelegate", "tabBarControllerSupportedInterfaceOrientations"]
+- !private ["PSo26UITabBarControllerDelegate", "timer"]
+- !private ["PSo26UITabBarControllerDelegate", "updateTimer"]
+- !private ["PSo26UITabBarControllerDelegate", "viewControllers"]
+- ["PSo26UITabBarControllerDelegate", ""]
 - !private ["PSo16UITabBarDelegate", "CGFloat"]
 - !private ["PSo16UITabBarDelegate", "NSBundle"]
 - !private ["PSo16UITabBarDelegate", "NSClassFromString"]
@@ -1318,6 +1442,7 @@ depends-member:
 - ["PSo16UITabBarDelegate", "composeButton.storage"]
 - ["PSo16UITabBarDelegate", "composeStatus"]
 - ["PSo16UITabBarDelegate", "controller"]
+- !private ["PSo16UITabBarDelegate", "delegate"]
 - ["PSo16UITabBarDelegate", "init"]
 - !private ["PSo16UITabBarDelegate", "presentViewController"]
 - !private ["PSo16UITabBarDelegate", "print"]
@@ -1326,6 +1451,9 @@ depends-member:
 - ["PSo16UITabBarDelegate", "setupTimer"]
 - ["PSo16UITabBarDelegate", "supportedInterfaceOrientations"]
 - !private ["PSo16UITabBarDelegate", "tabBar"]
+- ["PSo16UITabBarDelegate", "tabBarController"]
+- ["PSo16UITabBarDelegate", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo16UITabBarDelegate", "tabBarControllerSupportedInterfaceOrientations"]
 - ["PSo16UITabBarDelegate", "timer"]
 - ["PSo16UITabBarDelegate", "updateTimer"]
 - !private ["PSo16UITabBarDelegate", "viewControllers"]
@@ -1371,8 +1499,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "composeStatus"]
 - ["PSo18UITraitEnvironment", "controller"]
 - !private ["PSo18UITraitEnvironment", "cz_imageButton"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isMemberOfClass"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1381,6 +1511,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setupTimer"]
 - ["PSo18UITraitEnvironment", "supportedInterfaceOrientations"]
 - !private ["PSo18UITraitEnvironment", "tabBar"]
+- ["PSo18UITraitEnvironment", "tabBarController"]
+- ["PSo18UITraitEnvironment", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo18UITraitEnvironment", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UITraitEnvironment", "tabBarItem"]
 - ["PSo18UITraitEnvironment", "timer"]
 - !private ["PSo18UITraitEnvironment", "title"]
@@ -1398,6 +1531,7 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "items"]
 - !private ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "NSBundle"]
 - !private ["CSo16UIViewController", "NSClassFromString"]
@@ -1416,7 +1550,8 @@ depends-member:
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIInterfaceOrientationMask"]
 - !private ["CSo16UIViewController", "UINavigationController"]
-- !private ["CSo16UIViewController", "UIViewController"]
+- ["CSo16UIViewController", "UITabBarController"]
+- ["CSo16UIViewController", "UIViewController"]
 - !private ["CSo16UIViewController", "WBBaseViewController"]
 - !private ["CSo16UIViewController", "WBNavigationController"]
 - !private ["CSo16UIViewController", "WBNetworkManager"]
@@ -1425,7 +1560,9 @@ depends-member:
 - ["CSo16UIViewController", "composeButton.storage"]
 - ["CSo16UIViewController", "composeStatus"]
 - ["CSo16UIViewController", "controller"]
+- !private ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "isMemberOfClass"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "setupChildControllers"]
@@ -1433,6 +1570,9 @@ depends-member:
 - ["CSo16UIViewController", "setupTimer"]
 - ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "tabBar"]
+- ["CSo16UIViewController", "tabBarController"]
+- ["CSo16UIViewController", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo16UIViewController", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "tabBarItem"]
 - ["CSo16UIViewController", "timer"]
 - !private ["CSo16UIViewController", "title"]
@@ -1454,6 +1594,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBBaseViewController", "title"]
 - !private ["C8STTWeiBo20WBBaseViewController", "visitorInfoDictionary"]
 - !private ["C8STTWeiBo20WBMainViewController", "AnyObject"]
+- ["C8STTWeiBo20WBMainViewController", "Bool"]
 - !private ["C8STTWeiBo20WBMainViewController", "CGFloat"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSBundle"]
 - !private ["C8STTWeiBo20WBMainViewController", "NSClassFromString"]
@@ -1472,7 +1613,8 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "UIImage"]
 - ["C8STTWeiBo20WBMainViewController", "UIInterfaceOrientationMask"]
 - !private ["C8STTWeiBo20WBMainViewController", "UINavigationController"]
-- !private ["C8STTWeiBo20WBMainViewController", "UIViewController"]
+- ["C8STTWeiBo20WBMainViewController", "UITabBarController"]
+- ["C8STTWeiBo20WBMainViewController", "UIViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBBaseViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBNavigationController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBNetworkManager"]
@@ -1482,6 +1624,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "composeStatus"]
 - !private ["C8STTWeiBo20WBMainViewController", "controller"]
 - ["C8STTWeiBo20WBMainViewController", "deinit"]
+- !private ["C8STTWeiBo20WBMainViewController", "delegate"]
 - ["C8STTWeiBo20WBMainViewController", "init"]
 - !private ["C8STTWeiBo20WBMainViewController", "presentViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "print"]
@@ -1490,6 +1633,9 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "setupTimer"]
 - ["C8STTWeiBo20WBMainViewController", "supportedInterfaceOrientations"]
 - !private ["C8STTWeiBo20WBMainViewController", "tabBar"]
+- ["C8STTWeiBo20WBMainViewController", "tabBarController"]
+- ["C8STTWeiBo20WBMainViewController", "tabBarControllerPreferredInterfaceOrientationForPresentation"]
+- ["C8STTWeiBo20WBMainViewController", "tabBarControllerSupportedInterfaceOrientations"]
 - !private ["C8STTWeiBo20WBMainViewController", "timer"]
 - !private ["C8STTWeiBo20WBMainViewController", "updateTimer"]
 - !private ["C8STTWeiBo20WBMainViewController", "viewControllers"]
@@ -1685,6 +1831,7 @@ depends-nominal:
 - "PSo16UIStateRestoring"
 - !private "CSo8UITabBar"
 - "CSo18UITabBarController"
+- "PSo26UITabBarControllerDelegate"
 - "PSo16UITabBarDelegate"
 - !private "CSo12UITabBarItem"
 - !private "PSo21UITableViewDataSource"
@@ -1771,4 +1918,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
-interface-hash: "0d2f18f4b6a9bec6892eeda6f9013cde"
+interface-hash: "66abeb7780e5409e34c44a02791fcd6c"

@@ -269,6 +269,19 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBMainViewController")
 @end
 
 
+@interface WBMainViewController (SWIFT_EXTENSION(STTWeiBo)) <UITabBarControllerDelegate>
+
+/// 将要选择 tabBarItem
+///
+/// \param tabBarController tabBarController
+///
+/// \param viewController 目标控制器
+///
+/// \returns  是否切换到目标控制器
+- (BOOL)tabBarController:(UITabBarController * _Nonnull)tabBarController shouldSelectViewController:(UIViewController * _Nonnull)viewController;
+@end
+
+
 @interface WBMainViewController (SWIFT_EXTENSION(STTWeiBo))
 @end
 

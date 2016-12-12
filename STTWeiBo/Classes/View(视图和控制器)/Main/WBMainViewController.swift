@@ -23,6 +23,8 @@ class WBMainViewController: UITabBarController {
         setupComposeButton()
         setupTimer()
         
+        //设置代理
+        delegate = self
     }
     deinit{
         
@@ -67,6 +69,25 @@ class WBMainViewController: UITabBarController {
     private lazy var composeButton:UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
 }
 
+// MARK: - UITabBarControllerDelegate
+extension WBMainViewController:UITabBarControllerDelegate{
+    
+    /**
+     将要选择 tabBarItem
+     
+     - parameter tabBarController: tabBarController
+     - parameter viewController:   目标控制器
+     
+     - returns: 是否切换到目标控制器
+     */
+    func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+        print("将要切换到\(viewController)")
+        
+        //判断目标控制器是否是 UIViewController
+        
+        return !viewController.isMemberOfClass(UIViewController.self)
+    }
+}
 // MARK: - 时钟相关方法
 extension WBMainViewController{
     /**
@@ -113,7 +134,10 @@ extension WBMainViewController{
         //计算撰写按钮的宽度
         let count = CGFloat(childViewControllers.count)
         // 将向内缩进的宽度减少 能够让按钮的宽度变大 盖住容错点 防止穿帮
-        let w = tabBar.bounds.width / count - 1
+//        let w = tabBar.bounds.width / count - 1
+        
+        // 将向内缩进的宽度
+        let w = tabBar.bounds.width / count
         //OC CGRectInset 正数向内缩进  负数向外扩展
         composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
         print("撰写按钮的宽度\(composeButton.bounds.width)")
