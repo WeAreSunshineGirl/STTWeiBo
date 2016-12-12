@@ -12,6 +12,8 @@ import UIKit
 //主控制器
 class WBMainViewController: UITabBarController {
 
+    /// 定时器
+    private var timer:NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +21,13 @@ class WBMainViewController: UITabBarController {
         // Do any additional setup after loading the view.
         setupChildControllers()
         setupComposeButton()
+        setupTimer()
         
+    }
+    deinit{
         
-//        测试未读数量
-        WBNetworkManager.shared.unreadCount { (count) in
-            print("有\(count)条新微博")
-        }
-        
+        //释放时钟
+        timer?.invalidate()
     }
   
     /**
@@ -57,18 +59,39 @@ class WBMainViewController: UITabBarController {
     presentViewController(nav, animated: true, completion: nil)
     
 //    self.navigationController?.pushViewController(vc, animated: true)
-    
-    
     }
     
     
     //MARK:-私有控件
     /// 撰写按钮
     private lazy var composeButton:UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+}
+
+// MARK: - 时钟相关方法
+extension WBMainViewController{
+    /**
+     定义时钟
+     */
+    private func setupTimer(){
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(15.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
     
-    
+    /**
+     时钟触发方法
+     */
+    @objc private func updateTimer(){
+        
+        WBNetworkManager.shared.unreadCount { (count) in
+            
+            print("检测到\(count)条新微博")
+            //设置 首页 tabBarItem 的badgeNumber
+            self.tabBar.items?[0].badgeValue = count > 0 ? "\(count)" : nil
+        }
+    }
     
 }
+
 
 //extension 类似于OC 中的分类 在Swift中还可以用来切分代码块
 //可以把相近的功能函数 放在一个extension 中

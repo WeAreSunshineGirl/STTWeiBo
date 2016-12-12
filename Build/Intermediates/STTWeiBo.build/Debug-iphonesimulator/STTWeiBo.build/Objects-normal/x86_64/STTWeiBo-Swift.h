@@ -273,6 +273,10 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBMainViewController")
 @end
 
 
+@interface WBMainViewController (SWIFT_EXTENSION(STTWeiBo))
+@end
+
+
 SWIFT_CLASS("_TtC8STTWeiBo23WBMessageViewController")
 @interface WBMessageViewController : WBBaseViewController
 - (void)viewDidLoad;
