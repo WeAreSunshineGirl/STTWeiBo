@@ -8,6 +8,9 @@
 
 import UIKit
 
+//ios10
+//import UserNotifications
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,12 +22,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        sleep(2)
         
+        //#available 是检测设备版本 如果是10.0以上
+      if #available(ios 10.0, *){
+       UNUserNotificationCenter.current().requestAuthorization([.alert,.badge,.carPlay,.sound]){(success,error) in
+            print("授权" + (success ? "成功" : "失败"))
+        }
+        }else{
+            //10.0 以下
+            //取得用户授权显示通知[上方的提示条/声音/badgeNumber]
+            let notifySettings = UIUserNotificationSettings(forTypes: [.Alert,.Badge,.Sound], categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(notifySettings)
+        }
+        
+        
+       
+        
         window = UIWindow()
         window?.backgroundColor = UIColor.whiteColor()
         window?.rootViewController = WBMainViewController()
         
         window?.makeKeyAndVisible()
-        
         
         
         

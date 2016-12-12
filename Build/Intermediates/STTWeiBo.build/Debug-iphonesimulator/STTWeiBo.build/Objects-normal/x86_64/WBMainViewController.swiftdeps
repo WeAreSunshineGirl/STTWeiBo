@@ -8,45 +8,46 @@ provides-member:
 provides-dynamic-lookup:
 - "supportedInterfaceOrientations"
 - "viewDidLoad"
-- "updateTimer"
 - "composeStatus"
+- "updateTimer"
 depends-top-level:
-- !private "WBBaseViewController"
-- "UITabBarController"
-- !private "*"
+- !private "NSFontAttributeName"
+- !private "/"
+- !private "NSSearchPathForDirectoriesInDomains"
 - "NSTimer"
-- !private "UIImage"
-- !private "NSClassFromString"
+- !private "WBNavigationController"
+- !private "AnyObject"
 - !private "print"
-- !private "-"
-- !private "Dictionary"
-- !private "+"
+- !private "NSString"
+- !private "WBBaseViewController"
 - !private "BooleanLiteralType"
+- !private "UIViewController"
+- !private "NSForegroundColorAttributeName"
+- !private "NSData"
+- !private "+"
+- !private "Array"
+- !private "UIFont"
+- !private "NSClassFromString"
+- "WBMainViewController"
 - !private ">"
 - !private "CGFloat"
-- !private "UIColor"
-- !private "NSString"
-- !private "NSJSONSerialization"
-- !private "AnyObject"
-- !private "NSForegroundColorAttributeName"
-- !private "WBNetworkManager"
-- !private "=="
-- !private "Array"
-- !private "UINavigationController"
-- !private "UIViewController"
-- !private "StringLiteralType"
-- !private "NSData"
-- !private "/"
-- !private "NSBundle"
-- "WBMainViewController"
 - "UIButton"
-- "UIInterfaceOrientationMask"
+- !private "=="
 - !private "String"
+- !private "-"
+- !private "WBNetworkManager"
+- !private "StringLiteralType"
 - !private "UnicodeScalarType"
-- !private "UIFont"
-- !private "NSFontAttributeName"
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "WBNavigationController"
+- !private "UIColor"
+- !private "UIApplication"
+- !private "UIImage"
+- "UITabBarController"
+- !private "Dictionary"
+- !private "*"
+- "UIInterfaceOrientationMask"
+- !private "NSJSONSerialization"
+- !private "NSBundle"
+- !private "UINavigationController"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "unreadCount"]
@@ -63,6 +64,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSJSONSerialization"]
 - !private ["Ps9AnyObject", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps9AnyObject", "NSTimer"]
+- !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIButton"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
@@ -73,6 +75,7 @@ depends-member:
 - !private ["Ps9AnyObject", "WBNetworkManager"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
+- !private ["Ps9AnyObject", "applicationIconBadgeNumber"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "badgeValue"]
 - !private ["Ps9AnyObject", "bounds"]
@@ -102,6 +105,7 @@ depends-member:
 - ["Ps9AnyObject", "setupComposeButton"]
 - ["Ps9AnyObject", "setupTimer"]
 - !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "sharedApplication"]
 - !private ["Ps9AnyObject", "stringByAppendingPathComponent"]
 - ["Ps9AnyObject", "supportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "systemFontOfSize"]
@@ -167,6 +171,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "NSJSONSerialization"]
 - !private ["Ps11CVarArgType", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps11CVarArgType", "NSTimer"]
+- !private ["Ps11CVarArgType", "UIApplication"]
 - !private ["Ps11CVarArgType", "UIButton"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIFont"]
@@ -177,6 +182,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "WBNetworkManager"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
+- !private ["Ps11CVarArgType", "applicationIconBadgeNumber"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "badgeValue"]
 - !private ["Ps11CVarArgType", "bounds"]
@@ -206,6 +212,7 @@ depends-member:
 - ["Ps11CVarArgType", "setupComposeButton"]
 - ["Ps11CVarArgType", "setupTimer"]
 - !private ["Ps11CVarArgType", "shared"]
+- !private ["Ps11CVarArgType", "sharedApplication"]
 - !private ["Ps11CVarArgType", "stringByAppendingPathComponent"]
 - ["Ps11CVarArgType", "supportedInterfaceOrientations"]
 - !private ["Ps11CVarArgType", "systemFontOfSize"]
@@ -250,6 +257,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSTimer"]
 - !private ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIButton"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
@@ -263,6 +271,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "applicationIconBadgeNumber"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "badgeValue"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
@@ -293,6 +302,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setupComposeButton"]
 - ["Ps28CustomDebugStringConvertible", "setupTimer"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "supportedInterfaceOrientations"]
@@ -324,6 +334,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps23CustomStringConvertible", "NSTimer"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "UIButton"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
@@ -338,6 +349,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "applicationIconBadgeNumber"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "badgeValue"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
@@ -368,6 +380,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setupComposeButton"]
 - ["Ps23CustomStringConvertible", "setupTimer"]
 - !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "sharedApplication"]
 - !private ["Ps23CustomStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "supportedInterfaceOrientations"]
@@ -412,6 +425,7 @@ depends-member:
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "Portrait"]
 - !private ["Ps9Equatable", "TouchUpInside"]
+- !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UIButton"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
@@ -424,6 +438,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
+- !private ["Ps9Equatable", "applicationIconBadgeNumber"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "badgeValue"]
 - !private ["Ps9Equatable", "bounds"]
@@ -454,6 +469,7 @@ depends-member:
 - ["Ps9Equatable", "setupComposeButton"]
 - ["Ps9Equatable", "setupTimer"]
 - !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "sharedApplication"]
 - !private ["Ps9Equatable", "stringByAppendingPathComponent"]
 - ["Ps9Equatable", "supportedInterfaceOrientations"]
 - !private ["Ps9Equatable", "systemFontOfSize"]
@@ -491,6 +507,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSJSONSerialization"]
 - !private ["Ps8Hashable", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps8Hashable", "NSTimer"]
+- !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UIButton"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
@@ -502,6 +519,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
+- !private ["Ps8Hashable", "applicationIconBadgeNumber"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "badgeValue"]
 - !private ["Ps8Hashable", "bounds"]
@@ -531,6 +549,7 @@ depends-member:
 - ["Ps8Hashable", "setupComposeButton"]
 - ["Ps8Hashable", "setupTimer"]
 - !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "sharedApplication"]
 - !private ["Ps8Hashable", "stringByAppendingPathComponent"]
 - ["Ps8Hashable", "supportedInterfaceOrientations"]
 - !private ["Ps8Hashable", "systemFontOfSize"]
@@ -615,6 +634,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
 - !private ["PSo8NSCoding", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo8NSCoding", "NSTimer"]
+- !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIButton"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
@@ -679,6 +699,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo26NSExtensionRequestHandling", "NSTimer"]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIButton"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
@@ -726,6 +747,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSString"]
 - ["CSo8NSObject", "NSTimer"]
 - !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
@@ -738,6 +760,7 @@ depends-member:
 - !private ["CSo8NSObject", "WBNetworkManager"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
+- !private ["CSo8NSObject", "applicationIconBadgeNumber"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "badgeValue"]
 - !private ["CSo8NSObject", "bounds"]
@@ -767,6 +790,7 @@ depends-member:
 - ["CSo8NSObject", "setupComposeButton"]
 - ["CSo8NSObject", "setupTimer"]
 - !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "sharedApplication"]
 - !private ["CSo8NSObject", "stringByAppendingPathComponent"]
 - ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
@@ -790,6 +814,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16NSObjectProtocol", "NSTimer"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIButton"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
@@ -800,6 +825,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
+- !private ["PSo16NSObjectProtocol", "applicationIconBadgeNumber"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "badgeValue"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
@@ -829,6 +855,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setupComposeButton"]
 - ["PSo16NSObjectProtocol", "setupTimer"]
 - !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
 - !private ["PSo16NSObjectProtocol", "stringByAppendingPathComponent"]
 - ["PSo16NSObjectProtocol", "supportedInterfaceOrientations"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
@@ -963,6 +990,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo21UIAppearanceContainer", "NSTimer"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIButton"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -1000,6 +1028,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - !private ["PSo21UIAppearanceContainer", "visitorInfoDictionary"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo13UIApplication", "applicationIconBadgeNumber"]
+- !private ["CSo13UIApplication", "sharedApplication"]
 - !private ["CSo9UIBarItem", "badgeValue"]
 - !private ["CSo9UIBarItem", "image"]
 - !private ["CSo9UIBarItem", "selectedImage"]
@@ -1019,6 +1049,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
 - !private ["PSo18UIContentContainer", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo18UIContentContainer", "NSTimer"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIButton"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
@@ -1079,6 +1110,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo18UIFocusEnvironment", "NSTimer"]
+- !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIButton"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -1134,6 +1166,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSString"]
 - ["CSo11UIResponder", "NSTimer"]
 - !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
@@ -1146,6 +1179,7 @@ depends-member:
 - !private ["CSo11UIResponder", "WBNetworkManager"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
+- !private ["CSo11UIResponder", "applicationIconBadgeNumber"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
 - !private ["CSo11UIResponder", "childViewControllers"]
@@ -1162,6 +1196,7 @@ depends-member:
 - ["CSo11UIResponder", "setupChildControllers"]
 - ["CSo11UIResponder", "setupComposeButton"]
 - ["CSo11UIResponder", "setupTimer"]
+- !private ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "tabBar"]
 - !private ["CSo11UIResponder", "tabBarItem"]
@@ -1185,6 +1220,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
 - !private ["PSo16UIStateRestoring", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16UIStateRestoring", "NSTimer"]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIButton"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
@@ -1230,6 +1266,7 @@ depends-member:
 - !private ["CSo18UITabBarController", "NSString"]
 - ["CSo18UITabBarController", "NSTimer"]
 - !private ["CSo18UITabBarController", "String"]
+- !private ["CSo18UITabBarController", "UIApplication"]
 - ["CSo18UITabBarController", "UIButton"]
 - !private ["CSo18UITabBarController", "UIColor"]
 - !private ["CSo18UITabBarController", "UIFont"]
@@ -1267,6 +1304,7 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "NSJSONSerialization"]
 - !private ["PSo16UITabBarDelegate", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo16UITabBarDelegate", "NSTimer"]
+- !private ["PSo16UITabBarDelegate", "UIApplication"]
 - !private ["PSo16UITabBarDelegate", "UIButton"]
 - !private ["PSo16UITabBarDelegate", "UIColor"]
 - !private ["PSo16UITabBarDelegate", "UIFont"]
@@ -1314,6 +1352,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "NSSearchPathForDirectoriesInDomains"]
 - !private ["PSo18UITraitEnvironment", "NSTimer"]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIButton"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -1370,6 +1409,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSString"]
 - ["CSo16UIViewController", "NSTimer"]
 - !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
@@ -1425,6 +1465,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "NSString"]
 - ["C8STTWeiBo20WBMainViewController", "NSTimer"]
 - !private ["C8STTWeiBo20WBMainViewController", "String"]
+- !private ["C8STTWeiBo20WBMainViewController", "UIApplication"]
 - ["C8STTWeiBo20WBMainViewController", "UIButton"]
 - !private ["C8STTWeiBo20WBMainViewController", "UIColor"]
 - !private ["C8STTWeiBo20WBMainViewController", "UIFont"]
@@ -1623,6 +1664,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
 - !private "CSo9UIBarItem"
 - !private "CSo8UIButton"
 - !private "CSo7UIColor"
