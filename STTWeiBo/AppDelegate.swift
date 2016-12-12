@@ -68,6 +68,16 @@ extension AppDelegate{
 //get
 
 
+//获取某个用户的各种消息未读数
+//https://rm.api.weibo.com/2/remind/unread_count.json
+
+
+
+
+
+
+
+
 
 
 

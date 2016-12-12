@@ -36,6 +36,7 @@
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
 		CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15262E1DF94A0800149510 /* WBNetworkManager.swift */; };
 		CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */; };
+		CE1B9C531DFE75FD0085E831 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1B9C521DFE75FD0085E831 /* main.json */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
 		CE4315AD1DF6AB3E005F7199 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = CE4315AC1DF6AB3D005F7199 /* demo.json */; };
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
@@ -92,6 +93,7 @@
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		CE15262E1DF94A0800149510 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
 		CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
+		CE1B9C521DFE75FD0085E831 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
 		CE4315AC1DF6AB3D005F7199 /* demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				CE0843841DEFCA2800BD8168 /* Classes */,
 				CE08436E1DEFC43D00BD8168 /* AppDelegate.swift */,
 				CE0843CC1DEFCDA900BD8168 /* WeiBo-Bridge.h */,
+				CE1B9C521DFE75FD0085E831 /* main.json */,
 				CE4315AC1DF6AB3D005F7199 /* demo.json */,
 				CE08439C1DEFCB6500BD8168 /* Launch Screen.storyboard */,
 				CE0843A01DEFCBD500BD8168 /* 2@3x.png */,
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B9C531DFE75FD0085E831 /* main.json in Resources */,
 				CE0843A11DEFCBD500BD8168 /* 2@3x.png in Resources */,
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
 				CE4315AD1DF6AB3E005F7199 /* demo.json in Resources */,

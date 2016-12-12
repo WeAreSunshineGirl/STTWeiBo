@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
 - "application"
+- "window"
 depends-top-level:
 - "UIWindow"
-- !private "NSData"
-- "UIApplication"
-- "AppDelegate"
-- !private "dispatch_get_global_queue"
-- !private "dispatch_async"
-- "Bool"
-- "StringLiteralType"
-- "UIApplicationDelegate"
-- !private "NSBundle"
-- "NSObject"
 - "AnyObject"
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "UIColor"
-- !private "WBMainViewController"
 - !private "BooleanLiteralType"
+- !private "print"
+- !private "dispatch_get_global_queue"
+- !private "NSBundle"
+- "UIApplicationDelegate"
+- !private "dispatch_async"
+- "UIApplication"
+- "Bool"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "WBMainViewController"
+- !private "NSData"
+- "AppDelegate"
+- !private "UIColor"
+- "NSObject"
+- "StringLiteralType"
 - !private "NSString"
 - "UIResponder"
-- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSData"]

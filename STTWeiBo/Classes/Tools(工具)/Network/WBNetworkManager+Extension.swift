@@ -36,6 +36,39 @@ extension WBNetworkManager{
             completion(list: result, isSuccess: isSuccess)
         }
     }
+    
+    
+    /**
+     返回微博的未读数量
+     */
+    func unreadCount(completion:(count:Int)->()){
+        
+        guard let uid = uid else{
+            return
+        }
+        let URLString = "https://rm.api.weibo.com/2/remind/unread_count.json"
+        
+        let params = ["uid":uid]
+        
+        tokenRequest(URLString: URLString, parameters: params) { (json, isSuccess) in
+            print(json)
+            let dict = json as? [String:AnyObject]
+            let count = dict?["status"] as? Int
+            completion(count: count ?? 0)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //用网络工具加载微博数据  对token进行封装
     //        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
     //        let params = ["access_token":"2.00mqiHMEXmKOnDdeff3a547e9YmKFD"]

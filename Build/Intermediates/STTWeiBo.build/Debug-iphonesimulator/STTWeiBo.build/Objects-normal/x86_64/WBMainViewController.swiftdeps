@@ -10,40 +10,45 @@ provides-dynamic-lookup:
 - "supportedInterfaceOrientations"
 - "viewDidLoad"
 depends-top-level:
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "Dictionary"
-- !private "UIColor"
-- !private "/"
-- !private "String"
-- !private "NSString"
-- !private "WBNavigationController"
-- "UIButton"
-- !private "UIFont"
-- !private "UIViewController"
-- !private "AnyObject"
-- !private "-"
-- !private "BooleanLiteralType"
-- !private "NSClassFromString"
 - !private "NSJSONSerialization"
 - !private "NSFontAttributeName"
-- "WBMainViewController"
-- !private "UnicodeScalarType"
-- !private "Array"
-- "UIInterfaceOrientationMask"
-- !private "NSBundle"
-- !private "CGFloat"
-- !private "UINavigationController"
-- !private "UIImage"
-- !private "=="
-- "UITabBarController"
 - !private "NSData"
-- !private "StringLiteralType"
-- !private "*"
-- !private "print"
-- !private "+"
+- !private "AnyObject"
+- !private "BooleanLiteralType"
+- !private "String"
+- !private "UIColor"
+- !private "Dictionary"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "Array"
+- "UITabBarController"
 - !private "NSForegroundColorAttributeName"
+- !private "WBNavigationController"
+- !private "UIViewController"
+- !private "/"
+- !private "NSBundle"
 - !private "WBBaseViewController"
+- !private "UIFont"
+- !private "NSClassFromString"
+- "WBMainViewController"
+- "UIButton"
+- "UIInterfaceOrientationMask"
+- !private "*"
+- !private "+"
+- !private "-"
+- !private "UnicodeScalarType"
+- !private "StringLiteralType"
+- !private "UIImage"
+- !private "NSString"
+- !private "=="
+- !private "WBNetworkManager"
+- !private "CGFloat"
+- !private "print"
+- !private "UINavigationController"
 depends-member:
+- !private ["CSo20AFHTTPSessionManager", "shared"]
+- !private ["CSo20AFHTTPSessionManager", "unreadCount"]
+- !private ["CSo19AFURLSessionManager", "shared"]
+- !private ["CSo19AFURLSessionManager", "unreadCount"]
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "JSONObjectWithData"]
@@ -61,6 +66,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UINavigationController"]
 - !private ["Ps9AnyObject", "UIViewController"]
 - !private ["Ps9AnyObject", "WBNavigationController"]
+- !private ["Ps9AnyObject", "WBNetworkManager"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -86,12 +92,14 @@ depends-member:
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
 - ["Ps9AnyObject", "setupChildControllers"]
 - ["Ps9AnyObject", "setupComposeButton"]
+- !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "stringByAppendingPathComponent"]
 - ["Ps9AnyObject", "supportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "systemFontOfSize"]
 - !private ["Ps9AnyObject", "tabBar"]
 - !private ["Ps9AnyObject", "tabBarItem"]
 - !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "unreadCount"]
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "viewControllers"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -152,6 +160,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UINavigationController"]
 - !private ["Ps11CVarArgType", "UIViewController"]
 - !private ["Ps11CVarArgType", "WBNavigationController"]
+- !private ["Ps11CVarArgType", "WBNetworkManager"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
@@ -177,12 +186,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "setTitleTextAttributes"]
 - ["Ps11CVarArgType", "setupChildControllers"]
 - ["Ps11CVarArgType", "setupComposeButton"]
+- !private ["Ps11CVarArgType", "shared"]
 - !private ["Ps11CVarArgType", "stringByAppendingPathComponent"]
 - ["Ps11CVarArgType", "supportedInterfaceOrientations"]
 - !private ["Ps11CVarArgType", "systemFontOfSize"]
 - !private ["Ps11CVarArgType", "tabBar"]
 - !private ["Ps11CVarArgType", "tabBarItem"]
 - !private ["Ps11CVarArgType", "title"]
+- !private ["Ps11CVarArgType", "unreadCount"]
 - !private ["Ps11CVarArgType", "view"]
 - !private ["Ps11CVarArgType", "viewControllers"]
 - ["Ps11CVarArgType", "viewDidLoad"]
@@ -224,6 +235,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNavigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
@@ -252,6 +264,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
 - ["Ps28CustomDebugStringConvertible", "setupChildControllers"]
 - ["Ps28CustomDebugStringConvertible", "setupComposeButton"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "supportedInterfaceOrientations"]
@@ -259,6 +272,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "tabBar"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBarItem"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "unreadCount"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewControllers"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -287,6 +301,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIViewController"]
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "WBNavigationController"]
+- !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
@@ -316,6 +331,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
 - ["Ps23CustomStringConvertible", "setupChildControllers"]
 - ["Ps23CustomStringConvertible", "setupComposeButton"]
+- !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "stringByAppendingPathComponent"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "supportedInterfaceOrientations"]
@@ -323,6 +339,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "tabBar"]
 - !private ["Ps23CustomStringConvertible", "tabBarItem"]
 - !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "unreadCount"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewControllers"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -364,6 +381,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIViewController"]
 - !private ["Ps9Equatable", "UserDomainMask"]
 - !private ["Ps9Equatable", "WBNavigationController"]
+- !private ["Ps9Equatable", "WBNetworkManager"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
@@ -391,12 +409,14 @@ depends-member:
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
 - ["Ps9Equatable", "setupChildControllers"]
 - ["Ps9Equatable", "setupComposeButton"]
+- !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "stringByAppendingPathComponent"]
 - ["Ps9Equatable", "supportedInterfaceOrientations"]
 - !private ["Ps9Equatable", "systemFontOfSize"]
 - !private ["Ps9Equatable", "tabBar"]
 - !private ["Ps9Equatable", "tabBarItem"]
 - !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "unreadCount"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewControllers"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -431,6 +451,7 @@ depends-member:
 - !private ["Ps8Hashable", "UINavigationController"]
 - !private ["Ps8Hashable", "UIViewController"]
 - !private ["Ps8Hashable", "WBNavigationController"]
+- !private ["Ps8Hashable", "WBNetworkManager"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
@@ -457,12 +478,14 @@ depends-member:
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
 - ["Ps8Hashable", "setupChildControllers"]
 - ["Ps8Hashable", "setupComposeButton"]
+- !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "stringByAppendingPathComponent"]
 - ["Ps8Hashable", "supportedInterfaceOrientations"]
 - !private ["Ps8Hashable", "systemFontOfSize"]
 - !private ["Ps8Hashable", "tabBar"]
 - !private ["Ps8Hashable", "tabBarItem"]
 - !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "unreadCount"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewControllers"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -539,6 +562,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UINavigationController"]
 - !private ["PSo8NSCoding", "UIViewController"]
 - !private ["PSo8NSCoding", "WBNavigationController"]
+- !private ["PSo8NSCoding", "WBNetworkManager"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -561,11 +585,13 @@ depends-member:
 - !private ["PSo8NSCoding", "setTitleTextAttributes"]
 - ["PSo8NSCoding", "setupChildControllers"]
 - ["PSo8NSCoding", "setupComposeButton"]
+- !private ["PSo8NSCoding", "shared"]
 - !private ["PSo8NSCoding", "stringByAppendingPathComponent"]
 - ["PSo8NSCoding", "supportedInterfaceOrientations"]
 - !private ["PSo8NSCoding", "tabBar"]
 - !private ["PSo8NSCoding", "tabBarItem"]
 - !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "unreadCount"]
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewControllers"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -574,8 +600,10 @@ depends-member:
 - !private ["PSo9NSCopying", "cz_randomColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "orangeColor"]
+- !private ["PSo9NSCopying", "shared"]
 - !private ["PSo9NSCopying", "stringByAppendingPathComponent"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
+- !private ["PSo9NSCopying", "unreadCount"]
 - !private ["CSo6NSData", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "NSBundle"]
@@ -592,6 +620,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UINavigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "WBNavigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
 - !private ["PSo26NSExtensionRequestHandling", "childViewControllers"]
 - ["PSo26NSExtensionRequestHandling", "composeButton"]
 - ["PSo26NSExtensionRequestHandling", "composeButton.storage"]
@@ -636,6 +665,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIViewController"]
 - !private ["CSo8NSObject", "WBBaseViewController"]
 - !private ["CSo8NSObject", "WBNavigationController"]
+- !private ["CSo8NSObject", "WBNetworkManager"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "backgroundColor"]
@@ -661,12 +691,14 @@ depends-member:
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
 - ["CSo8NSObject", "setupChildControllers"]
 - ["CSo8NSObject", "setupComposeButton"]
+- !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "stringByAppendingPathComponent"]
 - ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "systemFontOfSize"]
 - !private ["CSo8NSObject", "tabBar"]
 - !private ["CSo8NSObject", "tabBarItem"]
 - !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "unreadCount"]
 - !private ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "viewControllers"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -687,6 +719,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UINavigationController"]
 - !private ["PSo16NSObjectProtocol", "UIViewController"]
 - !private ["PSo16NSObjectProtocol", "WBNavigationController"]
+- !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -712,12 +745,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
 - ["PSo16NSObjectProtocol", "setupChildControllers"]
 - ["PSo16NSObjectProtocol", "setupComposeButton"]
+- !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "stringByAppendingPathComponent"]
 - ["PSo16NSObjectProtocol", "supportedInterfaceOrientations"]
 - !private ["PSo16NSObjectProtocol", "systemFontOfSize"]
 - !private ["PSo16NSObjectProtocol", "tabBar"]
 - !private ["PSo16NSObjectProtocol", "tabBarItem"]
 - !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "unreadCount"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewControllers"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -729,10 +764,20 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "imageWithRenderingMode"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "orangeColor"]
+- !private ["PSo14NSSecureCoding", "shared"]
 - !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "unreadCount"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "stringByAppendingPathComponent"]
+- !private ["PSo24NSURLSessionDataDelegate", "shared"]
+- !private ["PSo24NSURLSessionDataDelegate", "unreadCount"]
+- !private ["PSo20NSURLSessionDelegate", "shared"]
+- !private ["PSo20NSURLSessionDelegate", "unreadCount"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "shared"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "unreadCount"]
+- !private ["PSo24NSURLSessionTaskDelegate", "shared"]
+- !private ["PSo24NSURLSessionTaskDelegate", "unreadCount"]
 - !private ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "Element"]
 - !private ["Ps13OptionSetType", "Highlighted"]
@@ -831,6 +876,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UINavigationController"]
 - !private ["PSo21UIAppearanceContainer", "UIViewController"]
 - !private ["PSo21UIAppearanceContainer", "WBNavigationController"]
+- !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -880,6 +926,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UINavigationController"]
 - !private ["PSo18UIContentContainer", "UIViewController"]
 - !private ["PSo18UIContentContainer", "WBNavigationController"]
+- !private ["PSo18UIContentContainer", "WBNetworkManager"]
 - !private ["PSo18UIContentContainer", "childViewControllers"]
 - ["PSo18UIContentContainer", "composeButton"]
 - ["PSo18UIContentContainer", "composeButton.storage"]
@@ -933,6 +980,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UINavigationController"]
 - !private ["PSo18UIFocusEnvironment", "UIViewController"]
 - !private ["PSo18UIFocusEnvironment", "WBNavigationController"]
+- !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -984,6 +1032,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIViewController"]
 - !private ["CSo11UIResponder", "WBBaseViewController"]
 - !private ["CSo11UIResponder", "WBNavigationController"]
+- !private ["CSo11UIResponder", "WBNetworkManager"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "backgroundColor"]
@@ -1027,6 +1076,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UINavigationController"]
 - !private ["PSo16UIStateRestoring", "UIViewController"]
 - !private ["PSo16UIStateRestoring", "WBNavigationController"]
+- !private ["PSo16UIStateRestoring", "WBNetworkManager"]
 - !private ["PSo16UIStateRestoring", "childViewControllers"]
 - ["PSo16UIStateRestoring", "composeButton"]
 - ["PSo16UIStateRestoring", "composeButton.storage"]
@@ -1068,6 +1118,7 @@ depends-member:
 - !private ["CSo18UITabBarController", "UIViewController"]
 - !private ["CSo18UITabBarController", "WBBaseViewController"]
 - !private ["CSo18UITabBarController", "WBNavigationController"]
+- !private ["CSo18UITabBarController", "WBNetworkManager"]
 - !private ["CSo18UITabBarController", "childViewControllers"]
 - ["CSo18UITabBarController", "composeButton"]
 - ["CSo18UITabBarController", "composeButton.storage"]
@@ -1098,6 +1149,7 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "UINavigationController"]
 - !private ["PSo16UITabBarDelegate", "UIViewController"]
 - !private ["PSo16UITabBarDelegate", "WBNavigationController"]
+- !private ["PSo16UITabBarDelegate", "WBNetworkManager"]
 - !private ["PSo16UITabBarDelegate", "childViewControllers"]
 - ["PSo16UITabBarDelegate", "composeButton"]
 - ["PSo16UITabBarDelegate", "composeButton.storage"]
@@ -1139,6 +1191,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UINavigationController"]
 - !private ["PSo18UITraitEnvironment", "UIViewController"]
 - !private ["PSo18UITraitEnvironment", "WBNavigationController"]
+- !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -1190,6 +1243,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIViewController"]
 - !private ["CSo16UIViewController", "WBBaseViewController"]
 - !private ["CSo16UIViewController", "WBNavigationController"]
+- !private ["CSo16UIViewController", "WBNetworkManager"]
 - !private ["CSo16UIViewController", "childViewControllers"]
 - ["CSo16UIViewController", "composeButton"]
 - ["CSo16UIViewController", "composeButton.storage"]
@@ -1240,6 +1294,7 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "UIViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBBaseViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBNavigationController"]
+- !private ["C8STTWeiBo20WBMainViewController", "WBNetworkManager"]
 - !private ["C8STTWeiBo20WBMainViewController", "childViewControllers"]
 - !private ["C8STTWeiBo20WBMainViewController", "composeButton"]
 - !private ["C8STTWeiBo20WBMainViewController", "composeButton.storage"]
@@ -1256,6 +1311,8 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "viewControllers"]
 - ["C8STTWeiBo20WBMainViewController", "viewDidLoad"]
 - !private ["C8STTWeiBo22WBNavigationController", "init"]
+- !private ["C8STTWeiBo16WBNetworkManager", "shared"]
+- !private ["C8STTWeiBo16WBNetworkManager", "unreadCount"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -1333,6 +1390,8 @@ depends-member:
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
+- !private "CSo20AFHTTPSessionManager"
+- !private "CSo19AFURLSessionManager"
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "Sa"
@@ -1391,6 +1450,10 @@ depends-nominal:
 - !private "VSC22NSSearchPathDomainMask"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "PSo24NSURLSessionDataDelegate"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
 - !private "Ps21NilLiteralConvertible"
 - !private "Ps13OptionSetType"
 - !private "Sq"
@@ -1448,6 +1511,7 @@ depends-nominal:
 - !private "C8STTWeiBo20WBBaseViewController"
 - "C8STTWeiBo20WBMainViewController"
 - !private "C8STTWeiBo22WBNavigationController"
+- !private "C8STTWeiBo16WBNetworkManager"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"

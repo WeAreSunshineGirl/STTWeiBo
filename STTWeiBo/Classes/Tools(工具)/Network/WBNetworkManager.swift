@@ -30,7 +30,8 @@ class WBNetworkManager: AFHTTPSessionManager {
     /// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
     /// 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
     var accessToken:String? = "2.00mqiHMEXmKOnDdeff3a547e9YmKFD"
-    
+    /// 用户微博id
+    var uid:String? = "5365823342"
     
     /**
      专门负责拼接 token 的网络请求方法

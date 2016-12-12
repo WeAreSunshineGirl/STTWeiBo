@@ -312,6 +312,9 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 /// 访问令牌 所有的网络请求 都基于此令牌（登录除外） 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
 @property (nonatomic, copy) NSString * _Nullable accessToken;
+
+/// 用户微博id
+@property (nonatomic, copy) NSString * _Nullable uid;
 - (nonnull instancetype)initWithBaseURL:(NSURL * _Nullable)url sessionConfiguration:(NSURLSessionConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -327,6 +330,9 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 ///
 /// \param completion 完成回调[list:微博字典数组，是否成功]
 - (void)statusList:(int64_t)since_id max_id:(int64_t)max_id completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable list, BOOL isSuccess))completion;
+
+/// 返回微博的未读数量
+- (void)unreadCount:(void (^ _Nonnull)(NSInteger count))completion;
 @end
 
 
