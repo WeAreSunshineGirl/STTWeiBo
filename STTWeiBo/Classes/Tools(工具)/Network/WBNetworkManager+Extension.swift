@@ -24,7 +24,7 @@ extension WBNetworkManager{
         
         //Swift 中 Int 可以转换成 AnyObject/但是 Int64不行
         let params = ["since_id":"\(since_id)",
-                      "max_id":"\(max_id > 0 ?max_id - 1 : 0)"]
+                      "max_id":"\(max_id > 0 ? max_id - 1 : 0)"]
         
         tokenRequest(URLString: urlString, parameters: params) { (json, isSuccess) in
             

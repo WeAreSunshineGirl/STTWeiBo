@@ -40,7 +40,7 @@ class WBHomeViewController: WBBaseViewController {
         }
         */
         print("准备刷新，最后一条\(self.listViewModel.statusList.last?.text)")
-        listViewModel.loadStatus(self.isPullup) { (isSuccess) in
+        listViewModel.loadStatus(self.isPullup) { (isSuccess,shouldRefresh) in
             
             print("数据加载结束")
             //结束刷新控件
@@ -48,8 +48,13 @@ class WBHomeViewController: WBBaseViewController {
             
             //恢复上拉刷新标记
             self.isPullup = false
+            
             //刷新表格
-            self.tableView?.reloadData()
+            if shouldRefresh{
+                
+                self.tableView?.reloadData()
+            }
+            
 
         }
         
