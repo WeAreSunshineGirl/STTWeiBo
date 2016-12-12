@@ -39,10 +39,10 @@ class WBHomeViewController: WBBaseViewController {
             print(json)
         }
         */
-        
-        listViewModel.loadStatus { (isSuccess) in
+        print("准备刷新，最后一条\(self.listViewModel.statusList.last?.text)")
+        listViewModel.loadStatus(self.isPullup) { (isSuccess) in
             
-            print("数据加载完成")
+            print("数据加载结束")
             //结束刷新控件
             self.refreshControl?.endRefreshing()
             
