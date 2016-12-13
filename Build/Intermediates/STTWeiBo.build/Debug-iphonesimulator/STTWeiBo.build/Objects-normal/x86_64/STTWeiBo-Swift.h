@@ -151,9 +151,6 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 SWIFT_CLASS("_TtC8STTWeiBo20WBBaseViewController")
 @interface WBBaseViewController : UIViewController
 
-/// 用户登录标记  为 true 时 显示数据 否则是访问视图页面
-@property (nonatomic) BOOL userLogin;
-
 /// 访客视图字典信息
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable visitorInfoDictionary;
 
@@ -332,6 +329,9 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 /// 用户微博id
 @property (nonatomic, copy) NSString * _Nullable uid;
+
+/// 用户登录标记(计算型属性)
+@property (nonatomic, readonly) BOOL userLogon;
 - (nonnull instancetype)initWithBaseURL:(NSURL * _Nullable)url sessionConfiguration:(NSURLSessionConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

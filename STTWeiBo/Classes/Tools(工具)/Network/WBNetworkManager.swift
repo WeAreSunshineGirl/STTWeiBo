@@ -29,9 +29,15 @@ class WBNetworkManager: AFHTTPSessionManager {
     
     /// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
     /// 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
-    var accessToken:String? = "2.00mqiHMEXmKOnDdeff3a547e9YmKFD"
+    var accessToken:String? //= "2.00mqiHMEXmKOnDdeff3a547e9YmKFD"
     /// 用户微博id
     var uid:String? = "5365823342"
+    /// 用户登录标记(计算型属性)
+    var userLogon:Bool{
+        
+        return accessToken != nil
+    }
+    
     
     /**
      专门负责拼接 token 的网络请求方法
@@ -39,7 +45,7 @@ class WBNetworkManager: AFHTTPSessionManager {
     func tokenRequest(method:WBHTTPMethod = .GET,URLString: String,parameters:[String:AnyObject]?,completion:(json:AnyObject?,isSuccess:Bool)->()) {
         
         //处理Token字典
-        // 0判断 token 是否 为nil 为 nil 直接返回
+        // 0判断 token 是否 为nil  为 nil时 直接返回
         guard let token = accessToken else{
             print("没有 toekn！ 需要登录")
             //FIXME: 发送通知，提示用户登录（本方法不知道被谁调用 谁接收到通知 谁处理）

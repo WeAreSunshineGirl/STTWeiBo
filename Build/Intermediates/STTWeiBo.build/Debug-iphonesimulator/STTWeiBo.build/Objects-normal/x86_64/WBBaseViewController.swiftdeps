@@ -7,55 +7,59 @@ provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
 - ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 provides-dynamic-lookup:
-- "visitorInfoDictionary"
-- "userLogin"
-- "navItem"
-- "loadData"
-- "refreshControl"
-- "navigationBar"
-- "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "register"
-- "login"
-- "title"
 - "isPullup"
 - "setupTableView"
+- "navigationBar"
+- "register"
+- "visitorInfoDictionary"
+- "navItem"
+- "title"
+- "login"
+- "viewDidLoad"
+- "refreshControl"
+- "loadData"
 depends-top-level:
-- !private "&&"
-- "Int"
+- !private "UIColor"
+- "BooleanLiteralType"
+- "UITableViewCell"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- !private "NSForegroundColorAttributeName"
 - "UIViewController"
-- !private "!"
-- !private "-"
+- !private "??"
+- !private "UIBarButtonItem"
+- "NSIndexPath"
+- "Int"
+- !private "print"
+- "UIRefreshControl"
 - "String"
 - "UINavigationItem"
-- "UINavigationBar"
 - "CGRect"
-- !private "||"
+- !private "WBNetworkManager"
+- "UINavigationBar"
 - "UITableView"
 - "WBBaseViewController"
-- "BooleanLiteralType"
-- !private "UIColor"
-- !private "<"
-- "UITableViewDelegate"
-- "UIScreen"
-- !private "NSForegroundColorAttributeName"
-- "UITableViewDataSource"
-- !private "??"
-- !private "print"
 - !private "WBVisitorView"
-- !private "Array"
-- "NSIndexPath"
-- !private "=="
-- !private "StringLiteralType"
-- "UIRefreshControl"
-- "UITableViewCell"
-- !private "Dictionary"
 - !private "UIEdgeInsets"
-- !private "UIBarButtonItem"
+- !private "Array"
+- !private "||"
+- !private "<"
+- "UIScreen"
+- !private "Dictionary"
+- !private "StringLiteralType"
+- !private "!"
+- !private "-"
+- !private "=="
+- !private "&&"
 depends-member:
+- !private ["CSo20AFHTTPSessionManager", "shared"]
+- !private ["CSo20AFHTTPSessionManager", "userLogon"]
+- !private ["CSo19AFURLSessionManager", "shared"]
+- !private ["CSo19AFURLSessionManager", "userLogon"]
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
@@ -67,6 +71,7 @@ depends-member:
 - ["Ps9AnyObject", "UIScreen"]
 - !private ["Ps9AnyObject", "UITableView"]
 - !private ["Ps9AnyObject", "UITableViewCell"]
+- !private ["Ps9AnyObject", "WBNetworkManager"]
 - !private ["Ps9AnyObject", "WBVisitorView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
@@ -121,13 +126,14 @@ depends-member:
 - ["Ps9AnyObject", "setupTableView"]
 - ["Ps9AnyObject", "setupUI"]
 - ["Ps9AnyObject", "setupVisitorView"]
+- !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "tabBar"]
 - !private ["Ps9AnyObject", "tabBarController"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "tintColor"]
 - ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "titleTextAttributes"]
-- ["Ps9AnyObject", "userLogin"]
+- !private ["Ps9AnyObject", "userLogon"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
@@ -140,7 +146,6 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["Ps23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -157,6 +162,7 @@ depends-member:
 - ["Ps11CVarArgType", "UIScreen"]
 - !private ["Ps11CVarArgType", "UITableView"]
 - !private ["Ps11CVarArgType", "UITableViewCell"]
+- !private ["Ps11CVarArgType", "WBNetworkManager"]
 - !private ["Ps11CVarArgType", "WBVisitorView"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
@@ -211,13 +217,14 @@ depends-member:
 - ["Ps11CVarArgType", "setupTableView"]
 - ["Ps11CVarArgType", "setupUI"]
 - ["Ps11CVarArgType", "setupVisitorView"]
+- !private ["Ps11CVarArgType", "shared"]
 - !private ["Ps11CVarArgType", "tabBar"]
 - !private ["Ps11CVarArgType", "tabBarController"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "tintColor"]
 - ["Ps11CVarArgType", "title"]
 - !private ["Ps11CVarArgType", "titleTextAttributes"]
-- ["Ps11CVarArgType", "userLogin"]
+- !private ["Ps11CVarArgType", "userLogon"]
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
@@ -225,11 +232,9 @@ depends-member:
 - ["Ps11CVarArgType", "visitorInfoDictionary"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "Value"]
-- !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
@@ -244,6 +249,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UITableView"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
 - !private ["Ps28CustomDebugStringConvertible", "WBVisitorView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
@@ -298,13 +304,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setupTableView"]
 - ["Ps28CustomDebugStringConvertible", "setupUI"]
 - ["Ps28CustomDebugStringConvertible", "setupVisitorView"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBar"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBarController"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
-- ["Ps28CustomDebugStringConvertible", "userLogin"]
+- !private ["Ps28CustomDebugStringConvertible", "userLogon"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
@@ -326,6 +333,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UITableView"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
 - !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
 - !private ["Ps23CustomStringConvertible", "WBVisitorView"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
@@ -381,13 +389,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setupTableView"]
 - ["Ps23CustomStringConvertible", "setupUI"]
 - ["Ps23CustomStringConvertible", "setupVisitorView"]
+- !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "tabBar"]
 - !private ["Ps23CustomStringConvertible", "tabBarController"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
-- ["Ps23CustomStringConvertible", "userLogin"]
+- !private ["Ps23CustomStringConvertible", "userLogon"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -399,7 +408,6 @@ depends-member:
 - !private ["Vs10Dictionary", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
-- !private ["Sd", "deinit"]
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "Plain"]
@@ -414,6 +422,7 @@ depends-member:
 - !private ["Ps9Equatable", "UITableView"]
 - !private ["Ps9Equatable", "UITableViewCell"]
 - !private ["Ps9Equatable", "ValueChanged"]
+- !private ["Ps9Equatable", "WBNetworkManager"]
 - !private ["Ps9Equatable", "WBVisitorView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -470,13 +479,14 @@ depends-member:
 - ["Ps9Equatable", "setupTableView"]
 - ["Ps9Equatable", "setupUI"]
 - ["Ps9Equatable", "setupVisitorView"]
+- !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "tabBar"]
 - !private ["Ps9Equatable", "tabBarController"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "tintColor"]
 - ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "titleTextAttributes"]
-- ["Ps9Equatable", "userLogin"]
+- !private ["Ps9Equatable", "userLogon"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -484,8 +494,6 @@ depends-member:
 - ["Ps9Equatable", "visitorInfoDictionary"]
 - !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", ""]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Sf", "deinit"]
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "Plain"]
@@ -498,6 +506,7 @@ depends-member:
 - ["Ps8Hashable", "UIScreen"]
 - !private ["Ps8Hashable", "UITableView"]
 - !private ["Ps8Hashable", "UITableViewCell"]
+- !private ["Ps8Hashable", "WBNetworkManager"]
 - !private ["Ps8Hashable", "WBVisitorView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -553,13 +562,14 @@ depends-member:
 - ["Ps8Hashable", "setupTableView"]
 - ["Ps8Hashable", "setupUI"]
 - ["Ps8Hashable", "setupVisitorView"]
+- !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "tabBar"]
 - !private ["Ps8Hashable", "tabBarController"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "tintColor"]
 - ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "titleTextAttributes"]
-- ["Ps8Hashable", "userLogin"]
+- !private ["Ps8Hashable", "userLogon"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
@@ -570,12 +580,6 @@ depends-member:
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableSliceable", "Element"]
@@ -590,6 +594,7 @@ depends-member:
 - ["PSo8NSCoding", "UIScreen"]
 - !private ["PSo8NSCoding", "UITableView"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
+- !private ["PSo8NSCoding", "WBNetworkManager"]
 - !private ["PSo8NSCoding", "WBVisitorView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
@@ -643,13 +648,14 @@ depends-member:
 - ["PSo8NSCoding", "setupTableView"]
 - ["PSo8NSCoding", "setupUI"]
 - ["PSo8NSCoding", "setupVisitorView"]
+- !private ["PSo8NSCoding", "shared"]
 - !private ["PSo8NSCoding", "tabBar"]
 - !private ["PSo8NSCoding", "tabBarController"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "tintColor"]
 - ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
-- ["PSo8NSCoding", "userLogin"]
+- !private ["PSo8NSCoding", "userLogon"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -659,9 +665,10 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "cz_colorWithHex"]
 - !private ["PSo9NSCopying", "darkGrayColor"]
-- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "orangeColor"]
 - !private ["PSo9NSCopying", "row"]
+- !private ["PSo9NSCopying", "shared"]
+- !private ["PSo9NSCopying", "userLogon"]
 - !private ["PSo9NSCopying", "whiteColor"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
@@ -674,6 +681,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
+- !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
 - !private ["PSo26NSExtensionRequestHandling", "WBVisitorView"]
 - !private ["PSo26NSExtensionRequestHandling", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
@@ -710,14 +718,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "tabBarController"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "title"]
-- ["PSo26NSExtensionRequestHandling", "userLogin"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "visitorInfoDictionary"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
-- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
@@ -732,6 +738,7 @@ depends-member:
 - ["CSo8NSObject", "UIScreen"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "WBNetworkManager"]
 - !private ["CSo8NSObject", "WBVisitorView"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
@@ -786,13 +793,14 @@ depends-member:
 - ["CSo8NSObject", "setupTableView"]
 - ["CSo8NSObject", "setupUI"]
 - ["CSo8NSObject", "setupVisitorView"]
+- !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "tabBar"]
 - !private ["CSo8NSObject", "tabBarController"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "tintColor"]
 - ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
-- ["CSo8NSObject", "userLogin"]
+- !private ["CSo8NSObject", "userLogon"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -810,6 +818,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "UIScreen"]
 - !private ["PSo16NSObjectProtocol", "UITableView"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
+- !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
 - !private ["PSo16NSObjectProtocol", "WBVisitorView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
@@ -864,13 +873,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setupTableView"]
 - ["PSo16NSObjectProtocol", "setupUI"]
 - ["PSo16NSObjectProtocol", "setupVisitorView"]
+- !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "tabBar"]
 - !private ["PSo16NSObjectProtocol", "tabBarController"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
-- ["PSo16NSObjectProtocol", "userLogin"]
+- !private ["PSo16NSObjectProtocol", "userLogon"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -880,16 +890,22 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "cz_colorWithHex"]
 - !private ["PSo14NSSecureCoding", "darkGrayColor"]
-- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "orangeColor"]
 - !private ["PSo14NSSecureCoding", "row"]
+- !private ["PSo14NSSecureCoding", "shared"]
+- !private ["PSo14NSSecureCoding", "userLogon"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
-- !private ["CSo8NSString", "deinit"]
-- !private ["CSo8NSString", "init"]
+- !private ["PSo24NSURLSessionDataDelegate", "shared"]
+- !private ["PSo24NSURLSessionDataDelegate", "userLogon"]
+- !private ["PSo20NSURLSessionDelegate", "shared"]
+- !private ["PSo20NSURLSessionDelegate", "userLogon"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "shared"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "userLogon"]
+- !private ["PSo24NSURLSessionTaskDelegate", "shared"]
+- !private ["PSo24NSURLSessionTaskDelegate", "userLogon"]
 - !private ["Ps13OptionSetType", "TouchUpInside"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
-- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps16RawRepresentable", "Plain"]
 - !private ["Ps16RawRepresentable", "TouchUpInside"]
@@ -899,10 +915,6 @@ depends-member:
 - !private ["Ps12SequenceType", "Value"]
 - !private ["Ps14SetAlgebraType", "TouchUpInside"]
 - !private ["Ps14SetAlgebraType", "ValueChanged"]
-- !private ["Ps10Streamable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -952,6 +964,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "UIScreen"]
 - !private ["PSo21UIAppearanceContainer", "UITableView"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
+- !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
 - !private ["PSo21UIAppearanceContainer", "WBVisitorView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
@@ -1005,7 +1018,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
 - ["PSo21UIAppearanceContainer", "title"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
-- ["PSo21UIAppearanceContainer", "userLogin"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -1037,6 +1049,7 @@ depends-member:
 - ["PSo18UIContentContainer", "UIScreen"]
 - !private ["PSo18UIContentContainer", "UITableView"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
+- !private ["PSo18UIContentContainer", "WBNetworkManager"]
 - !private ["PSo18UIContentContainer", "WBVisitorView"]
 - !private ["PSo18UIContentContainer", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1073,7 +1086,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "tabBarController"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "title"]
-- ["PSo18UIContentContainer", "userLogin"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -1134,6 +1146,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "UIScreen"]
 - !private ["PSo18UIFocusEnvironment", "UITableView"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
+- !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
 - !private ["PSo18UIFocusEnvironment", "WBVisitorView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
@@ -1187,7 +1200,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
 - ["PSo18UIFocusEnvironment", "title"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
-- ["PSo18UIFocusEnvironment", "userLogin"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -1222,6 +1234,7 @@ depends-member:
 - ["CSo11UIResponder", "UIScreen"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "WBNetworkManager"]
 - !private ["CSo11UIResponder", "WBVisitorView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
@@ -1275,7 +1288,6 @@ depends-member:
 - !private ["CSo11UIResponder", "tintColor"]
 - ["CSo11UIResponder", "title"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
-- ["CSo11UIResponder", "userLogin"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -1300,6 +1312,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "UIScreen"]
 - !private ["PSo20UIScrollViewDelegate", "UITableView"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
+- !private ["PSo20UIScrollViewDelegate", "WBNetworkManager"]
 - !private ["PSo20UIScrollViewDelegate", "WBVisitorView"]
 - !private ["PSo20UIScrollViewDelegate", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1332,7 +1345,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "tabBarController"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "title"]
-- !private ["PSo20UIScrollViewDelegate", "userLogin"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "visitorInfoDictionary"]
@@ -1348,6 +1360,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "UIScreen"]
 - !private ["PSo16UIStateRestoring", "UITableView"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
+- !private ["PSo16UIStateRestoring", "WBNetworkManager"]
 - !private ["PSo16UIStateRestoring", "WBVisitorView"]
 - !private ["PSo16UIStateRestoring", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
@@ -1384,7 +1397,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "tabBarController"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "title"]
-- ["PSo16UIStateRestoring", "userLogin"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
@@ -1412,6 +1424,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "UIScreen"]
 - !private ["PSo21UITableViewDataSource", "UITableView"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
+- !private ["PSo21UITableViewDataSource", "WBNetworkManager"]
 - !private ["PSo21UITableViewDataSource", "WBVisitorView"]
 - !private ["PSo21UITableViewDataSource", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -1444,7 +1457,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "tabBarController"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "title"]
-- !private ["PSo21UITableViewDataSource", "userLogin"]
 - !private ["PSo21UITableViewDataSource", "view"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo21UITableViewDataSource", "visitorInfoDictionary"]
@@ -1460,6 +1472,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "UIScreen"]
 - !private ["PSo19UITableViewDelegate", "UITableView"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
+- !private ["PSo19UITableViewDelegate", "WBNetworkManager"]
 - !private ["PSo19UITableViewDelegate", "WBVisitorView"]
 - !private ["PSo19UITableViewDelegate", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1492,7 +1505,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "tabBarController"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "title"]
-- !private ["PSo19UITableViewDelegate", "userLogin"]
 - !private ["PSo19UITableViewDelegate", "view"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo19UITableViewDelegate", "visitorInfoDictionary"]
@@ -1509,6 +1521,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "UIScreen"]
 - !private ["PSo18UITraitEnvironment", "UITableView"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
+- !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
 - !private ["PSo18UITraitEnvironment", "WBVisitorView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
@@ -1563,7 +1576,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "tintColor"]
 - ["PSo18UITraitEnvironment", "title"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
-- ["PSo18UITraitEnvironment", "userLogin"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -1603,6 +1615,7 @@ depends-member:
 - ["CSo16UIViewController", "UIScreen"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- !private ["CSo16UIViewController", "WBNetworkManager"]
 - !private ["CSo16UIViewController", "WBVisitorView"]
 - !private ["CSo16UIViewController", "automaticallyAdjustsScrollViewInsets"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -1639,19 +1652,11 @@ depends-member:
 - !private ["CSo16UIViewController", "tabBarController"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "title"]
-- ["CSo16UIViewController", "userLogin"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "visitorInfoDictionary"]
 - ["CSo16UIViewController", ""]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - ["C8STTWeiBo20WBBaseViewController", "CGRect"]
 - ["C8STTWeiBo20WBBaseViewController", "Int"]
 - !private ["C8STTWeiBo20WBBaseViewController", "NSForegroundColorAttributeName"]
@@ -1666,6 +1671,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "UIScreen"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableView"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableViewCell"]
+- !private ["C8STTWeiBo20WBBaseViewController", "WBNetworkManager"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBVisitorView"]
 - !private ["C8STTWeiBo20WBBaseViewController", "automaticallyAdjustsScrollViewInsets"]
 - ["C8STTWeiBo20WBBaseViewController", "deinit"]
@@ -1702,21 +1708,18 @@ depends-member:
 - !private ["C8STTWeiBo20WBBaseViewController", "tabBarController"]
 - ["C8STTWeiBo20WBBaseViewController", "tableView"]
 - ["C8STTWeiBo20WBBaseViewController", "title"]
-- ["C8STTWeiBo20WBBaseViewController", "userLogin"]
 - !private ["C8STTWeiBo20WBBaseViewController", "view"]
 - ["C8STTWeiBo20WBBaseViewController", "viewDidLoad"]
 - ["C8STTWeiBo20WBBaseViewController", "viewForZoomingInScrollView"]
 - ["C8STTWeiBo20WBBaseViewController", "visitorInfoDictionary"]
+- !private ["C8STTWeiBo16WBNetworkManager", "shared"]
+- !private ["C8STTWeiBo16WBNetworkManager", "userLogon"]
 - !private ["C8STTWeiBo13WBVisitorView", "init"]
 - !private ["C8STTWeiBo13WBVisitorView", "loginButton"]
 - !private ["C8STTWeiBo13WBVisitorView", "registerButton"]
 - !private ["C8STTWeiBo13WBVisitorView", "visitorInfo"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "cz_colorWithHex"]
 - !private ["Ps24_ColorLiteralConvertible", "darkGrayColor"]
 - !private ["Ps24_ColorLiteralConvertible", "orangeColor"]
@@ -1726,7 +1729,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Key"]
 - !private ["Ps12_Reflectable", "Value"]
@@ -1752,6 +1754,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "titleTextAttributes"]
 - !private ["Ps12_Reflectable", "visitorInfo"]
 depends-nominal:
+- !private "CSo20AFHTTPSessionManager"
+- !private "CSo19AFURLSessionManager"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
@@ -1761,25 +1765,14 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps14CollectionType"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
-- !private "Sd"
 - "Ps9Equatable"
-- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
@@ -1787,22 +1780,19 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
-- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- !private "PSo24NSURLSessionDataDelegate"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
 - !private "Ps13OptionSetType"
 - !private "Sq"
-- !private "Ps16OutputStreamType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
-- !private "Ps10Streamable"
-- !private "SS"
-- !private "Ps30StringInterpolationConvertible"
-- !private "Ps24StringLiteralConvertible"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1839,21 +1829,11 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
-- !private "Ps31UnicodeScalarLiteralConvertible"
 - "C8STTWeiBo20WBBaseViewController"
+- !private "C8STTWeiBo16WBNetworkManager"
 - !private "C8STTWeiBo13WBVisitorView"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
-- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "Ps32_BuiltinStringLiteralConvertible"
-- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
-- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -1906,4 +1886,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
-interface-hash: "4f0c8b2488c1fb54c48be209d041f028"
+interface-hash: "331bf1001b974dbb9d8f5556c9103ef8"

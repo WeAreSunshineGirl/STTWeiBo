@@ -79,7 +79,7 @@ extension AppDelegate{
             
             //直接保存在沙盒 等待下一次程序启动使用
             data?.writeToFile(jsonPath, atomically: true)
-            print("应用程序加载完毕\(jsonPath)")
+//            print("应用程序加载完毕\(jsonPath)")
         }
     }
 }
@@ -97,12 +97,13 @@ extension AppDelegate{
 //https://rm.api.weibo.com/2/remind/unread_count.json
 
 
+//授权
+//https://api.weibo.com/oauth2/authorize
 
 
-
-
-
-
+//App Key   3475817001
+//App Secret：51d356a35b5365283ea462952c2ef600
+//redirect_uri http://baidu.com
 
 
 

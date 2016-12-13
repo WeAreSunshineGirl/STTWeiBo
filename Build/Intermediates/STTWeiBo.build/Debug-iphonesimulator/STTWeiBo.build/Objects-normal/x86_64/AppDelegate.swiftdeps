@@ -6,30 +6,29 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
 - "application"
+- "window"
 depends-top-level:
-- "UIApplicationDelegate"
-- !private "NSData"
-- !private "NSString"
-- !private "UIColor"
-- "NSObject"
-- "AppDelegate"
 - !private "NSSearchPathForDirectoriesInDomains"
-- "AnyObject"
 - !private "BooleanLiteralType"
-- "UIResponder"
-- !private "UIUserNotificationSettings"
-- "Bool"
-- "UIApplication"
-- !private "NSBundle"
-- !private "WBMainViewController"
-- !private "Array"
-- "StringLiteralType"
 - !private "dispatch_async"
-- "UIWindow"
+- !private "WBMainViewController"
+- "AppDelegate"
+- !private "NSData"
 - !private "dispatch_get_global_queue"
-- !private "print"
+- !private "NSBundle"
+- !private "Array"
+- !private "NSString"
+- "Bool"
+- "UIResponder"
+- "UIWindow"
+- "UIApplication"
+- "NSObject"
+- !private "UIColor"
+- !private "UIUserNotificationSettings"
+- "UIApplicationDelegate"
+- "StringLiteralType"
+- "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSData"]
@@ -59,7 +58,6 @@ depends-member:
 - ["Ps9AnyObject", "loadAppInfo"]
 - !private ["Ps9AnyObject", "mainBundle"]
 - !private ["Ps9AnyObject", "makeKeyAndVisible"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "registerUserNotificationSettings"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - ["Ps9AnyObject", "setupAdditions"]
@@ -98,7 +96,6 @@ depends-member:
 - !private ["C8STTWeiBo11AppDelegate", "dispatch_get_global_queue"]
 - ["C8STTWeiBo11AppDelegate", "init"]
 - !private ["C8STTWeiBo11AppDelegate", "loadAppInfo"]
-- !private ["C8STTWeiBo11AppDelegate", "print"]
 - !private ["C8STTWeiBo11AppDelegate", "setupAdditions"]
 - ["C8STTWeiBo11AppDelegate", "window"]
 - !private ["Sa", "Index"]
@@ -111,7 +108,6 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Sound"]
 - !private ["Ps23ArrayLiteralConvertible", "UserDomainMask"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
-- !private ["Sb", "deinit"]
 - !private ["Ps11CVarArgType", "NSBundle"]
 - !private ["Ps11CVarArgType", "NSData"]
 - !private ["Ps11CVarArgType", "NSSearchPathForDirectoriesInDomains"]
@@ -140,7 +136,6 @@ depends-member:
 - ["Ps11CVarArgType", "loadAppInfo"]
 - !private ["Ps11CVarArgType", "mainBundle"]
 - !private ["Ps11CVarArgType", "makeKeyAndVisible"]
-- !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
 - !private ["Ps11CVarArgType", "rootViewController"]
 - ["Ps11CVarArgType", "setupAdditions"]
@@ -150,13 +145,11 @@ depends-member:
 - ["Ps11CVarArgType", "window"]
 - !private ["Ps11CVarArgType", "writeToFile"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "subscript"]
-- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "NSData"]
@@ -186,7 +179,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "loadAppInfo"]
 - !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "makeKeyAndVisible"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - ["Ps28CustomDebugStringConvertible", "setupAdditions"]
@@ -226,7 +218,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "loadAppInfo"]
 - !private ["Ps23CustomStringConvertible", "mainBundle"]
 - !private ["Ps23CustomStringConvertible", "makeKeyAndVisible"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - ["Ps23CustomStringConvertible", "setupAdditions"]
@@ -237,7 +228,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "window"]
 - !private ["Ps23CustomStringConvertible", "writeToFile"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "Badge"]
 - !private ["Ps9Equatable", "DocumentDirectory"]
@@ -272,7 +262,6 @@ depends-member:
 - ["Ps9Equatable", "loadAppInfo"]
 - !private ["Ps9Equatable", "mainBundle"]
 - !private ["Ps9Equatable", "makeKeyAndVisible"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "registerUserNotificationSettings"]
 - !private ["Ps9Equatable", "rootViewController"]
 - ["Ps9Equatable", "setupAdditions"]
@@ -282,9 +271,7 @@ depends-member:
 - ["Ps9Equatable", "window"]
 - !private ["Ps9Equatable", "writeToFile"]
 - ["Ps9Equatable", ""]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByAppendingPathComponent"]
-- !private ["Sf", "deinit"]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "DocumentDirectory"]
 - !private ["Ps8Hashable", "NSBundle"]
@@ -315,7 +302,6 @@ depends-member:
 - ["Ps8Hashable", "loadAppInfo"]
 - !private ["Ps8Hashable", "mainBundle"]
 - !private ["Ps8Hashable", "makeKeyAndVisible"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "registerUserNotificationSettings"]
 - !private ["Ps8Hashable", "rootViewController"]
 - ["Ps8Hashable", "setupAdditions"]
@@ -332,12 +318,6 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "subscript"]
 - !private ["Ps16MutableIndexable", "Index"]
@@ -395,7 +375,6 @@ depends-member:
 - ["CSo8NSObject", "loadAppInfo"]
 - !private ["CSo8NSObject", "mainBundle"]
 - !private ["CSo8NSObject", "makeKeyAndVisible"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "registerUserNotificationSettings"]
 - !private ["CSo8NSObject", "rootViewController"]
 - ["CSo8NSObject", "setupAdditions"]
@@ -432,7 +411,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "loadAppInfo"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - !private ["PSo16NSObjectProtocol", "makeKeyAndVisible"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - ["PSo16NSObjectProtocol", "setupAdditions"]
@@ -448,8 +426,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["PSo14NSSecureCoding", "writeToFile"]
-- !private ["CSo8NSString", "deinit"]
-- !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "stringByAppendingPathComponent"]
 - !private ["Ps13OptionSetType", "Alert"]
 - !private ["Ps13OptionSetType", "Badge"]
@@ -457,7 +433,6 @@ depends-member:
 - !private ["Ps13OptionSetType", "Sound"]
 - !private ["Ps13OptionSetType", "UserDomainMask"]
 - !private ["Sq", "deinit"]
-- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "Alert"]
@@ -481,11 +456,7 @@ depends-member:
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
-- !private ["Ps10Streamable", "init"]
 - !private ["SS", "deinit"]
-- !private ["SS", "init"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "stringByAppendingPathComponent"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
@@ -524,7 +495,6 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "dispatch_async"]
 - !private ["PSo21UIApplicationDelegate", "dispatch_get_global_queue"]
 - !private ["PSo21UIApplicationDelegate", "loadAppInfo"]
-- !private ["PSo21UIApplicationDelegate", "print"]
 - !private ["PSo21UIApplicationDelegate", "setupAdditions"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
@@ -572,7 +542,6 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "loadAppInfo"]
 - !private ["CSo11UIResponder", "makeKeyAndVisible"]
-- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "registerUserNotificationSettings"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - ["CSo11UIResponder", "setupAdditions"]
@@ -601,26 +570,14 @@ depends-member:
 - !private ["CSo8UIWindow", "init"]
 - !private ["CSo8UIWindow", "makeKeyAndVisible"]
 - !private ["CSo8UIWindow", "rootViewController"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAppendingPathComponent"]
 - !private ["C8STTWeiBo20WBMainViewController", "init"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "subscript"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "backgroundColor"]
@@ -635,28 +592,17 @@ depends-nominal:
 - "C8STTWeiBo11AppDelegate"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
-- !private "Sb"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps14CollectionType"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
-- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
 - !private "SQ"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
@@ -674,15 +620,12 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "Ps13OptionSetType"
 - !private "Sq"
-- !private "Ps16OutputStreamType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
 - !private "Vs5Slice"
-- !private "Ps10Streamable"
 - !private "SS"
-- !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
@@ -705,19 +648,9 @@ depends-nominal:
 - !private "CSo6UIView"
 - !private "CSo16UIViewController"
 - !private "CSo8UIWindow"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "C8STTWeiBo20WBMainViewController"
 - !private "Ps10_ArrayType"
-- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "Ps32_BuiltinStringLiteralConvertible"
-- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
-- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps21_ObjectiveCBridgeable"

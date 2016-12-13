@@ -7,10 +7,10 @@ provides-member:
 provides-dynamic-lookup:
 - "namespace"
 depends-top-level:
-- !private "StringLiteralType"
 - "NSBundle"
-- "String"
 - !private "??"
+- !private "StringLiteralType"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "infoDictionary"]
 - ["Ps9AnyObject", "namespace"]

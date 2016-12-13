@@ -51,7 +51,7 @@ extension WBNetworkManager{
         let params = ["uid":uid]
         
         tokenRequest(URLString: URLString, parameters: params) { (json, isSuccess) in
-            print(json)
+//            print(json)
             let dict = json as? [String:AnyObject]
             let count = dict?["status"] as? Int
             completion(count: count ?? 0)

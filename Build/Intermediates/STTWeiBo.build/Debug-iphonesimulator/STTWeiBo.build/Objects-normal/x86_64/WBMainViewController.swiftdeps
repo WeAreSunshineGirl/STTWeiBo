@@ -6,66 +6,68 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo20WBMainViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "supportedInterfaceOrientations"
-- "tabBarController"
 - "updateTimer"
+- "viewDidLoad"
+- "tabBarController"
+- "supportedInterfaceOrientations"
 - "composeStatus"
 depends-top-level:
-- !private "NSData"
-- "UIViewController"
-- !private "AnyObject"
-- !private "+"
-- !private "NSString"
-- !private "NSFontAttributeName"
-- !private "CGFloat"
-- !private "BooleanLiteralType"
-- !private "UIColor"
-- !private "Dictionary"
 - !private "NSSearchPathForDirectoriesInDomains"
-- !private "Array"
-- !private "*"
-- !private "UIApplication"
-- !private "Int64"
-- !private "UnicodeScalarType"
-- !private "WBNetworkManager"
-- !private "=="
-- !private "NSEC_PER_SEC"
-- !private "NSForegroundColorAttributeName"
-- "Bool"
-- !private "dispatch_time"
-- "UITabBarController"
-- !private "NSClassFromString"
-- !private "NSBundle"
-- !private "DISPATCH_TIME_NOW"
-- "UIButton"
-- "UITabBarControllerDelegate"
-- !private "WBHomeViewController"
-- !private "dispatch_get_main_queue"
-- !private "UIImage"
 - !private "WBBaseViewController"
-- !private "dispatch_after"
-- !private "print"
-- "UIInterfaceOrientationMask"
+- !private "NSJSONSerialization"
+- !private "Dictionary"
 - !private "UINavigationController"
-- !private ">"
-- !private "WBNavigationController"
+- !private "*"
+- !private "NSData"
+- !private "DISPATCH_TIME_NOW"
+- !private "WBNetworkManager"
+- !private "NSBundle"
+- !private "StringLiteralType"
 - !private "&&"
+- !private "NSFontAttributeName"
+- !private ">"
+- !private "NSEC_PER_SEC"
 - !private "!"
-- !private "/"
+- !private "dispatch_after"
+- !private "NSString"
+- !private "UnicodeScalarType"
+- !private "UIImage"
+- !private "WBHomeViewController"
+- "UIViewController"
+- !private "CGFloat"
+- "UITabBarController"
+- "Bool"
+- !private "dispatch_get_main_queue"
+- !private "Array"
+- !private "BooleanLiteralType"
+- "WBMainViewController"
 - !private "CGPoint"
 - "NSTimer"
-- !private "StringLiteralType"
-- "WBMainViewController"
+- "UIButton"
+- !private "UIApplication"
 - !private "String"
+- !private "=="
+- !private "WBNavigationController"
+- !private "+"
+- !private "NSClassFromString"
 - !private "UIFont"
 - !private "NSArray"
-- !private "NSJSONSerialization"
+- "UITabBarControllerDelegate"
+- "UIInterfaceOrientationMask"
+- !private "AnyObject"
+- !private "NSForegroundColorAttributeName"
+- !private "print"
+- !private "Int64"
+- !private "UIColor"
+- !private "dispatch_time"
+- !private "/"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "unreadCount"]
+- !private ["CSo20AFHTTPSessionManager", "userLogon"]
 - !private ["CSo19AFURLSessionManager", "shared"]
 - !private ["CSo19AFURLSessionManager", "unreadCount"]
+- !private ["CSo19AFURLSessionManager", "userLogon"]
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -145,6 +147,7 @@ depends-member:
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "unreadCount"]
 - ["Ps9AnyObject", "updateTimer"]
+- !private ["Ps9AnyObject", "userLogon"]
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "viewControllers"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -273,6 +276,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "title"]
 - !private ["Ps11CVarArgType", "unreadCount"]
 - ["Ps11CVarArgType", "updateTimer"]
+- !private ["Ps11CVarArgType", "userLogon"]
 - !private ["Ps11CVarArgType", "view"]
 - !private ["Ps11CVarArgType", "viewControllers"]
 - ["Ps11CVarArgType", "viewDidLoad"]
@@ -381,6 +385,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "unreadCount"]
 - ["Ps28CustomDebugStringConvertible", "updateTimer"]
+- !private ["Ps28CustomDebugStringConvertible", "userLogon"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewControllers"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -476,6 +481,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "unreadCount"]
 - ["Ps23CustomStringConvertible", "updateTimer"]
+- !private ["Ps23CustomStringConvertible", "userLogon"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewControllers"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -581,6 +587,7 @@ depends-member:
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "unreadCount"]
 - ["Ps9Equatable", "updateTimer"]
+- !private ["Ps9Equatable", "userLogon"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewControllers"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -679,6 +686,7 @@ depends-member:
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "unreadCount"]
 - ["Ps8Hashable", "updateTimer"]
+- !private ["Ps8Hashable", "userLogon"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewControllers"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -818,6 +826,7 @@ depends-member:
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "unreadCount"]
 - ["PSo8NSCoding", "updateTimer"]
+- !private ["PSo8NSCoding", "userLogon"]
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewControllers"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -831,6 +840,7 @@ depends-member:
 - !private ["PSo9NSCopying", "stringByAppendingPathComponent"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["PSo9NSCopying", "unreadCount"]
+- !private ["PSo9NSCopying", "userLogon"]
 - !private ["CSo6NSData", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPoint"]
@@ -980,6 +990,7 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "unreadCount"]
 - ["CSo8NSObject", "updateTimer"]
+- !private ["CSo8NSObject", "userLogon"]
 - !private ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "viewControllers"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -1062,6 +1073,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "unreadCount"]
 - ["PSo16NSObjectProtocol", "updateTimer"]
+- !private ["PSo16NSObjectProtocol", "userLogon"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewControllers"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -1077,6 +1089,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "shared"]
 - !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
 - !private ["PSo14NSSecureCoding", "unreadCount"]
+- !private ["PSo14NSSecureCoding", "userLogon"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "stringByAppendingPathComponent"]
@@ -1084,12 +1097,16 @@ depends-member:
 - !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
 - !private ["PSo24NSURLSessionDataDelegate", "shared"]
 - !private ["PSo24NSURLSessionDataDelegate", "unreadCount"]
+- !private ["PSo24NSURLSessionDataDelegate", "userLogon"]
 - !private ["PSo20NSURLSessionDelegate", "shared"]
 - !private ["PSo20NSURLSessionDelegate", "unreadCount"]
+- !private ["PSo20NSURLSessionDelegate", "userLogon"]
 - !private ["PSo28NSURLSessionDownloadDelegate", "shared"]
 - !private ["PSo28NSURLSessionDownloadDelegate", "unreadCount"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "userLogon"]
 - !private ["PSo24NSURLSessionTaskDelegate", "shared"]
 - !private ["PSo24NSURLSessionTaskDelegate", "unreadCount"]
+- !private ["PSo24NSURLSessionTaskDelegate", "userLogon"]
 - !private ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "Element"]
 - !private ["Ps13OptionSetType", "Highlighted"]
@@ -1923,6 +1940,7 @@ depends-member:
 - !private ["C8STTWeiBo22WBNavigationController", "init"]
 - !private ["C8STTWeiBo16WBNetworkManager", "shared"]
 - !private ["C8STTWeiBo16WBNetworkManager", "unreadCount"]
+- !private ["C8STTWeiBo16WBNetworkManager", "userLogon"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]

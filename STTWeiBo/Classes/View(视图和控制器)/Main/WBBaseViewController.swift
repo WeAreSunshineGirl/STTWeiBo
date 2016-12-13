@@ -22,7 +22,7 @@ import UIKit
 class WBBaseViewController: UIViewController{
     
     /// 用户登录标记  为 true 时 显示数据 否则是访问视图页面 
-    var userLogin = true
+//    var userLogin = true //可以用accessToken有值没值来判断
     
     /// 访客视图字典信息
     var visitorInfoDictionary:[String:String]?
@@ -47,7 +47,8 @@ class WBBaseViewController: UIViewController{
         
         setupUI()
         
-        loadData()
+        
+        WBNetworkManager.shared.userLogon ? loadData() :()
         
         
     }
@@ -61,11 +62,10 @@ class WBBaseViewController: UIViewController{
      加载数据 具体的实现由子类负责
      */
     func loadData(){
+        
         //如果子类不实现任何方法 默认关闭刷新控件
         refreshControl?.endRefreshing()
     }
-    
-
 }
 
 //MARK: 访客视图监听方法
@@ -104,7 +104,7 @@ extension WBBaseViewController{
         
         setupNavigationBar()
         
-        userLogin ? setupTableView() : setupVisitorView()
+        WBNetworkManager.shared.userLogon ? setupTableView() : setupVisitorView()
     }
     
     /**
@@ -143,7 +143,7 @@ extension WBBaseViewController{
         
         view.insertSubview(visitorView, belowSubview: navigationBar)
         
-        print("访客视图\(visitorView)")
+//        print("访客视图\(visitorView)")
         /// 1设置访客视图信息
         visitorView.visitorInfo = visitorInfoDictionary
         

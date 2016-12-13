@@ -116,14 +116,19 @@ extension WBMainViewController{
      定义时钟
      */
     private func setupTimer(){
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(15.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        //时间间隔建议长一些
+        timer = NSTimer.scheduledTimerWithTimeInterval(60.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
     /**
      时钟触发方法
      */
     @objc private func updateTimer(){
+        
+        //没有登录就不走时钟方法
+        if !WBNetworkManager.shared.userLogon {
+            return
+        }
         
         WBNetworkManager.shared.unreadCount { (count) in
             
