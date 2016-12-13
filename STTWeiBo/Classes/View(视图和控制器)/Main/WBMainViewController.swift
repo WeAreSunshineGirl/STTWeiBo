@@ -25,11 +25,17 @@ class WBMainViewController: UITabBarController {
         
         //设置代理
         delegate = self
+        
+        //注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(userlogin), name: WBUserShouldLoginNotification, object: nil)
     }
     deinit{
         
         //释放时钟
         timer?.invalidate()
+        
+        //注销通知
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
   
     /**
@@ -46,6 +52,12 @@ class WBMainViewController: UITabBarController {
     
     
     //MARK: - 监听方法
+    
+    @objc private func userlogin(n:NSNotification){
+        print("用户登录通知\(n)")
+    }
+    
+    
     /**
      撰写微博
      */

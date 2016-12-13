@@ -7,54 +7,56 @@ provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
 - ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "isPullup"
-- "setupTableView"
-- "navigationBar"
-- "register"
-- "visitorInfoDictionary"
-- "navItem"
-- "title"
-- "login"
-- "viewDidLoad"
 - "refreshControl"
 - "loadData"
+- "visitorInfoDictionary"
+- "setupTableView"
+- "register"
+- "navItem"
+- "title"
+- "isPullup"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
+- "navigationBar"
+- "login"
 depends-top-level:
-- !private "UIColor"
-- "BooleanLiteralType"
-- "UITableViewCell"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- !private "NSForegroundColorAttributeName"
-- "UIViewController"
-- !private "??"
-- !private "UIBarButtonItem"
-- "NSIndexPath"
-- "Int"
+- !private "<"
 - !private "print"
+- "BooleanLiteralType"
+- "Int"
+- "UINavigationItem"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- "CGRect"
+- "UITableView"
+- !private "??"
+- !private "NSForegroundColorAttributeName"
+- !private "UIBarButtonItem"
+- !private "&&"
+- !private "Array"
+- !private "NSNotificationCenter"
+- !private "!"
+- "UINavigationBar"
+- !private "Dictionary"
+- "UITableViewCell"
+- !private "WBVisitorView"
 - "UIRefreshControl"
 - "String"
-- "UINavigationItem"
-- "CGRect"
-- !private "WBNetworkManager"
-- "UINavigationBar"
-- "UITableView"
-- "WBBaseViewController"
-- !private "WBVisitorView"
 - !private "UIEdgeInsets"
-- !private "Array"
-- !private "||"
-- !private "<"
-- "UIScreen"
-- !private "Dictionary"
+- "UIViewController"
+- !private "WBNetworkManager"
 - !private "StringLiteralType"
-- !private "!"
 - !private "-"
+- !private "||"
+- "UIScreen"
+- "WBBaseViewController"
+- !private "UIColor"
 - !private "=="
-- !private "&&"
+- "NSIndexPath"
+- !private "WBUserShouldLoginNotification"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "userLogon"]
@@ -62,6 +64,7 @@ depends-member:
 - !private ["CSo19AFURLSessionManager", "userLogon"]
 - ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "NSNotificationCenter"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIEdgeInsets"]
@@ -72,6 +75,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UITableView"]
 - !private ["Ps9AnyObject", "UITableViewCell"]
 - !private ["Ps9AnyObject", "WBNetworkManager"]
+- !private ["Ps9AnyObject", "WBUserShouldLoginNotification"]
 - !private ["Ps9AnyObject", "WBVisitorView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
@@ -84,6 +88,7 @@ depends-member:
 - ["Ps9AnyObject", "cz_screenWidth"]
 - !private ["Ps9AnyObject", "darkGrayColor"]
 - !private ["Ps9AnyObject", "dataSource"]
+- !private ["Ps9AnyObject", "defaultCenter"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "endRefreshing"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -103,6 +108,7 @@ depends-member:
 - !private ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - !private ["Ps9AnyObject", "orangeColor"]
+- !private ["Ps9AnyObject", "postNotificationName"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "refreshControl"]
 - ["Ps9AnyObject", "register"]
@@ -153,6 +159,7 @@ depends-member:
 - ["VSC6CGRect", "init"]
 - ["Ps11CVarArgType", "CGRect"]
 - !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
+- !private ["Ps11CVarArgType", "NSNotificationCenter"]
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIEdgeInsets"]
@@ -163,6 +170,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UITableView"]
 - !private ["Ps11CVarArgType", "UITableViewCell"]
 - !private ["Ps11CVarArgType", "WBNetworkManager"]
+- !private ["Ps11CVarArgType", "WBUserShouldLoginNotification"]
 - !private ["Ps11CVarArgType", "WBVisitorView"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
@@ -175,6 +183,7 @@ depends-member:
 - ["Ps11CVarArgType", "cz_screenWidth"]
 - !private ["Ps11CVarArgType", "darkGrayColor"]
 - !private ["Ps11CVarArgType", "dataSource"]
+- !private ["Ps11CVarArgType", "defaultCenter"]
 - !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "endRefreshing"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -194,6 +203,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "numberOfSections"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["Ps11CVarArgType", "orangeColor"]
+- !private ["Ps11CVarArgType", "postNotificationName"]
 - !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "refreshControl"]
 - ["Ps11CVarArgType", "register"]
@@ -239,6 +249,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsets"]
@@ -250,6 +261,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
+- !private ["Ps28CustomDebugStringConvertible", "WBUserShouldLoginNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "WBVisitorView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
@@ -262,6 +274,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "cz_screenWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "darkGrayColor"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "endRefreshing"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -281,6 +294,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "orangeColor"]
+- !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "refreshControl"]
 - ["Ps28CustomDebugStringConvertible", "register"]
@@ -323,6 +337,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps23CustomStringConvertible", "NSNotificationCenter"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsets"]
@@ -334,6 +349,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
+- !private ["Ps23CustomStringConvertible", "WBUserShouldLoginNotification"]
 - !private ["Ps23CustomStringConvertible", "WBVisitorView"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
@@ -347,6 +363,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "cz_screenWidth"]
 - !private ["Ps23CustomStringConvertible", "darkGrayColor"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
+- !private ["Ps23CustomStringConvertible", "defaultCenter"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "endRefreshing"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -366,6 +383,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["Ps23CustomStringConvertible", "orangeColor"]
+- !private ["Ps23CustomStringConvertible", "postNotificationName"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "refreshControl"]
 - ["Ps23CustomStringConvertible", "register"]
@@ -410,6 +428,7 @@ depends-member:
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
+- !private ["Ps9Equatable", "NSNotificationCenter"]
 - !private ["Ps9Equatable", "Plain"]
 - !private ["Ps9Equatable", "TouchUpInside"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
@@ -423,6 +442,7 @@ depends-member:
 - !private ["Ps9Equatable", "UITableViewCell"]
 - !private ["Ps9Equatable", "ValueChanged"]
 - !private ["Ps9Equatable", "WBNetworkManager"]
+- !private ["Ps9Equatable", "WBUserShouldLoginNotification"]
 - !private ["Ps9Equatable", "WBVisitorView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -436,6 +456,7 @@ depends-member:
 - ["Ps9Equatable", "cz_screenWidth"]
 - !private ["Ps9Equatable", "darkGrayColor"]
 - !private ["Ps9Equatable", "dataSource"]
+- !private ["Ps9Equatable", "defaultCenter"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "endRefreshing"]
 - !private ["Ps9Equatable", "height"]
@@ -456,6 +477,7 @@ depends-member:
 - !private ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - !private ["Ps9Equatable", "orangeColor"]
+- !private ["Ps9Equatable", "postNotificationName"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "refreshControl"]
 - ["Ps9Equatable", "register"]
@@ -496,6 +518,7 @@ depends-member:
 - ["Ps9Equatable", ""]
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps8Hashable", "NSNotificationCenter"]
 - !private ["Ps8Hashable", "Plain"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -507,6 +530,7 @@ depends-member:
 - !private ["Ps8Hashable", "UITableView"]
 - !private ["Ps8Hashable", "UITableViewCell"]
 - !private ["Ps8Hashable", "WBNetworkManager"]
+- !private ["Ps8Hashable", "WBUserShouldLoginNotification"]
 - !private ["Ps8Hashable", "WBVisitorView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -520,6 +544,7 @@ depends-member:
 - ["Ps8Hashable", "cz_screenWidth"]
 - !private ["Ps8Hashable", "darkGrayColor"]
 - !private ["Ps8Hashable", "dataSource"]
+- !private ["Ps8Hashable", "defaultCenter"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "endRefreshing"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -539,6 +564,7 @@ depends-member:
 - !private ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - !private ["Ps8Hashable", "orangeColor"]
+- !private ["Ps8Hashable", "postNotificationName"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "refreshControl"]
 - ["Ps8Hashable", "register"]
@@ -585,6 +611,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "Element"]
 - ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
+- !private ["PSo8NSCoding", "NSNotificationCenter"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIEdgeInsets"]
@@ -595,6 +622,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UITableView"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
 - !private ["PSo8NSCoding", "WBNetworkManager"]
+- !private ["PSo8NSCoding", "WBUserShouldLoginNotification"]
 - !private ["PSo8NSCoding", "WBVisitorView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
@@ -672,6 +700,7 @@ depends-member:
 - !private ["PSo9NSCopying", "whiteColor"]
 - ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIEdgeInsets"]
@@ -682,6 +711,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UITableView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
 - !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
+- !private ["PSo26NSExtensionRequestHandling", "WBUserShouldLoginNotification"]
 - !private ["PSo26NSExtensionRequestHandling", "WBVisitorView"]
 - !private ["PSo26NSExtensionRequestHandling", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
@@ -724,10 +754,13 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "visitorInfoDictionary"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSNotificationCenter"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -739,6 +772,7 @@ depends-member:
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "WBNetworkManager"]
+- !private ["CSo8NSObject", "WBUserShouldLoginNotification"]
 - !private ["CSo8NSObject", "WBVisitorView"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
@@ -751,6 +785,7 @@ depends-member:
 - ["CSo8NSObject", "cz_screenWidth"]
 - !private ["CSo8NSObject", "darkGrayColor"]
 - !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "defaultCenter"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "endRefreshing"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -770,6 +805,7 @@ depends-member:
 - !private ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "orangeColor"]
+- !private ["CSo8NSObject", "postNotificationName"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "refreshControl"]
 - ["CSo8NSObject", "register"]
@@ -809,6 +845,7 @@ depends-member:
 - !private ["CSo8NSObject", "whiteColor"]
 - ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsets"]
@@ -819,6 +856,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UITableView"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
 - !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
+- !private ["PSo16NSObjectProtocol", "WBUserShouldLoginNotification"]
 - !private ["PSo16NSObjectProtocol", "WBVisitorView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
@@ -831,6 +869,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "cz_screenWidth"]
 - !private ["PSo16NSObjectProtocol", "darkGrayColor"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "endRefreshing"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -850,6 +889,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "orangeColor"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "refreshControl"]
 - ["PSo16NSObjectProtocol", "register"]
@@ -955,6 +995,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "visitorInfo"]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIEdgeInsets"]
@@ -965,6 +1006,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UITableView"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
 - !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
+- !private ["PSo21UIAppearanceContainer", "WBUserShouldLoginNotification"]
 - !private ["PSo21UIAppearanceContainer", "WBVisitorView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
@@ -1040,6 +1082,7 @@ depends-member:
 - !private ["CSo7UIColor", "whiteColor"]
 - ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIContentContainer", "NSNotificationCenter"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIEdgeInsets"]
@@ -1050,6 +1093,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UITableView"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
 - !private ["PSo18UIContentContainer", "WBNetworkManager"]
+- !private ["PSo18UIContentContainer", "WBUserShouldLoginNotification"]
 - !private ["PSo18UIContentContainer", "WBVisitorView"]
 - !private ["PSo18UIContentContainer", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
@@ -1137,6 +1181,7 @@ depends-member:
 - !private ["VSC12UIEdgeInsets", "init"]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIEdgeInsets"]
@@ -1147,6 +1192,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UITableView"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
 - !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
+- !private ["PSo18UIFocusEnvironment", "WBUserShouldLoginNotification"]
 - !private ["PSo18UIFocusEnvironment", "WBVisitorView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
@@ -1224,6 +1270,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSNotificationCenter"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -1235,6 +1282,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "WBNetworkManager"]
+- !private ["CSo11UIResponder", "WBUserShouldLoginNotification"]
 - !private ["CSo11UIResponder", "WBVisitorView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
@@ -1303,6 +1351,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIEdgeInsets"]
@@ -1313,6 +1362,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UITableView"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "WBNetworkManager"]
+- !private ["PSo20UIScrollViewDelegate", "WBUserShouldLoginNotification"]
 - !private ["PSo20UIScrollViewDelegate", "WBVisitorView"]
 - !private ["PSo20UIScrollViewDelegate", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1351,6 +1401,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIEdgeInsets"]
@@ -1361,6 +1412,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UITableView"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
 - !private ["PSo16UIStateRestoring", "WBNetworkManager"]
+- !private ["PSo16UIStateRestoring", "WBUserShouldLoginNotification"]
 - !private ["PSo16UIStateRestoring", "WBVisitorView"]
 - !private ["PSo16UIStateRestoring", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
@@ -1415,6 +1467,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "init"]
 - ["PSo21UITableViewDataSource", "CGRect"]
 - !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
+- !private ["PSo21UITableViewDataSource", "NSNotificationCenter"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIEdgeInsets"]
@@ -1425,6 +1478,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UITableView"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "WBNetworkManager"]
+- !private ["PSo21UITableViewDataSource", "WBUserShouldLoginNotification"]
 - !private ["PSo21UITableViewDataSource", "WBVisitorView"]
 - !private ["PSo21UITableViewDataSource", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -1463,6 +1517,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "CGRect"]
 - !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo19UITableViewDelegate", "NSNotificationCenter"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIEdgeInsets"]
@@ -1473,6 +1528,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UITableView"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "WBNetworkManager"]
+- !private ["PSo19UITableViewDelegate", "WBUserShouldLoginNotification"]
 - !private ["PSo19UITableViewDelegate", "WBVisitorView"]
 - !private ["PSo19UITableViewDelegate", "automaticallyAdjustsScrollViewInsets"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1512,6 +1568,7 @@ depends-member:
 - !private ["OSC16UITableViewStyle", "Plain"]
 - ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIEdgeInsets"]
@@ -1522,6 +1579,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UITableView"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
 - !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
+- !private ["PSo18UITraitEnvironment", "WBUserShouldLoginNotification"]
 - !private ["PSo18UITraitEnvironment", "WBVisitorView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
@@ -1605,6 +1663,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSNotificationCenter"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -1616,6 +1675,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "WBNetworkManager"]
+- !private ["CSo16UIViewController", "WBUserShouldLoginNotification"]
 - !private ["CSo16UIViewController", "WBVisitorView"]
 - !private ["CSo16UIViewController", "automaticallyAdjustsScrollViewInsets"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -1661,6 +1721,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "Int"]
 - !private ["C8STTWeiBo20WBBaseViewController", "NSForegroundColorAttributeName"]
 - ["C8STTWeiBo20WBBaseViewController", "NSIndexPath"]
+- !private ["C8STTWeiBo20WBBaseViewController", "NSNotificationCenter"]
 - ["C8STTWeiBo20WBBaseViewController", "String"]
 - !private ["C8STTWeiBo20WBBaseViewController", "UIBarButtonItem"]
 - !private ["C8STTWeiBo20WBBaseViewController", "UIColor"]
@@ -1672,6 +1733,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "UITableView"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableViewCell"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBNetworkManager"]
+- !private ["C8STTWeiBo20WBBaseViewController", "WBUserShouldLoginNotification"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBVisitorView"]
 - !private ["C8STTWeiBo20WBBaseViewController", "automaticallyAdjustsScrollViewInsets"]
 - ["C8STTWeiBo20WBBaseViewController", "deinit"]
@@ -1780,6 +1842,7 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "CSo20NSNotificationCenter"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"

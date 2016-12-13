@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0900710F40F584B72CF5A7BB /* Pods_STTWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */; };
+		CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */; };
 		CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08436E1DEFC43D00BD8168 /* AppDelegate.swift */; };
 		CE0843761DEFC43D00BD8168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0843751DEFC43D00BD8168 /* Assets.xcassets */; };
 		CE08438F1DEFCA6100BD8168 /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08438E1DEFCA6100BD8168 /* WBMainViewController.swift */; };
@@ -48,6 +49,7 @@
 		3664F7D1121B599462CF78D3 /* Pods-STTWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		39DCCF117E8BCE01A84DE0D8 /* Pods-STTWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 		55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STTWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCommon.swift; sourceTree = "<group>"; };
 		CE08436B1DEFC43D00BD8168 /* STTWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE08436E1DEFC43D00BD8168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0843751DEFC43D00BD8168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				CE0843C81DEFCC8E00BD8168 /* UIColor+Backcolor.h */,
 				CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */,
 				CE0843A21DEFCC8200BD8168 /* Additions */,
+				CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
+				CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
