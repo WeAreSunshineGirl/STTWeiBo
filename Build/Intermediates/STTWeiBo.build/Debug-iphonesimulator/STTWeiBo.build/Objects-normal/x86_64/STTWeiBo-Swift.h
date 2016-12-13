@@ -353,6 +353,17 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 @end
 
 
+
+/// 通过webView加载新浪微博授权页面
+SWIFT_CLASS("_TtC8STTWeiBo21WBOAuthViewController")
+@interface WBOAuthViewController : UIViewController
+- (void)loadView;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 @interface WBProfileViewController : WBBaseViewController
 - (void)viewDidLoad;
