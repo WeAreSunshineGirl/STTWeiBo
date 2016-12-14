@@ -339,6 +339,13 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
+/// 加载 accessToken
+- (void)loadAccessToken:(NSString * _Nonnull)code;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
 /// 加载微博数据字典数组
 ///
 /// \param since _id:   返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0

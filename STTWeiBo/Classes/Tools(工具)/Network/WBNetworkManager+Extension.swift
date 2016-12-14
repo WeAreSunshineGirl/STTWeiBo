@@ -57,18 +57,6 @@ extension WBNetworkManager{
             completion(count: count ?? 0)
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     //用网络工具加载微博数据  对token进行封装
     //        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
     //        let params = ["access_token":"2.00mqiHMEXmKOnDdeff3a547e9YmKFD"]
@@ -83,3 +71,33 @@ extension WBNetworkManager{
     //        }
     
 }
+
+// MARK: - OAuth 相关方法
+extension WBNetworkManager{
+    /**
+     加载 accessToken
+     */
+    func loadAccessToken(code:String){
+        
+        let urlString = "https://api.weibo.com/oauth2/access_token"
+        
+        let params = ["client_id":WBAppKey,
+                      "client_secret":WBAppSecret,
+                      "grant_type":"authorization_code",
+                      "code":code,
+                      "redirect_uri":WBRedirectURI]
+        //发起网络请求
+        request(.POST, URLString: urlString, parameters: params) { (json, isSuccess) in
+            print(json)
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
