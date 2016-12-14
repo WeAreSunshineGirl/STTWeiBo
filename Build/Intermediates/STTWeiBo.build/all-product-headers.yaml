@@ -2,5 +2,27 @@
   'version': 0,
   'case-sensitive': 'false',
   'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/STTWeiBo.app/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "STTWeiBo-Swift.h",
+          'external-contents': "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/STTWeiBo.app/Headers/STTWeiBo-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/STTWeiBo.app/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/user/Desktop/STTWeiBo/Build/Intermediates/STTWeiBo.build/Debug-iphonesimulator/STTWeiBo.build/module.modulemap"
+        }
+      ]
+    }
   ]
 }

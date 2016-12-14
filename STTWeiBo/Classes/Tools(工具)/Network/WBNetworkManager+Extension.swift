@@ -22,7 +22,7 @@ extension WBNetworkManager{
         
         let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
         
-        //Swift 中 Int 可以转换成 AnyObject/但是 Int64不行
+        //Swift 中 Int 可以转换成 AnyObject/但是 Int64不行 不能转成 AnyObject
         let params = ["since_id":"\(since_id)",
                       "max_id":"\(max_id > 0 ? max_id - 1 : 0)"]
         

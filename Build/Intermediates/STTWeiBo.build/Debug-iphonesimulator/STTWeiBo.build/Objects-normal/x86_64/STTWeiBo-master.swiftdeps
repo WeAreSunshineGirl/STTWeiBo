@@ -1,14 +1,14 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "9bd8d75ff5892be3d145e2c443b948a5"
-build_time: [534927191, 864388000]
+options: "0b3cdadf119afc94f84af394fa61f81c"
+build_time: [534992862, 689481000]
 inputs:
-  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [534924950, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [534930934, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [533899091, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/\u6D4B\u8BD5/WBDemoViewController.swift": [534843831, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/ViewModel(\u89C6\u56FE\u6A21\u578B)/WBStatusListViewModel.swift": [534828439, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/NSBundle+Extensions.swift": [533888873, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Discover/WBDiscoverViewController.swift": [533876719, 0]
-  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager+Extension.swift": [534848074, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager+Extension.swift": [534930934, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Model(\u6A21\u578B)/WBStatus.swift": [534567193, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBBaseViewController.swift": [534926329, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBMainViewController.swift": [534926962, 0]
@@ -17,6 +17,6 @@ inputs:
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/AppDelegate.swift": [534848074, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Profile/WBProfileViewController.swift": [533876710, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBNavigationController.swift": [534926962, 0]
-  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/OAuth/WBOAuthViewController.swift": [534927191, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/OAuth/WBOAuthViewController.swift": [534931164, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Message/WBMessageViewController.swift": [533876699, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/WBCommon.swift": [534926290, 0]

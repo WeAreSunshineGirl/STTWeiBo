@@ -11,13 +11,14 @@ import UIKit
 import AFNetworking
 
 
+
+
 ///Swift 的枚举支持任意数据类型
 ///switch / enum 在OC中都只支持整数
 enum WBHTTPMethod {
     case GET
     case POST
 }
-
 
 
 /// 网络管理工具 封装 AFN 的

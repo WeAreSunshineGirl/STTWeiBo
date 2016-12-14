@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 /// 通过webView加载新浪微博授权页面
 class WBOAuthViewController: UIViewController {
 
