@@ -413,7 +413,7 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 用户账户信息
 SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 @interface WBUserAccount : NSObject
-@property (nonatomic, copy) NSString * _Nullable aaccess_token;
+@property (nonatomic, copy) NSString * _Nullable access_token;
 @property (nonatomic, copy) NSString * _Nullable uid;
 @property (nonatomic) NSTimeInterval expires_in;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

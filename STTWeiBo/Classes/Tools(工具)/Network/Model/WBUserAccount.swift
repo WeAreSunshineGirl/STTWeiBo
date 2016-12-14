@@ -12,7 +12,7 @@ import UIKit
 class WBUserAccount: NSObject {
 
     //访问令牌
-    var aaccess_token:String? //= "2.00mqiHMEXmKOnDeff2feca1dip6eeB"
+    var access_token:String? //= "2.00mqiHMEXmKOnDeff2feca1dip6eeB"
     //用户代号
     var uid:String?
     //过期时间 单位秒 开发者 5年 使用者 3天

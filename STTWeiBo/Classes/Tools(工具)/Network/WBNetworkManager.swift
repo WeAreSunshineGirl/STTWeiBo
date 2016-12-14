@@ -50,7 +50,7 @@ class WBNetworkManager: AFHTTPSessionManager {
     /// 用户登录标记(计算型属性)
     var userLogon:Bool{
         
-        return userAccount.aaccess_token != nil
+        return userAccount.access_token != nil
     }
     
     
@@ -61,7 +61,7 @@ class WBNetworkManager: AFHTTPSessionManager {
         
         //处理Token字典
         // 0判断 token 是否 为nil  为 nil时 直接返回
-        guard let token = userAccount.aaccess_token else{
+        guard let token = userAccount.access_token else{
             print("没有 toekn！ 需要登录")
             //FIXME: 发送通知，提示用户登录（本方法不知道被谁调用 谁接收到通知 谁处理）
 

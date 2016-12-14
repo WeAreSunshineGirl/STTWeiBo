@@ -93,7 +93,12 @@ extension WBNetworkManager{
              "remind_in" = 157679999;
              uid = 3843688064;
              */
-            print(json)
+//            print(json)
+            
+            //直接用字典设置 userAccount的属性
+            self.userAccount.yy_modelSetWithJSON((json as? [String:AnyObject]) ?? [:])
+            
+            print(self.userAccount)
         }
         
     }
