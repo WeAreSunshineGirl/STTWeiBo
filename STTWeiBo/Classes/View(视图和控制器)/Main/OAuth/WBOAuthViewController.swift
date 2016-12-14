@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+
 /// 通过webView加载新浪微博授权页面
 class WBOAuthViewController: UIViewController {
 
@@ -20,6 +22,9 @@ class WBOAuthViewController: UIViewController {
         view = webView
         
         view.backgroundColor = UIColor.whiteColor()
+        
+        //取消滚动视图 -新浪微博的服务器返回的授权界面默认就是手机全屏
+        webView.scrollView.scrollEnabled = false
         
         //设置代理
         webView.delegate = self
@@ -48,7 +53,12 @@ class WBOAuthViewController: UIViewController {
 
     
 //Mark: 监听方法
+    /**
+     关闭控制器
+     */
     @objc private func close(){
+        
+        SVProgressHUD.dismiss()
         dismissViewControllerAnimated(true, completion: nil)
     }
     //Mark 自动填充 - webView 的注入 直接通过js 修改‘本地浏览器’ 缓存的页面内容
@@ -102,8 +112,13 @@ extension WBOAuthViewController:UIWebViewDelegate{
         print("获取授权码---\(code)")
         
         
-        
-        
         return false
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView) {
+        SVProgressHUD.show()
+    }
+    func webViewDidFinishLoad(webView: UIWebView) {
+        SVProgressHUD.dismiss()
     }
 }

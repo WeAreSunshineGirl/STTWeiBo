@@ -378,6 +378,8 @@ SWIFT_CLASS("_TtC8STTWeiBo21WBOAuthViewController")
 ///
 /// \returns  是否加载 request
 - (BOOL)webView:(UIWebView * _Nonnull)webView shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)request navigationType:(UIWebViewNavigationType)navigationType;
+- (void)webViewDidStartLoad:(UIWebView * _Nonnull)webView;
+- (void)webViewDidFinishLoad:(UIWebView * _Nonnull)webView;
 @end
 
 
