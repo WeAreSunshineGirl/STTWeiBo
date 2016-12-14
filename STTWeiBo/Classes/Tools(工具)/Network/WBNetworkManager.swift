@@ -26,11 +26,19 @@ class WBNetworkManager: AFHTTPSessionManager {
 
     /// 静态区（常量区）   
     ///静态区/常量/闭包/在第一次访问时执行闭包 并且将结果保存在 shared 常量中
-    static let shared = WBNetworkManager()
-    
+//    static let shared = WBNetworkManager()//但是需要做一些初始化的动作 改成闭包
+    static let shared:WBNetworkManager = {
+        //实例化对象
+        let instance = WBNetworkManager()
+        
+        //设置响应的反序列化
+        instance.responseSerializer.acceptableContentTypes?.insert("text/plain")
+        
+        return instance
+    }()
     /// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
     /// 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
-    var accessToken:String? //= "2.00mqiHMEXmKOnDdeff3a547e9YmKFD"
+    var accessToken:String? //= "2.00mqiHMEXmKOnDeff2feca1dip6eeB"
     /// 用户微博id
     var uid:String? = "5365823342"
     /// 用户登录标记(计算型属性)
