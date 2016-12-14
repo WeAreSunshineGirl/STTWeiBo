@@ -27,6 +27,13 @@ class WBNetworkManager: AFHTTPSessionManager {
     /// 静态区（常量区）   
     ///静态区/常量/闭包/在第一次访问时执行闭包 并且将结果保存在 shared 常量中
 //    static let shared = WBNetworkManager()//但是需要做一些初始化的动作 改成闭包
+    /*
+    /// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
+    /// 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
+    var accessToken:String? //= "2.00mqiHMEXmKOnDeff2feca1dip6eeB"
+    /// 用户微博id
+    var uid:String? = "5365823342"
+*/
     static let shared:WBNetworkManager = {
         //实例化对象
         let instance = WBNetworkManager()
@@ -36,15 +43,14 @@ class WBNetworkManager: AFHTTPSessionManager {
         
         return instance
     }()
-    /// 访问令牌 所有的网络请求 都基于此令牌（登录除外）
-    /// 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
-    var accessToken:String? //= "2.00mqiHMEXmKOnDeff2feca1dip6eeB"
-    /// 用户微博id
-    var uid:String? = "5365823342"
+    
+    //用户账户的懒加载属性
+    lazy var userAccount = WBUserAccount()
+    
     /// 用户登录标记(计算型属性)
     var userLogon:Bool{
         
-        return accessToken != nil
+        return userAccount.aaccess_token != nil
     }
     
     
@@ -55,7 +61,7 @@ class WBNetworkManager: AFHTTPSessionManager {
         
         //处理Token字典
         // 0判断 token 是否 为nil  为 nil时 直接返回
-        guard let token = accessToken else{
+        guard let token = userAccount.aaccess_token else{
             print("没有 toekn！ 需要登录")
             //FIXME: 发送通知，提示用户登录（本方法不知道被谁调用 谁接收到通知 谁处理）
 

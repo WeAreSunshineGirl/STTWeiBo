@@ -43,7 +43,7 @@ extension WBNetworkManager{
      */
     func unreadCount(completion:(count:Int)->()){
         
-        guard let uid = uid else{
+        guard let uid = userAccount.uid else{
             return
         }
         let URLString = "https://rm.api.weibo.com/2/remind/unread_count.json"

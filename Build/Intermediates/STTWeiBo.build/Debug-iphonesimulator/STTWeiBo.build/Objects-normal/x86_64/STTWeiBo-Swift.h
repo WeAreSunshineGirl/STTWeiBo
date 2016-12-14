@@ -312,6 +312,7 @@ SWIFT_CLASS("_TtC8STTWeiBo22WBNavigationController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WBUserAccount;
 @class NSURL;
 @class NSURLSessionConfiguration;
 
@@ -320,12 +321,7 @@ SWIFT_CLASS("_TtC8STTWeiBo22WBNavigationController")
 SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 @interface WBNetworkManager : AFHTTPSessionManager
 + (WBNetworkManager * _Nonnull)shared;
-
-/// 访问令牌 所有的网络请求 都基于此令牌（登录除外） 为了保护用户安全 token是有时限的 默认用户 是 三天    token过期的话 服务器返回的状态码是 403
-@property (nonatomic, copy) NSString * _Nullable accessToken;
-
-/// 用户微博id
-@property (nonatomic, copy) NSString * _Nullable uid;
+@property (nonatomic, strong) WBUserAccount * _Nonnull userAccount;
 
 /// 用户登录标记(计算型属性)
 @property (nonatomic, readonly) BOOL userLogon;
@@ -413,8 +409,14 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 @end
 
 
+
+/// 用户账户信息
 SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 @interface WBUserAccount : NSObject
+@property (nonatomic, copy) NSString * _Nullable aaccess_token;
+@property (nonatomic, copy) NSString * _Nullable uid;
+@property (nonatomic) NSTimeInterval expires_in;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
