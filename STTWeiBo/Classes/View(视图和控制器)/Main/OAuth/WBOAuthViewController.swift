@@ -93,8 +93,17 @@ extension WBOAuthViewController:UIWebViewDelegate{
             
             return false
         }
-        print("获取授权码---")
         
-        return true
+        // 3 从query 字符串中取出授权码
+        //代码走到这此处 url 中一定有查询字符串 并且包含'code'
+        //  code=109d37eb09a74964e8c99195bb719093
+        let code = request.URL?.query?.substringFromIndex("code=".endIndex) ?? ""
+       
+        print("获取授权码---\(code)")
+        
+        
+        
+        
+        return false
     }
 }
