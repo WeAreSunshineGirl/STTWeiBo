@@ -363,6 +363,23 @@ SWIFT_CLASS("_TtC8STTWeiBo21WBOAuthViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIWebView;
+@class NSURLRequest;
+
+@interface WBOAuthViewController (SWIFT_EXTENSION(STTWeiBo)) <UIWebViewDelegate>
+
+/// webView 将要加载请求
+///
+/// \param webView webView
+///
+/// \param request 要加载的请求
+///
+/// \param navigationType 导航类型
+///
+/// \returns  是否加载 request
+- (BOOL)webView:(UIWebView * _Nonnull)webView shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)request navigationType:(UIWebViewNavigationType)navigationType;
+@end
+
 
 SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 @interface WBProfileViewController : WBBaseViewController
