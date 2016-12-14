@@ -408,6 +408,7 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
 
 
 /// 用户账户信息
@@ -416,6 +417,7 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 @property (nonatomic, copy) NSString * _Nullable access_token;
 @property (nonatomic, copy) NSString * _Nullable uid;
 @property (nonatomic) NSTimeInterval expires_in;
+@property (nonatomic, strong) NSDate * _Nullable expiresDate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -16,7 +16,16 @@ class WBUserAccount: NSObject {
     //用户代号
     var uid:String?
     //过期时间 单位秒 开发者 5年 使用者 3天
-    var expires_in:NSTimeInterval = 0
+    var expires_in:NSTimeInterval = 0{
+        
+        didSet{
+            expiresDate = NSDate(timeIntervalSinceNow: expires_in)
+            
+        }
+    }
+    //过期日期
+    var expiresDate:NSDate?
+    
     override var description: String{
         
         return yy_modelDescription()
