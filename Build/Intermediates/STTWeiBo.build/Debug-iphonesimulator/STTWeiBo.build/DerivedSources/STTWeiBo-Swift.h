@@ -412,6 +412,12 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
+@interface WBUserAccount : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 
 

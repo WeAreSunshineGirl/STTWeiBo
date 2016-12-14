@@ -88,6 +88,11 @@ extension WBNetworkManager{
                       "redirect_uri":WBRedirectURI]
         //发起网络请求
         request(.POST, URLString: urlString, parameters: params) { (json, isSuccess) in
+            /*"access_token" = "2.00mqiHMEXmKOnDeff2feca1dip6eeB";
+             "expires_in" = 157679999;
+             "remind_in" = 157679999;
+             uid = 3843688064;
+             */
             print(json)
         }
         
