@@ -77,10 +77,24 @@ extension WBOAuthViewController:UIWebViewDelegate{
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         //确认思路：
         //1 如果请求地址包含 http://www.baidu.com 不加载页面  / 否则加载页面
-        print("加载请求 ---\(request.URL?.absoluteURL)")
-        
+        //request.URL?.absoluteString.hasPrefix(WBRedirectURI) 返回的是可选项 true/false/nil
+        if request.URL?.absoluteString.hasPrefix(WBRedirectURI) == false{
+            return true
+        }
+        print("加载请求 ---\(request.URL?.absoluteString)")
+        //query 就是  URL 中 '?' 后面的所有部分
+        print("加载请求 ---\(request.URL?.query)")
         // 2 从http://baidu.com 回调地址的 查询字符串 中 查找 'code='
         //  如果有 就说明授权成功  否则 授权失败
+        if request.URL?.query?.hasPrefix("code=") == false {
+            
+            print("取消授权")
+            close()
+            
+            return false
+        }
+        print("获取授权码---")
+        
         return true
     }
 }
