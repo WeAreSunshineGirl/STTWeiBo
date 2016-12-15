@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+private let accountFile:NSString = "useraccount.json"
+
 /// 用户账户信息
 class WBUserAccount: NSObject {
 
@@ -30,11 +33,29 @@ class WBUserAccount: NSObject {
         
         return yy_modelDescription()
     }
+    
+    
+    override init() {
+        
+        super.init()
+        
+        //从磁盘加载保存的文件 -> 字典
+        
+        //使用字典设置属性值
+    }
+    
+    
+    
+    
+    
     /*
      1 偏好设置(小) - xcode8 beta 无效
      2 沙盒 - 归档/plist/json
      3 数据库(FMDB/CoreData)
      4 钥匙串访问(小/自动加密 - 需要使用框架 SSKeychain)
+     */
+    /**
+     保存用户数据到json
      */
     func saveAccount() {
         
@@ -45,7 +66,7 @@ class WBUserAccount: NSObject {
         dict.removeValueForKey("expires_in")
         
         // 2 字典序列化 data
-        guard let data = try? NSJSONSerialization.dataWithJSONObject(dict, options: []),filePath = ("useraccount.json" as NSString).cz_appendDocumentDir()else{
+        guard let data = try? NSJSONSerialization.dataWithJSONObject(dict, options: []),filePath = accountFile.cz_appendDocumentDir()else{
             return
         }
         

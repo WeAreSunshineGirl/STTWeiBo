@@ -75,7 +75,7 @@ extension WBNetworkManager{
 // MARK: - OAuth 相关方法
 extension WBNetworkManager{
     /**
-     加载 accessToken
+     加载 授权 accessToken
      */
     func loadAccessToken(code:String){
         

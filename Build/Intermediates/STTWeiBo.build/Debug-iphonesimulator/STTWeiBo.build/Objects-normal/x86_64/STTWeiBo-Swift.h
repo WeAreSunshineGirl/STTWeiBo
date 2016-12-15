@@ -332,7 +332,7 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
-/// 加载 accessToken
+/// 加载 授权 accessToken
 - (void)loadAccessToken:(NSString * _Nonnull)code;
 @end
 
@@ -419,8 +419,10 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 @property (nonatomic) NSTimeInterval expires_in;
 @property (nonatomic, strong) NSDate * _Nullable expiresDate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (void)saveAccount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+
+/// 保存用户数据到json
+- (void)saveAccount;
 @end
 
 @class UIButton;
