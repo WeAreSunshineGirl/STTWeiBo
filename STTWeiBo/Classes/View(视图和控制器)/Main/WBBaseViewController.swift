@@ -50,7 +50,13 @@ class WBBaseViewController: UIViewController{
         
         WBNetworkManager.shared.userLogon ? loadData() :()
         
+        //注册通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(loginSuccess), name: WBUserLoginSuccessNotification, object: nil)
         
+    }
+    deinit{
+        //注销通知
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     /// 重写 title 的 didSet
     override var title: String?{
@@ -70,7 +76,22 @@ class WBBaseViewController: UIViewController{
 
 //MARK: 访客视图监听方法
 extension WBBaseViewController{
-    
+    /**
+     登录成功通知
+     */
+    @objc private func loginSuccess(n:NSNotification){
+        
+        print("登录成功\(n)")
+        //更新UI - 将访客视图替换为 表格视图
+        //需要重新设置 View
+        //在访问 view 的 getter时 如果view == nil 会调用loadView 方法(此控制器没有重写loadView)  -> 再次调用viewDidLoad
+        
+        view = nil
+        
+        //注销通知 -》 重新执行 viewDidLoad 会再次注册通知
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+        
+    }
     @objc private func login(){
         
         //发送通知

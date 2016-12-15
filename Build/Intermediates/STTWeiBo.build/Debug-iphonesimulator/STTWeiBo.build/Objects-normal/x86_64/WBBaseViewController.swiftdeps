@@ -7,55 +7,58 @@ provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
 - ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "loadData"
 - "navigationBar"
-- "viewDidLoad"
-- "setupTableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "title"
+- "register"
 - "navItem"
 - "login"
-- "loadData"
-- "register"
-- "isPullup"
+- "viewDidLoad"
 - "refreshControl"
 - "visitorInfoDictionary"
-- "title"
+- "setupTableView"
+- "loginSuccess"
+- "isPullup"
 depends-top-level:
-- !private "Array"
-- !private "!"
-- "UITableViewCell"
-- !private "=="
-- "UIViewController"
-- "String"
-- "Int"
-- !private "WBNetworkManager"
-- !private "WBVisitorView"
-- !private "Dictionary"
-- !private "-"
-- "UIRefreshControl"
-- "UITableViewDelegate"
-- !private "WBUserShouldLoginNotification"
-- !private "<"
-- "UINavigationBar"
-- "NSIndexPath"
-- "UIScreen"
-- !private "UIEdgeInsets"
-- !private "print"
-- !private "??"
-- "UITableViewDataSource"
 - !private "||"
-- !private "NSForegroundColorAttributeName"
-- "UITableView"
-- !private "UIBarButtonItem"
-- "BooleanLiteralType"
-- "CGRect"
-- !private "UIColor"
-- !private "&&"
-- "WBBaseViewController"
-- "UINavigationItem"
+- "UITableViewCell"
+- !private "Dictionary"
+- "NSIndexPath"
+- "String"
 - !private "NSNotificationCenter"
+- !private "UIEdgeInsets"
+- !private "UIColor"
+- !private "<"
+- "Int"
+- !private "Array"
+- !private "WBNetworkManager"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- "BooleanLiteralType"
+- "UINavigationBar"
+- !private "print"
+- !private "WBVisitorView"
+- "CGRect"
+- "UIViewController"
+- "UITableView"
+- !private "NSNotification"
+- !private "WBUserLoginSuccessNotification"
+- !private "!"
+- !private "WBUserShouldLoginNotification"
+- "WBBaseViewController"
+- !private "=="
+- !private "UIBarButtonItem"
+- "UIScreen"
+- "UINavigationItem"
+- !private "NSForegroundColorAttributeName"
+- !private "??"
+- !private "-"
+- !private "&&"
+- "UIRefreshControl"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "userLogon"]
@@ -74,8 +77,10 @@ depends-member:
 - !private ["Ps9AnyObject", "UITableView"]
 - !private ["Ps9AnyObject", "UITableViewCell"]
 - !private ["Ps9AnyObject", "WBNetworkManager"]
+- !private ["Ps9AnyObject", "WBUserLoginSuccessNotification"]
 - !private ["Ps9AnyObject", "WBUserShouldLoginNotification"]
 - !private ["Ps9AnyObject", "WBVisitorView"]
+- !private ["Ps9AnyObject", "addObserver"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "automaticallyAdjustsScrollViewInsets"]
@@ -99,6 +104,7 @@ depends-member:
 - ["Ps9AnyObject", "loadData"]
 - ["Ps9AnyObject", "login"]
 - !private ["Ps9AnyObject", "loginButton"]
+- ["Ps9AnyObject", "loginSuccess"]
 - ["Ps9AnyObject", "navItem"]
 - ["Ps9AnyObject", "navItem.storage"]
 - ["Ps9AnyObject", "navigationBar"]
@@ -112,6 +118,7 @@ depends-member:
 - ["Ps9AnyObject", "refreshControl"]
 - ["Ps9AnyObject", "register"]
 - !private ["Ps9AnyObject", "registerButton"]
+- !private ["Ps9AnyObject", "removeObserver"]
 - !private ["Ps9AnyObject", "rightBarButtonItem"]
 - !private ["Ps9AnyObject", "row"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
@@ -151,6 +158,7 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["Ps23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -169,8 +177,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "UITableView"]
 - !private ["Ps11CVarArgType", "UITableViewCell"]
 - !private ["Ps11CVarArgType", "WBNetworkManager"]
+- !private ["Ps11CVarArgType", "WBUserLoginSuccessNotification"]
 - !private ["Ps11CVarArgType", "WBUserShouldLoginNotification"]
 - !private ["Ps11CVarArgType", "WBVisitorView"]
+- !private ["Ps11CVarArgType", "addObserver"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
 - !private ["Ps11CVarArgType", "automaticallyAdjustsScrollViewInsets"]
@@ -194,6 +204,7 @@ depends-member:
 - ["Ps11CVarArgType", "loadData"]
 - ["Ps11CVarArgType", "login"]
 - !private ["Ps11CVarArgType", "loginButton"]
+- ["Ps11CVarArgType", "loginSuccess"]
 - ["Ps11CVarArgType", "navItem"]
 - ["Ps11CVarArgType", "navItem.storage"]
 - ["Ps11CVarArgType", "navigationBar"]
@@ -207,6 +218,7 @@ depends-member:
 - ["Ps11CVarArgType", "refreshControl"]
 - ["Ps11CVarArgType", "register"]
 - !private ["Ps11CVarArgType", "registerButton"]
+- !private ["Ps11CVarArgType", "removeObserver"]
 - !private ["Ps11CVarArgType", "rightBarButtonItem"]
 - !private ["Ps11CVarArgType", "row"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
@@ -241,9 +253,11 @@ depends-member:
 - ["Ps11CVarArgType", "visitorInfoDictionary"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "Value"]
+- !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
@@ -260,8 +274,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
+- !private ["Ps28CustomDebugStringConvertible", "WBUserLoginSuccessNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "WBUserShouldLoginNotification"]
 - !private ["Ps28CustomDebugStringConvertible", "WBVisitorView"]
+- !private ["Ps28CustomDebugStringConvertible", "addObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "automaticallyAdjustsScrollViewInsets"]
@@ -285,6 +301,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "loadData"]
 - ["Ps28CustomDebugStringConvertible", "login"]
 - !private ["Ps28CustomDebugStringConvertible", "loginButton"]
+- ["Ps28CustomDebugStringConvertible", "loginSuccess"]
 - ["Ps28CustomDebugStringConvertible", "navItem"]
 - ["Ps28CustomDebugStringConvertible", "navItem.storage"]
 - ["Ps28CustomDebugStringConvertible", "navigationBar"]
@@ -298,6 +315,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "refreshControl"]
 - ["Ps28CustomDebugStringConvertible", "register"]
 - !private ["Ps28CustomDebugStringConvertible", "registerButton"]
+- !private ["Ps28CustomDebugStringConvertible", "removeObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
@@ -348,9 +366,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
+- !private ["Ps23CustomStringConvertible", "WBUserLoginSuccessNotification"]
 - !private ["Ps23CustomStringConvertible", "WBUserShouldLoginNotification"]
 - !private ["Ps23CustomStringConvertible", "WBVisitorView"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addObserver"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "automaticallyAdjustsScrollViewInsets"]
@@ -374,6 +394,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "loadData"]
 - ["Ps23CustomStringConvertible", "login"]
 - !private ["Ps23CustomStringConvertible", "loginButton"]
+- ["Ps23CustomStringConvertible", "loginSuccess"]
 - ["Ps23CustomStringConvertible", "navItem"]
 - ["Ps23CustomStringConvertible", "navItem.storage"]
 - ["Ps23CustomStringConvertible", "navigationBar"]
@@ -387,6 +408,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "refreshControl"]
 - ["Ps23CustomStringConvertible", "register"]
 - !private ["Ps23CustomStringConvertible", "registerButton"]
+- !private ["Ps23CustomStringConvertible", "removeObserver"]
 - !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -425,6 +447,7 @@ depends-member:
 - !private ["Vs10Dictionary", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Sd", "deinit"]
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "NSNotificationCenter"]
@@ -441,9 +464,11 @@ depends-member:
 - !private ["Ps9Equatable", "UITableViewCell"]
 - !private ["Ps9Equatable", "ValueChanged"]
 - !private ["Ps9Equatable", "WBNetworkManager"]
+- !private ["Ps9Equatable", "WBUserLoginSuccessNotification"]
 - !private ["Ps9Equatable", "WBUserShouldLoginNotification"]
 - !private ["Ps9Equatable", "WBVisitorView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addObserver"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "automaticallyAdjustsScrollViewInsets"]
@@ -468,6 +493,7 @@ depends-member:
 - ["Ps9Equatable", "loadData"]
 - ["Ps9Equatable", "login"]
 - !private ["Ps9Equatable", "loginButton"]
+- ["Ps9Equatable", "loginSuccess"]
 - ["Ps9Equatable", "navItem"]
 - ["Ps9Equatable", "navItem.storage"]
 - ["Ps9Equatable", "navigationBar"]
@@ -481,6 +507,7 @@ depends-member:
 - ["Ps9Equatable", "refreshControl"]
 - ["Ps9Equatable", "register"]
 - !private ["Ps9Equatable", "registerButton"]
+- !private ["Ps9Equatable", "removeObserver"]
 - !private ["Ps9Equatable", "rightBarButtonItem"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
@@ -515,6 +542,8 @@ depends-member:
 - ["Ps9Equatable", "visitorInfoDictionary"]
 - !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "NSNotificationCenter"]
@@ -529,9 +558,11 @@ depends-member:
 - !private ["Ps8Hashable", "UITableView"]
 - !private ["Ps8Hashable", "UITableViewCell"]
 - !private ["Ps8Hashable", "WBNetworkManager"]
+- !private ["Ps8Hashable", "WBUserLoginSuccessNotification"]
 - !private ["Ps8Hashable", "WBUserShouldLoginNotification"]
 - !private ["Ps8Hashable", "WBVisitorView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addObserver"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "automaticallyAdjustsScrollViewInsets"]
@@ -555,6 +586,7 @@ depends-member:
 - ["Ps8Hashable", "loadData"]
 - ["Ps8Hashable", "login"]
 - !private ["Ps8Hashable", "loginButton"]
+- ["Ps8Hashable", "loginSuccess"]
 - ["Ps8Hashable", "navItem"]
 - ["Ps8Hashable", "navItem.storage"]
 - ["Ps8Hashable", "navigationBar"]
@@ -568,6 +600,7 @@ depends-member:
 - ["Ps8Hashable", "refreshControl"]
 - ["Ps8Hashable", "register"]
 - !private ["Ps8Hashable", "registerButton"]
+- !private ["Ps8Hashable", "removeObserver"]
 - !private ["Ps8Hashable", "rightBarButtonItem"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
@@ -605,6 +638,12 @@ depends-member:
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableSliceable", "Element"]
@@ -621,6 +660,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UITableView"]
 - !private ["PSo8NSCoding", "UITableViewCell"]
 - !private ["PSo8NSCoding", "WBNetworkManager"]
+- !private ["PSo8NSCoding", "WBUserLoginSuccessNotification"]
 - !private ["PSo8NSCoding", "WBUserShouldLoginNotification"]
 - !private ["PSo8NSCoding", "WBVisitorView"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -644,6 +684,7 @@ depends-member:
 - ["PSo8NSCoding", "loadData"]
 - ["PSo8NSCoding", "login"]
 - !private ["PSo8NSCoding", "loginButton"]
+- ["PSo8NSCoding", "loginSuccess"]
 - ["PSo8NSCoding", "navItem"]
 - ["PSo8NSCoding", "navItem.storage"]
 - ["PSo8NSCoding", "navigationBar"]
@@ -692,6 +733,7 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "cz_colorWithHex"]
 - !private ["PSo9NSCopying", "darkGrayColor"]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "orangeColor"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "shared"]
@@ -710,6 +752,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UITableView"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
 - !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
+- !private ["PSo26NSExtensionRequestHandling", "WBUserLoginSuccessNotification"]
 - !private ["PSo26NSExtensionRequestHandling", "WBUserShouldLoginNotification"]
 - !private ["PSo26NSExtensionRequestHandling", "WBVisitorView"]
 - !private ["PSo26NSExtensionRequestHandling", "automaticallyAdjustsScrollViewInsets"]
@@ -718,6 +761,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "isPullup"]
 - ["PSo26NSExtensionRequestHandling", "loadData"]
 - ["PSo26NSExtensionRequestHandling", "login"]
+- ["PSo26NSExtensionRequestHandling", "loginSuccess"]
 - ["PSo26NSExtensionRequestHandling", "navItem"]
 - ["PSo26NSExtensionRequestHandling", "navItem.storage"]
 - ["PSo26NSExtensionRequestHandling", "navigationBar"]
@@ -753,12 +797,16 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "visitorInfoDictionary"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo20NSNotificationCenter", "addObserver"]
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- !private ["CSo20NSNotificationCenter", "removeObserver"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSNotification"]
 - !private ["CSo8NSObject", "NSNotificationCenter"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
@@ -771,8 +819,10 @@ depends-member:
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "WBNetworkManager"]
+- !private ["CSo8NSObject", "WBUserLoginSuccessNotification"]
 - !private ["CSo8NSObject", "WBUserShouldLoginNotification"]
 - !private ["CSo8NSObject", "WBVisitorView"]
+- !private ["CSo8NSObject", "addObserver"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "automaticallyAdjustsScrollViewInsets"]
@@ -796,6 +846,7 @@ depends-member:
 - ["CSo8NSObject", "loadData"]
 - ["CSo8NSObject", "login"]
 - !private ["CSo8NSObject", "loginButton"]
+- ["CSo8NSObject", "loginSuccess"]
 - ["CSo8NSObject", "navItem"]
 - ["CSo8NSObject", "navItem.storage"]
 - ["CSo8NSObject", "navigationBar"]
@@ -809,6 +860,7 @@ depends-member:
 - ["CSo8NSObject", "refreshControl"]
 - ["CSo8NSObject", "register"]
 - !private ["CSo8NSObject", "registerButton"]
+- !private ["CSo8NSObject", "removeObserver"]
 - !private ["CSo8NSObject", "rightBarButtonItem"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
@@ -855,8 +907,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UITableView"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
 - !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
+- !private ["PSo16NSObjectProtocol", "WBUserLoginSuccessNotification"]
 - !private ["PSo16NSObjectProtocol", "WBUserShouldLoginNotification"]
 - !private ["PSo16NSObjectProtocol", "WBVisitorView"]
+- !private ["PSo16NSObjectProtocol", "addObserver"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "automaticallyAdjustsScrollViewInsets"]
@@ -880,6 +934,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "loadData"]
 - ["PSo16NSObjectProtocol", "login"]
 - !private ["PSo16NSObjectProtocol", "loginButton"]
+- ["PSo16NSObjectProtocol", "loginSuccess"]
 - ["PSo16NSObjectProtocol", "navItem"]
 - ["PSo16NSObjectProtocol", "navItem.storage"]
 - ["PSo16NSObjectProtocol", "navigationBar"]
@@ -893,6 +948,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "refreshControl"]
 - ["PSo16NSObjectProtocol", "register"]
 - !private ["PSo16NSObjectProtocol", "registerButton"]
+- !private ["PSo16NSObjectProtocol", "removeObserver"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
@@ -929,11 +985,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "cz_colorWithHex"]
 - !private ["PSo14NSSecureCoding", "darkGrayColor"]
+- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "orangeColor"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "shared"]
 - !private ["PSo14NSSecureCoding", "userLogon"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
 - !private ["PSo24NSURLSessionDataDelegate", "shared"]
 - !private ["PSo24NSURLSessionDataDelegate", "userLogon"]
 - !private ["PSo20NSURLSessionDelegate", "shared"]
@@ -945,6 +1004,7 @@ depends-member:
 - !private ["Ps13OptionSetType", "TouchUpInside"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps16RawRepresentable", "Plain"]
 - !private ["Ps16RawRepresentable", "TouchUpInside"]
@@ -954,6 +1014,10 @@ depends-member:
 - !private ["Ps12SequenceType", "Value"]
 - !private ["Ps14SetAlgebraType", "TouchUpInside"]
 - !private ["Ps14SetAlgebraType", "ValueChanged"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1005,6 +1069,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UITableView"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
 - !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
+- !private ["PSo21UIAppearanceContainer", "WBUserLoginSuccessNotification"]
 - !private ["PSo21UIAppearanceContainer", "WBUserShouldLoginNotification"]
 - !private ["PSo21UIAppearanceContainer", "WBVisitorView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
@@ -1025,6 +1090,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "loadData"]
 - ["PSo21UIAppearanceContainer", "login"]
 - !private ["PSo21UIAppearanceContainer", "loginButton"]
+- ["PSo21UIAppearanceContainer", "loginSuccess"]
 - ["PSo21UIAppearanceContainer", "navItem"]
 - ["PSo21UIAppearanceContainer", "navItem.storage"]
 - ["PSo21UIAppearanceContainer", "navigationBar"]
@@ -1092,6 +1158,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UITableView"]
 - !private ["PSo18UIContentContainer", "UITableViewCell"]
 - !private ["PSo18UIContentContainer", "WBNetworkManager"]
+- !private ["PSo18UIContentContainer", "WBUserLoginSuccessNotification"]
 - !private ["PSo18UIContentContainer", "WBUserShouldLoginNotification"]
 - !private ["PSo18UIContentContainer", "WBVisitorView"]
 - !private ["PSo18UIContentContainer", "automaticallyAdjustsScrollViewInsets"]
@@ -1100,6 +1167,7 @@ depends-member:
 - ["PSo18UIContentContainer", "isPullup"]
 - ["PSo18UIContentContainer", "loadData"]
 - ["PSo18UIContentContainer", "login"]
+- ["PSo18UIContentContainer", "loginSuccess"]
 - ["PSo18UIContentContainer", "navItem"]
 - ["PSo18UIContentContainer", "navItem.storage"]
 - ["PSo18UIContentContainer", "navigationBar"]
@@ -1191,6 +1259,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UITableView"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
 - !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
+- !private ["PSo18UIFocusEnvironment", "WBUserLoginSuccessNotification"]
 - !private ["PSo18UIFocusEnvironment", "WBUserShouldLoginNotification"]
 - !private ["PSo18UIFocusEnvironment", "WBVisitorView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
@@ -1211,6 +1280,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "loadData"]
 - ["PSo18UIFocusEnvironment", "login"]
 - !private ["PSo18UIFocusEnvironment", "loginButton"]
+- ["PSo18UIFocusEnvironment", "loginSuccess"]
 - ["PSo18UIFocusEnvironment", "navItem"]
 - ["PSo18UIFocusEnvironment", "navItem.storage"]
 - ["PSo18UIFocusEnvironment", "navigationBar"]
@@ -1269,6 +1339,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSNotification"]
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
@@ -1281,6 +1352,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "WBNetworkManager"]
+- !private ["CSo11UIResponder", "WBUserLoginSuccessNotification"]
 - !private ["CSo11UIResponder", "WBUserShouldLoginNotification"]
 - !private ["CSo11UIResponder", "WBVisitorView"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -1301,6 +1373,7 @@ depends-member:
 - ["CSo11UIResponder", "loadData"]
 - ["CSo11UIResponder", "login"]
 - !private ["CSo11UIResponder", "loginButton"]
+- ["CSo11UIResponder", "loginSuccess"]
 - ["CSo11UIResponder", "navItem"]
 - ["CSo11UIResponder", "navItem.storage"]
 - ["CSo11UIResponder", "navigationBar"]
@@ -1361,6 +1434,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UITableView"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
 - !private ["PSo20UIScrollViewDelegate", "WBNetworkManager"]
+- !private ["PSo20UIScrollViewDelegate", "WBUserLoginSuccessNotification"]
 - !private ["PSo20UIScrollViewDelegate", "WBUserShouldLoginNotification"]
 - !private ["PSo20UIScrollViewDelegate", "WBVisitorView"]
 - !private ["PSo20UIScrollViewDelegate", "automaticallyAdjustsScrollViewInsets"]
@@ -1368,6 +1442,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "isPullup"]
 - !private ["PSo20UIScrollViewDelegate", "loadData"]
 - !private ["PSo20UIScrollViewDelegate", "login"]
+- !private ["PSo20UIScrollViewDelegate", "loginSuccess"]
 - !private ["PSo20UIScrollViewDelegate", "navItem"]
 - !private ["PSo20UIScrollViewDelegate", "navigationBar"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
@@ -1411,6 +1486,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UITableView"]
 - !private ["PSo16UIStateRestoring", "UITableViewCell"]
 - !private ["PSo16UIStateRestoring", "WBNetworkManager"]
+- !private ["PSo16UIStateRestoring", "WBUserLoginSuccessNotification"]
 - !private ["PSo16UIStateRestoring", "WBUserShouldLoginNotification"]
 - !private ["PSo16UIStateRestoring", "WBVisitorView"]
 - !private ["PSo16UIStateRestoring", "automaticallyAdjustsScrollViewInsets"]
@@ -1419,6 +1495,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "isPullup"]
 - ["PSo16UIStateRestoring", "loadData"]
 - ["PSo16UIStateRestoring", "login"]
+- ["PSo16UIStateRestoring", "loginSuccess"]
 - ["PSo16UIStateRestoring", "navItem"]
 - ["PSo16UIStateRestoring", "navItem.storage"]
 - ["PSo16UIStateRestoring", "navigationBar"]
@@ -1477,6 +1554,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UITableView"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
 - !private ["PSo21UITableViewDataSource", "WBNetworkManager"]
+- !private ["PSo21UITableViewDataSource", "WBUserLoginSuccessNotification"]
 - !private ["PSo21UITableViewDataSource", "WBUserShouldLoginNotification"]
 - !private ["PSo21UITableViewDataSource", "WBVisitorView"]
 - !private ["PSo21UITableViewDataSource", "automaticallyAdjustsScrollViewInsets"]
@@ -1484,6 +1562,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "isPullup"]
 - !private ["PSo21UITableViewDataSource", "loadData"]
 - !private ["PSo21UITableViewDataSource", "login"]
+- !private ["PSo21UITableViewDataSource", "loginSuccess"]
 - !private ["PSo21UITableViewDataSource", "navItem"]
 - !private ["PSo21UITableViewDataSource", "navigationBar"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
@@ -1527,6 +1606,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UITableView"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCell"]
 - !private ["PSo19UITableViewDelegate", "WBNetworkManager"]
+- !private ["PSo19UITableViewDelegate", "WBUserLoginSuccessNotification"]
 - !private ["PSo19UITableViewDelegate", "WBUserShouldLoginNotification"]
 - !private ["PSo19UITableViewDelegate", "WBVisitorView"]
 - !private ["PSo19UITableViewDelegate", "automaticallyAdjustsScrollViewInsets"]
@@ -1534,6 +1614,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "isPullup"]
 - !private ["PSo19UITableViewDelegate", "loadData"]
 - !private ["PSo19UITableViewDelegate", "login"]
+- !private ["PSo19UITableViewDelegate", "loginSuccess"]
 - !private ["PSo19UITableViewDelegate", "navItem"]
 - !private ["PSo19UITableViewDelegate", "navigationBar"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
@@ -1578,6 +1659,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UITableView"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCell"]
 - !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
+- !private ["PSo18UITraitEnvironment", "WBUserLoginSuccessNotification"]
 - !private ["PSo18UITraitEnvironment", "WBUserShouldLoginNotification"]
 - !private ["PSo18UITraitEnvironment", "WBVisitorView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
@@ -1599,6 +1681,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "loadData"]
 - ["PSo18UITraitEnvironment", "login"]
 - !private ["PSo18UITraitEnvironment", "loginButton"]
+- ["PSo18UITraitEnvironment", "loginSuccess"]
 - ["PSo18UITraitEnvironment", "navItem"]
 - ["PSo18UITraitEnvironment", "navItem.storage"]
 - ["PSo18UITraitEnvironment", "navigationBar"]
@@ -1662,6 +1745,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSNotification"]
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
@@ -1674,6 +1758,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "WBNetworkManager"]
+- !private ["CSo16UIViewController", "WBUserLoginSuccessNotification"]
 - !private ["CSo16UIViewController", "WBUserShouldLoginNotification"]
 - !private ["CSo16UIViewController", "WBVisitorView"]
 - !private ["CSo16UIViewController", "automaticallyAdjustsScrollViewInsets"]
@@ -1682,6 +1767,7 @@ depends-member:
 - ["CSo16UIViewController", "isPullup"]
 - ["CSo16UIViewController", "loadData"]
 - ["CSo16UIViewController", "login"]
+- ["CSo16UIViewController", "loginSuccess"]
 - ["CSo16UIViewController", "navItem"]
 - ["CSo16UIViewController", "navItem.storage"]
 - ["CSo16UIViewController", "navigationBar"]
@@ -1716,10 +1802,18 @@ depends-member:
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "visitorInfoDictionary"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - ["C8STTWeiBo20WBBaseViewController", "CGRect"]
 - ["C8STTWeiBo20WBBaseViewController", "Int"]
 - !private ["C8STTWeiBo20WBBaseViewController", "NSForegroundColorAttributeName"]
 - ["C8STTWeiBo20WBBaseViewController", "NSIndexPath"]
+- !private ["C8STTWeiBo20WBBaseViewController", "NSNotification"]
 - !private ["C8STTWeiBo20WBBaseViewController", "NSNotificationCenter"]
 - ["C8STTWeiBo20WBBaseViewController", "String"]
 - !private ["C8STTWeiBo20WBBaseViewController", "UIBarButtonItem"]
@@ -1732,6 +1826,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "UITableView"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableViewCell"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBNetworkManager"]
+- !private ["C8STTWeiBo20WBBaseViewController", "WBUserLoginSuccessNotification"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBUserShouldLoginNotification"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBVisitorView"]
 - !private ["C8STTWeiBo20WBBaseViewController", "automaticallyAdjustsScrollViewInsets"]
@@ -1741,6 +1836,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "isPullup"]
 - ["C8STTWeiBo20WBBaseViewController", "loadData"]
 - !private ["C8STTWeiBo20WBBaseViewController", "login"]
+- !private ["C8STTWeiBo20WBBaseViewController", "loginSuccess"]
 - ["C8STTWeiBo20WBBaseViewController", "navItem"]
 - !private ["C8STTWeiBo20WBBaseViewController", "navItem.storage"]
 - ["C8STTWeiBo20WBBaseViewController", "navigationBar"]
@@ -1781,6 +1877,10 @@ depends-member:
 - !private ["C8STTWeiBo13WBVisitorView", "visitorInfo"]
 - !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "cz_colorWithHex"]
 - !private ["Ps24_ColorLiteralConvertible", "darkGrayColor"]
 - !private ["Ps24_ColorLiteralConvertible", "orangeColor"]
@@ -1790,6 +1890,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Key"]
 - !private ["Ps12_Reflectable", "Value"]
@@ -1826,14 +1927,25 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - !private "Ps14CollectionType"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - !private "Vs10Dictionary"
 - !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
@@ -1841,20 +1953,27 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
 - !private "CSo20NSNotificationCenter"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "PSo24NSURLSessionDataDelegate"
 - !private "PSo20NSURLSessionDelegate"
 - !private "PSo28NSURLSessionDownloadDelegate"
 - !private "PSo24NSURLSessionTaskDelegate"
 - !private "Ps13OptionSetType"
 - !private "Sq"
+- !private "Ps16OutputStreamType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1891,11 +2010,22 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
 - "C8STTWeiBo20WBBaseViewController"
 - !private "C8STTWeiBo16WBNetworkManager"
 - !private "C8STTWeiBo13WBVisitorView"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -1952,4 +2082,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-interface-hash: "331bf1001b974dbb9d8f5556c9103ef8"
+interface-hash: "0cc2c2e36f1703d7bec66025e28f80a1"
