@@ -6,18 +6,18 @@ provides-member:
 - ["CSo15UIBarButtonItem", "init"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- "UIBarButtonItem"
-- !private "+"
-- !private "UIButton"
-- "Selector"
-- !private "UIImage"
-- !private "UIColor"
-- !private "StringLiteralType"
-- "BooleanLiteralType"
-- "CGFloat"
-- "String"
 - "AnyObject"
+- "Selector"
+- !private "UIColor"
+- "CGFloat"
+- "UIBarButtonItem"
+- !private "StringLiteralType"
+- !private "UIButton"
+- !private "UIImage"
+- !private "+"
+- "Bool"
+- "BooleanLiteralType"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "UIButton"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -317,4 +317,8 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 interface-hash: "7695d913b97dd69101a88de9c1ced037"

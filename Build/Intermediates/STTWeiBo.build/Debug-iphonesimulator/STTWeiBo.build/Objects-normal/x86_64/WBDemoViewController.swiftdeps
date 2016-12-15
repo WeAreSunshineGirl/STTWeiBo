@@ -8,16 +8,16 @@ provides-member:
 - ["C8STTWeiBo20WBDemoViewController", "setupTableView"]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "showNext"
 - "setupTableView"
+- "showNext"
 depends-top-level:
-- !private "UnicodeScalarType"
 - !private "??"
+- !private "UnicodeScalarType"
 - !private "StringLiteralType"
-- "WBBaseViewController"
-- !private "BooleanLiteralType"
 - "WBDemoViewController"
+- !private "BooleanLiteralType"
 - !private "UIBarButtonItem"
+- "WBBaseViewController"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "WBDemoViewController"]
@@ -569,4 +569,8 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 interface-hash: "2fda956319441c6e4764d2b06452f58f"

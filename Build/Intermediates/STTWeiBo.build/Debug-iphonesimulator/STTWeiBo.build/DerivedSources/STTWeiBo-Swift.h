@@ -419,6 +419,7 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 @property (nonatomic) NSTimeInterval expires_in;
 @property (nonatomic, strong) NSDate * _Nullable expiresDate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (void)saveAccount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

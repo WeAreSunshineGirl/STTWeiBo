@@ -7,10 +7,10 @@ provides-member:
 provides-dynamic-lookup:
 - "namespace"
 depends-top-level:
-- "String"
 - "NSBundle"
-- !private "??"
+- "String"
 - !private "StringLiteralType"
+- !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "infoDictionary"]
 - ["Ps9AnyObject", "namespace"]
@@ -137,4 +137,8 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 interface-hash: "920427fed2ad25398580f18ef073fa8b"

@@ -168,4 +168,8 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/NSObject+YYModel.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules/module.modulemap"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
 interface-hash: "1994abd57794d0c7aa124f46431db112"
