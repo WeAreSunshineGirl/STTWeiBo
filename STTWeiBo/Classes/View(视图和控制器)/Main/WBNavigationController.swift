@@ -17,10 +17,7 @@ class WBNavigationController: UINavigationController {
         //隐藏默认的NavigationBar
         navigationBar.hidden = true
     }
-    
-    
-    
-    
+
     
     
     /**
