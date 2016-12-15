@@ -333,7 +333,11 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
 /// 加载 授权 accessToken
-- (void)loadAccessToken:(NSString * _Nonnull)code;
+///
+/// \param code 授权码
+///
+/// \param completion 完成回调[是否成功]
+- (void)loadAccessToken:(NSString * _Nonnull)code completion:(void (^ _Nonnull)(BOOL isSuccess))completion;
 @end
 
 
@@ -348,7 +352,7 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 /// \param completion 完成回调[list:微博字典数组，是否成功]
 - (void)statusList:(int64_t)since_id max_id:(int64_t)max_id completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nullable list, BOOL isSuccess))completion;
 
-/// 返回微博的未读数量
+/// 返回微博的未读数量 定时刷新 不需要提示是否失败
 - (void)unreadCount:(void (^ _Nonnull)(NSInteger count))completion;
 @end
 
