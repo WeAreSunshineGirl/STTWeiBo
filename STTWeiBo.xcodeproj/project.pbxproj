@@ -609,7 +609,7 @@
 			baseConfigurationReference = 39DCCF117E8BCE01A84DE0D8 /* Pods-STTWeiBo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = STTWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -626,7 +626,7 @@
 			baseConfigurationReference = 3664F7D1121B599462CF78D3 /* Pods-STTWeiBo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = STTWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

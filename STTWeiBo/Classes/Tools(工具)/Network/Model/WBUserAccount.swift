@@ -46,8 +46,26 @@ class WBUserAccount: NSObject {
             return
         }
         // 2 使用字典设置属性值
-//        yy_modelSetWithJSON(dict ?? [:])
+        yy_modelSetWithJSON(dict ?? [:])
         print("从沙盒加载用户信息\(self)")
+        
+        // 3判断token是否过期
+        //测试过期日期 - 开发中 每一个分支都需要测试！
+//        expiresDate = NSDate(timeIntervalSinceNow: -3600*24)  日期比现在日期小 就是过期  升序
+//        print(expiresDate)
+        
+        if expiresDate?.compare(NSDate()) != .OrderedDescending{
+            
+            print("账户过期")
+            
+            //清空 token
+            access_token = nil
+            uid = nil
+            
+            //删除账户文件
+           _ = try? NSFileManager.defaultManager().removeItemAtPath(path)
+            
+        }
     }
     
     

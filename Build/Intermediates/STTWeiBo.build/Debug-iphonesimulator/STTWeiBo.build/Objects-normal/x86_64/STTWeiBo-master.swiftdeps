@@ -1,10 +1,10 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "9bd8d75ff5892be3d145e2c443b948a5"
-build_time: [535100924, 570511000]
+build_time: [535103802, 485726000]
 inputs:
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [535019391, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [533899091, 0]
-  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/Model/WBUserAccount.swift": [535100924, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/Model/WBUserAccount.swift": [535103802, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/\u6D4B\u8BD5/WBDemoViewController.swift": [534843831, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/ViewModel(\u89C6\u56FE\u6A21\u578B)/WBStatusListViewModel.swift": [534828439, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/NSBundle+Extensions.swift": [533888873, 0]
