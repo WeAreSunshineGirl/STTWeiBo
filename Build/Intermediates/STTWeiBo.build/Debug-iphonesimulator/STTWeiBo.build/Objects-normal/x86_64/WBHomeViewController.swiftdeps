@@ -9,24 +9,24 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
 - ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "setupTableView"
 - "loadData"
+- "setupTableView"
 - "showFriends"
+- "tableView"
+- "tableView"
 depends-top-level:
+- !private "UIBarButtonItem"
+- "Int"
+- "NSIndexPath"
+- "StringLiteralType"
+- !private "print"
+- "UITableViewCell"
+- !private "WBDemoViewController"
+- "WBStatusListViewModel"
+- "WBHomeViewController"
 - "WBBaseViewController"
 - "UITableView"
 - !private "cellId"
-- "WBStatusListViewModel"
-- !private "UIBarButtonItem"
-- "WBHomeViewController"
-- !private "WBDemoViewController"
-- "UITableViewCell"
-- "StringLiteralType"
-- "NSIndexPath"
-- !private "print"
-- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UITableViewCell"]

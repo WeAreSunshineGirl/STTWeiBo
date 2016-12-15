@@ -8,8 +8,8 @@ provides-dynamic-lookup:
 - "namespace"
 depends-top-level:
 - "NSBundle"
-- "String"
 - !private "StringLiteralType"
+- "String"
 - !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "infoDictionary"]
