@@ -15,18 +15,18 @@ provides-dynamic-lookup:
 - "loadData"
 - "setupTableView"
 depends-top-level:
-- !private "cellId"
-- "StringLiteralType"
-- !private "WBDemoViewController"
-- "UITableView"
 - !private "UIBarButtonItem"
-- "WBStatusListViewModel"
-- !private "print"
-- "WBBaseViewController"
-- "WBHomeViewController"
 - "NSIndexPath"
+- !private "WBDemoViewController"
+- "WBStatusListViewModel"
 - "Int"
 - "UITableViewCell"
+- !private "print"
+- "WBHomeViewController"
+- "WBBaseViewController"
+- "StringLiteralType"
+- "UITableView"
+- !private "cellId"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UITableViewCell"]

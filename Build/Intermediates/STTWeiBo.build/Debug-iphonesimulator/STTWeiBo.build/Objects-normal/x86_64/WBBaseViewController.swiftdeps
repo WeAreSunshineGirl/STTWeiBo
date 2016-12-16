@@ -7,58 +7,58 @@ provides-member:
 - ["C8STTWeiBo20WBBaseViewController", ""]
 - ["C8STTWeiBo20WBBaseViewController", "setupTableView"]
 provides-dynamic-lookup:
-- "loadData"
-- "navigationBar"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "title"
-- "register"
-- "navItem"
-- "login"
-- "viewDidLoad"
-- "refreshControl"
 - "visitorInfoDictionary"
+- "viewDidLoad"
+- "loadData"
 - "setupTableView"
-- "loginSuccess"
+- "login"
+- "refreshControl"
+- "register"
 - "isPullup"
+- "loginSuccess"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "navigationBar"
+- "navItem"
 depends-top-level:
-- !private "||"
-- "UITableViewCell"
-- !private "Dictionary"
-- "NSIndexPath"
-- "String"
-- !private "NSNotificationCenter"
-- !private "UIEdgeInsets"
-- !private "UIColor"
-- !private "<"
-- "Int"
-- !private "Array"
-- !private "WBNetworkManager"
-- "UITableViewDelegate"
-- "UITableViewDataSource"
-- "BooleanLiteralType"
-- "UINavigationBar"
-- !private "print"
-- !private "WBVisitorView"
-- "CGRect"
-- "UIViewController"
 - "UITableView"
-- !private "NSNotification"
-- !private "WBUserLoginSuccessNotification"
-- !private "!"
-- !private "WBUserShouldLoginNotification"
-- "WBBaseViewController"
 - !private "=="
-- !private "UIBarButtonItem"
-- "UIScreen"
-- "UINavigationItem"
-- !private "NSForegroundColorAttributeName"
-- !private "??"
 - !private "-"
+- "String"
+- !private "!"
+- !private "<"
+- !private "UIBarButtonItem"
+- "WBBaseViewController"
+- !private "WBVisitorView"
+- "UINavigationBar"
+- !private "??"
+- !private "Array"
+- "UINavigationItem"
+- !private "UIColor"
+- "NSIndexPath"
 - !private "&&"
+- !private "NSForegroundColorAttributeName"
+- !private "WBUserLoginSuccessNotification"
+- "UITableViewDelegate"
+- !private "print"
+- !private "||"
+- "UITableViewDataSource"
+- "UITableViewCell"
+- !private "WBUserShouldLoginNotification"
 - "UIRefreshControl"
+- !private "UIEdgeInsets"
+- "CGRect"
+- !private "NSNotification"
+- !private "WBNetworkManager"
+- "BooleanLiteralType"
+- !private "NSNotificationCenter"
+- "UIScreen"
+- "UIViewController"
+- "Int"
+- !private "Dictionary"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "userLogon"]
@@ -121,6 +121,7 @@ depends-member:
 - !private ["Ps9AnyObject", "removeObserver"]
 - !private ["Ps9AnyObject", "rightBarButtonItem"]
 - !private ["Ps9AnyObject", "row"]
+- !private ["Ps9AnyObject", "scrollIndicatorInsets"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
 - ["Ps9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -221,6 +222,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "removeObserver"]
 - !private ["Ps11CVarArgType", "rightBarButtonItem"]
 - !private ["Ps11CVarArgType", "row"]
+- !private ["Ps11CVarArgType", "scrollIndicatorInsets"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["Ps11CVarArgType", "scrollViewDidEndDragging"]
 - ["Ps11CVarArgType", "scrollViewDidEndScrollingAnimation"]
@@ -318,6 +320,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "removeObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "scrollIndicatorInsets"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -411,6 +414,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "removeObserver"]
 - !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "scrollIndicatorInsets"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -510,6 +514,7 @@ depends-member:
 - !private ["Ps9Equatable", "removeObserver"]
 - !private ["Ps9Equatable", "rightBarButtonItem"]
 - !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "scrollIndicatorInsets"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
 - ["Ps9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -603,6 +608,7 @@ depends-member:
 - !private ["Ps8Hashable", "removeObserver"]
 - !private ["Ps8Hashable", "rightBarButtonItem"]
 - !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "scrollIndicatorInsets"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
 - ["Ps8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -699,6 +705,7 @@ depends-member:
 - !private ["PSo8NSCoding", "registerButton"]
 - !private ["PSo8NSCoding", "rightBarButtonItem"]
 - !private ["PSo8NSCoding", "row"]
+- !private ["PSo8NSCoding", "scrollIndicatorInsets"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -863,6 +870,7 @@ depends-member:
 - !private ["CSo8NSObject", "removeObserver"]
 - !private ["CSo8NSObject", "rightBarButtonItem"]
 - !private ["CSo8NSObject", "row"]
+- !private ["CSo8NSObject", "scrollIndicatorInsets"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -951,6 +959,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "removeObserver"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "row"]
+- !private ["PSo16NSObjectProtocol", "scrollIndicatorInsets"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -1034,6 +1043,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "numberOfRowsInSection"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfSections"]
 - !private ["PSo29UIAccessibilityIdentification", "registerButton"]
+- !private ["PSo29UIAccessibilityIdentification", "scrollIndicatorInsets"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo29UIAccessibilityIdentification", "visitorInfo"]
@@ -1053,6 +1063,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "numberOfRowsInSection"]
 - !private ["PSo12UIAppearance", "numberOfSections"]
 - !private ["PSo12UIAppearance", "registerButton"]
+- !private ["PSo12UIAppearance", "scrollIndicatorInsets"]
 - !private ["PSo12UIAppearance", "tintColor"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "visitorInfo"]
@@ -1102,6 +1113,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "refreshControl"]
 - ["PSo21UIAppearanceContainer", "register"]
 - !private ["PSo21UIAppearanceContainer", "registerButton"]
+- !private ["PSo21UIAppearanceContainer", "scrollIndicatorInsets"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1223,6 +1235,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "numberOfRowsInSection"]
 - !private ["PSo17UICoordinateSpace", "numberOfSections"]
 - !private ["PSo17UICoordinateSpace", "registerButton"]
+- !private ["PSo17UICoordinateSpace", "scrollIndicatorInsets"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo17UICoordinateSpace", "visitorInfo"]
@@ -1242,6 +1255,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "numberOfRowsInSection"]
 - !private ["PSo13UIDynamicItem", "numberOfSections"]
 - !private ["PSo13UIDynamicItem", "registerButton"]
+- !private ["PSo13UIDynamicItem", "scrollIndicatorInsets"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "visitorInfo"]
@@ -1292,6 +1306,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "refreshControl"]
 - ["PSo18UIFocusEnvironment", "register"]
 - !private ["PSo18UIFocusEnvironment", "registerButton"]
+- !private ["PSo18UIFocusEnvironment", "scrollIndicatorInsets"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1385,6 +1400,7 @@ depends-member:
 - ["CSo11UIResponder", "refreshControl"]
 - ["CSo11UIResponder", "register"]
 - !private ["CSo11UIResponder", "registerButton"]
+- !private ["CSo11UIResponder", "scrollIndicatorInsets"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1421,6 +1437,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "init"]
 - !private ["CSo12UIScrollView", "numberOfRowsInSection"]
 - !private ["CSo12UIScrollView", "numberOfSections"]
+- !private ["CSo12UIScrollView", "scrollIndicatorInsets"]
 - ["PSo20UIScrollViewDelegate", "CGRect"]
 - !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
@@ -1540,6 +1557,7 @@ depends-member:
 - !private ["CSo11UITableView", "init"]
 - !private ["CSo11UITableView", "numberOfRowsInSection"]
 - !private ["CSo11UITableView", "numberOfSections"]
+- !private ["CSo11UITableView", "scrollIndicatorInsets"]
 - !private ["CSo15UITableViewCell", "init"]
 - ["PSo21UITableViewDataSource", "CGRect"]
 - !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
@@ -1693,6 +1711,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "refreshControl"]
 - ["PSo18UITraitEnvironment", "register"]
 - !private ["PSo18UITraitEnvironment", "registerButton"]
+- !private ["PSo18UITraitEnvironment", "scrollIndicatorInsets"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1738,6 +1757,7 @@ depends-member:
 - !private ["CSo6UIView", "numberOfRowsInSection"]
 - !private ["CSo6UIView", "numberOfSections"]
 - !private ["CSo6UIView", "registerButton"]
+- !private ["CSo6UIView", "scrollIndicatorInsets"]
 - !private ["CSo6UIView", "tintColor"]
 - !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["CSo6UIView", "visitorInfo"]
@@ -1912,6 +1932,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "numberOfRowsInSection"]
 - !private ["Ps12_Reflectable", "numberOfSections"]
 - !private ["Ps12_Reflectable", "registerButton"]
+- !private ["Ps12_Reflectable", "scrollIndicatorInsets"]
 - !private ["Ps12_Reflectable", "tintColor"]
 - !private ["Ps12_Reflectable", "titleTextAttributes"]
 - !private ["Ps12_Reflectable", "visitorInfo"]
