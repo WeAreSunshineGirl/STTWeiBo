@@ -8,6 +8,7 @@
 
 import UIKit
 
+import SVProgressHUD
 
 //主控制器
 class WBMainViewController: UITabBarController {
@@ -55,10 +56,25 @@ class WBMainViewController: UITabBarController {
     
     @objc private func userlogin(n:NSNotification){
         print("用户登录通知\(n)")
+        var when = DISPATCH_TIME_NOW
         
-        //展现登陆控制器 - 通常会和UINavigationController连用 方便返回
-        let nav = UINavigationController(rootViewController: WBOAuthViewController())
-        presentViewController(nav, animated: true, completion: nil)
+        //判断 n.object是否有值 如果有值 提示用户重新登录
+        if n.object != nil {
+            
+            //设置指示器渐变样式
+            SVProgressHUD.setDefaultMaskType(.Black)
+            SVProgressHUD.showInfoWithStatus("用户登录已经超时 需要重新登录")
+            
+            //修改延迟时间
+            when = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC))
+        }
+        
+        dispatch_after(when, dispatch_get_main_queue()) {
+            //展现登陆控制器 - 通常会和UINavigationController连用 方便返回
+            let nav = UINavigationController(rootViewController: WBOAuthViewController())
+            self.presentViewController(nav, animated: true, completion: nil)
+        }
+        
     }
     
     

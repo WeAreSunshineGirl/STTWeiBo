@@ -6,98 +6,193 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo24WBDiscoverViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "WBBaseViewController"
 - "WBDiscoverViewController"
+- "WBBaseViewController"
+- !private "WBNetworkManager"
+- !private "StringLiteralType"
+- !private "print"
 depends-member:
+- !private ["CSo20AFHTTPSessionManager", "shared"]
+- !private ["CSo20AFHTTPSessionManager", "userAccount"]
+- !private ["CSo19AFURLSessionManager", "shared"]
+- !private ["CSo19AFURLSessionManager", "userAccount"]
+- !private ["Ps9AnyObject", "WBNetworkManager"]
+- !private ["Ps9AnyObject", "access_token"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "userAccount"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "WBNetworkManager"]
+- !private ["Ps11CVarArgType", "access_token"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "shared"]
+- !private ["Ps11CVarArgType", "userAccount"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
+- !private ["Ps28CustomDebugStringConvertible", "access_token"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "userAccount"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
+- !private ["Ps23CustomStringConvertible", "access_token"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "userAccount"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "WBNetworkManager"]
+- !private ["Ps9Equatable", "access_token"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "userAccount"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "WBNetworkManager"]
+- !private ["Ps8Hashable", "access_token"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "userAccount"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "WBNetworkManager"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "shared"]
+- !private ["PSo8NSCoding", "userAccount"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "shared"]
+- !private ["PSo9NSCopying", "userAccount"]
+- !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "WBNetworkManager"]
+- !private ["CSo8NSObject", "access_token"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "userAccount"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
+- !private ["PSo16NSObjectProtocol", "access_token"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "userAccount"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "shared"]
+- !private ["PSo14NSSecureCoding", "userAccount"]
+- !private ["PSo24NSURLSessionDataDelegate", "shared"]
+- !private ["PSo24NSURLSessionDataDelegate", "userAccount"]
+- !private ["PSo20NSURLSessionDelegate", "shared"]
+- !private ["PSo20NSURLSessionDelegate", "userAccount"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "shared"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "userAccount"]
+- !private ["PSo24NSURLSessionTaskDelegate", "shared"]
+- !private ["PSo24NSURLSessionTaskDelegate", "userAccount"]
+- !private ["Sq", "deinit"]
+- !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "WBNetworkManager"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "WBNetworkManager"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo20UIScrollViewDelegate", "WBNetworkManager"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "WBNetworkManager"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo21UITableViewDataSource", "WBNetworkManager"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
 - ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "WBNetworkManager"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "WBNetworkManager"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- !private ["C8STTWeiBo20WBBaseViewController", "WBNetworkManager"]
 - ["C8STTWeiBo20WBBaseViewController", "didReceiveMemoryWarning"]
 - ["C8STTWeiBo20WBBaseViewController", "init"]
+- !private ["C8STTWeiBo20WBBaseViewController", "print"]
 - ["C8STTWeiBo20WBBaseViewController", "viewDidLoad"]
 - ["C8STTWeiBo20WBBaseViewController", ""]
+- !private ["C8STTWeiBo24WBDiscoverViewController", "WBNetworkManager"]
 - ["C8STTWeiBo24WBDiscoverViewController", "deinit"]
 - ["C8STTWeiBo24WBDiscoverViewController", "didReceiveMemoryWarning"]
 - ["C8STTWeiBo24WBDiscoverViewController", "init"]
+- !private ["C8STTWeiBo24WBDiscoverViewController", "print"]
 - ["C8STTWeiBo24WBDiscoverViewController", "viewDidLoad"]
+- !private ["C8STTWeiBo16WBNetworkManager", "shared"]
+- !private ["C8STTWeiBo16WBNetworkManager", "userAccount"]
+- !private ["C8STTWeiBo13WBUserAccount", "access_token"]
 depends-nominal:
+- !private "CSo20AFHTTPSessionManager"
+- !private "CSo19AFURLSessionManager"
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
@@ -105,9 +200,16 @@ depends-nominal:
 - "Ps9Equatable"
 - "Ps8Hashable"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSo24NSURLSessionDataDelegate"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "PSo24NSURLSessionTaskDelegate"
+- !private "Sq"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - "PSo18UIFocusEnvironment"
@@ -120,6 +222,8 @@ depends-nominal:
 - "CSo16UIViewController"
 - "C8STTWeiBo20WBBaseViewController"
 - "C8STTWeiBo24WBDiscoverViewController"
+- !private "C8STTWeiBo16WBNetworkManager"
+- !private "C8STTWeiBo13WBUserAccount"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode 2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

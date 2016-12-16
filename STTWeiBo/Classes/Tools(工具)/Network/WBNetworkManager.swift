@@ -60,12 +60,13 @@ class WBNetworkManager: AFHTTPSessionManager {
     func tokenRequest(method:WBHTTPMethod = .GET,URLString: String,parameters:[String:AnyObject]?,completion:(json:AnyObject?,isSuccess:Bool)->()) {
         
         //处理Token字典
-        // 0判断 token 是否 为nil  为 nil时 直接返回
+        // 0判断 token 是否 为nil  为 nil时 直接返回 程序执行过程中一般Token不会为nil
         guard let token = userAccount.access_token else{
-            print("没有 toekn！ 需要登录")
-            //FIXME: 发送通知，提示用户登录（本方法不知道被谁调用 谁接收到通知 谁处理）
+           
+            // 发送通知，提示用户登录（本方法不知道被谁调用 谁接收到通知 谁处理）
+             print("没有 toekn！ 需要登录")
+            NSNotificationCenter.defaultCenter().postNotificationName(WBUserShouldLoginNotification, object: nil)
 
-            
             completion(json: nil, isSuccess: false)
             
             return
@@ -113,8 +114,8 @@ class WBNetworkManager: AFHTTPSessionManager {
                 
                 print("token 过期了")
                 
-            
-                //FIXME: 发送通知，提示用户再次登录（本方法不知道被谁调用 谁接收到通知 谁处理）
+                // 发送通知，提示用户再次登录（本方法不知道被谁调用 谁接收到通知 谁处理）
+                NSNotificationCenter.defaultCenter().postNotificationName(WBUserShouldLoginNotification, object: "bad token")
             }
             
             //error 通常比较吓人 例如编号：XXXX 错误原因一堆英文

@@ -46,7 +46,7 @@ class WBUserAccount: NSObject {
             return
         }
         // 2 使用字典设置属性值
-//        yy_modelSetWithJSON(dict ?? [:])
+        yy_modelSetWithJSON(dict ?? [:])
         
         // 3判断token是否过期
         //测试过期日期 - 开发中 每一个分支都需要测试！
