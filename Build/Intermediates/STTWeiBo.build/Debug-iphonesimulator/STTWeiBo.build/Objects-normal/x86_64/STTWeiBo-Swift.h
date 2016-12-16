@@ -347,6 +347,13 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
+/// 加载当前用户信息  用户登录后立即执行
+- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
 /// 加载微博数据字典数组
 ///
 /// \param since _id:   返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0
@@ -422,10 +429,24 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 用户账户信息
 SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 @interface WBUserAccount : NSObject
+
+/// 访问令牌
 @property (nonatomic, copy) NSString * _Nullable access_token;
+
+/// 用户代号
 @property (nonatomic, copy) NSString * _Nullable uid;
+
+/// 过期时间 单位秒 开发者 5年 使用者 3天
 @property (nonatomic) NSTimeInterval expires_in;
+
+/// 过期日期
 @property (nonatomic, strong) NSDate * _Nullable expiresDate;
+
+/// 用户昵称
+@property (nonatomic, copy) NSString * _Nullable screen_name;
+
+/// 用户头像地址(大图) 180*180像素
+@property (nonatomic, copy) NSString * _Nullable avatar_large;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 

@@ -14,11 +14,11 @@ private let accountFile:NSString = "useraccount.json"
 /// 用户账户信息
 class WBUserAccount: NSObject {
 
-    //访问令牌
+    /// 访问令牌
     var access_token:String? //= "2.00mqiHMEXmKOnDeff2feca1dip6eeB"
-    //用户代号
+    /// 用户代号
     var uid:String?
-    //过期时间 单位秒 开发者 5年 使用者 3天
+    /// 过期时间 单位秒 开发者 5年 使用者 3天
     var expires_in:NSTimeInterval = 0{
         
         didSet{
@@ -26,8 +26,13 @@ class WBUserAccount: NSObject {
             
         }
     }
-    //过期日期
+    /// 过期日期
     var expiresDate:NSDate?
+    
+    /// 用户昵称
+    var screen_name:String?
+    /// 用户头像地址(大图) 180*180像素
+    var avatar_large:String?
     
     override var description: String{
         
@@ -46,7 +51,7 @@ class WBUserAccount: NSObject {
             return
         }
         // 2 使用字典设置属性值
-        yy_modelSetWithJSON(dict ?? [:])
+//        yy_modelSetWithJSON(dict ?? [:])
         
         // 3判断token是否过期
         //测试过期日期 - 开发中 每一个分支都需要测试！
