@@ -245,15 +245,17 @@ SWIFT_CLASS("_TtC8STTWeiBo20WBHomeViewController")
 
 
 @interface WBHomeViewController (SWIFT_EXTENSION(STTWeiBo))
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+@class UIButton;
+
+@interface WBHomeViewController (SWIFT_EXTENSION(STTWeiBo))
 
 /// 重写父类方法
 - (void)setupTableView;
-@end
-
-
-@interface WBHomeViewController (SWIFT_EXTENSION(STTWeiBo))
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)clickTitleButton:(UIButton * _Nonnull)btn;
 @end
 
 
@@ -454,7 +456,6 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBUserAccount")
 - (void)saveAccount;
 @end
 
-@class UIButton;
 
 
 /// 访客视图
