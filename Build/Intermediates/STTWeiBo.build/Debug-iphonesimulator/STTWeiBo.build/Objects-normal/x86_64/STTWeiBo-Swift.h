@@ -338,19 +338,19 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
+/// 加载当前用户信息  用户登录后立即执行
+- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
 /// 加载 授权 accessToken
 ///
 /// \param code 授权码
 ///
 /// \param completion 完成回调[是否成功]
 - (void)loadAccessToken:(NSString * _Nonnull)code completion:(void (^ _Nonnull)(BOOL isSuccess))completion;
-@end
-
-
-@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
-
-/// 加载当前用户信息  用户登录后立即执行
-- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
 @end
 
 
@@ -423,6 +423,13 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 重写 description 的计算型属性
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8STTWeiBo13WBTitleButton")
+@interface WBTitleButton : UIButton
+- (nonnull instancetype)initWithTitle:(NSString * _Nullable)title OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSDate;

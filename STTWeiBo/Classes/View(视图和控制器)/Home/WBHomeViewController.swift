@@ -159,9 +159,9 @@ extension WBHomeViewController{
      */
     private func setupNavTitle(){
         
-        let button = UIButton.cz_textButton("孙婷", fontSize: 17, normalColor: UIColor.darkGrayColor(), highlightedColor: UIColor.orangeColor())
-        button.setImage(UIImage(named: "navigationbar_arrow_down"), forState: .Normal)
-        button.setImage(UIImage(named: "navigationbar_arrow_up"), forState: .Selected)
+        let  title = WBNetworkManager.shared.userAccount.screen_name
+        
+        let button = WBTitleButton(title: title)
         
         navItem.titleView = button
         

@@ -36,6 +36,7 @@
 		CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */; };
 		CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */; };
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
+		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
 		CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15262E1DF94A0800149510 /* WBNetworkManager.swift */; };
 		CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */; };
 		CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B261F1E02260B0044B55C /* WBUserAccount.swift */; };
@@ -96,6 +97,7 @@
 		CE0843CC1DEFCDA900BD8168 /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
 		CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
+		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
 		CE15262E1DF94A0800149510 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
 		CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
 		CE1B261F1E02260B0044B55C /* WBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUserAccount.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		CE0843891DEFCA2800BD8168 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE0DF92F1E03CF40003F47BB /* TitleButton */,
 				CE0843941DEFCAD100BD8168 /* WBHomeViewController.swift */,
 			);
 			path = Home;
@@ -287,6 +290,14 @@
 				CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		CE0DF92F1E03CF40003F47BB /* TitleButton */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */,
+			);
+			path = TitleButton;
 			sourceTree = "<group>";
 		};
 		CE15262D1DF949BF00149510 /* Network */ = {
@@ -508,6 +519,7 @@
 				CE0843BE1DEFCC8200BD8168 /* NSObject+CZRuntime.m in Sources */,
 				CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */,
 				CE0843991DEFCAE600BD8168 /* WBProfileViewController.swift in Sources */,
+				CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */,
 				CE0843911DEFCA8300BD8168 /* WBNavigationController.swift in Sources */,
 				CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */,
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
