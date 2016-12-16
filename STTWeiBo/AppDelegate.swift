@@ -8,6 +8,9 @@
 
 import UIKit
 
+import SVProgressHUD
+import AFNetworking
+
 //ios10
 //import UserNotifications
 
@@ -22,8 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        sleep(2)
         
+        //设置应用程序 额外设置
        setupAdditions()
-        
        
         
         window = UIWindow()
@@ -31,9 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = WBMainViewController()
         
         window?.makeKeyAndVisible()
-        
-        
-        
+ 
         loadAppInfo()
         
         
@@ -42,28 +43,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-//MARK: 从服务器加载应用程序信息
+
+// MARK: - 设置应用程序额外信息
 extension AppDelegate{
+    
     private func setupAdditions(){
+        
+        // 1 设置 SVProgressHUD 最小解除时间 没有找到方法
+        SVProgressHUD.setMinimumDismissTimeInterval(1)
+        
+        // 2 设置网络加载指示器
+        AFNetworkActivityIndicatorManager.sharedManager().enabled = true
+        
+        
+        // 3 设置用户授权显示通知
         /*
-        //#available 是检测设备版本 如果是10.0以上
-        if #available(ios 10.0, *){
-            UNUserNotificationCenter.current().requestAuthorization([.alert,.badge,.carPlay,.sound]){(success,error) in
-                print("授权" + (success ? "成功" : "失败"))
-            }
-        }else{
-            //10.0 以下
-            //取得用户授权显示通知[上方的提示条/声音/badgeNumber]
-            let notifySettings = UIUserNotificationSettings(forTypes: [.Alert,.Badge,.Sound], categories: nil)
-            UIApplication.sharedApplication().registerUserNotificationSettings(notifySettings)
-        }
- */
+         //#available 是检测设备版本 如果是10.0以上
+         if #available(ios 10.0, *){
+         UNUserNotificationCenter.current().requestAuthorization([.alert,.badge,.carPlay,.sound]){(success,error) in
+         print("授权" + (success ? "成功" : "失败"))
+         }
+         }else{
+         //10.0 以下
+         //取得用户授权显示通知[上方的提示条/声音/badgeNumber]
+         let notifySettings = UIUserNotificationSettings(forTypes: [.Alert,.Badge,.Sound], categories: nil)
+         UIApplication.sharedApplication().registerUserNotificationSettings(notifySettings)
+         }
+         */
         //10.0 以下
         //取得用户授权显示通知[上方的提示条/声音/badgeNumber]
         let notifySettings = UIUserNotificationSettings(forTypes: [.Alert,.Badge,.Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(notifySettings)
     }
-    private func loadAppInfo(){
+    
+}
+//MARK: 从服务器加载应用程序信息
+extension AppDelegate{
+    
+        private func loadAppInfo(){
         //1 模拟异步
         dispatch_async(dispatch_get_global_queue(0, 0)) { 
             

@@ -316,6 +316,11 @@
         },
         {
           'type': 'file',
+          'name': "SVProgressAnimatedView.h",
+          'external-contents': "/Users/user/Desktop/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.h"
+        },
+        {
+          'type': 'file',
           'name': "SVProgressHUD-Swift.h",
           'external-contents': "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
         },
@@ -328,6 +333,11 @@
           'type': 'file',
           'name': "SVProgressHUD.h",
           'external-contents': "/Users/user/Desktop/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h"
+        },
+        {
+          'type': 'file',
+          'name': "SVRadialGradientLayer.h",
+          'external-contents': "/Users/user/Desktop/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.h"
         }
       ]
     },

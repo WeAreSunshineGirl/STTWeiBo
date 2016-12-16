@@ -116,14 +116,13 @@ extension WBOAuthViewController:UIWebViewDelegate{
             if !isSuccess{
                 SVProgressHUD.showInfoWithStatus("网络请求失败")
             }else{
-                SVProgressHUD.showInfoWithStatus("登陆成功")
+//                SVProgressHUD.showInfoWithStatus("登陆成功")
                 
                 //下一步做什么？通过通知发送登录成功消息 跳转界面
                 // 1 发送通知
                 NSNotificationCenter.defaultCenter().postNotificationName(WBUserLoginSuccessNotification, object: nil)
                 
                 // 2 关闭窗口
-                
                 self.close()
             }
         }

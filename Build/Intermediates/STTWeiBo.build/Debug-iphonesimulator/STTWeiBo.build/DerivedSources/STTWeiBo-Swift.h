@@ -117,6 +117,10 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 @end
 
 
+@interface AppDelegate (SWIFT_EXTENSION(STTWeiBo))
+@end
+
+
 @interface NSBundle (SWIFT_EXTENSION(STTWeiBo))
 @property (nonatomic, readonly, copy, getter=namespace) NSString * _Nonnull namespace_;
 @end
