@@ -370,6 +370,13 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 @end
 
 
+SWIFT_CLASS("_TtC8STTWeiBo16WBNewFeatureView")
+@interface WBNewFeatureView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 /// 通过webView加载新浪微博授权页面
 SWIFT_CLASS("_TtC8STTWeiBo21WBOAuthViewController")
@@ -485,6 +492,13 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 
 @interface WBVisitorView (SWIFT_EXTENSION(STTWeiBo))
 - (void)setupUI;
+@end
+
+
+SWIFT_CLASS("_TtC8STTWeiBo13WBWelcomeView")
+@interface WBWelcomeView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

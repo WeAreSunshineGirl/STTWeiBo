@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "9bd8d75ff5892be3d145e2c443b948a5"
-build_time: [535426488, 370828000]
+build_time: [535427243, 148629000]
 inputs:
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [535183675, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [535183675, 0]
@@ -21,4 +21,6 @@ inputs:
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBNavigationController.swift": [535106738, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/OAuth/WBOAuthViewController.swift": [535171163, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Message/WBMessageViewController.swift": [533876699, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/NewFeature/WBWelcomeView.swift": [535427242, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/NewFeature/WBNewFeatureView.swift": [9223372036854775807, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/WBCommon.swift": [535106496, 0]

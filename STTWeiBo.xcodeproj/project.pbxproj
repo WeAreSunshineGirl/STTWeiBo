@@ -39,6 +39,8 @@
 		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
 		CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15262E1DF94A0800149510 /* WBNetworkManager.swift */; };
 		CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */; };
+		CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18872F1E07736800420C0B /* WBWelcomeView.swift */; };
+		CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1887311E0773AA00420C0B /* WBNewFeatureView.swift */; };
 		CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B261F1E02260B0044B55C /* WBUserAccount.swift */; };
 		CE1B9C531DFE75FD0085E831 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1B9C521DFE75FD0085E831 /* main.json */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
@@ -100,6 +102,8 @@
 		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
 		CE15262E1DF94A0800149510 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
 		CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
+		CE18872F1E07736800420C0B /* WBWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWelcomeView.swift; sourceTree = "<group>"; };
+		CE1887311E0773AA00420C0B /* WBNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNewFeatureView.swift; sourceTree = "<group>"; };
 		CE1B261F1E02260B0044B55C /* WBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUserAccount.swift; sourceTree = "<group>"; };
 		CE1B9C521DFE75FD0085E831 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
@@ -314,6 +318,8 @@
 		CE18872E1E0772C600420C0B /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
+				CE18872F1E07736800420C0B /* WBWelcomeView.swift */,
+				CE1887311E0773AA00420C0B /* WBNewFeatureView.swift */,
 			);
 			path = NewFeature;
 			sourceTree = "<group>";
@@ -534,6 +540,8 @@
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
+				CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */,
+				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
 				CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
