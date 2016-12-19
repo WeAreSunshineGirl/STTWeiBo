@@ -61,6 +61,7 @@ class WBNewFeatureView: UIView {
             
             //指定 scrollView的属性
             scrollView.contentSize = CGSize(width: CGFloat(count + 1) * rect.width, height: rect.height)
+            
             scrollView.showsHorizontalScrollIndicator = false
             scrollView.showsVerticalScrollIndicator = false
             scrollView.bounces = false

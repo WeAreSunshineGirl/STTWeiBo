@@ -24,7 +24,7 @@ class WBMainViewController: UITabBarController {
         setupComposeButton()
         setupTimer()
         
-        setupNewFeatureViews()
+//        setupNewFeatureViews()
         
         
         //设置代理
@@ -153,8 +153,8 @@ extension WBMainViewController{
         _ = try? currentVersion.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
         
         // 4 返回 两个版本号 是否一致 new  not new  new
-//        return  currentVersion != sandBoxVersion
-        return  currentVersion == sandBoxVersion
+        return  currentVersion != sandBoxVersion
+//        return  currentVersion == sandBoxVersion
     }
 }
 
