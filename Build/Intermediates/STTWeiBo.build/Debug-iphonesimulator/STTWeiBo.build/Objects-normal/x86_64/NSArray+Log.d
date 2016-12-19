@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/Tools(工具)/Additions/NSArray+Log.m \
-  /Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/Tools(工具)/Additions/NSArray+Log.h
+  /Users/user/STTWeiBo/STTWeiBo/Classes/Tools(工具)/Additions/NSArray+Log.m \
+  /Users/user/STTWeiBo/STTWeiBo/Classes/Tools(工具)/Additions/NSArray+Log.h

@@ -4,495 +4,495 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AFAutoPurgingImageCache.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.h"
         },
         {
           'type': 'file',
           'name': "AFHTTPSessionManager.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
         },
         {
           'type': 'file',
           'name': "AFImageDownloader.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.h"
         },
         {
           'type': 'file',
           'name': "AFNetworkActivityIndicatorManager.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
         },
         {
           'type': 'file',
           'name': "AFNetworkReachabilityManager.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
         },
         {
           'type': 'file',
           'name': "AFNetworking-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
         },
         {
           'type': 'file',
           'name': "AFNetworking-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h"
         },
         {
           'type': 'file',
           'name': "AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "AFSecurityPolicy.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h"
         },
         {
           'type': 'file',
           'name': "AFURLRequestSerialization.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
         },
         {
           'type': 'file',
           'name': "AFURLResponseSerialization.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
         },
         {
           'type': 'file',
           'name': "AFURLSessionManager.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h"
         },
         {
           'type': 'file',
           'name': "UIActivityIndicatorView+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIButton+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIImage+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIImageView+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIKit+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIProgressView+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIRefreshControl+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIWebView+AFNetworking.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FMDB-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Headers/FMDB-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Headers/FMDB-Swift.h"
         },
         {
           'type': 'file',
           'name': "FMDB-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/FMDB/FMDB-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/FMDB/FMDB-umbrella.h"
         },
         {
           'type': 'file',
           'name': "FMDB.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/FMDB/src/fmdb/FMDB.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/FMDB/src/fmdb/FMDB.h"
         },
         {
           'type': 'file',
           'name': "FMDatabase.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabase.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabase.h"
         },
         {
           'type': 'file',
           'name': "FMDatabaseAdditions.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabaseAdditions.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabaseAdditions.h"
         },
         {
           'type': 'file',
           'name': "FMDatabasePool.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabasePool.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabasePool.h"
         },
         {
           'type': 'file',
           'name': "FMDatabaseQueue.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabaseQueue.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/FMDB/src/fmdb/FMDatabaseQueue.h"
         },
         {
           'type': 'file',
           'name': "FMResultSet.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/FMDB/src/fmdb/FMResultSet.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/FMDB/src/fmdb/FMResultSet.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/FMDB/FMDB.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/FMDB.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/FMDB.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/Pods_STTWeiBo.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/Pods_STTWeiBo.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-STTWeiBo-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo-umbrella.h"
         },
         {
           'type': 'file',
           'name': "Pods_STTWeiBo-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/Pods_STTWeiBo.framework/Headers/Pods_STTWeiBo-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/Pods_STTWeiBo.framework/Headers/Pods_STTWeiBo-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/Pods_STTWeiBo.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/Pods_STTWeiBo.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-STTWeiBo.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-STTWeiBo.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "NSData+ImageContentType.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h"
         },
         {
           'type': 'file',
           'name': "SDImageCache.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDImageCache.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDImageCache.h"
         },
         {
           'type': 'file',
           'name': "SDWebImage-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-Swift.h"
         },
         {
           'type': 'file',
           'name': "SDWebImage-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h"
         },
         {
           'type': 'file',
           'name': "SDWebImageCompat.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h"
         },
         {
           'type': 'file',
           'name': "SDWebImageDecoder.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.h"
         },
         {
           'type': 'file',
           'name': "SDWebImageDownloader.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h"
         },
         {
           'type': 'file',
           'name': "SDWebImageDownloaderOperation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h"
         },
         {
           'type': 'file',
           'name': "SDWebImageManager.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageManager.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageManager.h"
         },
         {
           'type': 'file',
           'name': "SDWebImageOperation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h"
         },
         {
           'type': 'file',
           'name': "SDWebImagePrefetcher.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h"
         },
         {
           'type': 'file',
           'name': "UIButton+WebCache.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h"
         },
         {
           'type': 'file',
           'name': "UIImage+GIF.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImage+GIF.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImage+GIF.h"
         },
         {
           'type': 'file',
           'name': "UIImage+MultiFormat.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h"
         },
         {
           'type': 'file',
           'name': "UIImageView+HighlightedWebCache.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h"
         },
         {
           'type': 'file',
           'name': "UIImageView+WebCache.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h"
         },
         {
           'type': 'file',
           'name': "UIView+WebCacheOperation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/SDWebImage.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SVIndefiniteAnimatedView.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.h"
         },
         {
           'type': 'file',
           'name': "SVProgressAnimatedView.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.h"
         },
         {
           'type': 'file',
           'name': "SVProgressHUD-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
         },
         {
           'type': 'file',
           'name': "SVProgressHUD-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/SVProgressHUD/SVProgressHUD-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/SVProgressHUD/SVProgressHUD-umbrella.h"
         },
         {
           'type': 'file',
           'name': "SVProgressHUD.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h"
         },
         {
           'type': 'file',
           'name': "SVRadialGradientLayer.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/SVProgressHUD.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/SVProgressHUD.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "NSObject+YYModel.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/YYModel/YYModel/NSObject+YYModel.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/YYModel/YYModel/NSObject+YYModel.h"
         },
         {
           'type': 'file',
           'name': "YYClassInfo.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/YYModel/YYModel/YYClassInfo.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/YYModel/YYModel/YYClassInfo.h"
         },
         {
           'type': 'file',
           'name': "YYModel-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Headers/YYModel-Swift.h"
         },
         {
           'type': 'file',
           'name': "YYModel-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/YYModel/YYModel-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/YYModel/YYModel-umbrella.h"
         },
         {
           'type': 'file',
           'name': "YYModel.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/YYModel/YYModel/YYModel.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/YYModel/YYModel/YYModel.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/YYModel/YYModel.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/YYModel.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/YYModel.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/pop/pop.framework/Headers",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/pop/pop.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "POP.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POP.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POP.h"
         },
         {
           'type': 'file',
           'name': "POPAnimatableProperty.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPAnimatableProperty.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPAnimatableProperty.h"
         },
         {
           'type': 'file',
           'name': "POPAnimation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPAnimation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPAnimation.h"
         },
         {
           'type': 'file',
           'name': "POPAnimationEvent.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPAnimationEvent.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPAnimationEvent.h"
         },
         {
           'type': 'file',
           'name': "POPAnimationExtras.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPAnimationExtras.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPAnimationExtras.h"
         },
         {
           'type': 'file',
           'name': "POPAnimationTracer.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPAnimationTracer.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPAnimationTracer.h"
         },
         {
           'type': 'file',
           'name': "POPAnimator.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPAnimator.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPAnimator.h"
         },
         {
           'type': 'file',
           'name': "POPBasicAnimation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPBasicAnimation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPBasicAnimation.h"
         },
         {
           'type': 'file',
           'name': "POPCustomAnimation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPCustomAnimation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPCustomAnimation.h"
         },
         {
           'type': 'file',
           'name': "POPDecayAnimation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPDecayAnimation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPDecayAnimation.h"
         },
         {
           'type': 'file',
           'name': "POPDefines.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPDefines.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPDefines.h"
         },
         {
           'type': 'file',
           'name': "POPGeometry.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPGeometry.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPGeometry.h"
         },
         {
           'type': 'file',
           'name': "POPLayerExtras.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPLayerExtras.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPLayerExtras.h"
         },
         {
           'type': 'file',
           'name': "POPPropertyAnimation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPPropertyAnimation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPPropertyAnimation.h"
         },
         {
           'type': 'file',
           'name': "POPSpringAnimation.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/pop/pop/POPSpringAnimation.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/pop/pop/POPSpringAnimation.h"
         },
         {
           'type': 'file',
           'name': "pop-Swift.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/pop/pop.framework/Headers/pop-Swift.h"
+          'external-contents': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/pop/pop.framework/Headers/pop-Swift.h"
         },
         {
           'type': 'file',
           'name': "pop-umbrella.h",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Pods/Target Support Files/pop/pop-umbrella.h"
+          'external-contents': "/Users/user/STTWeiBo/Pods/Target Support Files/pop/pop-umbrella.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Products/Debug-iphonesimulator/pop/pop.framework/Modules",
+      'name': "/Users/user/STTWeiBo/Build/Products/Debug-iphonesimulator/pop/pop.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/user/Desktop/STWeiBo/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/pop.build/module.modulemap"
+          'external-contents': "/Users/user/STTWeiBo/Build/Intermediates/Pods.build/Debug-iphonesimulator/pop.build/module.modulemap"
         }
       ]
     }
