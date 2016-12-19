@@ -115,6 +115,10 @@ extension WBMainViewController{
      */
     private func setupNewFeatureViews(){
         
+        // 0 判断是否登录
+        if !WBNetworkManager.shared.userLogon {
+            return
+        }
         // 1 如果更新 显示新特性 否则 显示 欢迎
         let v = isNewVersion ? WBNewFeatureView() : WBWelcomeView()
         
