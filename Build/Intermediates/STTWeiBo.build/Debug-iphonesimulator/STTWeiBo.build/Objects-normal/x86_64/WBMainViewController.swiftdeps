@@ -6,72 +6,72 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo20WBMainViewController", ""]
 provides-dynamic-lookup:
-- "userlogin"
 - "updateTimer"
+- "tabBarController"
 - "supportedInterfaceOrientations"
 - "composeStatus"
 - "viewDidLoad"
-- "tabBarController"
+- "userlogin"
 depends-top-level:
-- !private "NSForegroundColorAttributeName"
-- !private "UIImage"
-- !private "AnyObject"
-- !private "+"
-- !private "NSArray"
-- !private "NSData"
-- "Bool"
-- !private "??"
-- !private "SVProgressHUD"
-- !private "UINavigationController"
-- !private "WBNetworkManager"
-- !private "CGFloat"
-- !private "NSUTF8StringEncoding"
-- !private "UnicodeScalarType"
-- !private "NSEC_PER_SEC"
-- !private "NSBundle"
-- !private "*"
-- !private "UIApplication"
-- !private ">"
-- !private "dispatch_time"
-- !private "NSNotification"
-- !private "String"
-- !private "UIColor"
 - !private "WBNewFeatureView"
-- !private "StringLiteralType"
-- !private "NSString"
-- !private "WBOAuthViewController"
-- !private "/"
-- !private "NSClassFromString"
-- !private "WBNavigationController"
-- "NSTimer"
-- "UITabBarControllerDelegate"
 - !private "print"
-- !private "WBHomeViewController"
-- !private "WBWelcomeView"
-- !private "NSJSONSerialization"
-- !private "WBBaseViewController"
-- !private "NSNotificationCenter"
-- "UITabBarController"
-- !private "!"
-- !private "&&"
-- !private "UIFont"
-- "BooleanLiteralType"
-- !private "!="
-- !private "CGPoint"
-- "WBMainViewController"
-- !private "DISPATCH_TIME_NOW"
-- !private "WBUserShouldLoginNotification"
-- !private "Dictionary"
-- !private "=="
-- !private "dispatch_get_main_queue"
-- !private "NSSearchPathForDirectoriesInDomains"
 - "UIInterfaceOrientationMask"
-- "UIViewController"
-- !private "Int64"
-- !private "dispatch_after"
 - !private "NSFontAttributeName"
+- !private "DISPATCH_TIME_NOW"
+- !private "UnicodeScalarType"
+- !private "WBBaseViewController"
+- "WBMainViewController"
+- !private "String"
+- !private "NSNotificationCenter"
+- !private "UINavigationController"
+- !private "!"
+- !private "NSBundle"
+- !private "NSJSONSerialization"
+- !private "NSUTF8StringEncoding"
+- !private "&&"
+- !private "NSArray"
+- !private "NSClassFromString"
+- !private "!="
+- !private "UIFont"
+- !private "WBOAuthViewController"
+- !private "SVProgressHUD"
+- "UITabBarControllerDelegate"
+- "NSTimer"
+- !private "NSData"
+- !private "StringLiteralType"
+- !private "Dictionary"
+- !private "WBWelcomeView"
+- !private "+"
+- !private "CGFloat"
+- !private "dispatch_time"
+- !private "WBNetworkManager"
+- "UIViewController"
+- !private "AnyObject"
+- !private "CGPoint"
+- !private "Int64"
+- !private "*"
+- "Bool"
+- !private "UIColor"
+- !private "??"
+- !private "NSEC_PER_SEC"
+- !private "/"
+- "UITabBarController"
+- "BooleanLiteralType"
 - !private "Array"
+- !private ">"
 - "UIButton"
+- !private "WBHomeViewController"
+- !private "UIApplication"
+- !private "dispatch_after"
+- !private "NSNotification"
+- !private "WBUserShouldLoginNotification"
+- !private "=="
+- !private "NSForegroundColorAttributeName"
+- !private "WBNavigationController"
+- !private "NSString"
+- !private "UIImage"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "dispatch_get_main_queue"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "unreadCount"]
@@ -145,6 +145,7 @@ depends-member:
 - !private ["Ps9AnyObject", "loadData"]
 - !private ["Ps9AnyObject", "mainBundle"]
 - !private ["Ps9AnyObject", "namespace"]
+- !private ["Ps9AnyObject", "newFeatureView"]
 - !private ["Ps9AnyObject", "object"]
 - !private ["Ps9AnyObject", "orangeColor"]
 - !private ["Ps9AnyObject", "pathForResource"]
@@ -295,6 +296,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "loadData"]
 - !private ["Ps11CVarArgType", "mainBundle"]
 - !private ["Ps11CVarArgType", "namespace"]
+- !private ["Ps11CVarArgType", "newFeatureView"]
 - !private ["Ps11CVarArgType", "object"]
 - !private ["Ps11CVarArgType", "orangeColor"]
 - !private ["Ps11CVarArgType", "pathForResource"]
@@ -425,6 +427,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "loadData"]
 - !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
 - !private ["Ps28CustomDebugStringConvertible", "namespace"]
+- !private ["Ps28CustomDebugStringConvertible", "newFeatureView"]
 - !private ["Ps28CustomDebugStringConvertible", "object"]
 - !private ["Ps28CustomDebugStringConvertible", "orangeColor"]
 - !private ["Ps28CustomDebugStringConvertible", "pathForResource"]
@@ -542,6 +545,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "loadData"]
 - !private ["Ps23CustomStringConvertible", "mainBundle"]
 - !private ["Ps23CustomStringConvertible", "namespace"]
+- !private ["Ps23CustomStringConvertible", "newFeatureView"]
 - !private ["Ps23CustomStringConvertible", "object"]
 - !private ["Ps23CustomStringConvertible", "orangeColor"]
 - !private ["Ps23CustomStringConvertible", "pathForResource"]
@@ -671,6 +675,7 @@ depends-member:
 - !private ["Ps9Equatable", "loadData"]
 - !private ["Ps9Equatable", "mainBundle"]
 - !private ["Ps9Equatable", "namespace"]
+- !private ["Ps9Equatable", "newFeatureView"]
 - !private ["Ps9Equatable", "object"]
 - !private ["Ps9Equatable", "orangeColor"]
 - !private ["Ps9Equatable", "pathForResource"]
@@ -794,6 +799,7 @@ depends-member:
 - !private ["Ps8Hashable", "loadData"]
 - !private ["Ps8Hashable", "mainBundle"]
 - !private ["Ps8Hashable", "namespace"]
+- !private ["Ps8Hashable", "newFeatureView"]
 - !private ["Ps8Hashable", "object"]
 - !private ["Ps8Hashable", "orangeColor"]
 - !private ["Ps8Hashable", "pathForResource"]
@@ -958,6 +964,7 @@ depends-member:
 - ["PSo8NSCoding", "isNewVersion"]
 - !private ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "loadData"]
+- !private ["PSo8NSCoding", "newFeatureView"]
 - !private ["PSo8NSCoding", "object"]
 - !private ["PSo8NSCoding", "orangeColor"]
 - !private ["PSo8NSCoding", "presentViewController"]
@@ -1158,6 +1165,7 @@ depends-member:
 - !private ["CSo8NSObject", "loadData"]
 - !private ["CSo8NSObject", "mainBundle"]
 - !private ["CSo8NSObject", "namespace"]
+- !private ["CSo8NSObject", "newFeatureView"]
 - !private ["CSo8NSObject", "object"]
 - !private ["CSo8NSObject", "orangeColor"]
 - !private ["CSo8NSObject", "pathForResource"]
@@ -1262,6 +1270,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "loadData"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - !private ["PSo16NSObjectProtocol", "namespace"]
+- !private ["PSo16NSObjectProtocol", "newFeatureView"]
 - !private ["PSo16NSObjectProtocol", "object"]
 - !private ["PSo16NSObjectProtocol", "orangeColor"]
 - !private ["PSo16NSObjectProtocol", "pathForResource"]
@@ -1424,6 +1433,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "imageWithRenderingMode"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "items"]
+- !private ["PSo29UIAccessibilityIdentification", "newFeatureView"]
 - !private ["PSo29UIAccessibilityIdentification", "selectedImage"]
 - !private ["PSo29UIAccessibilityIdentification", "setContentOffset"]
 - !private ["PSo29UIAccessibilityIdentification", "setDefaultMaskType"]
@@ -1438,8 +1448,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "cz_imageButton"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
-- !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "items"]
+- !private ["PSo12UIAppearance", "newFeatureView"]
 - !private ["PSo12UIAppearance", "selectedImage"]
 - !private ["PSo12UIAppearance", "setContentOffset"]
 - !private ["PSo12UIAppearance", "setDefaultMaskType"]
@@ -1496,6 +1506,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "isNewVersion"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "loadData"]
+- !private ["PSo21UIAppearanceContainer", "newFeatureView"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "selectedIndex"]
@@ -1614,8 +1625,8 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "cz_imageButton"]
 - !private ["PSo17UICoordinateSpace", "frame"]
-- !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "items"]
+- !private ["PSo17UICoordinateSpace", "newFeatureView"]
 - !private ["PSo17UICoordinateSpace", "setContentOffset"]
 - !private ["PSo17UICoordinateSpace", "setDefaultMaskType"]
 - !private ["PSo17UICoordinateSpace", "showInfoWithStatus"]
@@ -1626,8 +1637,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "cz_imageButton"]
 - !private ["PSo13UIDynamicItem", "frame"]
-- !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "items"]
+- !private ["PSo13UIDynamicItem", "newFeatureView"]
 - !private ["PSo13UIDynamicItem", "setContentOffset"]
 - !private ["PSo13UIDynamicItem", "setDefaultMaskType"]
 - !private ["PSo13UIDynamicItem", "showInfoWithStatus"]
@@ -1682,6 +1693,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "isNewVersion"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - !private ["PSo18UIFocusEnvironment", "loadData"]
+- !private ["PSo18UIFocusEnvironment", "newFeatureView"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "selectedIndex"]
@@ -1776,6 +1788,7 @@ depends-member:
 - ["CSo11UIResponder", "isNewVersion"]
 - !private ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "loadData"]
+- !private ["CSo11UIResponder", "newFeatureView"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "selectedIndex"]
@@ -2131,6 +2144,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "isNewVersion"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "loadData"]
+- !private ["PSo18UITraitEnvironment", "newFeatureView"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "selectedIndex"]
@@ -2164,8 +2178,8 @@ depends-member:
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "cz_imageButton"]
 - !private ["CSo6UIView", "frame"]
-- !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "items"]
+- !private ["CSo6UIView", "newFeatureView"]
 - !private ["CSo6UIView", "setContentOffset"]
 - !private ["CSo6UIView", "setDefaultMaskType"]
 - !private ["CSo6UIView", "showInfoWithStatus"]
@@ -2338,7 +2352,7 @@ depends-member:
 - !private ["C8STTWeiBo16WBNetworkManager", "shared"]
 - !private ["C8STTWeiBo16WBNetworkManager", "unreadCount"]
 - !private ["C8STTWeiBo16WBNetworkManager", "userLogon"]
-- !private ["C8STTWeiBo16WBNewFeatureView", "init"]
+- !private ["C8STTWeiBo16WBNewFeatureView", "newFeatureView"]
 - !private ["C8STTWeiBo21WBOAuthViewController", "init"]
 - !private ["C8STTWeiBo13WBWelcomeView", "welcomeView"]
 - !private ["Ps10_ArrayType", "Generator"]
@@ -2428,6 +2442,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "insetBy"]
 - !private ["Ps12_Reflectable", "items"]
+- !private ["Ps12_Reflectable", "newFeatureView"]
 - !private ["Ps12_Reflectable", "setContentOffset"]
 - !private ["Ps12_Reflectable", "setDefaultMaskType"]
 - !private ["Ps12_Reflectable", "showInfoWithStatus"]

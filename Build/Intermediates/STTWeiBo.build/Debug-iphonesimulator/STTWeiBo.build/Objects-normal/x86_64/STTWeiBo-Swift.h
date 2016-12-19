@@ -373,9 +373,17 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 - (void)unreadCount:(void (^ _Nonnull)(NSInteger count))completion;
 @end
 
+@class UIScrollView;
+@class UIPageControl;
 
 SWIFT_CLASS("_TtC8STTWeiBo16WBNewFeatureView")
 @interface WBNewFeatureView : UIView
+@property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified scrollView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified enterButton;
+@property (nonatomic, weak) IBOutlet UIPageControl * _Null_unspecified pageControl;
+- (IBAction)enterStatus;
++ (WBNewFeatureView * _Nonnull)newFeatureView;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

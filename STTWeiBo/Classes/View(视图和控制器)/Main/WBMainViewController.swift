@@ -120,7 +120,7 @@ extension WBMainViewController{
             return
         }
         // 1 如果更新 显示新特性 否则 显示 欢迎
-        let v = isNewVersion ? WBNewFeatureView() : WBWelcomeView.welcomeView()
+        let v = isNewVersion ? WBNewFeatureView.newFeatureView() : WBWelcomeView.welcomeView()
         
         // 2 添加视图        
         view.addSubview(v)
@@ -153,7 +153,8 @@ extension WBMainViewController{
         _ = try? currentVersion.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
         
         // 4 返回 两个版本号 是否一致 new  not new  new
-        return  currentVersion != sandBoxVersion
+//        return  currentVersion != sandBoxVersion
+        return  currentVersion == sandBoxVersion
     }
 }
 

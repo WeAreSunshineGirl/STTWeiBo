@@ -13,6 +13,7 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujd-cJ-1hi">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCO-gD-thV">
                     <rect key="frame" x="248" y="341" width="105" height="36"/>
@@ -27,7 +28,7 @@
                     <color key="currentPageIndicatorTintColor" red="1" green="0.1417739267" blue="0.26846273079999999" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ujd-cJ-1hi" secondAttribute="bottom" id="5eh-v5-579"/>
                 <constraint firstItem="0qp-xn-PFr" firstAttribute="top" secondItem="RCO-gD-thV" secondAttribute="bottom" constant="30" id="C9Z-nf-63Q"/>
