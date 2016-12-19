@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "9bd8d75ff5892be3d145e2c443b948a5"
-build_time: [535189493, 637837000]
+build_time: [535426488, 370828000]
 inputs:
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [535183675, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [535183675, 0]
@@ -13,11 +13,11 @@ inputs:
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/Model(\u6A21\u578B)/WBStatus.swift": [534567193, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBBaseViewController.swift": [535169984, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBMainViewController.swift": [535184636, 0]
-  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/WBHomeViewController.swift": [535189423, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/WBHomeViewController.swift": [535191243, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/VisitorView/WBVisitorView.swift": [534480841, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/AppDelegate.swift": [535171163, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Profile/WBProfileViewController.swift": [533876710, 0]
-  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/TitleButton/WBTitleButton.swift": [535189493, 0]
+  "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/TitleButton/WBTitleButton.swift": [535426488, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBNavigationController.swift": [535106738, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/OAuth/WBOAuthViewController.swift": [535171163, 0]
   "/Users/user/Desktop/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Message/WBMessageViewController.swift": [533876699, 0]

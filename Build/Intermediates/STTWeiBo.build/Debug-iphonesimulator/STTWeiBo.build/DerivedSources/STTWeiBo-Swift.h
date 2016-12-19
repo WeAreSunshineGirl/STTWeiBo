@@ -430,6 +430,7 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBTitleButton")
 @interface WBTitleButton : UIButton
 - (nonnull instancetype)initWithTitle:(NSString * _Nullable)title OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
 @end
 
 @class NSDate;
