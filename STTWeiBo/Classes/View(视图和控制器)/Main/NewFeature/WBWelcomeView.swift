@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import SDWebImage
 
 class WBWelcomeView: UIView {
 
-//    override init(frame: CGRect) {
+//    override init(frame: CGRect) {//纯代码入口
 //        super.init(frame: frame)
 //        backgroundColor = UIColor.redColor()
 //
@@ -35,6 +36,27 @@ class WBWelcomeView: UIView {
         
         return v
     }
+    
+    required init?(coder aDecoder: NSCoder) {//xib 入口
+        super.init(coder: aDecoder)
+        //        提示 initWithCode 只是刚刚 从 xib 的二进制文件将视图数据加载完成  还没有和代码连线建立关系 所以开发时 前往不要在这个方法中处理  UI
+        print("initWithCode \(iconView)")//nil
+        
+    }
+    override func awakeFromNib() {
+        //         1 url
+        guard let urlString = WBNetworkManager.shared.userAccount.avatar_large, url = NSURL(string: urlString) else{
+            return
+        }
+        //        2 设置头像 如果网络头像没有下载完成 先显示占位头像
+        //        如果不指定占位头像 之前设置的头像会被清空
+        iconView.sd_setImageWithURL(url, placeholderImage: UIImage(named: "avatar_default_big"))
+        // 3 设置圆角
+        iconView.layer.cornerRadius = iconView.bounds.width * 0.5
+        iconView.clipsToBounds = true
+        iconView.layer.masksToBounds = true
+    }
+    
     //自动布局系统 更新完成约束后会自动调用此方法
     //通常是对子视图布局进行修改
 //    override func layoutSubviews() {
@@ -60,7 +82,11 @@ class WBWelcomeView: UIView {
             //更新约束
             self.layoutIfNeeded()
             }) { (_) in
-                
+                UIView.animateWithDuration(1.0, animations: { 
+                    self.tipView.alpha = 1
+                    }, completion: { (_) in
+                        self.removeFromSuperview()
+                })
         }
     }
 

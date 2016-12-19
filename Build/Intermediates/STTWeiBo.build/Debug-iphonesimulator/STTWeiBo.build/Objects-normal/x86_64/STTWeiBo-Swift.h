@@ -508,9 +508,9 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBWelcomeView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tipView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified bottomCons;
 + (WBWelcomeView * _Nonnull)welcomeView;
-- (void)didMoveToWindow;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+- (void)didMoveToWindow;
 @end
 
 #pragma clang diagnostic pop

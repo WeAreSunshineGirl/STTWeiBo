@@ -11,30 +11,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="LIN-9t-VJl">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-RQ-Beo">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="kMs-Nx-al7">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="5tM-Wj-fOw">
+                    <rect key="frame" x="258" y="355" width="85" height="85"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="85" id="G31-aK-3HJ"/>
-                        <constraint firstAttribute="height" constant="85" id="Iii-7y-DFM"/>
+                        <constraint firstAttribute="height" constant="85" id="fUm-m5-fPD"/>
+                        <constraint firstAttribute="width" constant="85" id="uDa-XC-qzB"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="G31-aK-3HJ"/>
-                            <exclude reference="Iii-7y-DFM"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="G31-aK-3HJ"/>
-                            <include reference="Iii-7y-DFM"/>
-                        </mask>
-                    </variation>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎归来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yak-XI-rrl">
-                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎归来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGR-NL-M1c">
+                    <rect key="frame" x="266" y="463" width="68" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -42,53 +30,19 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="LIN-9t-VJl" secondAttribute="bottom" id="8s0-S9-dOo"/>
-                <constraint firstAttribute="bottom" secondItem="kMs-Nx-al7" secondAttribute="bottom" constant="160" id="CPv-wk-dIq"/>
-                <constraint firstItem="LIN-9t-VJl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K8x-FM-5eQ"/>
-                <constraint firstItem="Yak-XI-rrl" firstAttribute="top" secondItem="kMs-Nx-al7" secondAttribute="bottom" constant="19" id="ZGD-JH-JTf"/>
-                <constraint firstItem="Yak-XI-rrl" firstAttribute="centerX" secondItem="kMs-Nx-al7" secondAttribute="centerX" id="gSg-z7-90Z"/>
-                <constraint firstItem="kMs-Nx-al7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jQJ-Um-1Qt"/>
-                <constraint firstAttribute="trailing" secondItem="LIN-9t-VJl" secondAttribute="trailing" id="ltz-pz-JqV"/>
-                <constraint firstItem="LIN-9t-VJl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pJU-6E-qxO"/>
+                <constraint firstItem="9yS-RQ-Beo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CHH-Ml-ujp"/>
+                <constraint firstItem="fGR-NL-M1c" firstAttribute="centerX" secondItem="5tM-Wj-fOw" secondAttribute="centerX" id="Fev-0t-Aeq"/>
+                <constraint firstAttribute="bottom" secondItem="5tM-Wj-fOw" secondAttribute="bottom" constant="160" id="OEi-Ji-V8U"/>
+                <constraint firstItem="9yS-RQ-Beo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SX6-UH-baW"/>
+                <constraint firstItem="5tM-Wj-fOw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cZK-ii-YTp"/>
+                <constraint firstAttribute="bottom" secondItem="9yS-RQ-Beo" secondAttribute="bottom" id="g6y-nx-P5r"/>
+                <constraint firstAttribute="trailing" secondItem="9yS-RQ-Beo" secondAttribute="trailing" id="gmx-eD-fsI"/>
+                <constraint firstItem="fGR-NL-M1c" firstAttribute="top" secondItem="5tM-Wj-fOw" secondAttribute="bottom" constant="23" id="uy3-Y5-vVO"/>
             </constraints>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="LIN-9t-VJl"/>
-                    <exclude reference="kMs-Nx-al7"/>
-                    <exclude reference="Yak-XI-rrl"/>
-                </mask>
-                <mask key="constraints">
-                    <exclude reference="8s0-S9-dOo"/>
-                    <exclude reference="K8x-FM-5eQ"/>
-                    <exclude reference="ltz-pz-JqV"/>
-                    <exclude reference="pJU-6E-qxO"/>
-                    <exclude reference="CPv-wk-dIq"/>
-                    <exclude reference="jQJ-Um-1Qt"/>
-                    <exclude reference="ZGD-JH-JTf"/>
-                    <exclude reference="gSg-z7-90Z"/>
-                </mask>
-            </variation>
-            <variation key="widthClass=compact">
-                <mask key="subviews">
-                    <include reference="LIN-9t-VJl"/>
-                    <include reference="kMs-Nx-al7"/>
-                    <include reference="Yak-XI-rrl"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="8s0-S9-dOo"/>
-                    <include reference="K8x-FM-5eQ"/>
-                    <include reference="ltz-pz-JqV"/>
-                    <include reference="pJU-6E-qxO"/>
-                    <include reference="CPv-wk-dIq"/>
-                    <include reference="jQJ-Um-1Qt"/>
-                    <include reference="ZGD-JH-JTf"/>
-                    <include reference="gSg-z7-90Z"/>
-                </mask>
-            </variation>
             <connections>
-                <outlet property="bottomCons" destination="CPv-wk-dIq" id="WIv-zB-O60"/>
-                <outlet property="iconView" destination="kMs-Nx-al7" id="829-nK-uzO"/>
-                <outlet property="tipView" destination="Yak-XI-rrl" id="iSk-gf-xKA"/>
+                <outlet property="bottomCons" destination="OEi-Ji-V8U" id="iUb-ax-PhD"/>
+                <outlet property="iconView" destination="5tM-Wj-fOw" id="3LR-uu-7P8"/>
+                <outlet property="tipView" destination="fGR-NL-M1c" id="fXt-s9-0oO"/>
             </connections>
         </view>
     </objects>
