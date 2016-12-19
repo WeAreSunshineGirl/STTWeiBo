@@ -7,67 +7,69 @@ provides-member:
 - ["C8STTWeiBo20WBMainViewController", ""]
 provides-dynamic-lookup:
 - "composeStatus"
-- "tabBarController"
-- "supportedInterfaceOrientations"
-- "userlogin"
-- "updateTimer"
 - "viewDidLoad"
+- "userlogin"
+- "supportedInterfaceOrientations"
+- "updateTimer"
+- "tabBarController"
 depends-top-level:
-- !private "WBHomeViewController"
-- "UITabBarControllerDelegate"
-- !private "NSData"
-- !private "NSJSONSerialization"
-- !private "WBNavigationController"
-- "UIViewController"
-- !private "NSBundle"
-- !private "UIColor"
-- !private "!"
-- !private "&&"
-- "BooleanLiteralType"
-- !private "NSClassFromString"
 - !private ">"
 - !private "WBOAuthViewController"
+- !private "!="
+- !private "UIFont"
+- !private "NSForegroundColorAttributeName"
 - !private "CGPoint"
-- "Bool"
 - !private "/"
 - !private "NSString"
+- !private "NSArray"
+- !private "Int64"
 - "UITabBarController"
-- !private "WBNetworkManager"
+- !private "dispatch_time"
 - "UIInterfaceOrientationMask"
-- !private "AnyObject"
-- !private "=="
-- !private "Array"
+- !private "WBNetworkManager"
+- !private "print"
+- !private "*"
 - !private "NSFontAttributeName"
-- !private "NSForegroundColorAttributeName"
-- !private "WBUserShouldLoginNotification"
-- !private "UIFont"
-- !private "dispatch_after"
-- !private "UIImage"
-- !private "UINavigationController"
+- !private "NSEC_PER_SEC"
+- "UIButton"
+- !private "StringLiteralType"
+- "WBMainViewController"
+- !private "NSData"
+- !private "!"
 - !private "String"
 - !private "NSNotificationCenter"
+- !private "&&"
+- !private "Array"
+- !private "NSBundle"
 - !private "SVProgressHUD"
-- !private "dispatch_get_main_queue"
-- !private "UnicodeScalarType"
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "DISPATCH_TIME_NOW"
-- "WBMainViewController"
-- !private "NSNotification"
-- !private "print"
-- !private "NSArray"
-- !private "*"
-- !private "NSEC_PER_SEC"
-- !private "WBBaseViewController"
-- "UIButton"
-- !private "+"
-- !private "UIApplication"
-- !private "CGFloat"
-- !private "StringLiteralType"
-- !private "dispatch_time"
 - !private "Dictionary"
-- !private "!="
-- !private "Int64"
+- !private "WBNewFeatureView"
+- !private "dispatch_after"
+- !private "UIImage"
+- !private "UnicodeScalarType"
+- !private "DISPATCH_TIME_NOW"
+- !private "UINavigationController"
+- !private "+"
+- !private "WBUserShouldLoginNotification"
+- !private "dispatch_get_main_queue"
+- !private "UIApplication"
+- "BooleanLiteralType"
+- "Bool"
+- !private "AnyObject"
+- !private "WBNavigationController"
+- !private "CGFloat"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "NSClassFromString"
+- !private "NSJSONSerialization"
+- !private "WBHomeViewController"
+- !private "=="
+- !private "UIColor"
+- !private "WBBaseViewController"
+- "UITabBarControllerDelegate"
+- !private "WBWelcomeView"
 - "NSTimer"
+- "UIViewController"
+- !private "NSNotification"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "unreadCount"]
@@ -101,8 +103,10 @@ depends-member:
 - !private ["Ps9AnyObject", "UIViewController"]
 - !private ["Ps9AnyObject", "WBNavigationController"]
 - !private ["Ps9AnyObject", "WBNetworkManager"]
+- !private ["Ps9AnyObject", "WBNewFeatureView"]
 - !private ["Ps9AnyObject", "WBOAuthViewController"]
 - !private ["Ps9AnyObject", "WBUserShouldLoginNotification"]
+- !private ["Ps9AnyObject", "WBWelcomeView"]
 - !private ["Ps9AnyObject", "addObserver"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
@@ -130,6 +134,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "invalidate"]
 - !private ["Ps9AnyObject", "isMemberOfClass"]
+- ["Ps9AnyObject", "isNewVersion"]
 - !private ["Ps9AnyObject", "items"]
 - !private ["Ps9AnyObject", "loadData"]
 - !private ["Ps9AnyObject", "mainBundle"]
@@ -148,6 +153,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
 - ["Ps9AnyObject", "setupChildControllers"]
 - ["Ps9AnyObject", "setupComposeButton"]
+- ["Ps9AnyObject", "setupNewFeatureViews"]
 - ["Ps9AnyObject", "setupTimer"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "sharedApplication"]
@@ -242,8 +248,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIViewController"]
 - !private ["Ps11CVarArgType", "WBNavigationController"]
 - !private ["Ps11CVarArgType", "WBNetworkManager"]
+- !private ["Ps11CVarArgType", "WBNewFeatureView"]
 - !private ["Ps11CVarArgType", "WBOAuthViewController"]
 - !private ["Ps11CVarArgType", "WBUserShouldLoginNotification"]
+- !private ["Ps11CVarArgType", "WBWelcomeView"]
 - !private ["Ps11CVarArgType", "addObserver"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
@@ -270,6 +278,7 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "invalidate"]
 - !private ["Ps11CVarArgType", "isMemberOfClass"]
+- ["Ps11CVarArgType", "isNewVersion"]
 - !private ["Ps11CVarArgType", "items"]
 - !private ["Ps11CVarArgType", "loadData"]
 - !private ["Ps11CVarArgType", "mainBundle"]
@@ -288,6 +297,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "setTitleTextAttributes"]
 - ["Ps11CVarArgType", "setupChildControllers"]
 - ["Ps11CVarArgType", "setupComposeButton"]
+- ["Ps11CVarArgType", "setupNewFeatureViews"]
 - ["Ps11CVarArgType", "setupTimer"]
 - !private ["Ps11CVarArgType", "shared"]
 - !private ["Ps11CVarArgType", "sharedApplication"]
@@ -358,8 +368,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNavigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
+- !private ["Ps28CustomDebugStringConvertible", "WBNewFeatureView"]
 - !private ["Ps28CustomDebugStringConvertible", "WBOAuthViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "WBUserShouldLoginNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "WBWelcomeView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
@@ -389,6 +401,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "invalidate"]
 - !private ["Ps28CustomDebugStringConvertible", "isMemberOfClass"]
+- ["Ps28CustomDebugStringConvertible", "isNewVersion"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - !private ["Ps28CustomDebugStringConvertible", "loadData"]
 - !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
@@ -407,6 +420,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
 - ["Ps28CustomDebugStringConvertible", "setupChildControllers"]
 - ["Ps28CustomDebugStringConvertible", "setupComposeButton"]
+- ["Ps28CustomDebugStringConvertible", "setupNewFeatureViews"]
 - ["Ps28CustomDebugStringConvertible", "setupTimer"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
@@ -464,8 +478,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "WBNavigationController"]
 - !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
+- !private ["Ps23CustomStringConvertible", "WBNewFeatureView"]
 - !private ["Ps23CustomStringConvertible", "WBOAuthViewController"]
 - !private ["Ps23CustomStringConvertible", "WBUserShouldLoginNotification"]
+- !private ["Ps23CustomStringConvertible", "WBWelcomeView"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addObserver"]
@@ -496,6 +512,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "invalidate"]
 - !private ["Ps23CustomStringConvertible", "isMemberOfClass"]
+- ["Ps23CustomStringConvertible", "isNewVersion"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - !private ["Ps23CustomStringConvertible", "loadData"]
 - !private ["Ps23CustomStringConvertible", "mainBundle"]
@@ -514,6 +531,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
 - ["Ps23CustomStringConvertible", "setupChildControllers"]
 - ["Ps23CustomStringConvertible", "setupComposeButton"]
+- ["Ps23CustomStringConvertible", "setupNewFeatureViews"]
 - ["Ps23CustomStringConvertible", "setupTimer"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "sharedApplication"]
@@ -585,8 +603,10 @@ depends-member:
 - !private ["Ps9Equatable", "UserDomainMask"]
 - !private ["Ps9Equatable", "WBNavigationController"]
 - !private ["Ps9Equatable", "WBNetworkManager"]
+- !private ["Ps9Equatable", "WBNewFeatureView"]
 - !private ["Ps9Equatable", "WBOAuthViewController"]
 - !private ["Ps9Equatable", "WBUserShouldLoginNotification"]
+- !private ["Ps9Equatable", "WBWelcomeView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addObserver"]
 - !private ["Ps9Equatable", "addSubview"]
@@ -615,6 +635,7 @@ depends-member:
 - !private ["Ps9Equatable", "insetBy"]
 - !private ["Ps9Equatable", "invalidate"]
 - !private ["Ps9Equatable", "isMemberOfClass"]
+- ["Ps9Equatable", "isNewVersion"]
 - !private ["Ps9Equatable", "items"]
 - !private ["Ps9Equatable", "loadData"]
 - !private ["Ps9Equatable", "mainBundle"]
@@ -633,6 +654,7 @@ depends-member:
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
 - ["Ps9Equatable", "setupChildControllers"]
 - ["Ps9Equatable", "setupComposeButton"]
+- ["Ps9Equatable", "setupNewFeatureViews"]
 - ["Ps9Equatable", "setupTimer"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "sharedApplication"]
@@ -697,8 +719,10 @@ depends-member:
 - !private ["Ps8Hashable", "UIViewController"]
 - !private ["Ps8Hashable", "WBNavigationController"]
 - !private ["Ps8Hashable", "WBNetworkManager"]
+- !private ["Ps8Hashable", "WBNewFeatureView"]
 - !private ["Ps8Hashable", "WBOAuthViewController"]
 - !private ["Ps8Hashable", "WBUserShouldLoginNotification"]
+- !private ["Ps8Hashable", "WBWelcomeView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addObserver"]
 - !private ["Ps8Hashable", "addSubview"]
@@ -726,6 +750,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "invalidate"]
 - !private ["Ps8Hashable", "isMemberOfClass"]
+- ["Ps8Hashable", "isNewVersion"]
 - !private ["Ps8Hashable", "items"]
 - !private ["Ps8Hashable", "loadData"]
 - !private ["Ps8Hashable", "mainBundle"]
@@ -744,6 +769,7 @@ depends-member:
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
 - ["Ps8Hashable", "setupChildControllers"]
 - ["Ps8Hashable", "setupComposeButton"]
+- ["Ps8Hashable", "setupNewFeatureViews"]
 - ["Ps8Hashable", "setupTimer"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "sharedApplication"]
@@ -857,8 +883,10 @@ depends-member:
 - !private ["PSo8NSCoding", "UIViewController"]
 - !private ["PSo8NSCoding", "WBNavigationController"]
 - !private ["PSo8NSCoding", "WBNetworkManager"]
+- !private ["PSo8NSCoding", "WBNewFeatureView"]
 - !private ["PSo8NSCoding", "WBOAuthViewController"]
 - !private ["PSo8NSCoding", "WBUserShouldLoginNotification"]
+- !private ["PSo8NSCoding", "WBWelcomeView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -881,6 +909,7 @@ depends-member:
 - !private ["PSo8NSCoding", "indexOfObject"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isMemberOfClass"]
+- ["PSo8NSCoding", "isNewVersion"]
 - !private ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "loadData"]
 - !private ["PSo8NSCoding", "object"]
@@ -894,6 +923,7 @@ depends-member:
 - !private ["PSo8NSCoding", "setTitleTextAttributes"]
 - ["PSo8NSCoding", "setupChildControllers"]
 - ["PSo8NSCoding", "setupComposeButton"]
+- ["PSo8NSCoding", "setupNewFeatureViews"]
 - ["PSo8NSCoding", "setupTimer"]
 - !private ["PSo8NSCoding", "shared"]
 - !private ["PSo8NSCoding", "showInfoWithStatus"]
@@ -951,8 +981,10 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "WBNavigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
+- !private ["PSo26NSExtensionRequestHandling", "WBNewFeatureView"]
 - !private ["PSo26NSExtensionRequestHandling", "WBOAuthViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "WBUserShouldLoginNotification"]
+- !private ["PSo26NSExtensionRequestHandling", "WBWelcomeView"]
 - !private ["PSo26NSExtensionRequestHandling", "childViewControllers"]
 - ["PSo26NSExtensionRequestHandling", "composeButton"]
 - ["PSo26NSExtensionRequestHandling", "composeButton.storage"]
@@ -964,12 +996,14 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_time"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "isMemberOfClass"]
+- ["PSo26NSExtensionRequestHandling", "isNewVersion"]
 - !private ["PSo26NSExtensionRequestHandling", "loadData"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "selectedIndex"]
 - ["PSo26NSExtensionRequestHandling", "setupChildControllers"]
 - ["PSo26NSExtensionRequestHandling", "setupComposeButton"]
+- ["PSo26NSExtensionRequestHandling", "setupNewFeatureViews"]
 - ["PSo26NSExtensionRequestHandling", "setupTimer"]
 - ["PSo26NSExtensionRequestHandling", "supportedInterfaceOrientations"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBar"]
@@ -1032,8 +1066,10 @@ depends-member:
 - !private ["CSo8NSObject", "WBHomeViewController"]
 - !private ["CSo8NSObject", "WBNavigationController"]
 - !private ["CSo8NSObject", "WBNetworkManager"]
+- !private ["CSo8NSObject", "WBNewFeatureView"]
 - !private ["CSo8NSObject", "WBOAuthViewController"]
 - !private ["CSo8NSObject", "WBUserShouldLoginNotification"]
+- !private ["CSo8NSObject", "WBWelcomeView"]
 - !private ["CSo8NSObject", "addObserver"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
@@ -1060,6 +1096,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "invalidate"]
 - !private ["CSo8NSObject", "isMemberOfClass"]
+- ["CSo8NSObject", "isNewVersion"]
 - !private ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "loadData"]
 - !private ["CSo8NSObject", "mainBundle"]
@@ -1078,6 +1115,7 @@ depends-member:
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
 - ["CSo8NSObject", "setupChildControllers"]
 - ["CSo8NSObject", "setupComposeButton"]
+- ["CSo8NSObject", "setupNewFeatureViews"]
 - ["CSo8NSObject", "setupTimer"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "sharedApplication"]
@@ -1126,8 +1164,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIViewController"]
 - !private ["PSo16NSObjectProtocol", "WBNavigationController"]
 - !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
+- !private ["PSo16NSObjectProtocol", "WBNewFeatureView"]
 - !private ["PSo16NSObjectProtocol", "WBOAuthViewController"]
 - !private ["PSo16NSObjectProtocol", "WBUserShouldLoginNotification"]
+- !private ["PSo16NSObjectProtocol", "WBWelcomeView"]
 - !private ["PSo16NSObjectProtocol", "addObserver"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
@@ -1154,6 +1194,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "invalidate"]
 - !private ["PSo16NSObjectProtocol", "isMemberOfClass"]
+- ["PSo16NSObjectProtocol", "isNewVersion"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "loadData"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
@@ -1172,6 +1213,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
 - ["PSo16NSObjectProtocol", "setupChildControllers"]
 - ["PSo16NSObjectProtocol", "setupComposeButton"]
+- ["PSo16NSObjectProtocol", "setupNewFeatureViews"]
 - ["PSo16NSObjectProtocol", "setupTimer"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
@@ -1320,6 +1362,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "cz_imageButton"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "items"]
 - !private ["PSo12UIAppearance", "selectedImage"]
 - !private ["PSo12UIAppearance", "setContentOffset"]
@@ -1350,8 +1393,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIViewController"]
 - !private ["PSo21UIAppearanceContainer", "WBNavigationController"]
 - !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
+- !private ["PSo21UIAppearanceContainer", "WBNewFeatureView"]
 - !private ["PSo21UIAppearanceContainer", "WBOAuthViewController"]
 - !private ["PSo21UIAppearanceContainer", "WBUserShouldLoginNotification"]
+- !private ["PSo21UIAppearanceContainer", "WBWelcomeView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1369,6 +1414,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isMemberOfClass"]
+- ["PSo21UIAppearanceContainer", "isNewVersion"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "loadData"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
@@ -1378,6 +1424,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "setDefaultMaskType"]
 - ["PSo21UIAppearanceContainer", "setupChildControllers"]
 - ["PSo21UIAppearanceContainer", "setupComposeButton"]
+- ["PSo21UIAppearanceContainer", "setupNewFeatureViews"]
 - ["PSo21UIAppearanceContainer", "setupTimer"]
 - !private ["PSo21UIAppearanceContainer", "showInfoWithStatus"]
 - ["PSo21UIAppearanceContainer", "supportedInterfaceOrientations"]
@@ -1432,8 +1479,10 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIViewController"]
 - !private ["PSo18UIContentContainer", "WBNavigationController"]
 - !private ["PSo18UIContentContainer", "WBNetworkManager"]
+- !private ["PSo18UIContentContainer", "WBNewFeatureView"]
 - !private ["PSo18UIContentContainer", "WBOAuthViewController"]
 - !private ["PSo18UIContentContainer", "WBUserShouldLoginNotification"]
+- !private ["PSo18UIContentContainer", "WBWelcomeView"]
 - !private ["PSo18UIContentContainer", "childViewControllers"]
 - ["PSo18UIContentContainer", "composeButton"]
 - ["PSo18UIContentContainer", "composeButton.storage"]
@@ -1445,12 +1494,14 @@ depends-member:
 - !private ["PSo18UIContentContainer", "dispatch_time"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "isMemberOfClass"]
+- ["PSo18UIContentContainer", "isNewVersion"]
 - !private ["PSo18UIContentContainer", "loadData"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "selectedIndex"]
 - ["PSo18UIContentContainer", "setupChildControllers"]
 - ["PSo18UIContentContainer", "setupComposeButton"]
+- ["PSo18UIContentContainer", "setupNewFeatureViews"]
 - ["PSo18UIContentContainer", "setupTimer"]
 - ["PSo18UIContentContainer", "supportedInterfaceOrientations"]
 - !private ["PSo18UIContentContainer", "tabBar"]
@@ -1481,6 +1532,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "cz_imageButton"]
 - !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "items"]
 - !private ["PSo17UICoordinateSpace", "setContentOffset"]
 - !private ["PSo17UICoordinateSpace", "setDefaultMaskType"]
@@ -1491,6 +1543,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "cz_imageButton"]
 - !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "items"]
 - !private ["PSo13UIDynamicItem", "setContentOffset"]
 - !private ["PSo13UIDynamicItem", "setDefaultMaskType"]
@@ -1519,8 +1572,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIViewController"]
 - !private ["PSo18UIFocusEnvironment", "WBNavigationController"]
 - !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
+- !private ["PSo18UIFocusEnvironment", "WBNewFeatureView"]
 - !private ["PSo18UIFocusEnvironment", "WBOAuthViewController"]
 - !private ["PSo18UIFocusEnvironment", "WBUserShouldLoginNotification"]
+- !private ["PSo18UIFocusEnvironment", "WBWelcomeView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1538,6 +1593,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isMemberOfClass"]
+- ["PSo18UIFocusEnvironment", "isNewVersion"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - !private ["PSo18UIFocusEnvironment", "loadData"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
@@ -1547,6 +1603,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "setDefaultMaskType"]
 - ["PSo18UIFocusEnvironment", "setupChildControllers"]
 - ["PSo18UIFocusEnvironment", "setupComposeButton"]
+- ["PSo18UIFocusEnvironment", "setupNewFeatureViews"]
 - ["PSo18UIFocusEnvironment", "setupTimer"]
 - !private ["PSo18UIFocusEnvironment", "showInfoWithStatus"]
 - ["PSo18UIFocusEnvironment", "supportedInterfaceOrientations"]
@@ -1606,8 +1663,10 @@ depends-member:
 - !private ["CSo11UIResponder", "WBHomeViewController"]
 - !private ["CSo11UIResponder", "WBNavigationController"]
 - !private ["CSo11UIResponder", "WBNetworkManager"]
+- !private ["CSo11UIResponder", "WBNewFeatureView"]
 - !private ["CSo11UIResponder", "WBOAuthViewController"]
 - !private ["CSo11UIResponder", "WBUserShouldLoginNotification"]
+- !private ["CSo11UIResponder", "WBWelcomeView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "applicationIconBadgeNumber"]
@@ -1626,6 +1685,7 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isMemberOfClass"]
+- ["CSo11UIResponder", "isNewVersion"]
 - !private ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "loadData"]
 - !private ["CSo11UIResponder", "presentViewController"]
@@ -1635,6 +1695,7 @@ depends-member:
 - !private ["CSo11UIResponder", "setDefaultMaskType"]
 - ["CSo11UIResponder", "setupChildControllers"]
 - ["CSo11UIResponder", "setupComposeButton"]
+- ["CSo11UIResponder", "setupNewFeatureViews"]
 - ["CSo11UIResponder", "setupTimer"]
 - !private ["CSo11UIResponder", "sharedApplication"]
 - !private ["CSo11UIResponder", "showInfoWithStatus"]
@@ -1684,8 +1745,10 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIViewController"]
 - !private ["PSo16UIStateRestoring", "WBNavigationController"]
 - !private ["PSo16UIStateRestoring", "WBNetworkManager"]
+- !private ["PSo16UIStateRestoring", "WBNewFeatureView"]
 - !private ["PSo16UIStateRestoring", "WBOAuthViewController"]
 - !private ["PSo16UIStateRestoring", "WBUserShouldLoginNotification"]
+- !private ["PSo16UIStateRestoring", "WBWelcomeView"]
 - !private ["PSo16UIStateRestoring", "childViewControllers"]
 - ["PSo16UIStateRestoring", "composeButton"]
 - ["PSo16UIStateRestoring", "composeButton.storage"]
@@ -1697,12 +1760,14 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "dispatch_time"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "isMemberOfClass"]
+- ["PSo16UIStateRestoring", "isNewVersion"]
 - !private ["PSo16UIStateRestoring", "loadData"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "selectedIndex"]
 - ["PSo16UIStateRestoring", "setupChildControllers"]
 - ["PSo16UIStateRestoring", "setupComposeButton"]
+- ["PSo16UIStateRestoring", "setupNewFeatureViews"]
 - ["PSo16UIStateRestoring", "setupTimer"]
 - ["PSo16UIStateRestoring", "supportedInterfaceOrientations"]
 - !private ["PSo16UIStateRestoring", "tabBar"]
@@ -1757,8 +1822,10 @@ depends-member:
 - !private ["CSo18UITabBarController", "WBHomeViewController"]
 - !private ["CSo18UITabBarController", "WBNavigationController"]
 - !private ["CSo18UITabBarController", "WBNetworkManager"]
+- !private ["CSo18UITabBarController", "WBNewFeatureView"]
 - !private ["CSo18UITabBarController", "WBOAuthViewController"]
 - !private ["CSo18UITabBarController", "WBUserShouldLoginNotification"]
+- !private ["CSo18UITabBarController", "WBWelcomeView"]
 - !private ["CSo18UITabBarController", "childViewControllers"]
 - ["CSo18UITabBarController", "composeButton"]
 - ["CSo18UITabBarController", "composeButton.storage"]
@@ -1769,11 +1836,13 @@ depends-member:
 - !private ["CSo18UITabBarController", "dispatch_get_main_queue"]
 - !private ["CSo18UITabBarController", "dispatch_time"]
 - ["CSo18UITabBarController", "init"]
+- ["CSo18UITabBarController", "isNewVersion"]
 - !private ["CSo18UITabBarController", "presentViewController"]
 - !private ["CSo18UITabBarController", "print"]
 - !private ["CSo18UITabBarController", "selectedIndex"]
 - ["CSo18UITabBarController", "setupChildControllers"]
 - ["CSo18UITabBarController", "setupComposeButton"]
+- ["CSo18UITabBarController", "setupNewFeatureViews"]
 - ["CSo18UITabBarController", "setupTimer"]
 - ["CSo18UITabBarController", "supportedInterfaceOrientations"]
 - !private ["CSo18UITabBarController", "tabBar"]
@@ -1783,6 +1852,7 @@ depends-member:
 - ["CSo18UITabBarController", "timer"]
 - ["CSo18UITabBarController", "updateTimer"]
 - ["CSo18UITabBarController", "userlogin"]
+- !private ["CSo18UITabBarController", "view"]
 - !private ["CSo18UITabBarController", "viewControllers"]
 - ["CSo18UITabBarController", "viewDidLoad"]
 - ["CSo18UITabBarController", ""]
@@ -1810,8 +1880,10 @@ depends-member:
 - !private ["PSo26UITabBarControllerDelegate", "UIViewController"]
 - !private ["PSo26UITabBarControllerDelegate", "WBNavigationController"]
 - !private ["PSo26UITabBarControllerDelegate", "WBNetworkManager"]
+- !private ["PSo26UITabBarControllerDelegate", "WBNewFeatureView"]
 - !private ["PSo26UITabBarControllerDelegate", "WBOAuthViewController"]
 - !private ["PSo26UITabBarControllerDelegate", "WBUserShouldLoginNotification"]
+- !private ["PSo26UITabBarControllerDelegate", "WBWelcomeView"]
 - !private ["PSo26UITabBarControllerDelegate", "childViewControllers"]
 - !private ["PSo26UITabBarControllerDelegate", "composeButton"]
 - !private ["PSo26UITabBarControllerDelegate", "composeStatus"]
@@ -1820,11 +1892,13 @@ depends-member:
 - !private ["PSo26UITabBarControllerDelegate", "dispatch_after"]
 - !private ["PSo26UITabBarControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo26UITabBarControllerDelegate", "dispatch_time"]
+- !private ["PSo26UITabBarControllerDelegate", "isNewVersion"]
 - !private ["PSo26UITabBarControllerDelegate", "presentViewController"]
 - !private ["PSo26UITabBarControllerDelegate", "print"]
 - !private ["PSo26UITabBarControllerDelegate", "selectedIndex"]
 - !private ["PSo26UITabBarControllerDelegate", "setupChildControllers"]
 - !private ["PSo26UITabBarControllerDelegate", "setupComposeButton"]
+- !private ["PSo26UITabBarControllerDelegate", "setupNewFeatureViews"]
 - !private ["PSo26UITabBarControllerDelegate", "setupTimer"]
 - !private ["PSo26UITabBarControllerDelegate", "tabBar"]
 - ["PSo26UITabBarControllerDelegate", "tabBarController"]
@@ -1833,6 +1907,7 @@ depends-member:
 - !private ["PSo26UITabBarControllerDelegate", "timer"]
 - !private ["PSo26UITabBarControllerDelegate", "updateTimer"]
 - !private ["PSo26UITabBarControllerDelegate", "userlogin"]
+- !private ["PSo26UITabBarControllerDelegate", "view"]
 - !private ["PSo26UITabBarControllerDelegate", "viewControllers"]
 - ["PSo26UITabBarControllerDelegate", ""]
 - !private ["PSo16UITabBarDelegate", "CGFloat"]
@@ -1859,8 +1934,10 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "UIViewController"]
 - !private ["PSo16UITabBarDelegate", "WBNavigationController"]
 - !private ["PSo16UITabBarDelegate", "WBNetworkManager"]
+- !private ["PSo16UITabBarDelegate", "WBNewFeatureView"]
 - !private ["PSo16UITabBarDelegate", "WBOAuthViewController"]
 - !private ["PSo16UITabBarDelegate", "WBUserShouldLoginNotification"]
+- !private ["PSo16UITabBarDelegate", "WBWelcomeView"]
 - !private ["PSo16UITabBarDelegate", "childViewControllers"]
 - ["PSo16UITabBarDelegate", "composeButton"]
 - ["PSo16UITabBarDelegate", "composeButton.storage"]
@@ -1871,11 +1948,13 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "dispatch_get_main_queue"]
 - !private ["PSo16UITabBarDelegate", "dispatch_time"]
 - ["PSo16UITabBarDelegate", "init"]
+- ["PSo16UITabBarDelegate", "isNewVersion"]
 - !private ["PSo16UITabBarDelegate", "presentViewController"]
 - !private ["PSo16UITabBarDelegate", "print"]
 - !private ["PSo16UITabBarDelegate", "selectedIndex"]
 - ["PSo16UITabBarDelegate", "setupChildControllers"]
 - ["PSo16UITabBarDelegate", "setupComposeButton"]
+- ["PSo16UITabBarDelegate", "setupNewFeatureViews"]
 - ["PSo16UITabBarDelegate", "setupTimer"]
 - ["PSo16UITabBarDelegate", "supportedInterfaceOrientations"]
 - !private ["PSo16UITabBarDelegate", "tabBar"]
@@ -1885,6 +1964,7 @@ depends-member:
 - ["PSo16UITabBarDelegate", "timer"]
 - ["PSo16UITabBarDelegate", "updateTimer"]
 - ["PSo16UITabBarDelegate", "userlogin"]
+- !private ["PSo16UITabBarDelegate", "view"]
 - !private ["PSo16UITabBarDelegate", "viewControllers"]
 - ["PSo16UITabBarDelegate", "viewDidLoad"]
 - ["PSo16UITabBarDelegate", ""]
@@ -1929,8 +2009,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIViewController"]
 - !private ["PSo18UITraitEnvironment", "WBNavigationController"]
 - !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
+- !private ["PSo18UITraitEnvironment", "WBNewFeatureView"]
 - !private ["PSo18UITraitEnvironment", "WBOAuthViewController"]
 - !private ["PSo18UITraitEnvironment", "WBUserShouldLoginNotification"]
+- !private ["PSo18UITraitEnvironment", "WBWelcomeView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -1948,6 +2030,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isMemberOfClass"]
+- ["PSo18UITraitEnvironment", "isNewVersion"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "loadData"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
@@ -1957,6 +2040,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setDefaultMaskType"]
 - ["PSo18UITraitEnvironment", "setupChildControllers"]
 - ["PSo18UITraitEnvironment", "setupComposeButton"]
+- ["PSo18UITraitEnvironment", "setupNewFeatureViews"]
 - ["PSo18UITraitEnvironment", "setupTimer"]
 - !private ["PSo18UITraitEnvironment", "showInfoWithStatus"]
 - ["PSo18UITraitEnvironment", "supportedInterfaceOrientations"]
@@ -1981,6 +2065,7 @@ depends-member:
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "cz_imageButton"]
 - !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "items"]
 - !private ["CSo6UIView", "setContentOffset"]
 - !private ["CSo6UIView", "setDefaultMaskType"]
@@ -2019,8 +2104,10 @@ depends-member:
 - !private ["CSo16UIViewController", "WBHomeViewController"]
 - !private ["CSo16UIViewController", "WBNavigationController"]
 - !private ["CSo16UIViewController", "WBNetworkManager"]
+- !private ["CSo16UIViewController", "WBNewFeatureView"]
 - !private ["CSo16UIViewController", "WBOAuthViewController"]
 - !private ["CSo16UIViewController", "WBUserShouldLoginNotification"]
+- !private ["CSo16UIViewController", "WBWelcomeView"]
 - !private ["CSo16UIViewController", "childViewControllers"]
 - ["CSo16UIViewController", "composeButton"]
 - ["CSo16UIViewController", "composeButton.storage"]
@@ -2033,12 +2120,14 @@ depends-member:
 - !private ["CSo16UIViewController", "dispatch_time"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "isMemberOfClass"]
+- ["CSo16UIViewController", "isNewVersion"]
 - !private ["CSo16UIViewController", "loadData"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "selectedIndex"]
 - ["CSo16UIViewController", "setupChildControllers"]
 - ["CSo16UIViewController", "setupComposeButton"]
+- ["CSo16UIViewController", "setupNewFeatureViews"]
 - ["CSo16UIViewController", "setupTimer"]
 - ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "tabBar"]
@@ -2107,8 +2196,10 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "WBHomeViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBNavigationController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBNetworkManager"]
+- !private ["C8STTWeiBo20WBMainViewController", "WBNewFeatureView"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBOAuthViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "WBUserShouldLoginNotification"]
+- !private ["C8STTWeiBo20WBMainViewController", "WBWelcomeView"]
 - !private ["C8STTWeiBo20WBMainViewController", "childViewControllers"]
 - !private ["C8STTWeiBo20WBMainViewController", "composeButton"]
 - !private ["C8STTWeiBo20WBMainViewController", "composeButton.storage"]
@@ -2120,11 +2211,13 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "dispatch_get_main_queue"]
 - !private ["C8STTWeiBo20WBMainViewController", "dispatch_time"]
 - ["C8STTWeiBo20WBMainViewController", "init"]
+- !private ["C8STTWeiBo20WBMainViewController", "isNewVersion"]
 - !private ["C8STTWeiBo20WBMainViewController", "presentViewController"]
 - !private ["C8STTWeiBo20WBMainViewController", "print"]
 - !private ["C8STTWeiBo20WBMainViewController", "selectedIndex"]
 - !private ["C8STTWeiBo20WBMainViewController", "setupChildControllers"]
 - !private ["C8STTWeiBo20WBMainViewController", "setupComposeButton"]
+- !private ["C8STTWeiBo20WBMainViewController", "setupNewFeatureViews"]
 - !private ["C8STTWeiBo20WBMainViewController", "setupTimer"]
 - ["C8STTWeiBo20WBMainViewController", "supportedInterfaceOrientations"]
 - !private ["C8STTWeiBo20WBMainViewController", "tabBar"]
@@ -2134,13 +2227,16 @@ depends-member:
 - !private ["C8STTWeiBo20WBMainViewController", "timer"]
 - !private ["C8STTWeiBo20WBMainViewController", "updateTimer"]
 - !private ["C8STTWeiBo20WBMainViewController", "userlogin"]
+- !private ["C8STTWeiBo20WBMainViewController", "view"]
 - !private ["C8STTWeiBo20WBMainViewController", "viewControllers"]
 - ["C8STTWeiBo20WBMainViewController", "viewDidLoad"]
 - !private ["C8STTWeiBo22WBNavigationController", "init"]
 - !private ["C8STTWeiBo16WBNetworkManager", "shared"]
 - !private ["C8STTWeiBo16WBNetworkManager", "unreadCount"]
 - !private ["C8STTWeiBo16WBNetworkManager", "userLogon"]
+- !private ["C8STTWeiBo16WBNewFeatureView", "init"]
 - !private ["C8STTWeiBo21WBOAuthViewController", "init"]
+- !private ["C8STTWeiBo13WBWelcomeView", "init"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -2369,7 +2465,9 @@ depends-nominal:
 - "C8STTWeiBo20WBMainViewController"
 - !private "C8STTWeiBo22WBNavigationController"
 - !private "C8STTWeiBo16WBNetworkManager"
+- !private "C8STTWeiBo16WBNewFeatureView"
 - !private "C8STTWeiBo21WBOAuthViewController"
+- !private "C8STTWeiBo13WBWelcomeView"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -2444,4 +2542,4 @@ depends-external:
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/user/Desktop/STTWeiBo/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-interface-hash: "c315a73a1d8f3c2bd55fee4792b0cc19"
+interface-hash: "a1ca5cff41a86e86e82419164eec2051"
