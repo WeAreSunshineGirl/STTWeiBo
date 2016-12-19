@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "cf27247bbcaa9011ed02e40490a5b748"
-build_time: [535454908, 821934000]
+build_time: [535455249, 972318000]
 inputs:
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [535454616, 0]
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [535454616, 0]
@@ -15,7 +15,7 @@ inputs:
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBMainViewController.swift": [535454616, 0]
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/WBHomeViewController.swift": [535454616, 0]
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/VisitorView/WBVisitorView.swift": [535454616, 0]
-  "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/AppDelegate.swift": [535454616, 0]
+  "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/AppDelegate.swift": [535455249, 0]
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Profile/WBProfileViewController.swift": [535454616, 0]
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/TitleButton/WBTitleButton.swift": [535454616, 0]
   "/Users/user/Desktop/STWeiBo/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBNavigationController.swift": [535454616, 0]

@@ -43,6 +43,7 @@
 		CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1887311E0773AA00420C0B /* WBNewFeatureView.swift */; };
 		CE1887341E07841A00420C0B /* WBWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1887331E07841A00420C0B /* WBWelcomeView.xib */; };
 		CE1887361E07844300420C0B /* WBNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1887351E07844300420C0B /* WBNewFeatureView.xib */; };
+		CE1887381E07E11100420C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1887371E07E11100420C0B /* UIKit.framework */; };
 		CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B261F1E02260B0044B55C /* WBUserAccount.swift */; };
 		CE1B9C531DFE75FD0085E831 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1B9C521DFE75FD0085E831 /* main.json */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
@@ -108,6 +109,7 @@
 		CE1887311E0773AA00420C0B /* WBNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNewFeatureView.swift; sourceTree = "<group>"; };
 		CE1887331E07841A00420C0B /* WBWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBWelcomeView.xib; sourceTree = "<group>"; };
 		CE1887351E07844300420C0B /* WBNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBNewFeatureView.xib; sourceTree = "<group>"; };
+		CE1887371E07E11100420C0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE1B261F1E02260B0044B55C /* WBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUserAccount.swift; sourceTree = "<group>"; };
 		CE1B9C521DFE75FD0085E831 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1887381E07E11100420C0B /* UIKit.framework in Frameworks */,
 				0900710F40F584B72CF5A7BB /* Pods_STTWeiBo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +144,7 @@
 		AD7079626E52502398A7B482 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE1887371E07E11100420C0B /* UIKit.framework */,
 				55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */,
 			);
 			name = Frameworks;
