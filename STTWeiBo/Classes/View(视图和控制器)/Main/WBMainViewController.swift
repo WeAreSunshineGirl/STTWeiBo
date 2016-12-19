@@ -24,7 +24,7 @@ class WBMainViewController: UITabBarController {
         setupComposeButton()
         setupTimer()
         
-//        setupNewFeatureViews()
+       setupNewFeatureViews()
         
         
         //设置代理
