@@ -236,6 +236,7 @@
 		CE08438A1DEFCA2800BD8168 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CE18872E1E0772C600420C0B /* NewFeature */,
 				CE0743191DFFCF63002E5AA3 /* OAuth */,
 				CE8454CA1DF008C00062478F /* 测试 */,
 				CE3AE2E61DF159960082A19E /* 主控制器 */,
@@ -308,6 +309,13 @@
 				CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CE18872E1E0772C600420C0B /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewFeature;
 			sourceTree = "<group>";
 		};
 		CE3AE2E61DF159960082A19E /* 主控制器 */ = {
