@@ -10,14 +10,25 @@ import UIKit
 
 class WBNewFeatureView: UIView {
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        backgroundColor = UIColor.orangeColor()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        
+//        backgroundColor = UIColor.orangeColor()
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
 
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    @IBOutlet weak var enterButton: UIButton!
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    
+    @IBAction func enterStatus() {
+    }
 }

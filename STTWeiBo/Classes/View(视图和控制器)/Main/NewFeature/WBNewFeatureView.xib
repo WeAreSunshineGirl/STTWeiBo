@@ -7,10 +7,45 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBNewFeatureView" customModule="STTWeiBo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujd-cJ-1hi">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCO-gD-thV">
+                    <rect key="frame" x="248" y="341" width="105" height="36"/>
+                    <state key="normal" title="进入微博" backgroundImage="new_feature_finish_button"/>
+                    <connections>
+                        <action selector="enterStatus" destination="iN0-l3-epB" eventType="touchUpInside" id="3pv-a0-AtR"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="0qp-xn-PFr">
+                    <rect key="frame" x="273" y="407" width="55" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.1417739267" blue="0.26846273079999999" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ujd-cJ-1hi" secondAttribute="bottom" id="5eh-v5-579"/>
+                <constraint firstItem="0qp-xn-PFr" firstAttribute="top" secondItem="RCO-gD-thV" secondAttribute="bottom" constant="30" id="C9Z-nf-63Q"/>
+                <constraint firstAttribute="bottom" secondItem="RCO-gD-thV" secondAttribute="bottom" constant="223" id="Cct-0p-yYv"/>
+                <constraint firstItem="ujd-cJ-1hi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HKg-sd-7qW"/>
+                <constraint firstItem="ujd-cJ-1hi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fAr-7f-SrY"/>
+                <constraint firstItem="0qp-xn-PFr" firstAttribute="centerX" secondItem="RCO-gD-thV" secondAttribute="centerX" id="fdf-qp-doH"/>
+                <constraint firstItem="RCO-gD-thV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r7E-qX-zHe"/>
+                <constraint firstAttribute="trailing" secondItem="ujd-cJ-1hi" secondAttribute="trailing" id="sdh-Gg-Klc"/>
+            </constraints>
+            <connections>
+                <outlet property="enterButton" destination="RCO-gD-thV" id="rgi-PJ-VXG"/>
+                <outlet property="pageControl" destination="0qp-xn-PFr" id="hFc-Ep-F7N"/>
+                <outlet property="scrollView" destination="ujd-cJ-1hi" id="htf-VE-Wqk"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="new_feature_finish_button" width="105" height="36"/>
+    </resources>
 </document>
