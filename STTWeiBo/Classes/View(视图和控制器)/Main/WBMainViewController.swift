@@ -141,7 +141,10 @@ extension WBMainViewController{
      */
     private var isNewVersion:Bool{
         
-        
+        // 1 获取当前的版本号 1.0.1  1.0.2
+        // 2 取保存在 ‘Document（iTunes备份）[最理想保存在用户偏好]’目录中的之前的版本号 “” '1.0.1'
+        // 3 将当前版本号保存在沙盒 1.0.1 1.0.2
+        // 4 返回 两个版本号 是否一致 new  not new  new
         return true
     }
 }
