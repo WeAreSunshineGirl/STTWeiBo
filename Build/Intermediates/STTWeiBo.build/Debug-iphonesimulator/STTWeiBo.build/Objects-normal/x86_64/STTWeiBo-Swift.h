@@ -498,10 +498,17 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 - (void)setupUI;
 @end
 
+@class UIImageView;
+@class UILabel;
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8STTWeiBo13WBWelcomeView")
 @interface WBWelcomeView : UIView
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified iconView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tipView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified bottomCons;
 + (WBWelcomeView * _Nonnull)welcomeView;
+- (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
