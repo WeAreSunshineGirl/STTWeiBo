@@ -389,6 +389,12 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNewFeatureView")
 @end
 
 
+@interface WBNewFeatureView (SWIFT_EXTENSION(STTWeiBo)) <UIScrollViewDelegate>
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+@end
+
+
 
 /// 通过webView加载新浪微博授权页面
 SWIFT_CLASS("_TtC8STTWeiBo21WBOAuthViewController")

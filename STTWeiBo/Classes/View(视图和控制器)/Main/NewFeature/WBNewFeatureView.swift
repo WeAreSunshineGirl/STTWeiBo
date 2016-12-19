@@ -30,6 +30,7 @@ class WBNewFeatureView: UIView {
     
     
     @IBAction func enterStatus() {
+        removeFromSuperview()
     }
     
     class func newFeatureView()->WBNewFeatureView{
@@ -65,13 +66,43 @@ class WBNewFeatureView: UIView {
             scrollView.bounces = false
             scrollView.pagingEnabled = true
             
+            
+            scrollView.delegate = self
+            
             //隐藏按钮
             enterButton.hidden = true
         }
     }
+
+}
+
+extension WBNewFeatureView:UIScrollViewDelegate{
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        
+        //1 滚动到最后一屏 让视图删除
+        let page = Int(scrollView.contentOffset.x / scrollView.bounds.width)
+        
+        //2 判断是否是最后一页
+        if page == scrollView.subviews.count{
+            print("欢迎欢迎 进入主页")
+            removeFromSuperview()
+        }
+        // 3 如果是倒数第二页 显示按钮
+        enterButton.hidden  = (page != scrollView.subviews.count - 1)
+    }
     
-    
-    
-    
-    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        // 0 一旦滚动 隐藏按钮
+        enterButton.hidden = true
+        
+        // 1 计算当前的偏移量
+        let page = Int(scrollView.contentOffset.x / scrollView.bounds.width + 0.5)
+        
+        // 2设置分页控件
+        pageControl.currentPage = page
+        
+        // 3 分页控件的隐藏
+        pageControl.hidden = (page == scrollView.subviews.count)
+    }
 }
