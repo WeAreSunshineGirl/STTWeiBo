@@ -501,6 +501,7 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 
 SWIFT_CLASS("_TtC8STTWeiBo13WBWelcomeView")
 @interface WBWelcomeView : UIView
++ (WBWelcomeView * _Nonnull)welcomeView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

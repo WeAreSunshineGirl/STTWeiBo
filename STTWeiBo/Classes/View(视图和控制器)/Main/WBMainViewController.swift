@@ -120,11 +120,9 @@ extension WBMainViewController{
             return
         }
         // 1 如果更新 显示新特性 否则 显示 欢迎
-        let v = isNewVersion ? WBNewFeatureView() : WBWelcomeView()
+        let v = isNewVersion ? WBNewFeatureView() : WBWelcomeView.welcomeView()
         
-        // 2 添加视图
-        v.frame = view.bounds
-        
+        // 2 添加视图        
         view.addSubview(v)
     }
     //extension 可以有 计算型属性   不会占用存储空间   不能有属性

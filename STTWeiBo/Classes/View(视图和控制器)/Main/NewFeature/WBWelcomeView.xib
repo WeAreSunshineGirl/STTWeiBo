@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBWelcomeView" customModule="STTWeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="LIN-9t-VJl">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="OnG-by-UzX">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="0zy-dK-IoQ"/>
+                        <constraint firstAttribute="width" constant="85" id="FNF-bZ-7bq"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0zy-dK-IoQ"/>
+                            <exclude reference="FNF-bZ-7bq"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0zy-dK-IoQ"/>
+                            <include reference="FNF-bZ-7bq"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎归来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i01-KX-GdD">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LIN-9t-VJl" secondAttribute="bottom" id="9HR-W5-P8n"/>
+                <constraint firstAttribute="bottom" secondItem="OnG-by-UzX" secondAttribute="bottom" constant="180" id="9mF-7A-fzV">
+                    <variation key="widthClass=compact" constant="150"/>
+                </constraint>
+                <constraint firstItem="LIN-9t-VJl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OYD-hX-27w"/>
+                <constraint firstItem="i01-KX-GdD" firstAttribute="centerX" secondItem="OnG-by-UzX" secondAttribute="centerX" id="cuq-u2-yDn"/>
+                <constraint firstItem="OnG-by-UzX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pW6-4Y-X9O"/>
+                <constraint firstItem="i01-KX-GdD" firstAttribute="top" secondItem="OnG-by-UzX" secondAttribute="bottom" constant="16" id="qjH-RL-2YT"/>
+                <constraint firstAttribute="trailing" secondItem="LIN-9t-VJl" secondAttribute="trailing" id="qow-Hh-r4h"/>
+                <constraint firstItem="LIN-9t-VJl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sLk-PY-P9a"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="LIN-9t-VJl"/>
+                    <exclude reference="OnG-by-UzX"/>
+                    <exclude reference="i01-KX-GdD"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9HR-W5-P8n"/>
+                    <exclude reference="OYD-hX-27w"/>
+                    <exclude reference="qow-Hh-r4h"/>
+                    <exclude reference="sLk-PY-P9a"/>
+                    <exclude reference="9mF-7A-fzV"/>
+                    <exclude reference="pW6-4Y-X9O"/>
+                    <exclude reference="cuq-u2-yDn"/>
+                    <exclude reference="qjH-RL-2YT"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="LIN-9t-VJl"/>
+                    <include reference="OnG-by-UzX"/>
+                    <include reference="i01-KX-GdD"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="9HR-W5-P8n"/>
+                    <include reference="OYD-hX-27w"/>
+                    <include reference="qow-Hh-r4h"/>
+                    <include reference="sLk-PY-P9a"/>
+                    <include reference="9mF-7A-fzV"/>
+                    <include reference="pW6-4Y-X9O"/>
+                    <include reference="cuq-u2-yDn"/>
+                    <include reference="qjH-RL-2YT"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="375" height="667"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>
