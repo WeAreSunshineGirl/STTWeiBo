@@ -53,16 +53,16 @@ class WBStatusListViewModel {
         let max_id = !pullup ? 0 : (statusList.last?.status.id ?? 0)
         
         WBNetworkManager.shared.statusList(since_id,max_id: max_id) { (list, isSuccess) in
-//            print(list)
+//            print(list) //list 是一个字典数组
             
-            // 0 判断网络请求是否成功
+            // 0 判断网络请求失败 直接返回
             if !isSuccess{
                 //直接回调返回
                 completion(isSuccess: false, shouldRefresh: false)
                 
                 return
             }
-            
+
             //1 字典转模型 (所有第三方框架都支持嵌套的字典转模型)
             // 1> 定义结果可变数组
             var array = [WBStatusViewModel]()
@@ -70,17 +70,28 @@ class WBStatusListViewModel {
             // 2> 遍历服务器返回的字典数组 字典转模型 
             for dict in list ?? []{
                 
-                // a)创建微博模型 - 如果创建模型失败 继续后续的遍历
-                guard let model = WBStatus.yy_modelWithJSON(dict) else{
-                    
-                    continue
-                }
+//                // a)创建微博模型 - 如果创建模型失败 继续后续的遍历
+//                guard let model = WBStatus.yy_modelWithJSON(dict) else{
+//                    
+//                    continue
+//                }
+//                
+//                // b) 将 视图模型 添加到数组
+//                array.append(WBStatusViewModel(model: model))
+                // 1> 创建微博模型
+                let status = WBStatus()
                 
-                // b) 将 视图模型 添加到数组
-                array.append(WBStatusViewModel(model: model))
+                //2> 使用字典设置模型数组
+                status.yy_modelSetWithDictionary(dict)
+                
+                //3> 使用 微博 模型创建 微博视图 模型
+                let viewModel = WBStatusViewModel(model: status)
+                
+                //4> 添加到数组
+                array.append(viewModel)
             }
             
-            print("刷新到 \(array.count)条数据\(array)")
+//            print("刷新到 \(array.count)条数据\(array)")
             
             //2 拼接数据
             if pullup{

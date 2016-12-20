@@ -10,32 +10,32 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 - ["C8STTWeiBo20WBHomeViewController", "clickTitleButton"]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "clickTitleButton"
-- "loadData"
 - "showFriends"
+- "clickTitleButton"
+- "tableView"
+- "tableView"
 - "setupTableView"
+- "loadData"
 depends-top-level:
-- "NSIndexPath"
-- !private "UINib"
-- "WBStatusListViewModel"
 - !private "WBDemoViewController"
-- !private "WBNetworkManager"
-- !private "cellId"
-- "UITableViewCell"
-- "WBBaseViewController"
-- "StringLiteralType"
-- "UIButton"
-- !private "UIBarButtonItem"
-- !private "WBTitleButton"
-- !private "print"
-- !private "UITableViewAutomaticDimension"
-- !private "!"
-- !private "WBStatusCell"
-- "Int"
 - "UITableView"
+- "WBStatusListViewModel"
 - "WBHomeViewController"
+- "UIButton"
+- !private "WBStatusCell"
+- !private "UIBarButtonItem"
+- !private "print"
+- "WBBaseViewController"
+- !private "WBTitleButton"
+- !private "cellId"
+- !private "!"
+- !private "UITableViewAutomaticDimension"
+- "StringLiteralType"
+- "UITableViewCell"
+- !private "UINib"
+- "NSIndexPath"
+- "Int"
+- !private "WBNetworkManager"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "userAccount"]
@@ -61,6 +61,7 @@ depends-member:
 - ["Ps9AnyObject", "listViewModel.storage"]
 - ["Ps9AnyObject", "loadData"]
 - !private ["Ps9AnyObject", "loadStatus"]
+- !private ["Ps9AnyObject", "nameLabel"]
 - !private ["Ps9AnyObject", "navItem"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "print"]
@@ -77,11 +78,13 @@ depends-member:
 - ["Ps9AnyObject", "setupTableView"]
 - !private ["Ps9AnyObject", "shared"]
 - ["Ps9AnyObject", "showFriends"]
+- !private ["Ps9AnyObject", "status"]
 - !private ["Ps9AnyObject", "statusLabel"]
 - !private ["Ps9AnyObject", "statusList"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "titleView"]
+- !private ["Ps9AnyObject", "user"]
 - !private ["Ps9AnyObject", "userAccount"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
@@ -132,6 +135,7 @@ depends-member:
 - ["Ps11CVarArgType", "listViewModel"]
 - ["Ps11CVarArgType", "listViewModel.storage"]
 - ["Ps11CVarArgType", "loadData"]
+- !private ["Ps11CVarArgType", "nameLabel"]
 - !private ["Ps11CVarArgType", "navItem"]
 - !private ["Ps11CVarArgType", "navigationController"]
 - !private ["Ps11CVarArgType", "print"]
@@ -152,6 +156,7 @@ depends-member:
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "titleView"]
+- !private ["Ps11CVarArgType", "user"]
 - !private ["Ps11CVarArgType", "userAccount"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
@@ -190,6 +195,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "listViewModel"]
 - ["Ps28CustomDebugStringConvertible", "listViewModel.storage"]
 - ["Ps28CustomDebugStringConvertible", "loadData"]
+- !private ["Ps28CustomDebugStringConvertible", "nameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "navItem"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -211,6 +217,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "titleView"]
+- !private ["Ps28CustomDebugStringConvertible", "user"]
 - !private ["Ps28CustomDebugStringConvertible", "userAccount"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Distance"]
@@ -241,6 +248,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "listViewModel"]
 - ["Ps23CustomStringConvertible", "listViewModel.storage"]
 - ["Ps23CustomStringConvertible", "loadData"]
+- !private ["Ps23CustomStringConvertible", "nameLabel"]
 - !private ["Ps23CustomStringConvertible", "navItem"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -257,11 +265,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setupTableView"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - ["Ps23CustomStringConvertible", "showFriends"]
+- !private ["Ps23CustomStringConvertible", "status"]
 - !private ["Ps23CustomStringConvertible", "statusLabel"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "titleView"]
+- !private ["Ps23CustomStringConvertible", "user"]
 - !private ["Ps23CustomStringConvertible", "userAccount"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
@@ -289,6 +299,7 @@ depends-member:
 - ["Ps9Equatable", "listViewModel"]
 - ["Ps9Equatable", "listViewModel.storage"]
 - ["Ps9Equatable", "loadData"]
+- !private ["Ps9Equatable", "nameLabel"]
 - !private ["Ps9Equatable", "navItem"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "print"]
@@ -309,6 +320,7 @@ depends-member:
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "titleView"]
+- !private ["Ps9Equatable", "user"]
 - !private ["Ps9Equatable", "userAccount"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -339,6 +351,7 @@ depends-member:
 - ["Ps8Hashable", "listViewModel"]
 - ["Ps8Hashable", "listViewModel.storage"]
 - ["Ps8Hashable", "loadData"]
+- !private ["Ps8Hashable", "nameLabel"]
 - !private ["Ps8Hashable", "navItem"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "print"]
@@ -359,6 +372,7 @@ depends-member:
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "titleView"]
+- !private ["Ps8Hashable", "user"]
 - !private ["Ps8Hashable", "userAccount"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
@@ -425,6 +439,7 @@ depends-member:
 - ["PSo8NSCoding", "listViewModel"]
 - ["PSo8NSCoding", "listViewModel.storage"]
 - ["PSo8NSCoding", "loadData"]
+- !private ["PSo8NSCoding", "nameLabel"]
 - !private ["PSo8NSCoding", "navItem"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "print"]
@@ -501,6 +516,7 @@ depends-member:
 - ["CSo8NSObject", "listViewModel"]
 - ["CSo8NSObject", "listViewModel.storage"]
 - ["CSo8NSObject", "loadData"]
+- !private ["CSo8NSObject", "nameLabel"]
 - !private ["CSo8NSObject", "navItem"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "print"]
@@ -521,6 +537,7 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "titleView"]
+- !private ["CSo8NSObject", "user"]
 - !private ["CSo8NSObject", "userAccount"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
@@ -541,6 +558,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "listViewModel"]
 - ["PSo16NSObjectProtocol", "listViewModel.storage"]
 - ["PSo16NSObjectProtocol", "loadData"]
+- !private ["PSo16NSObjectProtocol", "nameLabel"]
 - !private ["PSo16NSObjectProtocol", "navItem"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -561,6 +579,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "titleView"]
+- !private ["PSo16NSObjectProtocol", "user"]
 - !private ["PSo16NSObjectProtocol", "userAccount"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -618,6 +637,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "endRefreshing"]
 - !private ["PSo29UIAccessibilityIdentification", "estimatedRowHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "nameLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
@@ -630,6 +650,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "endRefreshing"]
 - !private ["PSo12UIAppearance", "estimatedRowHeight"]
 - !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "nameLabel"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "rowHeight"]
@@ -655,6 +676,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "listViewModel"]
 - ["PSo21UIAppearanceContainer", "listViewModel.storage"]
 - ["PSo21UIAppearanceContainer", "loadData"]
+- !private ["PSo21UIAppearanceContainer", "nameLabel"]
 - !private ["PSo21UIAppearanceContainer", "navItem"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -709,6 +731,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "endRefreshing"]
 - !private ["PSo17UICoordinateSpace", "estimatedRowHeight"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "nameLabel"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
@@ -721,6 +744,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "endRefreshing"]
 - !private ["PSo13UIDynamicItem", "estimatedRowHeight"]
 - !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "nameLabel"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
@@ -746,6 +770,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "listViewModel"]
 - ["PSo18UIFocusEnvironment", "listViewModel.storage"]
 - ["PSo18UIFocusEnvironment", "loadData"]
+- !private ["PSo18UIFocusEnvironment", "nameLabel"]
 - !private ["PSo18UIFocusEnvironment", "navItem"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -763,6 +788,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "nameLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "statusLabel"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo22UINavigationController", "pushViewController"]
@@ -794,6 +820,7 @@ depends-member:
 - ["CSo11UIResponder", "listViewModel"]
 - ["CSo11UIResponder", "listViewModel.storage"]
 - ["CSo11UIResponder", "loadData"]
+- !private ["CSo11UIResponder", "nameLabel"]
 - !private ["CSo11UIResponder", "navItem"]
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "print"]
@@ -870,6 +897,7 @@ depends-member:
 - !private ["CSo11UITableView", "rowHeight"]
 - !private ["CSo11UITableView", "separatorStyle"]
 - !private ["CSo15UITableViewCell", "deinit"]
+- !private ["CSo15UITableViewCell", "nameLabel"]
 - !private ["CSo15UITableViewCell", "statusLabel"]
 - !private ["OSC29UITableViewCellSeparatorStyle", "None"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
@@ -936,6 +964,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "listViewModel"]
 - ["PSo18UITraitEnvironment", "listViewModel.storage"]
 - ["PSo18UITraitEnvironment", "loadData"]
+- !private ["PSo18UITraitEnvironment", "nameLabel"]
 - !private ["PSo18UITraitEnvironment", "navItem"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -957,6 +986,7 @@ depends-member:
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "endRefreshing"]
 - !private ["CSo6UIView", "estimatedRowHeight"]
+- !private ["CSo6UIView", "nameLabel"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "rowHeight"]
@@ -1062,13 +1092,17 @@ depends-member:
 - !private ["C8STTWeiBo16WBNetworkManager", "shared"]
 - !private ["C8STTWeiBo16WBNetworkManager", "userAccount"]
 - !private ["C8STTWeiBo8WBStatus", "text"]
+- !private ["C8STTWeiBo8WBStatus", "user"]
+- !private ["C8STTWeiBo12WBStatusCell", "nameLabel"]
 - !private ["C8STTWeiBo12WBStatusCell", "statusLabel"]
 - ["C8STTWeiBo21WBStatusListViewModel", "init"]
 - !private ["C8STTWeiBo21WBStatusListViewModel", "loadStatus"]
 - !private ["C8STTWeiBo21WBStatusListViewModel", "statusList"]
+- !private ["C8STTWeiBo17WBStatusViewModel", "status"]
 - !private ["C8STTWeiBo13WBTitleButton", "addTarget"]
 - !private ["C8STTWeiBo13WBTitleButton", "deinit"]
 - !private ["C8STTWeiBo13WBTitleButton", "init"]
+- !private ["C8STTWeiBo6WBUser", "screen_name"]
 - !private ["C8STTWeiBo13WBUserAccount", "screen_name"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
@@ -1124,6 +1158,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "estimatedRowHeight"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "last"]
+- !private ["Ps12_Reflectable", "nameLabel"]
 - !private ["Ps12_Reflectable", "registerNib"]
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "rowHeight"]
@@ -1246,7 +1281,9 @@ depends-nominal:
 - !private "C8STTWeiBo8WBStatus"
 - !private "C8STTWeiBo12WBStatusCell"
 - "C8STTWeiBo21WBStatusListViewModel"
+- !private "C8STTWeiBo17WBStatusViewModel"
 - !private "C8STTWeiBo13WBTitleButton"
+- !private "C8STTWeiBo6WBUser"
 - !private "C8STTWeiBo13WBUserAccount"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"

@@ -39,7 +39,7 @@ class WBHomeViewController: WBBaseViewController {
             print(json)
         }
         */
-        print("准备刷新，最后一条\(self.listViewModel.statusList.last?.text)")
+        print("准备刷新，最后一条\(self.listViewModel.statusList.last?.status.text)")
         listViewModel.loadStatus(self.isPullup) { (isSuccess,shouldRefresh) in
             
             print("数据加载结束")
@@ -120,7 +120,10 @@ extension WBHomeViewController{
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! WBStatusCell
         
         // 2 设置cell
-        cell.statusLabel?.text = listViewModel.statusList[indexPath.row].text
+        let viewModel = listViewModel.statusList[indexPath.row]
+        cell.statusLabel?.text = viewModel.status.text
+        
+        cell.nameLabel.text = viewModel.status.user?.screen_name
         
         //3 返回 cell
         return cell

@@ -366,8 +366,8 @@
 		CE4315A81DF65C7C005F7199 /* ViewModel(视图模型) */ = {
 			isa = PBXGroup;
 			children = (
-				CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */,
 				CEFFF9451E091BB400842467 /* WBStatusViewModel.swift */,
+				CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */,
 			);
 			path = "ViewModel(视图模型)";
 			sourceTree = "<group>";
