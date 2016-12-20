@@ -26,8 +26,8 @@ private let maxPullupTryTimes = 3
 
 class WBStatusListViewModel {
     
-    /// 微博模型 数组 懒加载
-    lazy var statusList = [WBStatus]()
+    /// 微博视图模型 数组 懒加载
+    lazy var statusList = [WBStatusViewModel]()
     /// 上拉刷新错误次数
     private var pullupErrorTimes = 0
     
@@ -48,18 +48,36 @@ class WBStatusListViewModel {
         }
         
         //since_id 下拉 取出数组中第一条微博的id
-        let since_id = pullup ? 0 : (statusList.first?.id ?? 0)
+        let since_id = pullup ? 0 : (statusList.first?.status.id ?? 0)
         //上拉刷新 取出数组中最后一条微博的id
-        let max_id = !pullup ? 0 : (statusList.last?.id ?? 0)
+        let max_id = !pullup ? 0 : (statusList.last?.status.id ?? 0)
         
         WBNetworkManager.shared.statusList(since_id,max_id: max_id) { (list, isSuccess) in
 //            print(list)
-            //1 字典转模型 (所有第三方框架都支持嵌套的字典转模型)
-           guard let array = NSArray.yy_modelArrayWithClass(WBStatus.self, json: list ?? []) as? [WBStatus]else{
             
-                completion(isSuccess: isSuccess,shouldRefresh: false)
-            
+            // 0 判断网络请求是否成功
+            if !isSuccess{
+                //直接回调返回
+                completion(isSuccess: false, shouldRefresh: false)
+                
                 return
+            }
+            
+            //1 字典转模型 (所有第三方框架都支持嵌套的字典转模型)
+            // 1> 定义结果可变数组
+            var array = [WBStatusViewModel]()
+            
+            // 2> 遍历服务器返回的字典数组 字典转模型 
+            for dict in list ?? []{
+                
+                // a)创建微博模型 - 如果创建模型失败 继续后续的遍历
+                guard let model = WBStatus.yy_modelWithJSON(dict) else{
+                    
+                    continue
+                }
+                
+                // b) 将 视图模型 添加到数组
+                array.append(WBStatusViewModel(model: model))
             }
             
             print("刷新到 \(array.count)条数据\(array)")
