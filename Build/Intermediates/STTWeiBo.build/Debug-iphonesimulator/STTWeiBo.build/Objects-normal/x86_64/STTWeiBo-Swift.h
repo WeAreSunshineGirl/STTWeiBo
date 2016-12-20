@@ -437,6 +437,7 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WBUser;
 
 
 /// 微博数据模型
@@ -448,6 +449,9 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 
 /// 微博信息内容
 @property (nonatomic, copy) NSString * _Nullable text;
+
+/// 微博的用户
+@property (nonatomic, strong) WBUser * _Nullable user;
 
 /// 重写 description 的计算型属性
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -495,8 +499,26 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBTitleButton")
 @end
 
 
+
+/// 微博用户模型
 SWIFT_CLASS("_TtC8STTWeiBo6WBUser")
 @interface WBUser : NSObject
+
+/// 基本数据类型 & private 不能使用 KVC 设置
+@property (nonatomic) int64_t id;
+
+/// 用户昵称
+@property (nonatomic, copy) NSString * _Nullable screen_name;
+
+/// 用户头像地址（中图），50×50像素
+@property (nonatomic, copy) NSString * _Nullable profile_image_url;
+
+/// 认证类型 -1:没有认证 0 认证用户 2 3 5 企业认证 220 达人
+@property (nonatomic) NSInteger verified_type;
+
+/// 会员等级 0 - 6
+@property (nonatomic) NSInteger mbrank;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
