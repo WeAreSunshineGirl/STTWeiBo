@@ -494,6 +494,12 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBTitleButton")
 - (void)layoutSubviews;
 @end
 
+
+SWIFT_CLASS("_TtC8STTWeiBo6WBUser")
+@interface WBUser : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSDate;
 
 

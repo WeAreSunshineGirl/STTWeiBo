@@ -54,6 +54,7 @@
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
 		CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */; };
+		CEFFF9441E09147700842467 /* WBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF9431E09147700842467 /* WBUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
 		CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusNormalCell.xib; sourceTree = "<group>"; };
+		CEFFF9431E09147700842467 /* WBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				CE1B261F1E02260B0044B55C /* WBUserAccount.swift */,
+				CEFFF9431E09147700842467 /* WBUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				CE08438F1DEFCA6100BD8168 /* WBMainViewController.swift in Sources */,
 				CE0843951DEFCAD100BD8168 /* WBHomeViewController.swift in Sources */,
 				CE0843C21DEFCC8200BD8168 /* UIButton+CZAddition.m in Sources */,
+				CEFFF9441E09147700842467 /* WBUser.swift in Sources */,
 				CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */,
 				CE0843C51DEFCC8200BD8168 /* UIScreen+CZAddition.m in Sources */,
 				CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */,
