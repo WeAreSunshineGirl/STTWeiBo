@@ -117,10 +117,10 @@ extension WBHomeViewController{
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // 1 取 cell
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! WBStatusCell
         
         // 2 设置cell
-        cell.textLabel?.text = listViewModel.statusList[indexPath.row].text
+        cell.statusLabel?.text = listViewModel.statusList[indexPath.row].text
         
         //3 返回 cell
         return cell
@@ -152,6 +152,14 @@ extension WBHomeViewController{
         //注册原型 cell  开始自定义cell 所以注释
 //        tableView?.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellId)
         tableView?.registerNib(UINib(nibName: "WBStatusNormalCell",bundle: nil), forCellReuseIdentifier: cellId)
+        
+         //设置行高
+         tableView?.rowHeight = UITableViewAutomaticDimension
+        tableView?.estimatedRowHeight = 300
+        
+        //取消分割线
+        tableView?.separatorStyle = .None
+        
         setupNavTitle()
     }
     /**

@@ -454,9 +454,32 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 @interface WBStatusCell : UITableViewCell
+
+/// 头像
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified iconView;
+
+/// 姓名
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+
+/// 会员图标
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified memberIconView;
+
+/// 时间
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+
+/// 来源
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified sourceLabel;
+
+/// 认证图标
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified vipIconView;
+
+/// 微博正文
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -525,8 +548,6 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 - (void)setupUI;
 @end
 
-@class UIImageView;
-@class UILabel;
 @class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8STTWeiBo13WBWelcomeView")
