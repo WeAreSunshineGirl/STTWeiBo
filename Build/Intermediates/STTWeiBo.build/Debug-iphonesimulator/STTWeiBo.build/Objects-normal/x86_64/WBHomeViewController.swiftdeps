@@ -10,36 +10,37 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 - ["C8STTWeiBo20WBHomeViewController", "clickTitleButton"]
 provides-dynamic-lookup:
-- "setupTableView"
-- "loadData"
-- "clickTitleButton"
 - "showFriends"
+- "loadData"
+- "setupTableView"
+- "clickTitleButton"
 - "tableView"
 - "tableView"
 depends-top-level:
-- "Int"
-- "UITableViewCell"
-- "WBHomeViewController"
-- !private "WBNetworkManager"
-- !private "cellId"
-- !private "WBTitleButton"
 - "WBStatusListViewModel"
 - "UITableView"
-- !private "print"
+- !private "cellId"
 - !private "UIBarButtonItem"
-- "WBBaseViewController"
 - "UIButton"
-- "StringLiteralType"
-- !private "!"
 - "NSIndexPath"
+- "WBBaseViewController"
+- !private "UINib"
 - !private "WBDemoViewController"
+- !private "!"
+- !private "WBNetworkManager"
+- "WBHomeViewController"
+- "UITableViewCell"
+- !private "print"
+- "Int"
+- "StringLiteralType"
+- !private "WBTitleButton"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "userAccount"]
 - !private ["CSo19AFURLSessionManager", "shared"]
 - !private ["CSo19AFURLSessionManager", "userAccount"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
-- !private ["Ps9AnyObject", "UITableViewCell"]
+- !private ["Ps9AnyObject", "UINib"]
 - !private ["Ps9AnyObject", "WBDemoViewController"]
 - !private ["Ps9AnyObject", "WBNetworkManager"]
 - ["Ps9AnyObject", "WBStatusListViewModel"]
@@ -61,7 +62,7 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "pushViewController"]
 - !private ["Ps9AnyObject", "refreshControl"]
-- !private ["Ps9AnyObject", "registerClass"]
+- !private ["Ps9AnyObject", "registerNib"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "row"]
 - !private ["Ps9AnyObject", "screen_name"]
@@ -106,7 +107,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
-- !private ["Ps11CVarArgType", "UITableViewCell"]
+- !private ["Ps11CVarArgType", "UINib"]
 - !private ["Ps11CVarArgType", "WBDemoViewController"]
 - !private ["Ps11CVarArgType", "WBNetworkManager"]
 - ["Ps11CVarArgType", "WBStatusListViewModel"]
@@ -127,7 +128,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "pushViewController"]
 - !private ["Ps11CVarArgType", "refreshControl"]
-- !private ["Ps11CVarArgType", "registerClass"]
+- !private ["Ps11CVarArgType", "registerNib"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "row"]
 - !private ["Ps11CVarArgType", "screen_name"]
@@ -157,7 +158,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
-- !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
+- !private ["Ps28CustomDebugStringConvertible", "UINib"]
 - !private ["Ps28CustomDebugStringConvertible", "WBDemoViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "WBNetworkManager"]
 - ["Ps28CustomDebugStringConvertible", "WBStatusListViewModel"]
@@ -181,7 +182,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "refreshControl"]
-- !private ["Ps28CustomDebugStringConvertible", "registerClass"]
+- !private ["Ps28CustomDebugStringConvertible", "registerNib"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "screen_name"]
@@ -203,7 +204,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
-- !private ["Ps23CustomStringConvertible", "UITableViewCell"]
+- !private ["Ps23CustomStringConvertible", "UINib"]
 - !private ["Ps23CustomStringConvertible", "WBDemoViewController"]
 - !private ["Ps23CustomStringConvertible", "WBNetworkManager"]
 - ["Ps23CustomStringConvertible", "WBStatusListViewModel"]
@@ -228,7 +229,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
 - !private ["Ps23CustomStringConvertible", "refreshControl"]
-- !private ["Ps23CustomStringConvertible", "registerClass"]
+- !private ["Ps23CustomStringConvertible", "registerNib"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "screen_name"]
@@ -249,7 +250,7 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "TouchUpInside"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
-- !private ["Ps9Equatable", "UITableViewCell"]
+- !private ["Ps9Equatable", "UINib"]
 - !private ["Ps9Equatable", "WBDemoViewController"]
 - !private ["Ps9Equatable", "WBNetworkManager"]
 - ["Ps9Equatable", "WBStatusListViewModel"]
@@ -271,7 +272,7 @@ depends-member:
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "pushViewController"]
 - !private ["Ps9Equatable", "refreshControl"]
-- !private ["Ps9Equatable", "registerClass"]
+- !private ["Ps9Equatable", "registerNib"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "screen_name"]
@@ -294,7 +295,7 @@ depends-member:
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
-- !private ["Ps8Hashable", "UITableViewCell"]
+- !private ["Ps8Hashable", "UINib"]
 - !private ["Ps8Hashable", "WBDemoViewController"]
 - !private ["Ps8Hashable", "WBNetworkManager"]
 - ["Ps8Hashable", "WBStatusListViewModel"]
@@ -316,7 +317,7 @@ depends-member:
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "pushViewController"]
 - !private ["Ps8Hashable", "refreshControl"]
-- !private ["Ps8Hashable", "registerClass"]
+- !private ["Ps8Hashable", "registerNib"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "screen_name"]
@@ -377,7 +378,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "last"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
-- !private ["PSo8NSCoding", "UITableViewCell"]
+- !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "WBDemoViewController"]
 - !private ["PSo8NSCoding", "WBNetworkManager"]
 - ["PSo8NSCoding", "WBStatusListViewModel"]
@@ -398,7 +399,7 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "refreshControl"]
-- !private ["PSo8NSCoding", "registerClass"]
+- !private ["PSo8NSCoding", "registerNib"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
 - !private ["PSo8NSCoding", "selected"]
@@ -417,7 +418,7 @@ depends-member:
 - !private ["PSo9NSCopying", "shared"]
 - !private ["PSo9NSCopying", "userAccount"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
-- !private ["PSo26NSExtensionRequestHandling", "UITableViewCell"]
+- !private ["PSo26NSExtensionRequestHandling", "UINib"]
 - !private ["PSo26NSExtensionRequestHandling", "WBDemoViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "WBNetworkManager"]
 - ["PSo26NSExtensionRequestHandling", "WBStatusListViewModel"]
@@ -445,6 +446,7 @@ depends-member:
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UINib"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "WBDemoViewController"]
@@ -467,7 +469,7 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "refreshControl"]
-- !private ["CSo8NSObject", "registerClass"]
+- !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
 - !private ["CSo8NSObject", "screen_name"]
@@ -482,7 +484,7 @@ depends-member:
 - !private ["CSo8NSObject", "titleView"]
 - !private ["CSo8NSObject", "userAccount"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
-- !private ["PSo16NSObjectProtocol", "UITableViewCell"]
+- !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "WBDemoViewController"]
 - !private ["PSo16NSObjectProtocol", "WBNetworkManager"]
 - ["PSo16NSObjectProtocol", "WBStatusListViewModel"]
@@ -503,7 +505,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "refreshControl"]
-- !private ["PSo16NSObjectProtocol", "registerClass"]
+- !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - !private ["PSo16NSObjectProtocol", "screen_name"]
@@ -571,7 +573,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "endRefreshing"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "registerClass"]
+- !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "selected"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -580,13 +582,13 @@ depends-member:
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "endRefreshing"]
 - !private ["PSo12UIAppearance", "init"]
-- !private ["PSo12UIAppearance", "registerClass"]
+- !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "selected"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
-- !private ["PSo21UIAppearanceContainer", "UITableViewCell"]
+- !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "WBDemoViewController"]
 - !private ["PSo21UIAppearanceContainer", "WBNetworkManager"]
 - ["PSo21UIAppearanceContainer", "WBStatusListViewModel"]
@@ -606,7 +608,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - !private ["PSo21UIAppearanceContainer", "refreshControl"]
-- !private ["PSo21UIAppearanceContainer", "registerClass"]
+- !private ["PSo21UIAppearanceContainer", "registerNib"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "selected"]
 - ["PSo21UIAppearanceContainer", "setupNavTitle"]
@@ -621,7 +623,7 @@ depends-member:
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "selected"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
-- !private ["PSo18UIContentContainer", "UITableViewCell"]
+- !private ["PSo18UIContentContainer", "UINib"]
 - !private ["PSo18UIContentContainer", "WBDemoViewController"]
 - !private ["PSo18UIContentContainer", "WBNetworkManager"]
 - ["PSo18UIContentContainer", "WBStatusListViewModel"]
@@ -651,7 +653,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "endRefreshing"]
 - !private ["PSo17UICoordinateSpace", "init"]
-- !private ["PSo17UICoordinateSpace", "registerClass"]
+- !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "selected"]
 - !private ["PSo17UICoordinateSpace", "text"]
@@ -660,13 +662,13 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "endRefreshing"]
 - !private ["PSo13UIDynamicItem", "init"]
-- !private ["PSo13UIDynamicItem", "registerClass"]
+- !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "selected"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
-- !private ["PSo18UIFocusEnvironment", "UITableViewCell"]
+- !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "WBDemoViewController"]
 - !private ["PSo18UIFocusEnvironment", "WBNetworkManager"]
 - ["PSo18UIFocusEnvironment", "WBStatusListViewModel"]
@@ -686,7 +688,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - !private ["PSo18UIFocusEnvironment", "refreshControl"]
-- !private ["PSo18UIFocusEnvironment", "registerClass"]
+- !private ["PSo18UIFocusEnvironment", "registerNib"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "selected"]
 - ["PSo18UIFocusEnvironment", "setupNavTitle"]
@@ -701,11 +703,13 @@ depends-member:
 - !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo16UINavigationItem", "leftBarButtonItem"]
 - !private ["CSo16UINavigationItem", "titleView"]
+- !private ["CSo5UINib", "init"]
 - !private ["CSo16UIRefreshControl", "endRefreshing"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "WBDemoViewController"]
@@ -727,7 +731,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "refreshControl"]
-- !private ["CSo11UIResponder", "registerClass"]
+- !private ["CSo11UIResponder", "registerNib"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "selected"]
 - ["CSo11UIResponder", "setupNavTitle"]
@@ -737,10 +741,10 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
-- !private ["CSo12UIScrollView", "registerClass"]
+- !private ["CSo12UIScrollView", "registerNib"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
-- !private ["PSo20UIScrollViewDelegate", "UITableViewCell"]
+- !private ["PSo20UIScrollViewDelegate", "UINib"]
 - !private ["PSo20UIScrollViewDelegate", "WBDemoViewController"]
 - !private ["PSo20UIScrollViewDelegate", "WBNetworkManager"]
 - ["PSo20UIScrollViewDelegate", "WBStatusListViewModel"]
@@ -762,7 +766,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
-- !private ["PSo16UIStateRestoring", "UITableViewCell"]
+- !private ["PSo16UIStateRestoring", "UINib"]
 - !private ["PSo16UIStateRestoring", "WBDemoViewController"]
 - !private ["PSo16UIStateRestoring", "WBNetworkManager"]
 - ["PSo16UIStateRestoring", "WBStatusListViewModel"]
@@ -785,11 +789,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
-- !private ["CSo11UITableView", "registerClass"]
+- !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "textLabel"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
-- !private ["PSo21UITableViewDataSource", "UITableViewCell"]
+- !private ["PSo21UITableViewDataSource", "UINib"]
 - !private ["PSo21UITableViewDataSource", "WBDemoViewController"]
 - !private ["PSo21UITableViewDataSource", "WBNetworkManager"]
 - ["PSo21UITableViewDataSource", "WBStatusListViewModel"]
@@ -811,7 +815,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
-- !private ["PSo19UITableViewDelegate", "UITableViewCell"]
+- !private ["PSo19UITableViewDelegate", "UINib"]
 - !private ["PSo19UITableViewDelegate", "WBDemoViewController"]
 - !private ["PSo19UITableViewDelegate", "WBNetworkManager"]
 - ["PSo19UITableViewDelegate", "WBStatusListViewModel"]
@@ -833,7 +837,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
-- !private ["PSo18UITraitEnvironment", "UITableViewCell"]
+- !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "WBDemoViewController"]
 - !private ["PSo18UITraitEnvironment", "WBNetworkManager"]
 - ["PSo18UITraitEnvironment", "WBStatusListViewModel"]
@@ -853,7 +857,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
 - !private ["PSo18UITraitEnvironment", "refreshControl"]
-- !private ["PSo18UITraitEnvironment", "registerClass"]
+- !private ["PSo18UITraitEnvironment", "registerNib"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "selected"]
 - ["PSo18UITraitEnvironment", "setupNavTitle"]
@@ -866,7 +870,7 @@ depends-member:
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "endRefreshing"]
-- !private ["CSo6UIView", "registerClass"]
+- !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "selected"]
 - !private ["CSo6UIView", "text"]
@@ -875,6 +879,7 @@ depends-member:
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UINib"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "WBDemoViewController"]
@@ -908,6 +913,7 @@ depends-member:
 - ["C8STTWeiBo20WBBaseViewController", "NSIndexPath"]
 - !private ["C8STTWeiBo20WBBaseViewController", "UIBarButtonItem"]
 - ["C8STTWeiBo20WBBaseViewController", "UIButton"]
+- !private ["C8STTWeiBo20WBBaseViewController", "UINib"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableView"]
 - ["C8STTWeiBo20WBBaseViewController", "UITableViewCell"]
 - !private ["C8STTWeiBo20WBBaseViewController", "WBDemoViewController"]
@@ -935,6 +941,7 @@ depends-member:
 - ["C8STTWeiBo20WBHomeViewController", "NSIndexPath"]
 - !private ["C8STTWeiBo20WBHomeViewController", "UIBarButtonItem"]
 - ["C8STTWeiBo20WBHomeViewController", "UIButton"]
+- !private ["C8STTWeiBo20WBHomeViewController", "UINib"]
 - ["C8STTWeiBo20WBHomeViewController", "UITableView"]
 - ["C8STTWeiBo20WBHomeViewController", "UITableViewCell"]
 - !private ["C8STTWeiBo20WBHomeViewController", "WBDemoViewController"]
@@ -1020,7 +1027,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "endRefreshing"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "last"]
-- !private ["Ps12_Reflectable", "registerClass"]
+- !private ["Ps12_Reflectable", "registerNib"]
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "selected"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -1111,6 +1118,7 @@ depends-nominal:
 - !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - !private "CSo16UINavigationItem"
+- !private "CSo5UINib"
 - !private "CSo16UIRefreshControl"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"

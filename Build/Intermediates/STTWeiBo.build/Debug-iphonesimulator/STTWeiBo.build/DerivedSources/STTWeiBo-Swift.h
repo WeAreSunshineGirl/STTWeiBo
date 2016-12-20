@@ -144,6 +144,10 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 - (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title fontSize:(CGFloat)fontSize target:(id _Nullable)target action:(SEL _Null_unspecified)action isBack:(BOOL)isBack;
 @end
 
+
+@interface UIImage (SWIFT_EXTENSION(STTWeiBo))
+@end
+
 @class UITableView;
 @class UIRefreshControl;
 @class UINavigationBar;
@@ -448,6 +452,15 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 重写 description 的计算型属性
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
+@interface WBStatusCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
