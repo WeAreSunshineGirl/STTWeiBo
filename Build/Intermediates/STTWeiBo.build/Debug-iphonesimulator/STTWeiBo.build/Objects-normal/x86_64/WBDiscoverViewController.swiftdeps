@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "WBDiscoverViewController"
 - !private "StringLiteralType"
 - !private "print"
 - "WBBaseViewController"
+- "WBDiscoverViewController"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]

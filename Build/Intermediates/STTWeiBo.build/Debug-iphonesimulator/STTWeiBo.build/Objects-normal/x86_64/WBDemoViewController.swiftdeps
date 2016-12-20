@@ -11,12 +11,12 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "setupTableView"
 depends-top-level:
-- !private "UnicodeScalarType"
+- "WBDemoViewController"
+- !private "StringLiteralType"
+- "WBBaseViewController"
 - !private "BooleanLiteralType"
 - !private "UIBarButtonItem"
-- "WBBaseViewController"
-- !private "StringLiteralType"
-- "WBDemoViewController"
+- !private "UnicodeScalarType"
 - !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
