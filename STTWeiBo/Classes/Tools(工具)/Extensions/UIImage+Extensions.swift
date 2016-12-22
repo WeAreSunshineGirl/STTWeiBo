@@ -20,6 +20,7 @@ extension UIImage{
      
      - returns: 裁切后的图像
      */
+    //    不设置圆角半径 的情况下 直接设置圆形
     func avatarImage(size:CGSize?,backColor:UIColor = UIColor.whiteColor(),lineColor:UIColor = UIColor.lightGrayColor()) -> UIImage? {
         
         var size = size
@@ -27,26 +28,53 @@ extension UIImage{
             size = self.size
         }
         let rect = CGRect(origin: CGPoint(), size: size!)
-        
+        //        图像上下文 内存中开辟一个地址 跟屏幕无关
         UIGraphicsBeginImageContextWithOptions(rect.size, true, 0)
-        
+        //        背景填充
         backColor.setFill()
         UIRectFill(rect)
-        
+        //        实例化一个圆形的路径
         let path = UIBezierPath(ovalInRect: rect)
+        //        进行路径裁切  后续的绘制 都会出现在圆形路径内部 外部的全部干净
         path.addClip()
-        
+        //        绘图 drawInrect 就是在指定区域内拉伸屏幕
         drawInRect(rect)
-        
+        //        画圆形  画圆形的边线
         let ovalPath = UIBezierPath(ovalInRect: rect)
         ovalPath.lineWidth = 2
         lineColor.setStroke()
         ovalPath.stroke()
-        
+              //        取得结果
         let result = UIGraphicsGetImageFromCurrentImageContext()
-        
+        //        关闭上下文
         UIGraphicsEndImageContext()
-        
+          //        返回结果
         return result
+    }
+    
+    //    生成指定大小的不透明图象
+    func cz_image(size:CGSize? = nil,backColor:UIColor = UIColor.whiteColor()) -> UIImage? {
+        var size = size
+        if size == nil{
+            size = self.size
+        }
+        let rect = CGRect(origin: CGPoint(), size: size!)
+        //        获取图像上下文
+        /*
+         size 绘制的尺寸
+         不透明： false（透明） true（不透明）
+         scale 屏幕分辨率 默认生成的图像默认使用1.0分辨率 图像质量不好
+         可以指定 0 会选择当前的设备的屏幕分辨率
+         */
+        UIGraphicsBeginImageContextWithOptions(rect.size, true, 0)
+        //        绘制 drawinRect 就是在指定区域内拉伸屏幕
+        drawInRect(rect)
+        //        取得结果
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        //        关闭上下文
+        UIGraphicsEndImageContext()
+        //        返回结果
+        return result
+        
     }
 }

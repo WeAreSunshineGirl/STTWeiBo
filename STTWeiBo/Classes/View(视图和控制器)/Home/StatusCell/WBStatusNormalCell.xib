@@ -91,7 +91,7 @@
                 <outlet property="timeLabel" destination="kZ0-j0-XXS" id="LSx-tM-UYI"/>
                 <outlet property="vipIconView" destination="uwb-cB-TiM" id="gaP-KG-I66"/>
             </connections>
-            <point key="canvasLocation" x="371" y="427"/>
+            <point key="canvasLocation" x="206" y="329"/>
         </tableViewCell>
     </objects>
     <resources>

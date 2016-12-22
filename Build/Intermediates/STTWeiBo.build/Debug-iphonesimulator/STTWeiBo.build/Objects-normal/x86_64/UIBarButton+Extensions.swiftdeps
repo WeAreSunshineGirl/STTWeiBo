@@ -6,17 +6,17 @@ provides-member:
 - ["CSo15UIBarButtonItem", "init"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIImage"
-- "String"
 - !private "UIColor"
+- "String"
 - "BooleanLiteralType"
 - "AnyObject"
-- "UIBarButtonItem"
-- !private "UIButton"
 - !private "+"
-- "Bool"
+- !private "UIButton"
+- "UIBarButtonItem"
 - "CGFloat"
+- !private "UIImage"
 - !private "StringLiteralType"
+- "Bool"
 - "Selector"
 depends-member:
 - !private ["Ps9AnyObject", "UIButton"]

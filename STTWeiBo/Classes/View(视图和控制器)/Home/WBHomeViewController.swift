@@ -120,11 +120,12 @@ extension WBHomeViewController{
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! WBStatusCell
         
         // 2 设置cell
-        let viewModel = listViewModel.statusList[indexPath.row]
-        cell.statusLabel?.text = viewModel.status.text
-        
-        cell.nameLabel.text = viewModel.status.user?.screen_name
-        
+        let vm = listViewModel.statusList[indexPath.row]
+        cell.viewModel = vm
+//        cell.statusLabel?.text = viewModel.status.text
+//        
+//        cell.nameLabel.text = viewModel.status.user?.screen_name
+//        
         //3 返回 cell
         return cell
     }

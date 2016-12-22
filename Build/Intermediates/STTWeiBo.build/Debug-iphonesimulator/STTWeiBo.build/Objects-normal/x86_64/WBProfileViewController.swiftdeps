@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo23WBProfileViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "WBBaseViewController"
 - "WBProfileViewController"

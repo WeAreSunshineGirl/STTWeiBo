@@ -7,9 +7,26 @@
 //
 
 import UIKit
-
+import SDWebImage
 class WBStatusCell: UITableViewCell {
 
+    /// 微博视图模型
+    var viewModel:WBStatusViewModel?{
+        didSet{
+            /// 微博文本
+            statusLabel?.text = viewModel?.status.text
+            /// 姓名
+            nameLabel.text = viewModel?.status.user?.screen_name
+            //会员 图标
+            //判断 mbrank的值 根据值设置属性
+            memberIconView.image = viewModel?.memberIcon
+            
+            
+            iconView.sd_setHighlightedImageWithURL(<#T##url: NSURL!##NSURL!#>, options: <#T##SDWebImageOptions#>, progress: <#T##SDWebImageDownloaderProgressBlock!##SDWebImageDownloaderProgressBlock!##(Int, Int) -> Void#>, completed: <#T##SDWebImageCompletionBlock!##SDWebImageCompletionBlock!##(UIImage!, NSError!, SDImageCacheType, NSURL!) -> Void#>)
+            
+        }
+            
+    }
     /// 头像
     @IBOutlet weak var iconView: UIImageView!
     /// 姓名
