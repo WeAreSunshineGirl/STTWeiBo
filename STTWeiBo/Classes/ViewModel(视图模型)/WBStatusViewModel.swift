@@ -30,6 +30,8 @@ class WBStatusViewModel:CustomStringConvertible {
     
     /// 会员图标 - 存储型属性（用内存 换 CPU）
     var memberIcon:UIImage?
+    /// 认证类型 -1:没有认证 0 认证用户 2 3 5 企业认证 220 达人
+    var vipIcon:UIImage?
     /**
      构造函数
      
@@ -42,10 +44,22 @@ class WBStatusViewModel:CustomStringConvertible {
         
         //直接计算出会员等级 0 -6 common_icon_membership_level1
         if model.user?.mbrank > 0 && model.user?.mbrank < 7{
-            
             let imageName = "common_icon_membership_level\(model.user?.mbrank ?? 1)"
             memberIcon = UIImage(named: imageName)
         }
+        
+        //认证图标
+        switch model.user?.verified_type ?? -1 {
+        case 0:
+            vipIcon = UIImage(named: "avatar_vip")
+        case 2,3,5:
+            vipIcon = UIImage(named: "avatar_enterprise_vip")
+        case 220:
+            vipIcon = UIImage(named: "avatar_grassroot")
+        default:
+            break
+        }
+
         
     }
     

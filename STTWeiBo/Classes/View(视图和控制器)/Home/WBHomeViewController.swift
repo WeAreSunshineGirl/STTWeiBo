@@ -23,6 +23,7 @@ class WBHomeViewController: WBBaseViewController {
      加载数据
      */
     override func loadData() {
+        
         /*
         //用网络工具加载微博数据   测试使用
         let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"

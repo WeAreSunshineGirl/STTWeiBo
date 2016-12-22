@@ -21,8 +21,10 @@ class WBStatusCell: UITableViewCell {
             //判断 mbrank的值 根据值设置属性
             memberIconView.image = viewModel?.memberIcon
             
+            //认证图标
+            vipIconView.image = viewModel?.vipIcon
             
-            iconView.sd_setHighlightedImageWithURL(<#T##url: NSURL!##NSURL!#>, options: <#T##SDWebImageOptions#>, progress: <#T##SDWebImageDownloaderProgressBlock!##SDWebImageDownloaderProgressBlock!##(Int, Int) -> Void#>, completed: <#T##SDWebImageCompletionBlock!##SDWebImageCompletionBlock!##(UIImage!, NSError!, SDImageCacheType, NSURL!) -> Void#>)
+//            iconView.sd_setHighlightedImageWithURL(<#T##url: NSURL!##NSURL!#>, options: <#T##SDWebImageOptions#>, progress: <#T##SDWebImageDownloaderProgressBlock!##SDWebImageDownloaderProgressBlock!##(Int, Int) -> Void#>, completed: <#T##SDWebImageCompletionBlock!##SDWebImageCompletionBlock!##(UIImage!, NSError!, SDImageCacheType, NSURL!) -> Void#>)
             
         }
             
