@@ -21,7 +21,7 @@ extension UIImage{
      - returns: 裁切后的图像
      */
     //    不设置圆角半径 的情况下 直接设置圆形
-    func avatarImage(size:CGSize?,backColor:UIColor = UIColor.whiteColor(),lineColor:UIColor = UIColor.lightGrayColor()) -> UIImage? {
+    func cz_avatarImage(size:CGSize?,backColor:UIColor = UIColor.whiteColor(),lineColor:UIColor = UIColor.lightGrayColor()) -> UIImage? {
         
         var size = size
         if size == nil {

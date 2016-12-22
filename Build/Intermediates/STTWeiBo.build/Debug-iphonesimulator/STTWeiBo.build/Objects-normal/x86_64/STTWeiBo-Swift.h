@@ -148,6 +148,17 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 @interface UIImage (SWIFT_EXTENSION(STTWeiBo))
 @end
 
+
+@interface UIImageView (SWIFT_EXTENSION(STTWeiBo))
+
+/// 隔离 SDWEBImage 设置图像函数
+///
+/// \param UrlString UrlString
+///
+/// \param placeholderImage 占位图像
+- (void)cz_setImage:(NSString * _Nullable)UrlString placeholderImage:(UIImage * _Nullable)placeholderImage;
+@end
+
 @class UITableView;
 @class UIRefreshControl;
 @class UINavigationBar;
@@ -458,7 +469,6 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 @class UILabel;
 
 SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")

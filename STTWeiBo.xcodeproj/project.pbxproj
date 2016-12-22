@@ -37,6 +37,7 @@
 		CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */; };
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
 		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
+		CE111F7C1E0BB01F00CA5061 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */; };
 		CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15262E1DF94A0800149510 /* WBNetworkManager.swift */; };
 		CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */; };
 		CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18872F1E07736800420C0B /* WBWelcomeView.swift */; };
@@ -108,6 +109,7 @@
 		CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
+		CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
 		CE15262E1DF94A0800149510 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
 		CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
 		CE18872F1E07736800420C0B /* WBWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWelcomeView.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */,
 				CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */,
 				CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */,
+				CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				CE08438F1DEFCA6100BD8168 /* WBMainViewController.swift in Sources */,
 				CE0843951DEFCAD100BD8168 /* WBHomeViewController.swift in Sources */,
 				CE0843C21DEFCC8200BD8168 /* UIButton+CZAddition.m in Sources */,
+				CE111F7C1E0BB01F00CA5061 /* UIImageView+WebImage.swift in Sources */,
 				CEFFF9441E09147700842467 /* WBUser.swift in Sources */,
 				CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */,
 				CE0843C51DEFCC8200BD8168 /* UIScreen+CZAddition.m in Sources */,
