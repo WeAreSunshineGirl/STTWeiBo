@@ -504,6 +504,8 @@ SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 
 /// 微博正文
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
+
+/// 底部工具栏
 @property (nonatomic, weak) IBOutlet WBStatusToolBar * _Null_unspecified toolBar;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;

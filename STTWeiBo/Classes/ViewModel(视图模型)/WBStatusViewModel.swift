@@ -32,6 +32,12 @@ class WBStatusViewModel:CustomStringConvertible {
     var memberIcon:UIImage?
     /// 认证类型 -1:没有认证 0 认证用户 2 3 5 企业认证 220 达人
     var vipIcon:UIImage?
+    /// 转发文字
+    var retweetedStr:String?
+    /// 评论文字
+    var commentStr:String?
+    /// 点赞文字
+    var likeStr:String?
     /**
      构造函数
      
@@ -60,11 +66,47 @@ class WBStatusViewModel:CustomStringConvertible {
             break
         }
 
-        
+        //设置底部计算字符串
+        //测试 转发数
+//        model.reposts_count = Int(arc4random_uniform(100000))
+        retweetedStr = countString(model.reposts_count, defaultStr: "转发")
+        commentStr = countString(model.comments_count, defaultStr: "评论")
+        likeStr = countString(model.attitudes_count, defaultStr: "赞")
     }
     
     var description: String{
         return status.description
     }
+    
+    
+    /**
+     
+     - returns: 描述结果
+     */
+    /**
+     给定一个数字返回对应的描述结果
+     
+     - parameter count:      数字
+     - parameter defaultStr: 默认字符串 转发 评论 赞
+     
+     - returns: 描述结果
+     */
+    /*
+     如果数量 == 0 显示默认标题
+     如果数量超过 10000 显示 x.xx万
+     如果数量 < 10000 显示实际数字
+     */
+    private func countString(count:Int,defaultStr:String)->String{
+        
+        if count == 0 {
+            return defaultStr
+        }
+        if count < 10000 {
+            return count.description
+        }
+        return String(format: "%.02f 万", Double(count) / 10000)
+        
+    }
+   
     
 }
