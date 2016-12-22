@@ -38,6 +38,7 @@
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
 		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
 		CE111F7C1E0BB01F00CA5061 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */; };
+		CE111F7E1E0BBF1300CA5061 /* WBStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE111F7D1E0BBF1300CA5061 /* WBStatusToolBar.swift */; };
 		CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE15262E1DF94A0800149510 /* WBNetworkManager.swift */; };
 		CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */; };
 		CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18872F1E07736800420C0B /* WBWelcomeView.swift */; };
@@ -110,6 +111,7 @@
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
 		CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		CE111F7D1E0BBF1300CA5061 /* WBStatusToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusToolBar.swift; sourceTree = "<group>"; };
 		CE15262E1DF94A0800149510 /* WBNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNetworkManager.swift; sourceTree = "<group>"; };
 		CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBNetworkManager+Extension.swift"; sourceTree = "<group>"; };
 		CE18872F1E07736800420C0B /* WBWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWelcomeView.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 			children = (
 				CEFFF93D1E09071300842467 /* WBStatusCell.swift */,
 				CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */,
+				CE111F7D1E0BBF1300CA5061 /* WBStatusToolBar.swift */,
 			);
 			path = StatusCell;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
 				CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */,
 				CEFFF9461E091BB400842467 /* WBStatusViewModel.swift in Sources */,
+				CE111F7E1E0BBF1300CA5061 /* WBStatusToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

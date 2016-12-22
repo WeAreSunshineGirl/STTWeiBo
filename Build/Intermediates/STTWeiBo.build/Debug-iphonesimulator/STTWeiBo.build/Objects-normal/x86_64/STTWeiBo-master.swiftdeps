@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "081b416ee6b10f7b517c08c36b70fdc2"
-build_time: [535706682, 807225000]
+build_time: [535710041, 973876000]
 inputs:
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [535456365, 0]
@@ -9,9 +9,9 @@ inputs:
   "/Users/user/STTWeiBo/STTWeiBo/Classes/ViewModel(\u89C6\u56FE\u6A21\u578B)/WBStatusListViewModel.swift": [535538654, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/NSBundle+Extensions.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Discover/WBDiscoverViewController.swift": [535456365, 0]
-  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusCell.swift": [535706377, 0]
+  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusCell.swift": [535710005, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager+Extension.swift": [535456365, 0]
-  "/Users/user/STTWeiBo/STTWeiBo/Classes/Model(\u6A21\u578B)/WBStatus.swift": [535534928, 0]
+  "/Users/user/STTWeiBo/STTWeiBo/Classes/Model(\u6A21\u578B)/WBStatus.swift": [535709734, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIImage+Extensions.swift": [535704864, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBBaseViewController.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBMainViewController.swift": [535514978, 0]
@@ -29,3 +29,4 @@ inputs:
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/NewFeature/WBNewFeatureView.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/WBCommon.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/ViewModel(\u89C6\u56FE\u6A21\u578B)/WBStatusViewModel.swift": [535704563, 0]
+  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusToolBar.swift": [535710041, 0]

@@ -24,6 +24,15 @@ class WBStatus: NSObject {
     /// 微博的用户
     var user:WBUser?
     
+    /// 转发数
+    var reposts_count:Int = 0
+    
+    /// 评论数
+    var comments_count:Int = 0
+    
+    /// 表态数
+    var attitudes_count:Int = 0
+    
     /// 重写 description 的计算型属性
     override var description: String{
         

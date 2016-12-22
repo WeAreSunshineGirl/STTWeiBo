@@ -357,19 +357,19 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
-/// 加载当前用户信息  用户登录后立即执行
-- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
-@end
-
-
-@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
-
 /// 加载 授权 accessToken
 ///
 /// \param code 授权码
 ///
 /// \param completion 完成回调[是否成功]
 - (void)loadAccessToken:(NSString * _Nonnull)code completion:(void (^ _Nonnull)(BOOL isSuccess))completion;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
+/// 加载当前用户信息  用户登录后立即执行
+- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
 @end
 
 
@@ -464,12 +464,22 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 微博的用户
 @property (nonatomic, strong) WBUser * _Nullable user;
 
+/// 转发数
+@property (nonatomic) NSInteger reposts_count;
+
+/// 评论数
+@property (nonatomic) NSInteger comments_count;
+
+/// 表态数
+@property (nonatomic) NSInteger attitudes_count;
+
 /// 重写 description 的计算型属性
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UILabel;
+@class WBStatusToolBar;
 
 SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 @interface WBStatusCell : UITableViewCell
@@ -494,9 +504,26 @@ SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 
 /// 微博正文
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, weak) IBOutlet WBStatusToolBar * _Null_unspecified toolBar;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8STTWeiBo15WBStatusToolBar")
+@interface WBStatusToolBar : UIView
+
+/// 转发
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified retweetedButton;
+
+/// 评论
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified commentButton;
+
+/// 点赞
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

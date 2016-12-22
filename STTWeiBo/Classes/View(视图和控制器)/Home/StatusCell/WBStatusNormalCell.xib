@@ -59,7 +59,7 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-se-mxN" userLabel="底部工具栏">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-se-mxN" userLabel="底部工具栏" customClass="WBStatusToolBar" customModule="STTWeiBo" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="203" width="320" height="28"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcK-Fd-rpE">
@@ -101,7 +101,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="c2e-3Q-VEC" firstAttribute="leading" secondItem="NcK-Fd-rpE" secondAttribute="trailing" id="2Vb-Zw-Z89"/>
                             <constraint firstItem="cVv-lz-PKa" firstAttribute="width" secondItem="c2e-3Q-VEC" secondAttribute="width" id="7B1-3q-tAx"/>
@@ -121,6 +121,11 @@
                             <constraint firstAttribute="height" constant="28" id="tXf-1Y-LIA"/>
                             <constraint firstAttribute="trailing" secondItem="cVv-lz-PKa" secondAttribute="trailing" id="tgK-zN-QkB"/>
                         </constraints>
+                        <connections>
+                            <outlet property="commentButton" destination="c2e-3Q-VEC" id="yY9-EE-OZs"/>
+                            <outlet property="likeButton" destination="cVv-lz-PKa" id="gXT-Mk-HvE"/>
+                            <outlet property="retweetedButton" destination="NcK-Fd-rpE" id="1zL-Pr-0cS"/>
+                        </connections>
                     </view>
                 </subviews>
                 <constraints>
@@ -155,6 +160,7 @@
                 <outlet property="sourceLabel" destination="a0N-hh-5pr" id="rf3-oR-KPN"/>
                 <outlet property="statusLabel" destination="Py4-mz-eJo" id="GLv-wH-QyM"/>
                 <outlet property="timeLabel" destination="kZ0-j0-XXS" id="LSx-tM-UYI"/>
+                <outlet property="toolBar" destination="E3c-se-mxN" id="TbB-jD-PLg"/>
                 <outlet property="vipIconView" destination="uwb-cB-TiM" id="gaP-KG-I66"/>
             </connections>
             <point key="canvasLocation" x="206" y="329"/>
