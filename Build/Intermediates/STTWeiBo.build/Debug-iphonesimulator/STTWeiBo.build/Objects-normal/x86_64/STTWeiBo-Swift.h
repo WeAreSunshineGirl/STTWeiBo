@@ -156,7 +156,7 @@ SWIFT_CLASS("_TtC8STTWeiBo11AppDelegate")
 /// \param UrlString UrlString
 ///
 /// \param placeholderImage 占位图像
-- (void)cz_setImage:(NSString * _Nullable)UrlString placeholderImage:(UIImage * _Nullable)placeholderImage;
+- (void)cz_setImage:(NSString * _Nullable)UrlString placeholderImage:(UIImage * _Nullable)placeholderImage isAvatar:(BOOL)isAvatar;
 @end
 
 @class UITableView;

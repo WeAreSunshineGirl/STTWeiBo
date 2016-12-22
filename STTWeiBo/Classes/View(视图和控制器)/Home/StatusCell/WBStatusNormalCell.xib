@@ -51,7 +51,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_vip" translatesAutoresizingMaskIntoConstraints="NO" id="uwb-cB-TiM" userLabel="认证图标">
-                        <rect key="frame" x="37" y="46" width="17" height="17"/>
+                        <rect key="frame" x="33" y="42" width="17" height="17"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py4-mz-eJo" userLabel="正文">
                         <rect key="frame" x="11" y="65" width="42" height="21"/>
@@ -74,8 +74,8 @@
                     <constraint firstItem="0R0-cG-LVz" firstAttribute="leading" secondItem="ZF6-DB-rdq" secondAttribute="leading" constant="11" id="ctl-Tz-xqS"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Py4-mz-eJo" secondAttribute="bottom" constant="12" id="gSv-8O-RgZ"/>
                     <constraint firstItem="aNB-ud-xfr" firstAttribute="top" secondItem="ZF6-DB-rdq" secondAttribute="top" id="inf-Ei-iyZ"/>
-                    <constraint firstItem="uwb-cB-TiM" firstAttribute="centerY" secondItem="0R0-cG-LVz" secondAttribute="bottom" id="mLq-Tn-0Qh"/>
-                    <constraint firstItem="uwb-cB-TiM" firstAttribute="centerX" secondItem="0R0-cG-LVz" secondAttribute="trailing" id="pMA-41-k1k"/>
+                    <constraint firstItem="uwb-cB-TiM" firstAttribute="centerY" secondItem="0R0-cG-LVz" secondAttribute="bottom" constant="-4" id="mLq-Tn-0Qh"/>
+                    <constraint firstItem="uwb-cB-TiM" firstAttribute="centerX" secondItem="0R0-cG-LVz" secondAttribute="trailing" constant="-4" id="pMA-41-k1k"/>
                     <constraint firstItem="a0N-hh-5pr" firstAttribute="leading" secondItem="kZ0-j0-XXS" secondAttribute="trailing" constant="8" id="pTL-og-5bA"/>
                     <constraint firstItem="kZ0-j0-XXS" firstAttribute="bottom" secondItem="0R0-cG-LVz" secondAttribute="bottom" id="pVy-wd-xs3"/>
                     <constraint firstItem="9qp-2W-CDg" firstAttribute="leading" secondItem="Pgt-1Y-2gZ" secondAttribute="trailing" constant="4" id="r1i-S4-pir"/>
