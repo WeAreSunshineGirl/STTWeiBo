@@ -8,11 +8,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="232" id="BWV-e4-JD6" customClass="WBStatusCell" customModule="STTWeiBo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="393" id="BWV-e4-JD6" customClass="WBStatusCell" customModule="STTWeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="393"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BWV-e4-JD6" id="ZF6-DB-rdq">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="392"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNB-ud-xfr" userLabel="顶部分割视图">
@@ -56,11 +56,11 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py4-mz-eJo" userLabel="正文">
                         <rect key="frame" x="11" y="65" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3c-se-mxN" userLabel="底部工具栏" customClass="WBStatusToolBar" customModule="STTWeiBo" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="203" width="320" height="28"/>
+                        <rect key="frame" x="0.0" y="364" width="320" height="28"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcK-Fd-rpE">
                                 <rect key="frame" x="0.0" y="0.0" width="107" height="28"/>
@@ -127,6 +127,13 @@
                             <outlet property="retweetedButton" destination="NcK-Fd-rpE" id="1zL-Pr-0cS"/>
                         </connections>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkl-oZ-i2V">
+                        <rect key="frame" x="11" y="98" width="297" height="254"/>
+                        <color key="backgroundColor" red="1" green="0.57316873820000003" blue="0.14620525670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="254" id="tce-F1-BjC"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="kZ0-j0-XXS" firstAttribute="leading" secondItem="Pgt-1Y-2gZ" secondAttribute="leading" id="1ax-4l-wNw"/>
@@ -137,19 +144,22 @@
                     <constraint firstItem="Py4-mz-eJo" firstAttribute="leading" secondItem="0R0-cG-LVz" secondAttribute="leading" id="GA3-HC-yuB"/>
                     <constraint firstItem="aNB-ud-xfr" firstAttribute="leading" secondItem="ZF6-DB-rdq" secondAttribute="leading" id="GmK-Dc-sBt"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Py4-mz-eJo" secondAttribute="trailing" constant="11" id="Lfn-0t-2fa"/>
-                    <constraint firstItem="E3c-se-mxN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Py4-mz-eJo" secondAttribute="bottom" constant="12" id="Qz0-as-31l"/>
                     <constraint firstAttribute="trailing" secondItem="E3c-se-mxN" secondAttribute="trailing" id="RMJ-h2-QY6"/>
                     <constraint firstItem="0R0-cG-LVz" firstAttribute="top" secondItem="aNB-ud-xfr" secondAttribute="bottom" constant="12" id="Sk8-XY-dY8"/>
+                    <constraint firstItem="wkl-oZ-i2V" firstAttribute="leading" secondItem="Py4-mz-eJo" secondAttribute="leading" id="TQl-dH-my4"/>
                     <constraint firstAttribute="bottom" secondItem="E3c-se-mxN" secondAttribute="bottom" id="aDU-YB-LYY"/>
                     <constraint firstItem="Pgt-1Y-2gZ" firstAttribute="leading" secondItem="0R0-cG-LVz" secondAttribute="trailing" constant="11" id="cac-q4-fDW"/>
                     <constraint firstItem="0R0-cG-LVz" firstAttribute="leading" secondItem="ZF6-DB-rdq" secondAttribute="leading" constant="11" id="ctl-Tz-xqS"/>
                     <constraint firstItem="E3c-se-mxN" firstAttribute="leading" secondItem="ZF6-DB-rdq" secondAttribute="leading" id="dNt-Lj-Tfv"/>
+                    <constraint firstItem="wkl-oZ-i2V" firstAttribute="top" secondItem="Py4-mz-eJo" secondAttribute="bottom" constant="12" id="dTH-Lw-APZ"/>
+                    <constraint firstItem="E3c-se-mxN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wkl-oZ-i2V" secondAttribute="bottom" constant="12" id="ikz-qi-vpj"/>
                     <constraint firstItem="aNB-ud-xfr" firstAttribute="top" secondItem="ZF6-DB-rdq" secondAttribute="top" id="inf-Ei-iyZ"/>
                     <constraint firstItem="uwb-cB-TiM" firstAttribute="centerY" secondItem="0R0-cG-LVz" secondAttribute="bottom" constant="-4" id="mLq-Tn-0Qh"/>
                     <constraint firstItem="uwb-cB-TiM" firstAttribute="centerX" secondItem="0R0-cG-LVz" secondAttribute="trailing" constant="-4" id="pMA-41-k1k"/>
                     <constraint firstItem="a0N-hh-5pr" firstAttribute="leading" secondItem="kZ0-j0-XXS" secondAttribute="trailing" constant="8" id="pTL-og-5bA"/>
                     <constraint firstItem="kZ0-j0-XXS" firstAttribute="bottom" secondItem="0R0-cG-LVz" secondAttribute="bottom" id="pVy-wd-xs3"/>
                     <constraint firstItem="9qp-2W-CDg" firstAttribute="leading" secondItem="Pgt-1Y-2gZ" secondAttribute="trailing" constant="4" id="r1i-S4-pir"/>
+                    <constraint firstAttribute="trailing" secondItem="wkl-oZ-i2V" secondAttribute="trailing" constant="12" id="xOy-LJ-m43"/>
                     <constraint firstAttribute="trailing" secondItem="aNB-ud-xfr" secondAttribute="trailing" id="zlX-cA-3tb"/>
                 </constraints>
             </tableViewCellContentView>
@@ -163,7 +173,7 @@
                 <outlet property="toolBar" destination="E3c-se-mxN" id="TbB-jD-PLg"/>
                 <outlet property="vipIconView" destination="uwb-cB-TiM" id="gaP-KG-I66"/>
             </connections>
-            <point key="canvasLocation" x="206" y="329"/>
+            <point key="canvasLocation" x="59" y="388.5"/>
         </tableViewCell>
     </objects>
     <resources>
