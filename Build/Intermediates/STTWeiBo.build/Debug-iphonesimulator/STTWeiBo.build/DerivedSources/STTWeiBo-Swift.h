@@ -481,7 +481,6 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 @class UILabel;
 @class WBStatusToolBar;
 @class WBStatusPictureView;
-@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 @interface WBStatusCell : UITableViewCell
@@ -512,15 +511,13 @@ SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 
 /// 配图视图
 @property (nonatomic, weak) IBOutlet WBStatusPictureView * _Null_unspecified pictureView;
-
-/// 配图视图顶部高度
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified pictureTopCons;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8STTWeiBo19WBStatusPictureView")
 @interface WBStatusPictureView : UIView
