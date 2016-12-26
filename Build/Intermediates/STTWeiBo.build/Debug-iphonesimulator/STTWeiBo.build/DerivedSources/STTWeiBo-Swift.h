@@ -543,8 +543,13 @@ SWIFT_CLASS("_TtC8STTWeiBo19WBStatusPictureView")
 
 /// 配图视图的高度
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified heightCons;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface WBStatusPictureView (SWIFT_EXTENSION(STTWeiBo))
 @end
 
 
