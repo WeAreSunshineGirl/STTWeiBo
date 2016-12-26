@@ -25,6 +25,11 @@ class WBStatusPictureView: UIView {
                 // 获得对应索引的 imageView
                 let iv = subviews[index] as! UIImageView
                 
+                // 4张图像处理
+                if index == 1 && urls?.count == 4 {
+                    index += 1
+                }
+                
                 //设置图像
                 iv.cz_setImage(url.thumbnail_pic, placeholderImage: nil)
                 
@@ -54,6 +59,9 @@ extension WBStatusPictureView{
     // 2 设置的时候 根据数据觉得是否显示
     // 3 不要动态创建控件
     private func setupUI(){
+        
+        //设置背景颜色
+        backgroundColor = superview?.backgroundColor
         
         /// 超出边界的内容不显示
         clipsToBounds = true
