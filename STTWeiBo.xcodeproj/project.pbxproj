@@ -131,7 +131,7 @@
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
 		CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusNormalCell.xib; sourceTree = "<group>"; };
-		CEFFF9431E09147700842467 /* WBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUser.swift; sourceTree = "<group>"; };
+		CEFFF9431E09147700842467 /* WBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBUser.swift; path = "../Tools(工具)/Network/Model/WBUser.swift"; sourceTree = "<group>"; };
 		CEFFF9451E091BB400842467 /* WBStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -365,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */,
+				CEFFF9431E09147700842467 /* WBUser.swift */,
 			);
 			path = "Model(模型)";
 			sourceTree = "<group>";
@@ -409,7 +410,6 @@
 			isa = PBXGroup;
 			children = (
 				CE1B261F1E02260B0044B55C /* WBUserAccount.swift */,
-				CEFFF9431E09147700842467 /* WBUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
