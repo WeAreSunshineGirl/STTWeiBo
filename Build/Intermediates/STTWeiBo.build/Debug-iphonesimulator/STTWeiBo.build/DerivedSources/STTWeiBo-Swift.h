@@ -540,6 +540,7 @@ SWIFT_CLASS("_TtC8STTWeiBo15WBStatusPicture")
 
 SWIFT_CLASS("_TtC8STTWeiBo19WBStatusPictureView")
 @interface WBStatusPictureView : UIView
+@property (nonatomic, copy) NSArray<WBStatusPicture *> * _Nullable urls;
 
 /// 配图视图的高度
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified heightCons;

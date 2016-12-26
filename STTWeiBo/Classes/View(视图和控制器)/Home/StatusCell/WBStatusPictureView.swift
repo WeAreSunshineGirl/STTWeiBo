@@ -9,6 +9,33 @@
 import UIKit
 
 class WBStatusPictureView: UIView {
+    
+    var urls:[WBStatusPicture]?{
+        didSet{
+            
+            // 1 隐藏所有的imageView
+            for v in subviews {
+                v.hidden = true
+            }
+            
+            // 2 遍历 urls 数据 顺序设置图像
+            var index = 0
+            for url in urls ?? []{
+                
+                // 获得对应索引的 imageView
+                let iv = subviews[index] as! UIImageView
+                
+                //设置图像
+                iv.cz_setImage(url.thumbnail_pic, placeholderImage: nil)
+                
+                //显示图像
+                iv.hidden = false
+                
+                index += 1
+                
+            }
+        }
+    }
     /// 配图视图的高度
     @IBOutlet weak var heightCons:NSLayoutConstraint!
 
@@ -38,7 +65,9 @@ extension WBStatusPictureView{
             
             let iv = UIImageView()
             
-            iv.backgroundColor = UIColor.redColor()
+            //设置 contemtMode
+            iv.contentMode = .ScaleAspectFill
+            iv.clipsToBounds = true
             
             // 行 - Y
             let row = CGFloat( i / count)
