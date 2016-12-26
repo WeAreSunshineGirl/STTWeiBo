@@ -38,6 +38,8 @@ class WBStatusViewModel:CustomStringConvertible {
     var commentStr:String?
     /// 点赞文字
     var likeStr:String?
+    /// 配图视图大小
+    var pictureViewSize = CGSize()
     /**
      构造函数
      
@@ -72,12 +74,26 @@ class WBStatusViewModel:CustomStringConvertible {
         retweetedStr = countString(model.reposts_count, defaultStr: "转发")
         commentStr = countString(model.comments_count, defaultStr: "评论")
         likeStr = countString(model.attitudes_count, defaultStr: "赞")
+        
+        // 计算配图视图的大小
+        pictureViewSize = calcPictureViewSize(status.pic_urls?.count )
     }
     
     var description: String{
         return status.description
     }
     
+    /**
+     计算指定数量的图片对应的配图视图的大小
+     
+     - parameter count: 配图数量
+     
+     - returns: 配图视图的大小
+     */
+    private func calcPictureViewSize(count:Int?)->CGSize{
+        
+        return CGSize(width: 100, height: 300)
+    }
     
     /**
      

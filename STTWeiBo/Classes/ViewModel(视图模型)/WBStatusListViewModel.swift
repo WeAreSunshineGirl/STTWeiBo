@@ -92,7 +92,7 @@ class WBStatusListViewModel {
                 //4> 添加到数组
                 array.append(viewModel)
             }
-            print("刷新到 \(array.count)条数据\(array)")
+//            print("刷新到 \(array.count)条数据\(array)")
             
             //2 拼接数据
             if pullup{
