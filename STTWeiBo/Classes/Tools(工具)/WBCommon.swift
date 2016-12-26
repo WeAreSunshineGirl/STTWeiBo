@@ -25,3 +25,15 @@ let WBAppKey = "3475817001"
 let WBAppSecret = "51d356a35b5365283ea462952c2ef600"
 /// 回调地址- 登录完成 跳转的 URL 参数以 GET 形式拼接
 let WBRedirectURI = "http://baidu.com"
+
+
+// MARK: - 微博配图视图常量
+
+/// 配图视图外侧的间距
+let WBStatusPictureViewOutterMargin = CGFloat(12)
+/// 配图视图内部图像视图的间距
+let WBStatusPictureViewInnerMargin = CGFloat(3)
+/// 视图的宽度
+let WBStatusPictureViewWidth = UIScreen.cz_screenWidth() - 2 * WBStatusPictureViewOutterMargin
+/// 每个 Item 默认的宽度
+let WBStatusPictureItemWidth = (WBStatusPictureViewWidth - 2 * WBStatusPictureViewInnerMargin) / 3

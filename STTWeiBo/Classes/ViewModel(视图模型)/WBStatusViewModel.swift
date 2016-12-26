@@ -91,21 +91,12 @@ class WBStatusViewModel:CustomStringConvertible {
      - returns: 配图视图的大小
      */
     private func calcPictureViewSize(count:Int?)->CGSize{
-        if count == 0{
+//        if count == 0 && count == nil{
+        if count == 0 {
             return CGSize()
         }
         
         // 1 计算配图视图的宽度
-        // 常数准备
-        /// 配图视图外侧的间距
-        let WBStatusPictureViewOutterMargin = CGFloat(12)
-        /// 配图视图内部图像视图的间距
-        let WBStatusPictureViewInnerMargin = CGFloat(3)
-        /// 视图的宽度
-        let WBStatusPictureViewWidth = UIScreen.cz_screenWidth() - 2 * WBStatusPictureViewOutterMargin
-        /// 每个 Item 默认的宽度
-        let WBStatusPictureItemWidth = (WBStatusPictureViewWidth - 2 * WBStatusPictureViewInnerMargin) / 3
-        
         // 2 计算高度
         // 1> 根据count 知道 行数 1 - 9
         /*
