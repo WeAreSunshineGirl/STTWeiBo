@@ -357,19 +357,19 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
+/// 加载当前用户信息  用户登录后立即执行
+- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
 /// 加载 授权 accessToken
 ///
 /// \param code 授权码
 ///
 /// \param completion 完成回调[是否成功]
 - (void)loadAccessToken:(NSString * _Nonnull)code completion:(void (^ _Nonnull)(BOOL isSuccess))completion;
-@end
-
-
-@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
-
-/// 加载当前用户信息  用户登录后立即执行
-- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
 @end
 
 
@@ -480,6 +480,8 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 
 @class UILabel;
 @class WBStatusToolBar;
+@class WBStatusPictureView;
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 @interface WBStatusCell : UITableViewCell
@@ -507,9 +509,25 @@ SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 
 /// 底部工具栏
 @property (nonatomic, weak) IBOutlet WBStatusToolBar * _Null_unspecified toolBar;
+
+/// 配图视图
+@property (nonatomic, weak) IBOutlet WBStatusPictureView * _Null_unspecified pictureView;
+
+/// 配图视图顶部高度
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified pictureTopCons;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8STTWeiBo19WBStatusPictureView")
+@interface WBStatusPictureView : UIView
+
+/// 配图视图的高度
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified heightCons;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -615,7 +633,6 @@ SWIFT_CLASS("_TtC8STTWeiBo13WBVisitorView")
 - (void)setupUI;
 @end
 
-@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC8STTWeiBo13WBWelcomeView")
 @interface WBWelcomeView : UIView

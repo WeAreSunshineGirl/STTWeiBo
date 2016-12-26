@@ -127,12 +127,15 @@
                             <outlet property="retweetedButton" destination="NcK-Fd-rpE" id="1zL-Pr-0cS"/>
                         </connections>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkl-oZ-i2V">
-                        <rect key="frame" x="11" y="98" width="297" height="254"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkl-oZ-i2V" userLabel="配图视图" customClass="WBStatusPictureView" customModule="STTWeiBo" customModuleProvider="target">
+                        <rect key="frame" x="11" y="98" width="297" height="200"/>
                         <color key="backgroundColor" red="1" green="0.57316873820000003" blue="0.14620525670000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="254" id="tce-F1-BjC"/>
+                            <constraint firstAttribute="height" constant="200" id="tce-F1-BjC"/>
                         </constraints>
+                        <connections>
+                            <outlet property="heightCons" destination="tce-F1-BjC" id="jV1-Rf-b80"/>
+                        </connections>
                     </view>
                 </subviews>
                 <constraints>
@@ -167,6 +170,8 @@
                 <outlet property="iconView" destination="0R0-cG-LVz" id="xMR-Zh-Rql"/>
                 <outlet property="memberIconView" destination="9qp-2W-CDg" id="V5w-RL-hUX"/>
                 <outlet property="nameLabel" destination="Pgt-1Y-2gZ" id="mqT-uQ-WfJ"/>
+                <outlet property="pictureTopCons" destination="dTH-Lw-APZ" id="eEb-Z7-v75"/>
+                <outlet property="pictureView" destination="wkl-oZ-i2V" id="cxA-ZQ-Xbn"/>
                 <outlet property="sourceLabel" destination="a0N-hh-5pr" id="rf3-oR-KPN"/>
                 <outlet property="statusLabel" destination="Py4-mz-eJo" id="GLv-wH-QyM"/>
                 <outlet property="timeLabel" destination="kZ0-j0-XXS" id="LSx-tM-UYI"/>
