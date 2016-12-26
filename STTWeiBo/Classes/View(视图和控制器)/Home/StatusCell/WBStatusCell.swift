@@ -34,6 +34,7 @@ class WBStatusCell: UITableViewCell {
             
             //  测试修改配图视图的高度
             pictureView.heightCons.constant = 0
+            
             pictureTopCons.constant = 0
             
             
