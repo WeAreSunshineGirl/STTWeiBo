@@ -54,6 +54,7 @@
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
+		CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
 		CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */; };
@@ -128,10 +129,11 @@
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
 		CE8454CB1DF008E40062478F /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
+		CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
 		CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusNormalCell.xib; sourceTree = "<group>"; };
-		CEFFF9431E09147700842467 /* WBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBUser.swift; path = "../Tools(工具)/Network/Model/WBUser.swift"; sourceTree = "<group>"; };
+		CEFFF9431E09147700842467 /* WBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUser.swift; sourceTree = "<group>"; };
 		CEFFF9451E091BB400842467 /* WBStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -365,7 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */,
-				CEFFF9431E09147700842467 /* WBUser.swift */,
+				CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */,
 			);
 			path = "Model(模型)";
 			sourceTree = "<group>";
@@ -409,6 +411,7 @@
 		CEDBC9631E01362700A09F82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CEFFF9431E09147700842467 /* WBUser.swift */,
 				CE1B261F1E02260B0044B55C /* WBUserAccount.swift */,
 			);
 			path = Model;
@@ -558,6 +561,7 @@
 				CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */,
 				CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */,
 				CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */,
+				CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
 				CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */,

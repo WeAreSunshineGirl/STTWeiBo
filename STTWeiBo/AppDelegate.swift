@@ -24,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
 //        sleep(2)
+        // 测试 一个按钮 能同时记录 区 和 行
+//        let cell = 1000 * 0 + 4
+//        let row = cell % 1000
+//        let sec = (cell - row) / 1000
+//        print("\(sec),\(row)")
         
         //设置应用程序 额外设置
        setupAdditions()

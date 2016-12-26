@@ -21,7 +21,7 @@ class WBStatus: NSObject {
     /// 微博信息内容
     var text:String?
     
-    /// 微博的用户
+    /// 微博的用户 - 注意和服务器返回的 KEY 要一致
     var user:WBUser?
     
     /// 转发数
@@ -33,9 +33,21 @@ class WBStatus: NSObject {
     /// 表态数
     var attitudes_count:Int = 0
     
+    /// 微博配图模型数组  
+    var pic_urls:[WBStatusPicture]?
+    
+    
     /// 重写 description 的计算型属性
     override var description: String{
         
         return yy_modelDescription()
+    }
+    //返回容器类中的所需要存放的数据类型（以Class 或 Class Name 的形式）
+    /// 类函数 -> 告诉第三方框架 YY_Model 如果遇到数组类型的属性 数组中存放的对象是什么类？
+    /// NSArray 中保存对象的类型通常是 ‘id’ 类型
+    /// OC中的泛型是 Swift 推出后 苹果为了兼容给 OC 增加的
+    /// 从运行的角度 仍然不知道数组中应该存放什么类型的对象
+    class func modelContainerPropertyGenericClass()->[String:AnyClass]{
+        return ["pic_urls":WBStatusPicture.self]
     }
 }

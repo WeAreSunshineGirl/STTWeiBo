@@ -357,19 +357,19 @@ SWIFT_CLASS("_TtC8STTWeiBo16WBNetworkManager")
 
 @interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
 
-/// 加载当前用户信息  用户登录后立即执行
-- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
-@end
-
-
-@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
-
 /// 加载 授权 accessToken
 ///
 /// \param code 授权码
 ///
 /// \param completion 完成回调[是否成功]
 - (void)loadAccessToken:(NSString * _Nonnull)code completion:(void (^ _Nonnull)(BOOL isSuccess))completion;
+@end
+
+
+@interface WBNetworkManager (SWIFT_EXTENSION(STTWeiBo))
+
+/// 加载当前用户信息  用户登录后立即执行
+- (void)loadUserInfo:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull dict))completion;
 @end
 
 
@@ -449,6 +449,7 @@ SWIFT_CLASS("_TtC8STTWeiBo23WBProfileViewController")
 @end
 
 @class WBUser;
+@class WBStatusPicture;
 
 
 /// 微博数据模型
@@ -461,7 +462,7 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 微博信息内容
 @property (nonatomic, copy) NSString * _Nullable text;
 
-/// 微博的用户
+/// 微博的用户 - 注意和服务器返回的 KEY 要一致
 @property (nonatomic, strong) WBUser * _Nullable user;
 
 /// 转发数
@@ -473,8 +474,14 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 表态数
 @property (nonatomic) NSInteger attitudes_count;
 
+/// 微博配图模型数组
+@property (nonatomic, copy) NSArray<WBStatusPicture *> * _Nullable pic_urls;
+
 /// 重写 description 的计算型属性
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+
+/// 类函数 -> 告诉第三方框架 YY_Model 如果遇到数组类型的属性 数组中存放的对象是什么类？ NSArray 中保存对象的类型通常是 ‘id’ 类型 OC中的泛型是 Swift 推出后 苹果为了兼容给 OC 增加的 从运行的角度 仍然不知道数组中应该存放什么类型的对象
++ (NSDictionary<NSString *, Class> * _Nonnull)modelContainerPropertyGenericClass;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -515,6 +522,18 @@ SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+/// 微博配图模型
+SWIFT_CLASS("_TtC8STTWeiBo15WBStatusPicture")
+@interface WBStatusPicture : NSObject
+
+/// 缩略图地址
+@property (nonatomic, copy) NSString * _Nullable thumbnail_pic;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSLayoutConstraint;
