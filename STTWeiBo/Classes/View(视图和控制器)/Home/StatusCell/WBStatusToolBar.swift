@@ -11,6 +11,7 @@ import UIKit
 class WBStatusToolBar: UIView {
 
     var viewModel:WBStatusViewModel?{
+        
         didSet{
 //            retweetedButton.setTitle("\(viewModel?.status.reposts_count)", forState: .Normal)
 //            commentButton.setTitle("\(viewModel?.status.comments_count)", forState: .Normal)

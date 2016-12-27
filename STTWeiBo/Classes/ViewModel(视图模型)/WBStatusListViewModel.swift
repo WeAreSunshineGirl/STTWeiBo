@@ -92,7 +92,7 @@ class WBStatusListViewModel {
                 //4> 添加到数组
                 array.append(viewModel)
             }
-            print("刷新到 \(array.count)条数据\(array)")
+//            print("刷新到 \(array.count)条数据\(array)")
             
             //2 拼接数据
             if pullup{
@@ -127,6 +127,20 @@ class WBStatusListViewModel {
      - parameter list: 本次下载的视图模型数组
      */
     private func cacheSingleImage(list:[WBStatusViewModel]){
-        
+        //遍历数组 查找微博数据中有单张图像的进行缓存
+        for vm in list {
+            // 1> 判断图像数量
+            if vm.picURLs?.count != 1 {
+                continue
+            }
+            
+            // 2> 代码执行到此 数组中有且仅有一张图片 获取 图像模型
+            guard let pic = vm.picURLs?[0].thumbnail_pic,let url = NSURL(string: pic)else{
+                continue
+            }
+            
+            print("要缓存的url是 \(url)" )
+            
+        }
     }
 }
