@@ -10,33 +10,34 @@ provides-member:
 - ["C8STTWeiBo20WBHomeViewController", "setupTableView"]
 - ["C8STTWeiBo20WBHomeViewController", "clickTitleButton"]
 provides-dynamic-lookup:
+- "tableView"
+- "tableView"
 - "setupTableView"
-- "loadData"
 - "showFriends"
+- "loadData"
 - "clickTitleButton"
-- "tableView"
-- "tableView"
 depends-top-level:
-- "UITableView"
-- !private "UINib"
-- !private "WBNetworkManager"
-- !private "UIBarButtonItem"
-- "UIButton"
-- !private "retweetedlCellId"
-- !private "print"
 - !private "WBStatusCell"
+- !private "!="
+- !private "UINib"
+- "UITableViewCell"
+- !private "UIBarButtonItem"
+- "Int"
+- "StringLiteralType"
+- "UIButton"
+- !private "WBNetworkManager"
+- !private "originalCellId"
+- !private "!"
+- !private "print"
+- !private "WBDemoViewController"
+- !private "UITableViewAutomaticDimension"
+- "UITableView"
 - "WBHomeViewController"
+- "WBBaseViewController"
+- !private "retweetedlCellId"
+- "NSIndexPath"
 - "WBStatusListViewModel"
 - !private "WBTitleButton"
-- !private "WBDemoViewController"
-- "UITableViewCell"
-- !private "UITableViewAutomaticDimension"
-- !private "!"
-- "WBBaseViewController"
-- "StringLiteralType"
-- "NSIndexPath"
-- !private "originalCellId"
-- "Int"
 depends-member:
 - !private ["CSo20AFHTTPSessionManager", "shared"]
 - !private ["CSo20AFHTTPSessionManager", "userAccount"]
@@ -69,6 +70,7 @@ depends-member:
 - !private ["Ps9AnyObject", "refreshControl"]
 - !private ["Ps9AnyObject", "registerNib"]
 - !private ["Ps9AnyObject", "reloadData"]
+- !private ["Ps9AnyObject", "retweeted_status"]
 - !private ["Ps9AnyObject", "retweetedlCellId"]
 - !private ["Ps9AnyObject", "row"]
 - !private ["Ps9AnyObject", "rowHeight"]
@@ -142,6 +144,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "refreshControl"]
 - !private ["Ps11CVarArgType", "registerNib"]
 - !private ["Ps11CVarArgType", "reloadData"]
+- !private ["Ps11CVarArgType", "retweeted_status"]
 - !private ["Ps11CVarArgType", "retweetedlCellId"]
 - !private ["Ps11CVarArgType", "row"]
 - !private ["Ps11CVarArgType", "rowHeight"]
@@ -201,6 +204,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "refreshControl"]
 - !private ["Ps28CustomDebugStringConvertible", "registerNib"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- !private ["Ps28CustomDebugStringConvertible", "retweeted_status"]
 - !private ["Ps28CustomDebugStringConvertible", "retweetedlCellId"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "rowHeight"]
@@ -253,6 +257,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "refreshControl"]
 - !private ["Ps23CustomStringConvertible", "registerNib"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
+- !private ["Ps23CustomStringConvertible", "retweeted_status"]
 - !private ["Ps23CustomStringConvertible", "retweetedlCellId"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "rowHeight"]
@@ -303,6 +308,7 @@ depends-member:
 - !private ["Ps9Equatable", "refreshControl"]
 - !private ["Ps9Equatable", "registerNib"]
 - !private ["Ps9Equatable", "reloadData"]
+- !private ["Ps9Equatable", "retweeted_status"]
 - !private ["Ps9Equatable", "retweetedlCellId"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "rowHeight"]
@@ -354,6 +360,7 @@ depends-member:
 - !private ["Ps8Hashable", "refreshControl"]
 - !private ["Ps8Hashable", "registerNib"]
 - !private ["Ps8Hashable", "reloadData"]
+- !private ["Ps8Hashable", "retweeted_status"]
 - !private ["Ps8Hashable", "retweetedlCellId"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "rowHeight"]
@@ -518,6 +525,7 @@ depends-member:
 - !private ["CSo8NSObject", "refreshControl"]
 - !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
+- !private ["CSo8NSObject", "retweeted_status"]
 - !private ["CSo8NSObject", "retweetedlCellId"]
 - !private ["CSo8NSObject", "row"]
 - !private ["CSo8NSObject", "rowHeight"]
@@ -559,6 +567,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "refreshControl"]
 - !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
+- !private ["PSo16NSObjectProtocol", "retweeted_status"]
 - !private ["PSo16NSObjectProtocol", "retweetedlCellId"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - !private ["PSo16NSObjectProtocol", "rowHeight"]
@@ -590,6 +599,7 @@ depends-member:
 - !private ["PSo24NSURLSessionTaskDelegate", "shared"]
 - !private ["PSo24NSURLSessionTaskDelegate", "userAccount"]
 - !private ["Ps13OptionSetType", "TouchUpInside"]
+- !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1075,6 +1085,8 @@ depends-member:
 - ["C8STTWeiBo20WBHomeViewController", "tableView"]
 - !private ["C8STTWeiBo16WBNetworkManager", "shared"]
 - !private ["C8STTWeiBo16WBNetworkManager", "userAccount"]
+- !private ["C8STTWeiBo8WBStatus", "deinit"]
+- !private ["C8STTWeiBo8WBStatus", "retweeted_status"]
 - !private ["C8STTWeiBo8WBStatus", "text"]
 - !private ["C8STTWeiBo12WBStatusCell", "viewModel"]
 - ["C8STTWeiBo21WBStatusListViewModel", "init"]
@@ -1123,6 +1135,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "last"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Distance"]
@@ -1202,6 +1215,7 @@ depends-nominal:
 - !private "PSo28NSURLSessionDownloadDelegate"
 - !private "PSo24NSURLSessionTaskDelegate"
 - !private "Ps13OptionSetType"
+- !private "Sq"
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
@@ -1274,6 +1288,7 @@ depends-nominal:
 - !private "Ps22_IntegerArithmeticType"
 - !private "Ps12_IntegerType"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
 - !private "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"

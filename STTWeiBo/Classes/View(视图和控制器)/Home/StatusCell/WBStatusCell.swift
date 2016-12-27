@@ -46,9 +46,12 @@ class WBStatusCell: UITableViewCell {
 //            pictureView.urls = viewModel?.status.pic_urls
 //            }
             
-            pictureView.urls = viewModel?.status.pic_urls
+//            pictureView.urls = viewModel?.status.pic_urls
+            /// 设置配图 （被转发 和 原创）
+            pictureView.urls = viewModel?.picURLs
+
         }
-            
+        
     }
     /// 头像
     @IBOutlet weak var iconView: UIImageView!

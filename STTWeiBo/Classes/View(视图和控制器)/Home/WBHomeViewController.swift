@@ -119,16 +119,18 @@ extension WBHomeViewController{
         return listViewModel.statusList.count
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //取出视图模型 根据视图模型判断 可重用 cell
+        let vm = listViewModel.statusList[indexPath.row]
         
+        let cellId = (vm.status.retweeted_status != nil) ? retweetedlCellId : originalCellId
+
         // 1 取 cell
         //FIXME : - 修改 ID
-        let cell = tableView.dequeueReusableCellWithIdentifier(retweetedlCellId, forIndexPath: indexPath) as! WBStatusCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! WBStatusCell
         
         // 2 设置cell
-        let vm = listViewModel.statusList[indexPath.row]
         cell.viewModel = vm
 //        cell.statusLabel?.text = viewModel.status.text
-//        
 //        cell.nameLabel.text = viewModel.status.user?.screen_name
 //        
         //3 返回 cell
