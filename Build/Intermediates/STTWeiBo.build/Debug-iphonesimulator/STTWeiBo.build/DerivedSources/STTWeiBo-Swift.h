@@ -477,6 +477,9 @@ SWIFT_CLASS("_TtC8STTWeiBo8WBStatus")
 /// 微博配图模型数组
 @property (nonatomic, copy) NSArray<WBStatusPicture *> * _Nullable pic_urls;
 
+/// 被转发的原创微博
+@property (nonatomic, strong) WBStatus * _Nullable retweeted_status;
+
 /// 重写 description 的计算型属性
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 
