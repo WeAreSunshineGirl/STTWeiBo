@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C8STTWeiBo24WBDiscoverViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "WBBaseViewController"
-- !private "print"
 - !private "StringLiteralType"
+- "WBBaseViewController"
 - "WBDiscoverViewController"
+- !private "print"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]

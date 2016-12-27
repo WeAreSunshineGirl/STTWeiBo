@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "081b416ee6b10f7b517c08c36b70fdc2"
-build_time: [536054070, 939659000]
+build_time: [536121289, 19574000]
 inputs:
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIBarButton+Extensions.swift": [535456365, 0]
@@ -10,7 +10,7 @@ inputs:
   "/Users/user/STTWeiBo/STTWeiBo/Classes/ViewModel(\u89C6\u56FE\u6A21\u578B)/WBStatusListViewModel.swift": [536047824, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/NSBundle+Extensions.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Discover/WBDiscoverViewController.swift": [535456365, 0]
-  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusCell.swift": [536054070, 0]
+  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusCell.swift": [536054111, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Network/WBNetworkManager+Extension.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Model(\u6A21\u578B)/WBStatus.swift": [536047381, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/Tools(\u5DE5\u5177)/Extensions/UIImage+Extensions.swift": [535704864, 0]
@@ -23,7 +23,7 @@ inputs:
   "/Users/user/STTWeiBo/STTWeiBo/AppDelegate.swift": [536051570, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Profile/WBProfileViewController.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/TitleButton/WBTitleButton.swift": [535456365, 0]
-  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusPictureView.swift": [536054007, 0]
+  "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Home/StatusCell/WBStatusPictureView.swift": [536121288, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/WBNavigationController.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Main/OAuth/WBOAuthViewController.swift": [535456365, 0]
   "/Users/user/STTWeiBo/STTWeiBo/Classes/View(\u89C6\u56FE\u548C\u63A7\u5236\u5668)/Message/WBMessageViewController.swift": [535456365, 0]
