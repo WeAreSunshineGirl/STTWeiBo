@@ -521,6 +521,9 @@ SWIFT_CLASS("_TtC8STTWeiBo12WBStatusCell")
 
 /// 配图视图
 @property (nonatomic, weak) IBOutlet WBStatusPictureView * _Null_unspecified pictureView;
+
+/// 被转发微博的标签 - 原创微博没有此控件 一定要用？
+@property (nonatomic, weak) IBOutlet UILabel * _Nullable retweetedLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
