@@ -64,7 +64,7 @@ class WBStatusListViewModel {
             }
 
             //1 字典转模型 (所有第三方框架都支持嵌套的字典转模型)
-            // 1> 定义结果可变数组
+            // 1> 定义结果可变数组   遍历字典数组 字典转 模型 => 视图模型 将视图模型添加到数组
             var array = [WBStatusViewModel]()
             
             // 2> 遍历服务器返回的字典数组 字典转模型 
@@ -111,11 +111,22 @@ class WBStatusListViewModel {
                 completion(isSuccess: isSuccess, shouldRefresh: false)
                 
             }else{
-                //4 完成回调
+                
+                self.cacheSingleImage(array)
+                
+                //4 真正有数据的回调
                 completion(isSuccess: isSuccess,shouldRefresh: true)
             }
             
             
         }
+    }
+    /**
+     缓存本次下载微博数据数组中的单张图像
+     
+     - parameter list: 本次下载的视图模型数组
+     */
+    private func cacheSingleImage(list:[WBStatusViewModel]){
+        
     }
 }

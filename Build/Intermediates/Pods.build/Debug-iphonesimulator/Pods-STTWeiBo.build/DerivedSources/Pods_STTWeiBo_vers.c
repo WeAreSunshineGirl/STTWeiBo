@@ -1,1 +1,0 @@
- const unsigned char Pods_STTWeiBoVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_STTWeiBo  PROJECT:Pods-1" "\n"; const double Pods_STTWeiBoVersionNumber __attribute__ ((used)) = (double)1.;
