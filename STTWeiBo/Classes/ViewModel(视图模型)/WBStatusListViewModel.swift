@@ -11,6 +11,8 @@ import Foundation
 
 import SDWebImage
 
+// 管理网络数据的
+
 /// 微博数据列表视图模型
 /*
  父类的选择
@@ -174,6 +176,10 @@ class WBStatusListViewModel {
                     let data = UIImagePNGRepresentation(image) {
                     
                     length += data.length
+                    
+                    // 图像 缓存成功 更新配图视图的大小
+                    vm.updateSingleImageSize(image)
+                    
                 }
                 
                 print("缓存的图像是 \(image) \(length)")

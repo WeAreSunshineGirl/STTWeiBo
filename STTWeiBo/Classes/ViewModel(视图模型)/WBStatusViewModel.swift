@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//管理单条数据的
 
 /// 单条微博的视图模型  没有继承 NSObject  所以敲不出 description  让它遵守一个协议就行了
 /*
@@ -96,6 +96,22 @@ class WBStatusViewModel:CustomStringConvertible {
     var description: String{
         return status.description
     }
+    
+    /**
+     使用单个图像 更新配图视图的大小
+     
+     - parameter image: 网络缓存的单张图像
+     */
+    func updateSingleImageSize(image:UIImage){
+        
+        var size = image.size
+        
+        size.height += WBStatusPictureViewOutterMargin
+        // 注意 尺寸需要增加顶部的12个点 便于布局
+        pictureViewSize = size
+        
+    }
+    
     
     /**
      计算指定数量的图片对应的配图视图的大小
