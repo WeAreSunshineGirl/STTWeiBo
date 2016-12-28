@@ -9,6 +9,8 @@
 
 import Foundation
 
+import SDWebImage
+
 /// 微博数据列表视图模型
 /*
  父类的选择
@@ -127,6 +129,9 @@ class WBStatusListViewModel {
      - parameter list: 本次下载的视图模型数组
      */
     private func cacheSingleImage(list:[WBStatusViewModel]){
+        
+        var length = 0
+        
         //遍历数组 查找微博数据中有单张图像的进行缓存
         for vm in list {
             // 1> 判断图像数量
@@ -141,6 +146,29 @@ class WBStatusListViewModel {
             
             print("要缓存的url是 \(url)" )
             
+            // 3> 下载图像
+            // 1） downloadImage是 SDWebImage 的核心方法
+            // 2)  图像下载完成之后会自动保存在沙盒中 文件路径是URL的 MD5
+            // 3) 如果沙盒中已经存在缓存的图像 后续使用SDWebImage通过url加装图像 都会加载本地沙盒的图像
+            // 4) 不会发起网络请求 同时  回调方法 同样会调用
+            // 5) 方法还是同样的方法 调用还是同样的调用 不过内部不会再次发起网络请求的
+            // 注意 如果要缓存的图像累计很大 要找后台找接口
+            
+            
+//            要缓存的url是 http://ww2.sinaimg.cn/thumbnail/625ab309jw1fb6beovporj20hi0bn0t1.jpg
+//            要缓存的url是 http://ww3.sinaimg.cn/thumbnail/006ubROmgw1fb6b69m5ofj308h08mdgm.jpg
+//            要缓存的url是 http://ww3.sinaimg.cn/thumbnail/905e665fgw1fam4zii2qvj20c00agwfk.jpg
+            SDWebImageManager.sharedManager().downloadImageWithURL(url, options: [], progress: nil, completed: { (image, _, _, _, _) in
+                
+                //将图像转换成二进制数据
+                if let image = image,
+                    let data = UIImagePNGRepresentation(image) {
+                    
+                    length += data.length
+                }
+                
+                print("缓存的图像是 \(image) \(length)")
+            })
         }
     }
 }
