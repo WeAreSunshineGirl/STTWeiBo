@@ -114,10 +114,11 @@ class WBStatusListViewModel {
                 
             }else{
                 
-                self.cacheSingleImage(array)
+                self.cacheSingleImage(array,finishedCompletion:
+                completion)
                 
-                //4 真正有数据的回调
-                completion(isSuccess: isSuccess,shouldRefresh: true)
+                //4 真正有数据的回调   此处的回调应该完成单张缓存之后 再回调  闭包是准备好的代码 可以当做参数传递
+//                completion(isSuccess: isSuccess,shouldRefresh: true)
             }
             
             
@@ -125,10 +126,10 @@ class WBStatusListViewModel {
     }
     /**
      缓存本次下载微博数据数组中的单张图像
-     
+     // 应该缓存完单张图像 并且修改过配图视图的大小 再回调 才能够保证表格等比例显示单张图像！
      - parameter list: 本次下载的视图模型数组
      */
-    private func cacheSingleImage(list:[WBStatusViewModel]){
+    private func cacheSingleImage(list:[WBStatusViewModel],finishedCompletion:(isSuccess:Bool,shouldRefresh:Bool)->()){
         
         // 调度组
         let group = dispatch_group_create()
@@ -183,6 +184,9 @@ class WBStatusListViewModel {
         }
         dispatch_group_notify(group, dispatch_get_main_queue()) { 
             print("图像缓存完成 \(length / 1024) k")
+            
+            //执行闭包回调
+            finishedCompletion(isSuccess: true, shouldRefresh: true)
         }
     }
 }
