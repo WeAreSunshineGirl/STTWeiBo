@@ -130,6 +130,10 @@ class WBStatusListViewModel {
      */
     private func cacheSingleImage(list:[WBStatusViewModel]){
         
+        // 调度组
+        let group = dispatch_group_create()
+        
+        /// 记录数据长度 （一次请求 里面 所有单张图像的长度）
         var length = 0
         
         //遍历数组 查找微博数据中有单张图像的进行缓存
@@ -144,7 +148,8 @@ class WBStatusListViewModel {
                 continue
             }
             
-            print("要缓存的url是 \(url)" )
+//            print("要缓存的url是 \(url)" )
+            
             
             // 3> 下载图像
             // 1） downloadImage是 SDWebImage 的核心方法
@@ -154,10 +159,13 @@ class WBStatusListViewModel {
             // 5) 方法还是同样的方法 调用还是同样的调用 不过内部不会再次发起网络请求的
             // 注意 如果要缓存的图像累计很大 要找后台找接口
             
-            
 //            要缓存的url是 http://ww2.sinaimg.cn/thumbnail/625ab309jw1fb6beovporj20hi0bn0t1.jpg
 //            要缓存的url是 http://ww3.sinaimg.cn/thumbnail/006ubROmgw1fb6b69m5ofj308h08mdgm.jpg
 //            要缓存的url是 http://ww3.sinaimg.cn/thumbnail/905e665fgw1fam4zii2qvj20c00agwfk.jpg
+            
+            // A)入组
+            dispatch_group_enter(group)
+            
             SDWebImageManager.sharedManager().downloadImageWithURL(url, options: [], progress: nil, completed: { (image, _, _, _, _) in
                 
                 //将图像转换成二进制数据
@@ -168,7 +176,13 @@ class WBStatusListViewModel {
                 }
                 
                 print("缓存的图像是 \(image) \(length)")
+                
+                // B）出组
+                dispatch_group_leave(group)
             })
+        }
+        dispatch_group_notify(group, dispatch_get_main_queue()) { 
+            print("图像缓存完成 \(length / 1024) k")
         }
     }
 }
