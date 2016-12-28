@@ -33,8 +33,12 @@ class WBStatusCell: UITableViewCell {
             /// 底部工具栏
             toolBar.viewModel = viewModel
             
+            
+            //配图视图模型
+            pictureView.viewModel = viewModel
+            
             //  测试修改配图视图的高度
-            pictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
+            //pictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
             
             // 设置配图视图的 URL 数据
 //            // 测试 4 张图像
