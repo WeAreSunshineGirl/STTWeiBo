@@ -47,7 +47,8 @@ class WBStatusPictureView: UIView {
     }
     
     /// 配图视图的数组
-    private var urls:[WBStatusPicture]?{
+    private var urls:[WBStatusPicture]?{//带属性监视器的普通属性
+        //我们需要在age属性发生变化后，更新这个属性
         didSet{
             
             // 1 隐藏所有的imageView

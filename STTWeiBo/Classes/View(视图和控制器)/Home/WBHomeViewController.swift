@@ -124,7 +124,7 @@ extension WBHomeViewController{
         
         let cellId = (vm.status.retweeted_status != nil) ? retweetedlCellId : originalCellId
 
-        // 1 取 cell
+        // 1 取 cell - 本身会调用代理方法(如果有) / 如果没有找到cell 按照自动布局的规则从上向下计算 找到向下的约束 从而计算行高
         //FIXME : - 修改 ID
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! WBStatusCell
         
