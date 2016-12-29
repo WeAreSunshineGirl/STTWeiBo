@@ -259,8 +259,10 @@ extension WBMainViewController{
         let w = tabBar.bounds.width / count
         //OC CGRectInset 正数向内缩进  负数向外扩展
         composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
-        print("撰写按钮的宽度\(composeButton.bounds.width)")
-        
+        print("撰写按钮的宽度\(composeButton.bounds.width)高度\(composeButton.bounds.height)")
+//        composeButton.setTitle("哈哈", forState: .Normal)
+//        composeButton.titleEdgeInsets = UIEdgeInsetsMake((composeButton.imageView?.frame.size.height)!, -(composeButton.imageView?.frame.size.width)!, 0, 0)
+//        composeButton.imageEdgeInsets = UIEdgeInsetsMake(-(composeButton.titleLabel?.frame.size.height)!, 0, 0, 0)
         //按钮监听方法
         composeButton.addTarget(self, action: #selector(composeStatus), forControlEvents: .TouchUpInside)
     }
@@ -336,8 +338,7 @@ extension WBMainViewController{
         guard let clsName = dict["clsName"] as? String,title = dict["title"] as? String,imageName = dict["imageName"] as? String,let cls = NSClassFromString(NSBundle.mainBundle().namespace + "." + clsName) as? WBBaseViewController.Type,
         visitorDict = dict["visitorInfo"] as? [String:String]
             else{
-                
-            return UIViewController()
+                return UIViewController()
         }
         
         //2 创建视图控制器   将clsName 转成cls
