@@ -14,6 +14,8 @@ class WBStatusPictureView: UIView {
     var viewModel:WBStatusViewModel?{
         didSet{
             calcViewSize()
+            //设置 urls
+            urls = viewModel?.picURLs
         }
             
     }
@@ -45,7 +47,7 @@ class WBStatusPictureView: UIView {
     }
     
     /// 配图视图的数组
-    var urls:[WBStatusPicture]?{
+    private var urls:[WBStatusPicture]?{
         didSet{
             
             // 1 隐藏所有的imageView

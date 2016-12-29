@@ -52,8 +52,9 @@ class WBStatusCell: UITableViewCell {
 //            }
             
 //            pictureView.urls = viewModel?.status.pic_urls
+            
             /// 设置配图 （被转发 和 原创）
-            pictureView.urls = viewModel?.picURLs
+//            pictureView.urls = viewModel?.picURLs //在WBStatusPictureView中替代
             
             /// 设置被转发微博的文字
             retweetedLabel?.text = viewModel?.retweetedText
