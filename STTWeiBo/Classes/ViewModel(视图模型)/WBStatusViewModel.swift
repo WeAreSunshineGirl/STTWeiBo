@@ -165,10 +165,14 @@ class WBStatusViewModel:CustomStringConvertible {
         
         var size = image.size
         
-        size.height += WBStatusPictureViewOutterMargin
         // 注意 尺寸需要增加顶部的12个点 便于布局
+        size.height += WBStatusPictureViewOutterMargin
+        
+        //重新设置配图视图的大小
         pictureViewSize = size
         
+        //更新行高
+        updateRowHeight()
     }
     
     

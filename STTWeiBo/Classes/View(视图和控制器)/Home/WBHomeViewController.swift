@@ -137,6 +137,16 @@ extension WBHomeViewController{
         return cell
     }
     
+    
+    // 没有override 在swift2.0 没有关系 在 swift3.0 没有override 父类没有提供这个方法 这个方法不会被调用
+    //父类必须实现代理方法 子类才能重写 swift3.0如此  2.0不需要
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        //根据indexPath 获取视图模型
+        let vm = listViewModel.statusList[indexPath.row]
+         //返回计算好的行高
+        return vm.rowHeight
+    }
 }
 
 
