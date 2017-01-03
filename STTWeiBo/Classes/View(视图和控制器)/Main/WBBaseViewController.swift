@@ -30,7 +30,7 @@ class WBBaseViewController: UIViewController{
     /// 表格视图 - 如果用户没有登录,就不创建
     var tableView:UITableView?
     /// 刷新控件
-    var refreshControl:UIRefreshControl?
+    var refreshControl:STRefreshControl?
     /// 上拉刷新标记
     var isPullup = false
     
@@ -155,7 +155,7 @@ extension WBBaseViewController{
         
         //设置刷新控件
         //1 实例化控件
-        refreshControl = UIRefreshControl()
+        refreshControl = STRefreshControl()
         
         //2 添加到表格视图
         tableView?.addSubview(refreshControl!)
