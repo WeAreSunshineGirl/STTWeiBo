@@ -43,6 +43,9 @@ class WBHomeViewController: WBBaseViewController {
             print(json)
         }
         */
+        // xcode8.0 的刷新控件  beginRefreshing 方法 什么都不显示！
+        refreshControl?.beginRefreshing()
+        
         print("准备刷新，最后一条\(self.listViewModel.statusList.last?.status.text)")
         listViewModel.loadStatus(self.isPullup) { (isSuccess,shouldRefresh) in
             

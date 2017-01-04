@@ -187,6 +187,8 @@ class WBStatusViewModel:CustomStringConvertible {
             size.height = size.width * image.size.height / image.size.width / 4
         }
         
+        // 特例 有些图像 本身就是很窄 很长 -> 定义一个 minHeight 思路同上
+        
         // 注意 尺寸需要增加顶部的12个点 便于布局
         size.height += WBStatusPictureViewOutterMargin
         
