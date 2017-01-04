@@ -51,9 +51,22 @@ class STRefreshControl: UIControl {
         scrollView?.addObserver(self, forKeyPath: "contentOffset", options: [], context: nil)
         
     }
+    //本视图从父视图上移除
+    //提示：所有的下拉刷新框架都是监听父视图的contentOffset
+    // 所有的框架KVO  监听实现思路都是这个！
+    override func removeFromSuperview() {
+        //superView 还存在
+        superview?.removeObserver(self, forKeyPath: "contentOffset")
+        
+        super.removeFromSuperview()
+        // suoerView 不存在
+    }
     
     //所有 KVO 会统一调用此方法   KVO属于观察者模式
     //在程序中  通常只监听某一个对象的某几个属性 如果属性太多 方法会很乱！
+    //观察者模式在不需要的时候都需要释放
+    //-通知中心 如果不释放 什么也不会发生但是会有内存泄漏 会有多次注册额的可能
+    //- KVO 如果不释放 会崩溃
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
         //contentOffset 的 y 值 跟 contentInset 的 top 有关
