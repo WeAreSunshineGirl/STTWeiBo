@@ -21,6 +21,9 @@ class STRefreshView: UIView {
     
     
     
-    
+    class func refreshView()->STRefreshView{
+        let nib = UINib(nibName: "STRefreshView", bundle: nil)
+        return nib.instantiateWithOwner(nib, options: nil)[0] as! STRefreshView
+    }
     
 }

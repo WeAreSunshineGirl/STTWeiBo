@@ -15,6 +15,9 @@ class STRefreshControl: UIControl {
     /// 滚动视图的父视图 下拉刷新应该适用于 UITableView /UICollectionView  所以是父视图UIScrollView
     private weak var scrollView:UIScrollView?
     
+    /// 刷新视图
+    private lazy var refreshView:STRefreshView = STRefreshView.refreshView()
+    
     //MARK:-构造函数
     init(){
         super.init(frame: CGRect())
@@ -98,6 +101,22 @@ extension STRefreshControl{
     private func setupUI(){
         backgroundColor = UIColor.orangeColor()
         
+        //设置超出边界不显示
+        clipsToBounds = true
+        //添加刷新视图 - 从xib加载出来 默认是xib 中指定的宽高
+        addSubview(refreshView)
         
+        //自动布局 - 设置 xib 控件的自动布局 需要指定宽高约束
+        //提示 iOS程序员 一定要会原生的写法 因为 如果自己开发的框架 不能用任何的自动布局框架
+        refreshView.translatesAutoresizingMaskIntoConstraints = false
+        
+        addConstraint(NSLayoutConstraint(item: refreshView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        
+         addConstraint(NSLayoutConstraint(item: refreshView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0))
+        
+        
+        addConstraint(NSLayoutConstraint(item: refreshView, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: refreshView.bounds.width))
+        
+        addConstraint(NSLayoutConstraint(item: refreshView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: refreshView.bounds.height))
     }
 }
