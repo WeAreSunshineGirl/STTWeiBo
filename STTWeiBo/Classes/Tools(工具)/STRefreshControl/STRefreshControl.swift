@@ -8,6 +8,9 @@
 
 import UIKit
 
+/// 刷新状态切换的临界点
+private let  STRefreshOffset:CGFloat = 60
+
 //刷新控件 - 负责刷新相关的 ’逻辑‘ 处理
 class STRefreshControl: UIControl {
 
@@ -80,9 +83,23 @@ class STRefreshControl: UIControl {
         }
         //初始高度就应该是 0
         let height = -(sv.contentInset.top + sv.contentOffset.y)
-        
+        if height < 0 {
+            return
+        }
         //可以根据高度设置刷新控件的 frame
         self.frame = CGRect(x: 0, y: -height, width: sv.bounds.width, height: height)
+        
+        //判断临界点 -只需要判断一次
+        if sv.dragging {
+            if height > STRefreshOffset{
+                print("放手刷新")
+            }else{
+                print("再使劲...")
+            }
+        }else{
+            //放手
+        }
+        
     }
     
     //开始刷新
@@ -113,7 +130,6 @@ extension STRefreshControl{
         addConstraint(NSLayoutConstraint(item: refreshView, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0))
         
          addConstraint(NSLayoutConstraint(item: refreshView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0))
-        
         
         addConstraint(NSLayoutConstraint(item: refreshView, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: refreshView.bounds.width))
         
