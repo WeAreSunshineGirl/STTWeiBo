@@ -8,7 +8,7 @@
 
 import UIKit
 
-//刷新控件
+//刷新控件 - 负责刷新相关的 ’逻辑‘ 处理
 class STRefreshControl: UIControl {
 
     //MARK:-属性
