@@ -45,16 +45,19 @@ class STRefreshControl: UIControl {
         //记录父视图
         scrollView = sv
         
-        //KVO监听父视图的contentOffset
+        //KVO监听父视图的contentOffset    KVO要监听的对象 负责添加监听者
+        //scrollView 要添加监听者 由谁来监听 由self  监听scrollView的contentOffset的变化
+        
         scrollView?.addObserver(self, forKeyPath: "contentOffset", options: [], context: nil)
         
     }
     
-    //所有 KVO 会统一调用此方法
+    //所有 KVO 会统一调用此方法   KVO属于观察者模式
+    //在程序中  通常只监听某一个对象的某几个属性 如果属性太多 方法会很乱！
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
         //contentOffset 的 y 值 跟 contentInset 的 top 有关
-        print(scrollView?.contentOffset)
+//        print(scrollView?.contentOffset)
         
         guard let sv = scrollView else{
             return
