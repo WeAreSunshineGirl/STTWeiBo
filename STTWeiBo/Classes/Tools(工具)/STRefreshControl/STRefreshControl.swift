@@ -11,6 +11,19 @@ import UIKit
 /// 刷新状态切换的临界点
 private let  STRefreshOffset:CGFloat = 60
 
+/**
+ 刷新状态
+ 
+ - Normal:      普通状态 什么都不做
+ - Pulling:     超过临界点 如果放手 开始刷新
+ - WillRefresh: 用户超过临界点 并且放手
+ */
+enum STRefreshState {
+    case Normal
+    case Pulling
+    case WillRefresh
+}
+
 //刷新控件 - 负责刷新相关的 ’逻辑‘ 处理
 class STRefreshControl: UIControl {
 

@@ -11,6 +11,9 @@ import UIKit
 /// 刷新视图 - 负责刷新相关的UI 显示 和 动画
 class STRefreshView: UIView {
 
+    //刷新状态
+    var refreshState:STRefreshState = STRefreshState.Normal
+    
     /// 指示器
     @IBOutlet weak var indicator: UIActivityIndicatorView!
    /// 提示图标
