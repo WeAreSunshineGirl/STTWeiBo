@@ -33,6 +33,12 @@ class STRefreshView: UIView {
                 })
             case .WillRefresh:
                 tipLabel.text = "正在刷新中..."
+                
+                //隐藏提示图标 
+                tipIcon.hidden = true
+                //显示菊花
+                indicator.startAnimating()
+                
             }
         }
             
