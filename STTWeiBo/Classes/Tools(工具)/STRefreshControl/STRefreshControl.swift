@@ -140,7 +140,7 @@ class STRefreshControl: UIControl {
 
 extension STRefreshControl{
     private func setupUI(){
-        backgroundColor = UIColor.orangeColor()
+        backgroundColor = superview?.backgroundColor
         
         //设置超出边界不显示
         clipsToBounds = true

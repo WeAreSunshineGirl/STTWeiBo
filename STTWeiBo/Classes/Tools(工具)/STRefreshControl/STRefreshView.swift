@@ -12,7 +12,19 @@ import UIKit
 class STRefreshView: UIView {
 
     //刷新状态
-    var refreshState:STRefreshState = .Normal
+    var refreshState:STRefreshState = .Normal{
+        didSet{
+            switch refreshState {
+            case .Normal:
+                tipLabel.text = "继续使劲拉..."
+            case .Pulling:
+                tipLabel.text = "放手就刷新..."
+            case .WillRefresh:
+                tipLabel.text = "正在刷新中..."
+            }
+        }
+            
+    }
     
     /// 指示器
     @IBOutlet weak var indicator: UIActivityIndicatorView!
