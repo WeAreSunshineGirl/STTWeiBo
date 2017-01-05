@@ -164,6 +164,19 @@ class STRefreshControl: UIControl {
     //结束刷新
     func endRefreshing(){
         print("结束刷新")
+        //判断父视图
+        guard let sv = scrollView else{
+            return
+        }
+
+        // 恢复刷新视图状态
+        refreshView.refreshState = .Normal
+        
+        //恢复表格的contentInset
+        var inset = sv.contentInset
+        inset.top -= STRefreshOffset
+        
+        sv.contentInset = inset
     }
 }
 

@@ -22,6 +22,11 @@ class STRefreshView: UIView {
         didSet{
             switch refreshState {
             case .Normal:
+                //恢复状态
+                indicator.stopAnimating()
+                // 显示 刷新图标
+                tipIcon.hidden = false
+                
                 tipLabel.text = "继续使劲拉..."
                 UIView.animateWithDuration(0.25, animations: {
                     self.tipIcon.transform = CGAffineTransformIdentity
