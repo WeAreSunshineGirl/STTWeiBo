@@ -58,6 +58,7 @@
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
 		CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE808461E1DE762008CE0E5 /* STRefreshView.swift */; };
 		CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE808471E1DE762008CE0E5 /* STRefreshView.xib */; };
+		CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */; };
 		CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
@@ -137,6 +138,7 @@
 		CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
 		CEE808461E1DE762008CE0E5 /* STRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRefreshView.swift; sourceTree = "<group>"; };
 		CEE808471E1DE762008CE0E5 /* STRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRefreshView.xib; sourceTree = "<group>"; };
+		CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SThumRefreshView.xib; sourceTree = "<group>"; };
 		CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 				CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */,
 				CEE808461E1DE762008CE0E5 /* STRefreshView.swift */,
 				CEE808471E1DE762008CE0E5 /* STRefreshView.xib */,
+				CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */,
 			);
 			path = STRefreshControl;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				CE1887361E07844300420C0B /* WBNewFeatureView.xib in Resources */,
 				CE1887341E07841A00420C0B /* WBWelcomeView.xib in Resources */,
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
+				CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */,
 				CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */,
 				CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */,
 				CE1F7BFE1E14AB03000D8D23 /* demo.json in Resources */,

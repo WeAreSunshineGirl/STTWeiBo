@@ -39,7 +39,7 @@
         </view>
     </objects>
     <resources>
-        <image name="refresh" width="92" height="112"/>
+        <image name="refresh" width="400" height="300"/>
         <image name="tableview_pull_refresh" width="25" height="25"/>
     </resources>
 </document>
