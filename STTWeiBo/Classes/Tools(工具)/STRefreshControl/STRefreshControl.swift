@@ -120,6 +120,14 @@ class STRefreshControl: UIControl {
                 print("准备开始刷新")
                 //需要刷新结束之后 将 状态修改为 .Normal 才能够继续响应
                 refreshView.refreshState = .WillRefresh
+                
+                // 让整个刷新视图能够显示出来
+                //解决方法 修改表格的 contentInset
+                var inset = sv.contentInset
+                inset.top += STRefreshOffset
+                
+                sv.contentInset = inset
+                
             }
             
         }
@@ -143,7 +151,7 @@ extension STRefreshControl{
         backgroundColor = superview?.backgroundColor
         
         //设置超出边界不显示
-        clipsToBounds = true
+        //clipsToBounds = true
         //添加刷新视图 - 从xib加载出来 默认是xib 中指定的宽高
         addSubview(refreshView)
         
