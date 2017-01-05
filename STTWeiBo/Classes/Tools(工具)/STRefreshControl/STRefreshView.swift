@@ -12,7 +12,7 @@ import UIKit
 class STRefreshView: UIView {
 
     //刷新状态
-    var refreshState:STRefreshState = STRefreshState.Normal
+    var refreshState:STRefreshState = .Normal
     
     /// 指示器
     @IBOutlet weak var indicator: UIActivityIndicatorView!

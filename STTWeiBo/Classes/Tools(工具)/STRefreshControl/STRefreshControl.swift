@@ -33,7 +33,7 @@ class STRefreshControl: UIControl {
     
     /// 刷新视图
     private lazy var refreshView:STRefreshView = STRefreshView.refreshView()
-    
+
     //MARK:-构造函数
     init(){
         super.init(frame: CGRect())
@@ -104,13 +104,24 @@ class STRefreshControl: UIControl {
         
         //判断临界点 -只需要判断一次
         if sv.dragging {
-            if height > STRefreshOffset{
+            
+            if height > STRefreshOffset && (refreshView.refreshState == .Normal){
                 print("放手刷新")
-            }else{
-                print("再使劲...")
+                refreshView.refreshState = .Pulling
+                
+            }else if height <= STRefreshOffset && (refreshView.refreshState == .Pulling) {
+                print("继续使劲...")
+                refreshView.refreshState = .Normal
+                
             }
         }else{
-            //放手
+            //放手 - 判断是否超过临界
+            if refreshView.refreshState == .Pulling {
+                print("准备开始刷新")
+                //需要刷新结束之后 将 状态修改为 .Normal 才能够继续响应
+                refreshView.refreshState = .WillRefresh
+            }
+            
         }
         
     }
