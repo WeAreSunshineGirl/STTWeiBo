@@ -60,8 +60,13 @@ class STRefreshView: UIView {
     
     
     class func refreshView()->STRefreshView{
+        //箭头刷新
 //        let nib = UINib(nibName: "STRefreshView", bundle: nil)
-        let nib = UINib(nibName: "SThumRefreshView", bundle: nil)
+        // 小人刷新
+//        let nib = UINib(nibName: "SThumRefreshView", bundle: nil)
+        // 美团刷新
+        let nib = UINib(nibName: "STMeiTuanRefreshView", bundle: nil)
+
         return nib.instantiateWithOwner(nib, options: nil)[0] as! STRefreshView
     }
     
