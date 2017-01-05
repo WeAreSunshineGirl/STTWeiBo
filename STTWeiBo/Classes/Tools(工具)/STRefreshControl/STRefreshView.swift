@@ -60,7 +60,8 @@ class STRefreshView: UIView {
     
     
     class func refreshView()->STRefreshView{
-        let nib = UINib(nibName: "STRefreshView", bundle: nil)
+//        let nib = UINib(nibName: "STRefreshView", bundle: nil)
+        let nib = UINib(nibName: "SThumRefreshView", bundle: nil)
         return nib.instantiateWithOwner(nib, options: nil)[0] as! STRefreshView
     }
     
