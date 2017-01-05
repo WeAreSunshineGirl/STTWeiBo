@@ -118,7 +118,10 @@ class STRefreshControl: UIControl {
             //放手 - 判断是否超过临界
             if refreshView.refreshState == .Pulling {
                 print("准备开始刷新")
-                //需要刷新结束之后 将 状态修改为 .Normal 才能够继续响应
+               
+                /*
+                 代码重复整合一下
+                //刷新结束之后 将 状态修改为 .Normal 才能够继续响应
                 refreshView.refreshState = .WillRefresh
                 
                 // 让整个刷新视图能够显示出来
@@ -127,7 +130,9 @@ class STRefreshControl: UIControl {
                 inset.top += STRefreshOffset
                 
                 sv.contentInset = inset
+                */
                 
+                beginRefreshing()
             }
             
         }
@@ -142,7 +147,10 @@ class STRefreshControl: UIControl {
         guard let sv = scrollView else{
             return
         }
-        
+        // 判断是否正在刷新 如果正在刷新 直接返回
+        if refreshView.refreshState == .WillRefresh {
+            return
+        }
         // 设置刷新视图状态
         refreshView.refreshState = .WillRefresh
         
