@@ -9,7 +9,7 @@
 import UIKit
 
 /// 刷新状态切换的临界点
-private let  STRefreshOffset:CGFloat = 60
+private let  STRefreshOffset:CGFloat = 104 //60 //104//美团
 
 /**
  刷新状态

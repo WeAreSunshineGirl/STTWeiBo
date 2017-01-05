@@ -23,26 +23,26 @@ class STRefreshView: UIView {
             switch refreshState {
             case .Normal:
                 //恢复状态
-                indicator.stopAnimating()
+                indicator?.stopAnimating()
                 // 显示 刷新图标
-                tipIcon.hidden = false
+                tipIcon?.hidden = false
                 
-                tipLabel.text = "继续使劲拉..."
+                tipLabel?.text = "继续使劲拉..."
                 UIView.animateWithDuration(0.25, animations: {
-                    self.tipIcon.transform = CGAffineTransformIdentity
+                    self.tipIcon?.transform = CGAffineTransformIdentity
                 })
             case .Pulling:
-                tipLabel.text = "放手就刷新..."
+                tipLabel?.text = "放手就刷新..."
                 UIView.animateWithDuration(0.25, animations: { 
-                    self.tipIcon.transform = CGAffineTransformMakeRotation(CGFloat(M_PI - 0.001))
+                    self.tipIcon?.transform = CGAffineTransformMakeRotation(CGFloat(M_PI - 0.001))
                 })
             case .WillRefresh:
-                tipLabel.text = "正在刷新中..."
+                tipLabel?.text = "正在刷新中..."
                 
                 //隐藏提示图标 
-                tipIcon.hidden = true
+                tipIcon?.hidden = true
                 //显示菊花
-                indicator.startAnimating()
+                indicator?.startAnimating()
                 
             }
         }
@@ -50,11 +50,11 @@ class STRefreshView: UIView {
     }
     
     /// 指示器
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView?
    /// 提示图标
-    @IBOutlet weak var tipIcon: UIImageView!
+    @IBOutlet weak var tipIcon: UIImageView?
    /// 提示标签
-    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var tipLabel: UILabel?
     
     
     
@@ -65,7 +65,7 @@ class STRefreshView: UIView {
         // 小人刷新
 //        let nib = UINib(nibName: "SThumRefreshView", bundle: nil)
         // 美团刷新
-        let nib = UINib(nibName: "STMeiTuanRefreshView", bundle: nil)
+        let nib = UINib(nibName: "STMeituanRefreshView", bundle: nil)
 
         return nib.instantiateWithOwner(nib, options: nil)[0] as! STRefreshView
     }

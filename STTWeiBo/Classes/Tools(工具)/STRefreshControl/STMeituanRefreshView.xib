@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="efm-Ty-h32" customClass="STMeiTuanRefreshView" customModule="刷新控件" customModuleProvider="target">
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="efm-Ty-h32" customClass="STMeiTuanRefreshView" customModule="刷新控件" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="223" height="104"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
