@@ -12,13 +12,25 @@ import UIKit
 class STRefreshView: UIView {
 
     //刷新状态
+    /*iOS系统中 UIView封装的动画旋转   
+     -默认顺时针旋转
+     -就近原则
+     -要想实现同方向旋转 需要调整一个 非常小的数字(近)
+     -如果想实现360 旋转 需要核心动画 CABaseAnimation
+     */
     var refreshState:STRefreshState = .Normal{
         didSet{
             switch refreshState {
             case .Normal:
                 tipLabel.text = "继续使劲拉..."
+                UIView.animateWithDuration(0.25, animations: {
+                    self.tipIcon.transform = CGAffineTransformIdentity
+                })
             case .Pulling:
                 tipLabel.text = "放手就刷新..."
+                UIView.animateWithDuration(0.25, animations: { 
+                    self.tipIcon.transform = CGAffineTransformMakeRotation(CGFloat(M_PI - 0.001))
+                })
             case .WillRefresh:
                 tipLabel.text = "正在刷新中..."
             }
