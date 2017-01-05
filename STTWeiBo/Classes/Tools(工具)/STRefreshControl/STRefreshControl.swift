@@ -137,6 +137,20 @@ class STRefreshControl: UIControl {
     //开始刷新
     func beginRefreshing(){
         print("开始刷新")
+        
+        //判断父视图
+        guard let sv = scrollView else{
+            return
+        }
+        
+        // 设置刷新视图状态
+        refreshView.refreshState = .WillRefresh
+        
+        //调整表格的间距
+        var inset = sv.contentInset
+        inset.top += STRefreshOffset
+        
+        sv.contentInset = inset
     }
     
     //结束刷新
