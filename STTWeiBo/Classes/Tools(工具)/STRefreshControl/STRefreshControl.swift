@@ -123,16 +123,17 @@ class STRefreshControl: UIControl {
                  代码重复整合一下
                 //刷新结束之后 将 状态修改为 .Normal 才能够继续响应
                 refreshView.refreshState = .WillRefresh
-                
                 // 让整个刷新视图能够显示出来
                 //解决方法 修改表格的 contentInset
                 var inset = sv.contentInset
                 inset.top += STRefreshOffset
-                
                 sv.contentInset = inset
                 */
                 
                 beginRefreshing()
+                
+                //发送刷新数据事件
+                sendActionsForControlEvents(.ValueChanged)
             }
             
         }
@@ -169,6 +170,10 @@ class STRefreshControl: UIControl {
             return
         }
 
+        //判断状态 是否正在刷新 如果不是 直接返回
+        if refreshView.refreshState != .WillRefresh {
+            return
+        }
         // 恢复刷新视图状态
         refreshView.refreshState = .Normal
         
