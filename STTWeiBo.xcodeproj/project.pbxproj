@@ -12,6 +12,8 @@
 		CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */; };
 		CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */; };
 		CE0718CC1E1F77D9004CD0E1 /* WBComposeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718CB1E1F77D9004CD0E1 /* WBComposeTypeView.xib */; };
+		CE0718CE1E1F84FB004CD0E1 /* WBComposeTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718CD1E1F84FB004CD0E1 /* WBComposeTypeButton.swift */; };
+		CE0718D01E1F850B004CD0E1 /* WBComposeTypeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718CF1E1F850B004CD0E1 /* WBComposeTypeButton.xib */; };
 		CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */; };
 		CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07431A1DFFCF7D002E5AA3 /* WBOAuthViewController.swift */; };
 		CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08436E1DEFC43D00BD8168 /* AppDelegate.swift */; };
@@ -79,6 +81,8 @@
 		CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeituanRefreshView.xib; sourceTree = "<group>"; };
 		CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
 		CE0718CB1E1F77D9004CD0E1 /* WBComposeTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeView.xib; sourceTree = "<group>"; };
+		CE0718CD1E1F84FB004CD0E1 /* WBComposeTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeButton.swift; sourceTree = "<group>"; };
+		CE0718CF1E1F850B004CD0E1 /* WBComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeTypeButton.xib; sourceTree = "<group>"; };
 		CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCommon.swift; sourceTree = "<group>"; };
 		CE07431A1DFFCF7D002E5AA3 /* WBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBOAuthViewController.swift; sourceTree = "<group>"; };
 		CE08436B1DEFC43D00BD8168 /* STTWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +203,8 @@
 			children = (
 				CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */,
 				CE0718CB1E1F77D9004CD0E1 /* WBComposeTypeView.xib */,
+				CE0718CD1E1F84FB004CD0E1 /* WBComposeTypeButton.swift */,
+				CE0718CF1E1F850B004CD0E1 /* WBComposeTypeButton.xib */,
 			);
 			path = ComposeType;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 				CE0718CC1E1F77D9004CD0E1 /* WBComposeTypeView.xib in Resources */,
 				CE1887341E07841A00420C0B /* WBWelcomeView.xib in Resources */,
 				CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */,
+				CE0718D01E1F850B004CD0E1 /* WBComposeTypeButton.xib in Resources */,
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
 				CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */,
 				CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */,
@@ -613,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0843C31DEFCC8200BD8168 /* UIColor+CZAddition.m in Sources */,
+				CE0718CE1E1F84FB004CD0E1 /* WBComposeTypeButton.swift in Sources */,
 				CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */,
 				CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */,
 				CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */,

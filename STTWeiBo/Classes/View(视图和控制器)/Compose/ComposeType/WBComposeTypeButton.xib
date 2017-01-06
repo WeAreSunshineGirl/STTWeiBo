@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBComposeTypeButton" customModule="STTWeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_compose_idea" translatesAutoresizingMaskIntoConstraints="NO" id="kxQ-XR-GEL">
+                    <rect key="frame" x="15" y="0.0" width="71" height="71"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0d-aE-JaA">
+                    <rect key="frame" x="37" y="84" width="26" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kxQ-XR-GEL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7TW-p8-SLS"/>
+                <constraint firstItem="kxQ-XR-GEL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iGo-FV-uCG"/>
+                <constraint firstAttribute="bottom" secondItem="o0d-aE-JaA" secondAttribute="bottom" id="ouE-Ti-tFk"/>
+                <constraint firstItem="o0d-aE-JaA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wU7-py-V7i"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="kxQ-XR-GEL" id="3W0-FQ-3B3"/>
+                <outlet property="titleLabel" destination="o0d-aE-JaA" id="dVN-8e-nPK"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="351"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_compose_idea" width="71" height="71"/>
+    </resources>
+</document>

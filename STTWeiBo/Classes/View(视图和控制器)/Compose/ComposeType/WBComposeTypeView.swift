@@ -32,6 +32,11 @@ class WBComposeTypeView: UIView {
         
         return v
     }
+    
+    override func awakeFromNib() {
+        setupUI()
+    }
+    
     /**
      显示当前视图
      */
@@ -44,5 +49,26 @@ class WBComposeTypeView: UIView {
        
         // 2 > 添加视图
         mainWindow.view.addSubview(self)
+    }
+    
+    //MARK:监听方法
+    @objc private func clickButton(){
+        print("按钮点击")
+    }
+}
+//private 让extension 中所有的方法都是私有的
+private extension WBComposeTypeView{
+    
+    
+    func setupUI(){
+        
+        // 1 创建类型按钮
+        let btn = WBComposeTypeButton.composeTypeButton("tabbar_compose_music", title: "试一试")
+        btn.center = center
+        
+        addSubview(btn)
+        
+        // 2 添加监听方法
+        btn.addTarget(self, action: #selector(clickButton), forControlEvents: .TouchUpInside)
     }
 }
