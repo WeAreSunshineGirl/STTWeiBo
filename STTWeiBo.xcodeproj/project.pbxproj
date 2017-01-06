@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0900710F40F584B72CF5A7BB /* Pods_STTWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */; };
+		CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */; };
+		CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */; };
 		CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */; };
 		CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07431A1DFFCF7D002E5AA3 /* WBOAuthViewController.swift */; };
 		CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08436E1DEFC43D00BD8168 /* AppDelegate.swift */; };
@@ -71,6 +73,8 @@
 		3664F7D1121B599462CF78D3 /* Pods-STTWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		39DCCF117E8BCE01A84DE0D8 /* Pods-STTWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 		55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STTWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeiTuanRefreshView.swift; sourceTree = "<group>"; };
+		CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeituanRefreshView.xib; sourceTree = "<group>"; };
 		CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCommon.swift; sourceTree = "<group>"; };
 		CE07431A1DFFCF7D002E5AA3 /* WBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBOAuthViewController.swift; sourceTree = "<group>"; };
 		CE08436B1DEFC43D00BD8168 /* STTWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +375,8 @@
 				CEE808461E1DE762008CE0E5 /* STRefreshView.swift */,
 				CEE808471E1DE762008CE0E5 /* STRefreshView.xib */,
 				CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */,
+				CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */,
+				CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */,
 			);
 			path = STRefreshControl;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */,
 				CE1887361E07844300420C0B /* WBNewFeatureView.xib in Resources */,
 				CE1887341E07841A00420C0B /* WBWelcomeView.xib in Resources */,
+				CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */,
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
 				CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */,
 				CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */,
@@ -613,6 +620,7 @@
 				CE0843BE1DEFCC8200BD8168 /* NSObject+CZRuntime.m in Sources */,
 				CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */,
 				CE0843991DEFCAE600BD8168 /* WBProfileViewController.swift in Sources */,
+				CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */,
 				CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */,
 				CE20E04D1E0CFDF500ED3D2A /* WBStatusPictureView.swift in Sources */,
 				CE0843911DEFCA8300BD8168 /* WBNavigationController.swift in Sources */,
