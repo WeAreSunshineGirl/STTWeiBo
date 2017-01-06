@@ -48,7 +48,8 @@ class STRefreshView: UIView {
         }
             
     }
-    
+    //父视图的高度
+    var parentViewHeight:CGFloat = 0
     /// 指示器
     @IBOutlet weak var indicator: UIActivityIndicatorView?
    /// 提示图标

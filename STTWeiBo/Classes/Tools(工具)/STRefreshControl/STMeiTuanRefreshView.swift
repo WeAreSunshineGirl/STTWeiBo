@@ -17,6 +17,14 @@ class STMeiTuanRefreshView: STRefreshView {
     
     @IBOutlet weak var kangarooIconView: UIImageView!
     
+    //父视图的高度
+    override var parentViewHeight:CGFloat{
+        
+        didSet{
+            print("父视图的高度 \(parentViewHeight)")
+        }
+    }
+    
     
     override func awakeFromNib() {
         //1 设置房子
