@@ -87,19 +87,21 @@ class WBMainViewController: UITabBarController {
     /**
      撰写微博
      */
-    // FIXME :没有实现
     //private 能够保证方法私有 仅在当前对象被访问
     //@objc 允许这个函数在运行时 通过 OC的消息机制被调用
-   @objc private func composeStatus(){
+    @objc private func composeStatus(){
         print("撰写微博")
-    //测试方向旋转
-    let vc = UIViewController()
-    vc.view.backgroundColor = UIColor.cz_randomColor()
-    let nav = UINavigationController(rootViewController: vc)
-    presentViewController(nav, animated: true, completion: nil)
-    
-//    self.navigationController?.pushViewController(vc, animated: true)
+        
+        //FIXME: 0> 判断是否登录
+        
+        // 1> 实例化视图
+        let v = WBComposeTypeView()
+        
+        // 2> 显示视图
+        v.show()
     }
+    
+  
     
     
     //MARK:-私有控件

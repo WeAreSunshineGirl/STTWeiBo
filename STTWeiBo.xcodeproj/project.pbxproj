@@ -10,6 +10,7 @@
 		0900710F40F584B72CF5A7BB /* Pods_STTWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */; };
 		CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */; };
 		CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */; };
+		CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */; };
 		CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */; };
 		CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07431A1DFFCF7D002E5AA3 /* WBOAuthViewController.swift */; };
 		CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08436E1DEFC43D00BD8168 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STTWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeiTuanRefreshView.swift; sourceTree = "<group>"; };
 		CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeituanRefreshView.xib; sourceTree = "<group>"; };
+		CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
 		CE0743171DFFCC7B002E5AA3 /* WBCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBCommon.swift; sourceTree = "<group>"; };
 		CE07431A1DFFCF7D002E5AA3 /* WBOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBOAuthViewController.swift; sourceTree = "<group>"; };
 		CE08436B1DEFC43D00BD8168 /* STTWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE0718C71E1F702C004CD0E1 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				CE0718C81E1F702C004CD0E1 /* ComposeType */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		CE0718C81E1F702C004CD0E1 /* ComposeType */ = {
+			isa = PBXGroup;
+			children = (
+				CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */,
+			);
+			path = ComposeType;
+			sourceTree = "<group>";
+		};
 		CE0743191DFFCF63002E5AA3 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +270,7 @@
 		CE0843871DEFCA2800BD8168 /* View(视图和控制器) */ = {
 			isa = PBXGroup;
 			children = (
+				CE0718C71E1F702C004CD0E1 /* Compose */,
 				CE08438A1DEFCA2800BD8168 /* Main */,
 				CE0843891DEFCA2800BD8168 /* Home */,
 				CE0843881DEFCA2800BD8168 /* Discover */,
@@ -595,6 +614,7 @@
 				CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */,
 				CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */,
 				CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */,
+				CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
 				CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */,
