@@ -11,17 +11,27 @@ import UIKit
 /// 撰写微博类型视图
 class WBComposeTypeView: UIView {
 
-    override init(frame: CGRect) {
-        
-        super.init(frame: UIScreen.mainScreen().bounds)
-        
-        backgroundColor = UIColor.orangeColor()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    override init(frame: CGRect) {
+//        
+//        super.init(frame: UIScreen.mainScreen().bounds)
+//        
+//        backgroundColor = UIColor.orangeColor()
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
 
+    class func composeTypeView()->WBComposeTypeView{
+        let nib = UINib(nibName: "WBComposeTypeView", bundle: nil)
+        
+        let v = nib.instantiateWithOwner(nil, options: nil)[0] as! WBComposeTypeView
+        
+        //XIB 加载默认 600 * 600
+        v.frame = UIScreen.mainScreen().bounds
+        
+        return v
+    }
     /**
      显示当前视图
      */

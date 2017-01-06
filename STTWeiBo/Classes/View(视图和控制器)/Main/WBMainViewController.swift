@@ -95,7 +95,7 @@ class WBMainViewController: UITabBarController {
         //FIXME: 0> 判断是否登录
         
         // 1> 实例化视图
-        let v = WBComposeTypeView()
+        let v = WBComposeTypeView.composeTypeView()
         
         // 2> 显示视图
         v.show()
