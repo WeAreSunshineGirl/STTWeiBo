@@ -8,17 +8,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clipsSubviews="YES" contentMode="scaleToFill" id="efm-Ty-h32" customClass="STMeiTuanRefreshView" customModule="刷新控件" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="223" height="104"/>
+            <rect key="frame" x="0.0" y="0.0" width="223" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="fangzi" translatesAutoresizingMaskIntoConstraints="NO" id="RCP-GV-Z5A">
-                    <rect key="frame" x="13" y="2" width="196" height="94"/>
+                    <rect key="frame" x="13" y="-5" width="196" height="110"/>
                 </imageView>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-SU-4kB">
-                    <rect key="frame" x="-3" y="65" width="223" height="220"/>
+                    <rect key="frame" x="8" y="96" width="223" height="220"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="daishu_1" translatesAutoresizingMaskIntoConstraints="NO" id="FJ1-S1-vEQ">
-                    <rect key="frame" x="67" y="13" width="80" height="71"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-1I-49x">
+                    <rect key="frame" x="89" y="42" width="61" height="67"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,13 +27,13 @@
             <connections>
                 <outlet property="bulidingIconView" destination="RCP-GV-Z5A" id="A8k-0g-nn4"/>
                 <outlet property="earthIconView" destination="Ou6-SU-4kB" id="LcV-jF-jQa"/>
-                <outlet property="kangarooIconView" destination="FJ1-S1-vEQ" id="7h9-fP-oAN"/>
+                <outlet property="kangarooIconView" destination="LXg-1I-49x" id="sMB-6C-a5f"/>
             </connections>
-            <point key="canvasLocation" x="138.5" y="-79"/>
+            <point key="canvasLocation" x="138.5" y="-68.5"/>
         </view>
     </objects>
     <resources>
-        <image name="daishu_1" width="80" height="71"/>
+        <image name="1" width="80" height="83"/>
         <image name="earth" width="223" height="220"/>
         <image name="fangzi" width="190" height="157"/>
     </resources>

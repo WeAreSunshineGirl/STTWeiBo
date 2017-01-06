@@ -32,5 +32,18 @@ class STMeiTuanRefreshView: STRefreshView {
         anim.removedOnCompletion = false
         
         earthIconView.layer.addAnimation(anim, forKey: nil)
+        
+        // 3 袋鼠
+        // 1>设置锚点
+        kangarooIconView.layer.anchorPoint = CGPoint(x: 0.5, y: 1)
+
+        // 2> 设置center
+        let x = self.bounds.width * 0.5
+        let y = self.bounds.height - 10
+        kangarooIconView.center = CGPoint(x: x, y: y)
+        
+        kangarooIconView.transform = CGAffineTransformMakeScale(0.2, 0.2)
+        
+        
     }
 }
