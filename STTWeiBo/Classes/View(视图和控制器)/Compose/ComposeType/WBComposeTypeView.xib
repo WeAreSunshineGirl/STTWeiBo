@@ -23,12 +23,15 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-pb-BNv">
                                         <rect key="frame" x="175" y="10" width="25" height="25"/>
                                         <state key="normal" image="tabbar_compose_background_icon_close"/>
+                                        <connections>
+                                            <action selector="close" destination="iN0-l3-epB" eventType="touchUpInside" id="Gcb-VC-TJ5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerX" secondItem="qWy-YF-0u3" secondAttribute="centerX" id="b9A-ge-Ko6"/>
-                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerY" secondItem="qWy-YF-0u3" secondAttribute="centerY" id="boc-fL-hQe"/>
+                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerX" secondItem="qWy-YF-0u3" secondAttribute="centerX" id="Ui8-od-JBz"/>
+                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerY" secondItem="qWy-YF-0u3" secondAttribute="centerY" id="r1y-uc-L1q"/>
                                     <constraint firstAttribute="height" constant="44" id="t45-IT-JyQ"/>
                                 </constraints>
                             </view>
@@ -69,6 +72,9 @@
                 <constraint firstAttribute="trailing" secondItem="BKT-8S-f4c" secondAttribute="trailing" id="tsk-TV-XIG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="6ie-Z2-ofQ" id="MWW-tC-zqh"/>
+            </connections>
             <point key="canvasLocation" x="232.5" y="246.5"/>
         </view>
     </objects>

@@ -35,7 +35,7 @@
                 <outlet property="imageView" destination="kxQ-XR-GEL" id="3W0-FQ-3B3"/>
                 <outlet property="titleLabel" destination="o0d-aE-JaA" id="dVN-8e-nPK"/>
             </connections>
-            <point key="canvasLocation" x="78" y="351"/>
+            <point key="canvasLocation" x="116" y="331"/>
         </view>
     </objects>
     <resources>
