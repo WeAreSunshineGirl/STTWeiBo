@@ -11,16 +11,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKT-8S-f4c">
+                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKT-8S-f4c">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ak3-gh-Iyr">
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ak3-gh-Iyr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWy-YF-0u3">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWy-YF-0u3">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-pb-BNv">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-pb-BNv">
                                         <rect key="frame" x="175" y="10" width="25" height="25"/>
                                         <state key="normal" image="tabbar_compose_background_icon_close"/>
                                         <connections>
@@ -29,48 +29,20 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerX" secondItem="qWy-YF-0u3" secondAttribute="centerX" id="Ui8-od-JBz"/>
-                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerY" secondItem="qWy-YF-0u3" secondAttribute="centerY" id="r1y-uc-L1q"/>
-                                    <constraint firstAttribute="height" constant="44" id="t45-IT-JyQ"/>
-                                </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
                                 <rect key="frame" x="0.0" y="343" width="375" height="224"/>
                                 <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="224" id="24m-Pa-J1D"/>
-                                </constraints>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-3D-xJY">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-3D-xJY">
                                 <rect key="frame" x="111" y="100" width="154" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="154" id="Pj3-Aj-fuf"/>
-                                    <constraint firstAttribute="height" constant="48" id="y8c-s8-aYj"/>
-                                </constraints>
                             </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qWy-YF-0u3" secondAttribute="bottom" id="1QZ-5J-XWC"/>
-                            <constraint firstAttribute="trailing" secondItem="6ie-Z2-ofQ" secondAttribute="trailing" id="9Xr-OM-VeA"/>
-                            <constraint firstItem="qWy-YF-0u3" firstAttribute="leading" secondItem="ak3-gh-Iyr" secondAttribute="leading" id="GTT-hC-Hav"/>
-                            <constraint firstAttribute="trailing" secondItem="qWy-YF-0u3" secondAttribute="trailing" id="Ngc-gF-L6e"/>
-                            <constraint firstItem="qWy-YF-0u3" firstAttribute="top" secondItem="6ie-Z2-ofQ" secondAttribute="bottom" constant="56" id="OSZ-uN-dyT"/>
-                            <constraint firstItem="lLL-3D-xJY" firstAttribute="centerX" secondItem="ak3-gh-Iyr" secondAttribute="centerX" id="W7L-eO-r35"/>
-                            <constraint firstItem="6ie-Z2-ofQ" firstAttribute="leading" secondItem="ak3-gh-Iyr" secondAttribute="leading" id="nef-fE-URr"/>
-                            <constraint firstItem="lLL-3D-xJY" firstAttribute="top" secondItem="ak3-gh-Iyr" secondAttribute="top" constant="100" id="nmk-8m-aZD"/>
-                        </constraints>
                     </view>
                     <blurEffect style="extraLight"/>
                 </visualEffectView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="BKT-8S-f4c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gaa-ep-maI"/>
-                <constraint firstItem="BKT-8S-f4c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cwI-xQ-jgC"/>
-                <constraint firstAttribute="bottom" secondItem="BKT-8S-f4c" secondAttribute="bottom" id="oOW-jP-2KQ"/>
-                <constraint firstAttribute="trailing" secondItem="BKT-8S-f4c" secondAttribute="trailing" id="tsk-TV-XIG"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="scrollView" destination="6ie-Z2-ofQ" id="MWW-tC-zqh"/>

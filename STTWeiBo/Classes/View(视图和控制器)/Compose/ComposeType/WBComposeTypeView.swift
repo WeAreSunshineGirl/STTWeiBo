@@ -42,20 +42,25 @@ class WBComposeTypeView: UIView {
         removeFromSuperview()
     }
     class func composeTypeView()->WBComposeTypeView{
+        
         let nib = UINib(nibName: "WBComposeTypeView", bundle: nil)
         
+        // 从 XIB 加载完成视图 就会调用 awakeFromNIb
         let v = nib.instantiateWithOwner(nil, options: nil)[0] as! WBComposeTypeView
+        
         
         //XIB 加载默认 600 * 600
         v.frame = UIScreen.mainScreen().bounds
         
+        v.setupUI()
+        
         return v
     }
     
-    override func awakeFromNib() {
-        setupUI()
-    }
-    
+//    override func awakeFromNib() {
+//        setupUI()
+//    }
+//    
     /**
      显示当前视图
      */
@@ -81,13 +86,13 @@ private extension WBComposeTypeView{
     
     func setupUI(){
         
-        // 1 创建类型按钮
-        let btn = WBComposeTypeButton.composeTypeButton("tabbar_compose_music", title: "试一试")
-        btn.center = center
+        // 0 强行更新布局
+        layoutIfNeeded()
         
-        addSubview(btn)
+        // 1 向scrollView 添加视图
+        let v = UIView()
         
-        // 2 添加监听方法
-        btn.addTarget(self, action: #selector(clickButton), forControlEvents: .TouchUpInside)
+        // 2 向视图添加按钮
+        
     }
 }
