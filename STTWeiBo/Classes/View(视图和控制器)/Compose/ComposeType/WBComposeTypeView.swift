@@ -90,9 +90,47 @@ private extension WBComposeTypeView{
         layoutIfNeeded()
         
         // 1 向scrollView 添加视图
-        let v = UIView()
+        
+        let rect = scrollView.bounds
+        
+        let v = UIView(frame: rect)
         
         // 2 向视图添加按钮
+        addButtons(v, idx: 0)
+        
+        // 3 将试图添加到 scrollView
+        scrollView.addSubview(v)
+    }
+    
+    /**
+     向 v 中添加按钮 按钮的数组索引 从 idx 开始
+     
+     - parameter v:   视图
+     - parameter idx: 索引
+     */
+    func addButtons(v:UIView,idx:Int){
+        
+        let count = 6
+        // 从 idx 开始 添加 6 个按钮
+        for i in idx..<(idx + count) {
+            
+            if idx >= buttonInfos.count {
+                break
+            }
+            
+            // 0 从数组字典中获取图像名称 和 title
+           let dict = buttonInfos[i]
+            
+            guard let imageName = dict["imageName"], title = dict["title"]else{
+                continue
+            }
+            
+            // 1 创建按钮
+            let btn = WBComposeTypeButton.composeTypeButton(imageName, title: title)
+            
+            // 2 将btn添加到视图
+            v.addSubview(btn)
+        }
         
     }
 }
