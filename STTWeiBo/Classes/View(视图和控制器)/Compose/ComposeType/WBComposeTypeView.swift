@@ -18,7 +18,7 @@ class WBComposeTypeView: UIView {
                                ["imageName":"tabbar_compose_weibo","title":"长微博"],
                                ["imageName":"tabbar_compose_lbs","title":"签到"],
                                ["imageName":"tabbar_compose_review","title":"点评"],
-                               ["imageName":"tabbar_compose_more","title":"更多"],
+                               ["imageName":"tabbar_compose_more","title":"更多","actionName":"clickMore"],
                                ["imageName":"tabbar_compose_friend","title":"好友圈"],
                                ["imageName":"tabbar_compose_wbcamera","title":"微博相机"],
                                ["imageName":"tabbar_compose_music","title":"音乐"],
@@ -78,6 +78,11 @@ class WBComposeTypeView: UIView {
     //MARK:监听方法
     @objc private func clickButton(){
         print("按钮点击")
+    }
+    
+    //点击更多按钮
+    @objc private func clickMore(){
+        print("点击更多")
     }
 }
 //private 让extension 中所有的方法都是私有的
@@ -144,6 +149,12 @@ private extension WBComposeTypeView{
             
             // 2 将btn添加到视图
             v.addSubview(btn)
+            
+            // 3 添加监听方法
+            if let actionName = dict["actionName"] {
+                //OC中使用 NSSelectorFromString(@"clickMore")
+                btn.addTarget(self, action: Selector(actionName), forControlEvents: .TouchUpInside)
+            }
         }
         
         // 遍历视图的子视图 布局按钮
