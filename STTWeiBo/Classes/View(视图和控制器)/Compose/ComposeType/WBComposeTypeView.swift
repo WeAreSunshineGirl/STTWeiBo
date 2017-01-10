@@ -132,5 +132,19 @@ private extension WBComposeTypeView{
             v.addSubview(btn)
         }
         
+        // 遍历视图的子视图 布局按钮
+        //准备常量
+        let btnSize = CGSize(width: 100, height: 100)
+        let margin = (v.bounds.width - 3 * btnSize.width) / 4
+        
+        for (i,btn) in v.subviews.enumerate() {
+            
+            let y:CGFloat = (i > 2) ? (v.bounds.height - btnSize.height) : 0
+            let col = i % 3
+            let x = CGFloat(col + 1) * margin + CGFloat(col) * btnSize.width
+            
+            btn.frame = CGRect(x: x, y: y, width: btnSize.width, height: btnSize.height)
+        }
+        
     }
 }
