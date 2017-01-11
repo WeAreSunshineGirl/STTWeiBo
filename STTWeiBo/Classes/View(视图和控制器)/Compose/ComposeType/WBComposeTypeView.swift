@@ -40,9 +40,8 @@ class WBComposeTypeView: UIView {
 //        fatalError("init(coder:) has not been implemented")
 //    }
 
-    /**
-     关闭视图
-     */
+    
+    // 关闭视图
     @IBAction func close() {
         
         removeFromSuperview()
@@ -105,6 +104,25 @@ class WBComposeTypeView: UIView {
             self.layoutIfNeeded()
         }
         
+    }
+    // 滚动到上一页按钮
+    @IBAction func clickReturn() {
+        // 1将滚动视图滚动到第一页
+        let offset = CGPoint(x: 0, y: 0)
+        scrollView.setContentOffset(offset, animated: true)
+        
+        closeButtonCenterXCons.constant = 0
+        returnButtonCenterXCons.constant = 0
+        
+        UIView.animateWithDuration(0.25, animations: { 
+            self.layoutIfNeeded()
+            self.returnButton.alpha = 0
+            }) { (_) in
+                // 2 让两个按钮合并
+                self.returnButton.hidden = true
+                self.returnButton.alpha = 1
+
+        }
     }
 }
 //private 让extension 中所有的方法都是私有的
