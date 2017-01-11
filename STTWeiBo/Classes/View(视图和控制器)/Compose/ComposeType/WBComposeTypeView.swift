@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import pop
 /// 撰写微博类型视图
 class WBComposeTypeView: UIView {
 
@@ -72,12 +72,15 @@ class WBComposeTypeView: UIView {
     func show(){
         
         // 1> 将当前视图 添加到 根视图控制器的 view
-        guard let mainWindow = UIApplication.sharedApplication().keyWindow?.rootViewController else{
+        guard let mainWindowVC = UIApplication.sharedApplication().keyWindow?.rootViewController else{
             return
         }
        
         // 2 > 添加视图
-        mainWindow.view.addSubview(self)
+        mainWindowVC.view.addSubview(self)
+        
+        // 3 > 动画视图
+        showCurrentView()
     }
     
     //MARK:监听方法
@@ -121,8 +124,23 @@ class WBComposeTypeView: UIView {
                 // 2 让两个按钮合并
                 self.returnButton.hidden = true
                 self.returnButton.alpha = 1
-
         }
+    }
+    
+}
+
+// MARK: - 动画方法扩展
+private extension WBComposeTypeView{
+    //动画显示当前视图
+    private func showCurrentView(){
+        
+        // 1>创建动画  pop支持三种动画类型 POPSpringAnimation  弹力 POPBasicAnimation 基本 POPDecayAnimation 衰减
+        let anim:POPBasicAnimation = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
+        anim.fromValue = 0
+        anim.toValue = 1
+        anim.duration = 0.5
+         // 2>添加到视图
+        pop_addAnimation(anim, forKey: nil)
     }
 }
 //private 让extension 中所有的方法都是私有的
