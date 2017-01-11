@@ -11,40 +11,83 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKT-8S-f4c">
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKT-8S-f4c">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ak3-gh-Iyr">
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ak3-gh-Iyr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWy-YF-0u3">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
+                                <rect key="frame" x="0.0" y="343" width="375" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="2E2-KG-QCi"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWy-YF-0u3">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-pb-BNv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-pb-BNv" userLabel="关闭按钮">
                                         <rect key="frame" x="175" y="10" width="25" height="25"/>
                                         <state key="normal" image="tabbar_compose_background_icon_close"/>
                                         <connections>
                                             <action selector="close" destination="iN0-l3-epB" eventType="touchUpInside" id="Gcb-VC-TJ5"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjP-ri-rWm" userLabel="返回上一页">
+                                        <rect key="frame" x="175" y="9" width="25" height="25"/>
+                                        <state key="normal" image="tabbar_compose_background_icon_return"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7lT-Qo-NCv"/>
+                                    <constraint firstItem="YjP-ri-rWm" firstAttribute="centerX" secondItem="qWy-YF-0u3" secondAttribute="centerX" id="Cr8-Fz-CZe"/>
+                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerY" secondItem="qWy-YF-0u3" secondAttribute="centerY" id="eFN-iO-pCF"/>
+                                    <constraint firstItem="sQB-pb-BNv" firstAttribute="centerX" secondItem="qWy-YF-0u3" secondAttribute="centerX" id="in1-TZ-OFb"/>
+                                    <constraint firstItem="YjP-ri-rWm" firstAttribute="centerY" secondItem="qWy-YF-0u3" secondAttribute="centerY" id="u5O-YJ-2B4"/>
+                                </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
-                                <rect key="frame" x="0.0" y="343" width="375" height="224"/>
-                                <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-3D-xJY">
-                                <rect key="frame" x="111" y="100" width="154" height="48"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-3D-xJY">
+                                <rect key="frame" x="110" y="100" width="154" height="48"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="qWy-YF-0u3" firstAttribute="centerY" secondItem="ak3-gh-Iyr" secondAttribute="centerY" id="1T1-E1-z8Z"/>
+                            <constraint firstAttribute="bottom" secondItem="qWy-YF-0u3" secondAttribute="bottom" id="3Rt-ez-g8A"/>
+                            <constraint firstAttribute="trailing" secondItem="qWy-YF-0u3" secondAttribute="trailing" id="7AE-aW-yH2"/>
+                            <constraint firstItem="qWy-YF-0u3" firstAttribute="top" secondItem="6ie-Z2-ofQ" secondAttribute="bottom" constant="56" id="Nto-EI-e1L"/>
+                            <constraint firstAttribute="trailing" secondItem="6ie-Z2-ofQ" secondAttribute="trailing" id="TEz-ho-FLf"/>
+                            <constraint firstItem="6ie-Z2-ofQ" firstAttribute="leading" secondItem="ak3-gh-Iyr" secondAttribute="leading" id="WPd-gy-unP"/>
+                            <constraint firstItem="lLL-3D-xJY" firstAttribute="top" secondItem="ak3-gh-Iyr" secondAttribute="top" constant="100" id="ZSC-Hd-drm"/>
+                            <constraint firstItem="qWy-YF-0u3" firstAttribute="leading" secondItem="ak3-gh-Iyr" secondAttribute="leading" id="lLJ-RB-VNI"/>
+                            <constraint firstItem="qWy-YF-0u3" firstAttribute="centerX" secondItem="ak3-gh-Iyr" secondAttribute="centerX" id="pxM-z5-WS3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1T1-E1-z8Z"/>
+                                <exclude reference="pxM-z5-WS3"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <constraints>
+                        <constraint firstItem="lLL-3D-xJY" firstAttribute="centerX" secondItem="BKT-8S-f4c" secondAttribute="centerX" id="IcR-bD-06t"/>
+                    </constraints>
                     <blurEffect style="extraLight"/>
                 </visualEffectView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BKT-8S-f4c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5nD-cD-gk1"/>
+                <constraint firstItem="BKT-8S-f4c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RI9-mq-aGr"/>
+                <constraint firstAttribute="trailing" secondItem="BKT-8S-f4c" secondAttribute="trailing" id="ZUs-gF-wcU"/>
+                <constraint firstAttribute="bottom" secondItem="BKT-8S-f4c" secondAttribute="bottom" id="mAB-3c-g31"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="closeButtonCenterXCons" destination="in1-TZ-OFb" id="RXq-eH-0Ot"/>
+                <outlet property="returnButton" destination="YjP-ri-rWm" id="ZOM-Xs-KDU"/>
+                <outlet property="returnButtonCenterXCons" destination="Cr8-Fz-CZe" id="Tmy-Gy-sZT"/>
                 <outlet property="scrollView" destination="6ie-Z2-ofQ" id="MWW-tC-zqh"/>
             </connections>
             <point key="canvasLocation" x="232.5" y="246.5"/>
@@ -53,5 +96,6 @@
     <resources>
         <image name="compose_slogan" width="154" height="48"/>
         <image name="tabbar_compose_background_icon_close" width="25" height="25"/>
+        <image name="tabbar_compose_background_icon_return" width="25" height="25"/>
     </resources>
 </document>
