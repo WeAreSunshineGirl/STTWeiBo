@@ -17,13 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
-                                <rect key="frame" x="0.0" y="343" width="375" height="224"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="224" id="2E2-KG-QCi"/>
-                                </constraints>
-                            </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-3D-xJY">
+                                <rect key="frame" x="110" y="100" width="154" height="48"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWy-YF-0u3">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <subviews>
@@ -51,9 +47,12 @@
                                     <constraint firstItem="YjP-ri-rWm" firstAttribute="centerY" secondItem="qWy-YF-0u3" secondAttribute="centerY" id="u5O-YJ-2B4"/>
                                 </constraints>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="lLL-3D-xJY">
-                                <rect key="frame" x="110" y="100" width="154" height="48"/>
-                            </imageView>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
+                                <rect key="frame" x="0.0" y="343" width="375" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="2E2-KG-QCi"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="qWy-YF-0u3" firstAttribute="centerY" secondItem="ak3-gh-Iyr" secondAttribute="centerY" id="1T1-E1-z8Z"/>

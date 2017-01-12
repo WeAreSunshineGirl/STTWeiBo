@@ -118,7 +118,7 @@ class WBComposeTypeView: UIView {
         returnButtonCenterXCons.constant = 0
         
         UIView.animateWithDuration(0.25, animations: { 
-            self.layoutIfNeeded()
+//            self.layoutIfNeeded()
             self.returnButton.alpha = 0
             }) { (_) in
                 // 2 让两个按钮合并
@@ -139,8 +139,39 @@ private extension WBComposeTypeView{
         anim.fromValue = 0
         anim.toValue = 1
         anim.duration = 0.5
+        
          // 2>添加到视图
         pop_addAnimation(anim, forKey: nil)
+        
+        //3>添加按钮的动画
+        showButtons()
+    }
+    //弹力显示所有的按钮
+    private func showButtons(){
+         // 1 获取 scrllView 的子视图的 第 0个视图
+        let v = scrollView.subviews[0]
+        
+        // 2 遍历 v 中所有按钮
+        for (i,btn) in v.subviews.enumerate() {
+            
+            // 1 >创建动画
+            let anim:POPSpringAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPositionY)
+            
+            // 2> 设置动画属性
+            anim.fromValue = btn.center.y + 350
+            anim.toValue = btn.center.y
+            
+            //弹力系数 取值范围0-20 数值越大 弹性越大 默认为 4
+            anim.springBounciness = 8
+            //弹力速度 取值范围0-20 数值越大 速度越快  默认为 12
+            anim.springSpeed = 8
+            
+            //设置动画启动时间
+            anim.beginTime = CACurrentMediaTime() + CFTimeInterval(i) * 0.025
+            
+            // 3>添加动画
+            btn.pop_addAnimation(anim, forKey: nil)
+        }
     }
 }
 //private 让extension 中所有的方法都是私有的

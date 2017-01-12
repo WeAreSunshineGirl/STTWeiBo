@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let sec = (cell - row) / 1000
 //        print("\(sec),\(row)")
         //设置应用程序 额外设置
+
        setupAdditions()
        
         
