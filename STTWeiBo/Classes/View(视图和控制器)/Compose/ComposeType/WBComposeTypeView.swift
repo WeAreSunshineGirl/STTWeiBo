@@ -40,13 +40,10 @@ class WBComposeTypeView: UIView {
 //        fatalError("init(coder:) has not been implemented")
 //    }
 
-    
-    // 关闭视图
-    @IBAction func close() {
-        
-//        removeFromSuperview()
-        hideButtons()
-    }
+    //完成回调
+    var completionBlock:((clsName:String?)->())?
+
+    //MARK:实例化方法
     class func composeTypeView()->WBComposeTypeView{
         
         let nib = UINib(nibName: "WBComposeTypeView", bundle: nil)
@@ -67,10 +64,13 @@ class WBComposeTypeView: UIView {
 //        setupUI()
 //    }
 //    
-    /**
-     显示当前视图
-     */
-    func show(){
+    
+    // 显示当前视图
+    // OC中的block 如果当前方法 不能执行 通常使用属性记录 在需要的时候执行
+    func show(completion:(clsName:String?)->()){
+        
+        // 0> 记录闭包
+        completionBlock = completion
         
         // 1> 将当前视图 添加到 根视图控制器的 view
         guard let mainWindowVC = UIApplication.sharedApplication().keyWindow?.rootViewController else{
@@ -86,7 +86,7 @@ class WBComposeTypeView: UIView {
     
     //MARK:监听方法
     //MARK:按钮监听方法
-    @objc private func clickButton(button:WBComposeTypeButton){
+    @objc private func clickButton(selectedButton:WBComposeTypeButton){
         
         // 1 判断当前显示的视图
         let page = Int(scrollView.contentOffset.x / scrollView.bounds.width)
@@ -101,7 +101,7 @@ class WBComposeTypeView: UIView {
             let scaleAnim:POPBasicAnimation = POPBasicAnimation(propertyNamed: kPOPViewScaleXY)
             
             //注意XY 在系统中使用 CGPoint 表示 如果要转换成id 需要使用 NSValue 包装
-            let scale = (button == btn) ? 2 : 0.2
+            let scale = (selectedButton == btn) ? 2 : 0.2
             scaleAnim.toValue = NSValue(CGPoint: CGPoint(x: scale, y: scale))
             
             scaleAnim.duration = 0.5
@@ -120,7 +120,7 @@ class WBComposeTypeView: UIView {
                 alphaAnim.completionBlock = { (_,_)->() in
                     //需要完成回调
                     print("完成回调展现控制器")
-                    
+                    self.completionBlock?(clsName:selectedButton.clsName)
                 }
             }
         }
@@ -164,6 +164,12 @@ class WBComposeTypeView: UIView {
                 self.returnButton.hidden = true
                 self.returnButton.alpha = 1
         }
+    }
+    // 关闭视图
+    @IBAction func close() {
+        
+        //        removeFromSuperview()
+        hideButtons()
     }
     
 }
