@@ -156,9 +156,38 @@ private extension WBComposeTypeView{
             
             //3> 添加动画
             btn.layer.pop_addAnimation(anim, forKey: nil)
+            
+            // 4>监听第0个按钮的动画 是最后一个执行的
+            if i == 0 {
+                
+                anim.completionBlock = {(_,_)->() in
+                    
+                    self.hideCurrentView()
+                }
+            }
+        }
+        
+        
+    }
+    //隐藏当前视图
+    private func hideCurrentView(){
+        
+        // 1> 创建动画
+        let anim:POPBasicAnimation = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
+        
+        anim.fromValue = 1
+        anim.toValue = 0
+        anim.duration = 0.25
+        
+        // 2> 添加动画到视图
+        pop_addAnimation(anim, forKey: nil)
+        
+        // 3> 添加完成监听方法
+        anim.completionBlock = { (_,_)->() in
+            
+            self.removeFromSuperview()
         }
     }
-    
     
     //MARK: 显示部分的动画
     //动画显示当前视图

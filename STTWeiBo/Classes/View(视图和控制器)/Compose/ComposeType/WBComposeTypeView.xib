@@ -49,6 +49,7 @@
                             </view>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-Z2-ofQ">
                                 <rect key="frame" x="0.0" y="343" width="375" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="224" id="2E2-KG-QCi"/>
                                 </constraints>
