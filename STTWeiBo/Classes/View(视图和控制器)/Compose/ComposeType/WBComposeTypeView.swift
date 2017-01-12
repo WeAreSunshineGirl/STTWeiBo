@@ -19,7 +19,7 @@ class WBComposeTypeView: UIView {
     //返回前一页按钮
     @IBOutlet weak var returnButton: UIButton!
     
-    private let buttonInfos = [["imageName":"tabbar_compose_idea","title":"文字"],
+    private let buttonInfos = [["imageName":"tabbar_compose_idea","title":"文字","clsName":"WBComposeViewController"],
                                ["imageName":"tabbar_compose_photo","title":"照片/视频"],
                                ["imageName":"tabbar_compose_weibo","title":"长微博"],
                                ["imageName":"tabbar_compose_lbs","title":"签到"],
@@ -85,8 +85,12 @@ class WBComposeTypeView: UIView {
     }
     
     //MARK:监听方法
-    @objc private func clickButton(){
-        print("按钮点击")
+    //MARK:按钮监听方法
+    @objc private func clickButton(btn:WBComposeTypeButton){
+        
+        print("按钮点击\(btn)")
+        
+        
     }
     
     //点击更多按钮
@@ -302,7 +306,12 @@ private extension WBComposeTypeView{
             if let actionName = dict["actionName"] {
                 //OC中使用 NSSelectorFromString(@"clickMore")
                 btn.addTarget(self, action: Selector(actionName), forControlEvents: .TouchUpInside)
+            }else{
+                
+                btn.addTarget(self, action: #selector(clickButton), forControlEvents: .TouchUpInside)
             }
+             // 4 设置要展现的类名 -注意不需要任何的判断 有了就设置 没有就不设置
+            btn.clsName = dict["clsName"]
         }
         
         // 遍历视图的子视图 布局按钮
