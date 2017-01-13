@@ -59,6 +59,9 @@ class WBStatusCell: UITableViewCell {
             /// 设置被转发微博的文字
             retweetedLabel?.text = viewModel?.retweetedText
 
+            /// 微博来源
+            print("微博来源\(viewModel?.status.source)")
+            sourceLabel.text = viewModel?.status.source
         }
         
     }
