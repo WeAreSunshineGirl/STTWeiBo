@@ -61,7 +61,7 @@ class WBStatusCell: UITableViewCell {
 
             /// 微博来源
             print("微博来源\(viewModel?.status.source)")
-            sourceLabel.text = viewModel?.status.source
+            sourceLabel.text = viewModel?.sourceStr
         }
         
     }

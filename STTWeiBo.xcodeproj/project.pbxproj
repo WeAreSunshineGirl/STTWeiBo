@@ -54,6 +54,7 @@
 		CE1887381E07E11100420C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1887371E07E11100420C0B /* UIKit.framework */; };
 		CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B261F1E02260B0044B55C /* WBUserAccount.swift */; };
 		CE1B9C531DFE75FD0085E831 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1B9C521DFE75FD0085E831 /* main.json */; };
+		CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */; };
 		CE1F7BFE1E14AB03000D8D23 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1F7BFD1E14AB03000D8D23 /* demo.json */; };
 		CE20E04D1E0CFDF500ED3D2A /* WBStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20E04C1E0CFDF500ED3D2A /* WBStatusPictureView.swift */; };
 		CE2C16EF1E1B8BBD00964736 /* STRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */; };
@@ -141,6 +142,7 @@
 		CE1887371E07E11100420C0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE1B261F1E02260B0044B55C /* WBUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBUserAccount.swift; sourceTree = "<group>"; };
 		CE1B9C521DFE75FD0085E831 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CE1F7BFD1E14AB03000D8D23 /* demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
 		CE20E04C1E0CFDF500ED3D2A /* WBStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPictureView.swift; sourceTree = "<group>"; };
 		CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRefreshControl.swift; sourceTree = "<group>"; };
@@ -452,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */,
+				CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */,
 				CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */,
 				CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */,
 				CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */,
@@ -662,6 +665,7 @@
 				CE0843911DEFCA8300BD8168 /* WBNavigationController.swift in Sources */,
 				CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */,
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
+				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
