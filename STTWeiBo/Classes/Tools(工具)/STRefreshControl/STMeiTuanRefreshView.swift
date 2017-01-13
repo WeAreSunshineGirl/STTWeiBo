@@ -21,7 +21,7 @@ class STMeiTuanRefreshView: STRefreshView {
     override var parentViewHeight:CGFloat{
         
         didSet{
-            print("父视图的高度 \(parentViewHeight)")
+//            print("父视图的高度 \(parentViewHeight)")
             
             if parentViewHeight < 23 {
                 return
