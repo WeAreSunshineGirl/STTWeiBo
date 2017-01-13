@@ -102,9 +102,11 @@ class STRefreshControl: UIControl {
         //可以根据高度设置刷新控件的 frame
         self.frame = CGRect(x: 0, y: -height, width: sv.bounds.width, height: height)
         
-        
-        //传递父视图高度
-        refreshView.parentViewHeight = height
+        //传递父视图高度 如果正在刷新中 不传递
+        if refreshView.refreshState != .WillRefresh {
+            
+            refreshView.parentViewHeight = height
+        }
         
         //判断临界点 -只需要判断一次
         if sv.dragging {
