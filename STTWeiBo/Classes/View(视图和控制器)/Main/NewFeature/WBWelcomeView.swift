@@ -39,7 +39,7 @@ class WBWelcomeView: UIView {
     
     required init?(coder aDecoder: NSCoder) {//xib 入口
         super.init(coder: aDecoder)
-        //        提示 initWithCode 只是刚刚 从 xib 的二进制文件将视图数据加载完成  还没有和代码连线建立关系 所以开发时 前往不要在这个方法中处理  UI
+        //        提示 initWithCode 只是刚刚 从 xib 的二进制文件将视图数据加载完成  还没有和代码连线建立关系 所以开发时 千万不要在这个方法中处理  UI
         print("initWithCode \(iconView)")//nil
         
     }
