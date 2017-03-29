@@ -41,7 +41,7 @@ class WBComposeTypeView: UIView {
 //    }
 
     //完成回调
-    var completionBlock:((clsName:String?)->())?
+    private var completionBlock:((clsName:String?)->())?
 
     //MARK:实例化方法
     class func composeTypeView()->WBComposeTypeView{
@@ -118,7 +118,7 @@ class WBComposeTypeView: UIView {
             // 3>动画监听
             if i == 0 {
                 alphaAnim.completionBlock = { (_,_)->() in
-                    //需要完成回调
+                    //需要执行完成回调
                     print("完成回调展现控制器")
                     self.completionBlock?(clsName:selectedButton.clsName)
                 }

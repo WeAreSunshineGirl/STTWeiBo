@@ -18,7 +18,7 @@ class WBComposeViewController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "退出", target: self, action: #selector(back))
 
     }
-    @objc private func back(){
+     @objc private func back(){
         
         dismissViewControllerAnimated(true, completion: nil)
     }

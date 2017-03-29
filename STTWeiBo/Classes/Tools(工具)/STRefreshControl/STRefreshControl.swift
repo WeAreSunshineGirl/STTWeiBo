@@ -49,7 +49,7 @@ class STRefreshControl: UIControl {
     }
     
     /*
-     willMove addSubview 方法会调用
+     willMove addSubview 方法会调用  tableView?.addSubview(refreshControl!) 在此处调用的
      - 当添加到父视图的时候 newSuperview 是父视图
      - 当父视图被移除，newSuperview 是 nil
      */

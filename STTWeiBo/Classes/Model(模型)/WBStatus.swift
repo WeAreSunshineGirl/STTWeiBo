@@ -21,6 +21,9 @@ class WBStatus: NSObject {
     /// 微博信息内容
     var text:String?
     
+    /// 微博创建时间字符串
+    var created_at:String?
+    
     /// 微博来源 - 发布微博使用的客户端
     var source:String?{
         didSet{
@@ -30,8 +33,7 @@ class WBStatus: NSObject {
         }
     }
     
-    /// 微博创建时间字符串
-    var created_at:String?
+  
     
     /// 微博的用户 - 注意和服务器返回的 KEY 要一致
     var user:WBUser?

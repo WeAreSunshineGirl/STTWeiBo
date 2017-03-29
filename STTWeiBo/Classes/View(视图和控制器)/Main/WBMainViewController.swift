@@ -99,7 +99,7 @@ class WBMainViewController: UITabBarController {
         
         // 2> 显示视图 -注意闭包的循环引用
         v.show { [weak v](clsName) in
-            
+            print(clsName);
             // 展现撰写微博控制器
             guard let clsName = clsName,let cls = NSClassFromString(NSBundle.mainBundle().namespace + "." + clsName) as? UIViewController.Type else{
                 
@@ -115,6 +115,9 @@ class WBMainViewController: UITabBarController {
                 
                 v?.removeFromSuperview()
             })
+//            self.presentViewController(nav, animated: true){
+//                v?.removeFromSuperview()
+//            }//尾随闭包
         }
     }
     
