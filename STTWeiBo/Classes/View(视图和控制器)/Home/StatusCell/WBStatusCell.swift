@@ -9,8 +9,27 @@
 import UIKit
 import SDWebImage
 
+/**
+ *  微博 Cell的协议
+如果需要设置可选协议方法 
+ 需要遵守NSObjectProtocol
+ 协议需要是 @objc的
+ 方法需要 @objc optional
+ */
+@objc protocol WBStatusCellDelegate:NSObjectProtocol {
+  
+    /**
+     微博 Cell 选中 URL 字符串
+     */
+  @objc optional func statusCellDidTapUrlString(cell:WBStatusCell,urlString:String)
+}
+
+/// 微博Cell
 class WBStatusCell: UITableViewCell {
 
+    /// 代理属性
+    weak var delegate:WBStatusCellDelegate?
+    
     /// 微博视图模型
     var viewModel:WBStatusViewModel?{
         didSet{
@@ -63,7 +82,7 @@ class WBStatusCell: UITableViewCell {
             
            
             /// 微博来源
-            print("微博来源 \(viewModel?.status.source)")
+//            print("微博来源 \(viewModel?.status.source)")
 //            sourceLabel.text = viewModel?.sourceStr
             sourceLabel.text = viewModel?.status.source
             
@@ -83,13 +102,13 @@ class WBStatusCell: UITableViewCell {
        /// 认证图标
     @IBOutlet weak var vipIconView: UIImageView!
     /// 微博正文
-    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusLabel: FFLabel!
     /// 底部工具栏
     @IBOutlet weak var toolBar: WBStatusToolBar!
     /// 配图视图
     @IBOutlet weak var pictureView: WBStatusPictureView!
     /// 被转发微博的标签 - 原创微博没有此控件 一定要用？
-    @IBOutlet weak var retweetedLabel: UILabel?
+    @IBOutlet weak var retweetedLabel: FFLabel?
     
     
     override func awakeFromNib() {
@@ -105,9 +124,25 @@ class WBStatusCell: UITableViewCell {
         
         //使用 栅格化 必须注意指定分辨率
         self.layer.rasterizationScale = UIScreen.mainScreen().scale
+        
+        //设置微博文本代理
+        statusLabel.delegate = self
+        retweetedLabel?.delegate = self
      
     }
-
-   
-
+}
+extension WBStatusCell:FFLabelDelegate{
+    
+    //MAR: - 点击cell 中的 url 实现 FFLabelDelegate 代理方法
+    func labelDidSelectedLinkText(label: FFLabel, text: String) {
+        
+        //判断是否是 URL
+        if !text.hasPrefix("http://") {
+            return
+        }
+        //插入 ？ 表示如果代理没有实现协议方法 就什么都不做
+        //如果使用 ！ 代理没有实现协议方法 仍然强制执行 会崩溃
+        delegate?.statusCellDidTapUrlString?(self, urlString: text)
+    }
+    
 }

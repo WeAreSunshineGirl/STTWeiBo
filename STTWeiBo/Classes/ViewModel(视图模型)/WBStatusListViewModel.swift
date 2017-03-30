@@ -182,7 +182,7 @@ class WBStatusListViewModel {
                     
                 }
                 
-                print("缓存的图像是 \(image) \(length)")
+//                print("缓存的图像是 \(image) \(length)")
                 
                 // B）出组
                 dispatch_group_leave(group)

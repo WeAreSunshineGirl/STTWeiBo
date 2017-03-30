@@ -50,7 +50,7 @@ extension STEmoticonManager{
         // 3 遍历所有匹配结果
         for m in matches.reverse() {
             let r = m.rangeAtIndex(0)
-            print(r)
+//            print("匹配结果的range\(r)")
             let subStr = (attrString.string as NSString).substringWithRange(r)
             
             // 1> 使用 subStr 查找对应的表情符号
