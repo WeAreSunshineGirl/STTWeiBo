@@ -62,7 +62,7 @@ extension STEmoticonManager{
         }
         //很重要 如果米有设置字符串属性 排版就是错乱
         // 4 统一设置一遍字符串的属性  除了需要设置‘字体’ 还需要设置 ‘颜色’
-        attrString.addAttributes([NSFontAttributeName:font], range: NSRange(location: 0, length: attrString.length))
+        attrString.addAttributes([NSFontAttributeName:font,NSForegroundColorAttributeName:UIColor.darkGrayColor()], range: NSRange(location: 0, length: attrString.length))
         
         return attrString
     }
