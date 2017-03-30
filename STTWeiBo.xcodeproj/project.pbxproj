@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0900710F40F584B72CF5A7BB /* Pods_STTWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */; };
+		CE04E1341E8CA29D00FB0E9C /* EmotionIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */; };
+		CE04E1351E8CA29D00FB0E9C /* STEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */; };
+		CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */; };
+		CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */; };
 		CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */; };
 		CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */; };
 		CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */; };
@@ -79,6 +83,10 @@
 		3664F7D1121B599462CF78D3 /* Pods-STTWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		39DCCF117E8BCE01A84DE0D8 /* Pods-STTWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 		55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STTWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionIcons.bundle; sourceTree = "<group>"; };
+		CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticon.swift; sourceTree = "<group>"; };
+		CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonPackage.swift; sourceTree = "<group>"; };
+		CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonManager.swift; sourceTree = "<group>"; };
 		CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeiTuanRefreshView.swift; sourceTree = "<group>"; };
 		CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeituanRefreshView.xib; sourceTree = "<group>"; };
 		CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
@@ -194,6 +202,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE04E12E1E8CA29D00FB0E9C /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */,
+				CE04E1301E8CA29D00FB0E9C /* Model */,
+				CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		CE04E1301E8CA29D00FB0E9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */,
+				CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CE0718C71E1F702C004CD0E1 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +297,7 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CE04E12E1E8CA29D00FB0E9C /* Emoticon */,
 				CE2C16EB1E1B8B2000964736 /* STRefreshControl */,
 				CE15262D1DF949BF00149510 /* Network */,
 				CE8454C51DEFF8A70062478F /* Extensions */,
@@ -556,6 +584,7 @@
 				CE1B9C531DFE75FD0085E831 /* main.json in Resources */,
 				CE0843A11DEFCBD500BD8168 /* 2@3x.png in Resources */,
 				CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */,
+				CE04E1341E8CA29D00FB0E9C /* EmotionIcons.bundle in Resources */,
 				CE1887361E07844300420C0B /* WBNewFeatureView.xib in Resources */,
 				CE0718CC1E1F77D9004CD0E1 /* WBComposeTypeView.xib in Resources */,
 				CE1887341E07841A00420C0B /* WBWelcomeView.xib in Resources */,
@@ -640,6 +669,7 @@
 				CE6062D51E27690200E53708 /* WBComposeViewController.swift in Sources */,
 				CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */,
 				CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */,
+				CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */,
 				CE0843C41DEFCC8200BD8168 /* UILabel+CZAddition.m in Sources */,
 				CE0843BD1DEFCC8200BD8168 /* NSAttributedString+CZAdditon.m in Sources */,
 				CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */,
@@ -653,6 +683,7 @@
 				CE0843C21DEFCC8200BD8168 /* UIButton+CZAddition.m in Sources */,
 				CE111F7C1E0BB01F00CA5061 /* UIImageView+WebImage.swift in Sources */,
 				CEFFF9441E09147700842467 /* WBUser.swift in Sources */,
+				CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */,
 				CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */,
 				CE0843C51DEFCC8200BD8168 /* UIScreen+CZAddition.m in Sources */,
 				CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */,
@@ -666,6 +697,7 @@
 				CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */,
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
 				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
+				CE04E1351E8CA29D00FB0E9C /* STEmoticon.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,

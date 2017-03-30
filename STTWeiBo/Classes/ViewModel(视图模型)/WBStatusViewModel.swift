@@ -38,7 +38,7 @@ class WBStatusViewModel:CustomStringConvertible {
     var commentStr:String?
     /// 点赞文字
     var likeStr:String?
-    /// 来源字符串
+    /// 来源字符串  会开辟空间
 //    var sourceStr:String?
     /// 配图视图大小
     var pictureViewSize = CGSize()
