@@ -163,6 +163,13 @@ extension WBHomeViewController:WBStatusCellDelegate{
     
     func statusCellDidTapUrlString(cell: WBStatusCell, urlString: String) {
         print(urlString)
+        
+        let vc = WBWebViewController()
+        
+        vc.urlString = urlString
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
 

@@ -13,6 +13,7 @@
 		CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */; };
 		CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */; };
 		CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1591E8CE56800FB0E9C /* FFLabel.swift */; };
+		CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E15B1E8CF03300FB0E9C /* WBWebViewController.swift */; };
 		CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */; };
 		CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */; };
 		CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */; };
@@ -89,6 +90,7 @@
 		CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonPackage.swift; sourceTree = "<group>"; };
 		CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonManager.swift; sourceTree = "<group>"; };
 		CE04E1591E8CE56800FB0E9C /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
+		CE04E15B1E8CF03300FB0E9C /* WBWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWebViewController.swift; sourceTree = "<group>"; };
 		CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeiTuanRefreshView.swift; sourceTree = "<group>"; };
 		CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeituanRefreshView.xib; sourceTree = "<group>"; };
 		CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				CEFFF93C1E0906EA00842467 /* StatusCell */,
 				CE0DF92F1E03CF40003F47BB /* TitleButton */,
 				CE0843941DEFCAD100BD8168 /* WBHomeViewController.swift */,
+				CE04E15B1E8CF03300FB0E9C /* WBWebViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */,
 				CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */,
 				CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */,
+				CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */,
 				CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
