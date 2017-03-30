@@ -136,6 +136,13 @@ extension WBHomeViewController{
 //        cell.statusLabel?.text = viewModel.status.text
 //        cell.nameLabel.text = viewModel.status.user?.screen_name
 //        
+        
+        //设置代理
+        //如果用Block 需要在数据源方法中 给每一个 cell 设置 block
+//        cell.completionBlock = {//.....}
+        //设置代理只是传递了一个指针
+        cell.delegate = self
+        
         //3 返回 cell
         return cell
     }
@@ -151,7 +158,13 @@ extension WBHomeViewController{
         return vm.rowHeight
     }
 }
-
+//MARK:遵守cell的代理协议  WBStatusCellDelegate
+extension WBHomeViewController:WBStatusCellDelegate{
+    
+    func statusCellDidTapUrlString(cell: WBStatusCell, urlString: String) {
+        print(urlString)
+    }
+}
 
 //MARK:- 设置界面
 extension WBHomeViewController{

@@ -114,7 +114,7 @@ class WBStatusCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // 离屏渲染 - 异步绘制
+        // 离屏渲染 - 异步绘制  在进入屏幕前绘制好表格 cell 进入之后 直接显示  离屏渲染需要在GPU/CPU之间快速切块    耗电厉害
         self.layer.drawsAsynchronously = true
 
         //栅格化  - 异步绘制之后 会生成一张独立的图像 cell 在屏幕上滚动的时候 本质上滚动的是这种图片
@@ -123,6 +123,8 @@ class WBStatusCell: UITableViewCell {
         self.layer.shouldRasterize = true
         
         //使用 栅格化 必须注意指定分辨率
+        
+        //        删格化我知道，只不过，删格化的并不能从根本上解决问题，他只不过是把圆角控件化成了一个bitmap，缓存到内存中，下次直接从内存中取出来用。但切圆角在一屏幕超过25个的时候，使用删格化第一次加载也是很卡的。而且内存中没有的，也还是要从新生成一个。
         self.layer.rasterizationScale = UIScreen.mainScreen().scale
         
         //设置微博文本代理
