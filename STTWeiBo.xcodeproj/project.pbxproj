@@ -12,6 +12,7 @@
 		CE04E1351E8CA29D00FB0E9C /* STEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */; };
 		CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */; };
 		CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */; };
+		CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1591E8CE56800FB0E9C /* FFLabel.swift */; };
 		CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */; };
 		CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */; };
 		CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */; };
@@ -87,6 +88,7 @@
 		CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticon.swift; sourceTree = "<group>"; };
 		CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonPackage.swift; sourceTree = "<group>"; };
 		CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonManager.swift; sourceTree = "<group>"; };
+		CE04E1591E8CE56800FB0E9C /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
 		CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeiTuanRefreshView.swift; sourceTree = "<group>"; };
 		CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STMeituanRefreshView.xib; sourceTree = "<group>"; };
 		CE0718C91E1F71AB004CD0E1 /* WBComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTypeView.swift; sourceTree = "<group>"; };
@@ -221,6 +223,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CE04E1581E8CE56800FB0E9C /* FFLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CE04E1591E8CE56800FB0E9C /* FFLabel.swift */,
+			);
+			path = FFLabel;
+			sourceTree = "<group>";
+		};
 		CE0718C71E1F702C004CD0E1 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +307,7 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CE04E1581E8CE56800FB0E9C /* FFLabel */,
 				CE04E12E1E8CA29D00FB0E9C /* Emoticon */,
 				CE2C16EB1E1B8B2000964736 /* STRefreshControl */,
 				CE15262D1DF949BF00149510 /* Network */,
@@ -696,6 +707,7 @@
 				CE0843911DEFCA8300BD8168 /* WBNavigationController.swift in Sources */,
 				CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */,
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
+				CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */,
 				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
 				CE04E1351E8CA29D00FB0E9C /* STEmoticon.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
