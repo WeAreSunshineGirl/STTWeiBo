@@ -34,9 +34,22 @@ class WBComposeViewController: UIViewController {
         
 //        view.backgroundColor = UIColor.cz_randomColor()
        setupUI()
+        
+        //监听键盘通知 - UIWindow
+        /*
+         1 监听对象
+         2 监听方法
+         3 监听的通知字符串
+         4 发送通知的对象 如果是nil 监听所有的对象
+         */
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyBoardChanged), name: UIKeyboardWillChangeFrameNotification, object: nil)
 
     }
  
+    //MARK: 键盘监听方法
+    @objc func keyBoardChanged(){
+        
+    }
     //MARK: 微博按钮监听方法
      ///发布微博方法
     @IBAction func postStatus() {
