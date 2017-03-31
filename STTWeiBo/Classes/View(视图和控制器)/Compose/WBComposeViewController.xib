@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="sendButton" destination="E69-YX-JrJ" id="ewn-CN-k3p"/>
                 <outlet property="textView" destination="eGN-q9-EF8" id="zPL-5b-eMp"/>
+                <outlet property="titleLabel" destination="awg-v9-sWL" id="chV-ph-ZSb"/>
                 <outlet property="toolbar" destination="s1Z-4t-ZgW" id="mPM-hq-zQY"/>
                 <outlet property="view" destination="bPT-19-Pta" id="FyE-HS-lJL"/>
             </connections>
@@ -57,8 +58,57 @@
             <connections>
                 <action selector="postStatus" destination="-1" eventType="touchUpInside" id="NN1-9h-FVb"/>
             </connections>
-            <point key="canvasLocation" x="337" y="564"/>
+            <point key="canvasLocation" x="199" y="554"/>
         </button>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="awg-v9-sWL">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <attributedString key="attributedText">
+                <fragment content="发布微博">
+                    <attributes>
+                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <font key="NSFont" size="13" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <font key="NSFont" size="10" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content=" ">
+                    <attributes>
+                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <font key="NSFont" size="4" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <font key="NSFont" size="10" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="提拉米苏小婷子">
+                    <attributes>
+                        <color key="NSColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="318" y="558.5"/>
+        </label>
     </objects>
     <resources>
         <image name="common_button_orange" width="11" height="9"/>
