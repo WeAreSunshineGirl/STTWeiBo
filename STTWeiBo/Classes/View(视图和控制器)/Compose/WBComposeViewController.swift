@@ -45,7 +45,6 @@ class WBComposeViewController: UIViewController {
          */
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyBoardChanged), name: UIKeyboardWillChangeFrameNotification, object: nil)
         
-
     }
  
     override func viewWillAppear(animated: Bool) {
