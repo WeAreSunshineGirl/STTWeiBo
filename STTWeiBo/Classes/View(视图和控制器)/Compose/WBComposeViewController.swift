@@ -19,6 +19,11 @@ class WBComposeViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     /// 底部工具栏
     @IBOutlet weak var toolbar: UIToolbar!
+    
+    /// 发布按钮
+    @IBOutlet var sendButton: UIButton!
+    
+    //MARK:视图生命周期
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,32 +31,18 @@ class WBComposeViewController: UIViewController {
        setupUI()
 
     }
+ 
+    //MARK: 微博按钮监听方法
+     ///发布微博方法
+    @IBAction func postStatus() {
+        
+        print("发布微博")
+    }
+    ///关闭按钮方法
      @objc private func back(){
         
         dismissViewControllerAnimated(true, completion: nil)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-    lazy var sendButton: UIButton = {
-        let btn = UIButton()
-        btn.setTitle("发布", forState: .Normal)
-        btn.titleLabel?.font = UIFont.systemFontOfSize(14)
-        //设置标题颜色
-        btn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        btn.setTitleColor(UIColor.grayColor(), forState: .Disabled)
-        
-        //设置背景图片
-        btn.setBackgroundImage(UIImage(named: "common_button_orange"), forState: .Normal)
-        btn.setBackgroundImage(UIImage(named: "common_button_orange_highlighted"), forState: .Highlighted)
-        btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: .Disabled)
-        //设置大小
-        btn.frame = CGRect(x: 0, y: 0, width: 45, height: 35)
-        return btn
-    }()
 }
 
 
@@ -73,7 +64,31 @@ private extension WBComposeViewController{
         
         //设置发送按钮
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: sendButton)
-        
+
         sendButton.enabled = false
     }
 }
+
+
+
+
+
+/*
+ //发布按钮的纯代码
+ lazy var sendButton: UIButton = {
+ let btn = UIButton()
+ btn.setTitle("发布", forState: .Normal)
+ btn.titleLabel?.font = UIFont.systemFontOfSize(14)
+ //设置标题颜色
+ btn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+ btn.setTitleColor(UIColor.grayColor(), forState: .Disabled)
+ 
+ //设置背景图片
+ btn.setBackgroundImage(UIImage(named: "common_button_orange"), forState: .Normal)
+ btn.setBackgroundImage(UIImage(named: "common_button_orange_highlighted"), forState: .Highlighted)
+ btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: .Disabled)
+ //设置大小
+ btn.frame = CGRect(x: 0, y: 0, width: 45, height: 35)
+ return btn
+ }()
+ */

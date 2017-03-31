@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WBComposeViewController" customModule="STTWeiBo" customModuleProvider="target">
             <connections>
+                <outlet property="sendButton" destination="E69-YX-JrJ" id="ewn-CN-k3p"/>
                 <outlet property="textView" destination="eGN-q9-EF8" id="zPL-5b-eMp"/>
                 <outlet property="toolbar" destination="s1Z-4t-ZgW" id="mPM-hq-zQY"/>
                 <outlet property="view" destination="bPT-19-Pta" id="FyE-HS-lJL"/>
@@ -44,5 +45,24 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="334.5" y="161.5"/>
         </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E69-YX-JrJ">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="发布" backgroundImage="common_button_orange"/>
+            <state key="disabled" backgroundImage="common_button_white_disable">
+                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <state key="highlighted" backgroundImage="common_button_orange_highlighted"/>
+            <connections>
+                <action selector="postStatus" destination="-1" eventType="touchUpInside" id="NN1-9h-FVb"/>
+            </connections>
+            <point key="canvasLocation" x="337" y="564"/>
+        </button>
     </objects>
+    <resources>
+        <image name="common_button_orange" width="11" height="9"/>
+        <image name="common_button_orange_highlighted" width="11" height="9"/>
+        <image name="common_button_white_disable" width="11" height="35"/>
+    </resources>
 </document>
