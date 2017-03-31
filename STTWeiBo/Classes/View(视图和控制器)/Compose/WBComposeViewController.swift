@@ -48,9 +48,16 @@ class WBComposeViewController: UIViewController {
 
     }
  
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //激活键盘
+        textView.becomeFirstResponder()
+    }
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
+        //关闭键盘
         textView.resignFirstResponder()
     }
     //MARK: 键盘监听方法
