@@ -10,6 +10,7 @@
                 <outlet property="sendButton" destination="E69-YX-JrJ" id="ewn-CN-k3p"/>
                 <outlet property="textView" destination="eGN-q9-EF8" id="zPL-5b-eMp"/>
                 <outlet property="titleLabel" destination="awg-v9-sWL" id="chV-ph-ZSb"/>
+                <outlet property="toolBarBottomConstraint" destination="zE8-6L-IBq" id="peq-jn-HgN"/>
                 <outlet property="toolbar" destination="s1Z-4t-ZgW" id="mPM-hq-zQY"/>
                 <outlet property="view" destination="bPT-19-Pta" id="FyE-HS-lJL"/>
             </connections>

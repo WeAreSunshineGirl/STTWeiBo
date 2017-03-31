@@ -22,7 +22,8 @@ class WBComposeViewController: UIViewController {
     
     /// 发布按钮
     @IBOutlet var sendButton: UIButton!
-    
+    /// 工具栏底部约束
+    @IBOutlet weak var toolBarBottomConstraint: NSLayoutConstraint!
     /// 标题标签 - 换行的 热键 option(Alt)+回车
     //逐行选中文本并且设置属性
     //如果想要调整行间距 可以增加一个空行 设置空行的字体 lineHeight
@@ -47,9 +48,25 @@ class WBComposeViewController: UIViewController {
     }
  
     //MARK: 键盘监听方法
-    @objc func keyBoardChanged(){
+    @objc func keyBoardChanged(n:NSNotification){
+        print(n)
         
+        // 1 目标 rect
+        guard let rect = (n.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue(), duration = (n.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue else{
+            return
+        }
+        
+        // 2 设置底部约束的高度
+        let offset = view.bounds.height - rect.origin.y
+        // 3 更新底部约束
+        toolBarBottomConstraint.constant = offset
+        
+        // 4 动画更新约束
+        UIView.animateWithDuration(duration) { 
+            self.view.layoutIfNeeded()
+        }
     }
+    
     //MARK: 微博按钮监听方法
      ///发布微博方法
     @IBAction func postStatus() {
@@ -60,6 +77,10 @@ class WBComposeViewController: UIViewController {
      @objc private func back(){
         
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 }
 
