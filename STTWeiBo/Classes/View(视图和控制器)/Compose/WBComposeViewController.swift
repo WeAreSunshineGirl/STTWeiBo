@@ -24,6 +24,8 @@ class WBComposeViewController: UIViewController {
     @IBOutlet var sendButton: UIButton!
     
     /// 标题标签 - 换行的 热键 option(Alt)+回车
+    //逐行选中文本并且设置属性
+    //如果想要调整行间距 可以增加一个空行 设置空行的字体 lineHeight
     @IBOutlet var titleLabel: UILabel!
     
     //MARK:视图生命周期
