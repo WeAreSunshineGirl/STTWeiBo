@@ -22,8 +22,8 @@ class WBComposeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.cz_randomColor()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "退出", target: self, action: #selector(back))
+//        view.backgroundColor = UIColor.cz_randomColor()
+       setupUI()
 
     }
      @objc private func back(){
@@ -34,8 +34,46 @@ class WBComposeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
+    lazy var sendButton: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("发布", forState: .Normal)
+        btn.titleLabel?.font = UIFont.systemFontOfSize(14)
+        //设置标题颜色
+        btn.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        btn.setTitleColor(UIColor.grayColor(), forState: .Disabled)
+        
+        //设置背景图片
+        btn.setBackgroundImage(UIImage(named: "common_button_orange"), forState: .Normal)
+        btn.setBackgroundImage(UIImage(named: "common_button_orange_highlighted"), forState: .Highlighted)
+        btn.setBackgroundImage(UIImage(named: "common_button_white_disable"), forState: .Disabled)
+        //设置大小
+        btn.frame = CGRect(x: 0, y: 0, width: 45, height: 35)
+        return btn
+    }()
+}
+
+
+private extension WBComposeViewController{
     
-
-   
-
+    func setupUI() {
+        
+        view.backgroundColor = UIColor.whiteColor()
+        setupNavigationBar()
+    }
+    
+    /**
+     设置导航栏
+     */
+    func setupNavigationBar(){
+        
+        //设置关闭按钮
+         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "关闭", target: self, action: #selector(back))
+        
+        //设置发送按钮
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: sendButton)
+        
+        sendButton.enabled = false
+    }
 }
