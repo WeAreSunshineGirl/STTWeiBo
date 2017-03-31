@@ -57,8 +57,45 @@ private extension WBComposeViewController{
         
         view.backgroundColor = UIColor.whiteColor()
         setupNavigationBar()
+        setupToolBar()
     }
     
+    /**
+     设置工具栏
+     */
+    func setupToolBar(){
+        let itemSettings = [["imageName":"compose_toolbar_picture"],
+            ["imageName":"compose_mentionbutton_background"],
+            ["imageName":"compose_trendbutton_background"],
+            ["imageName":"compose_emoticonbutton_background"],
+            ["imageName":"compose_add_background"]]
+        
+        //遍历数组
+        var items = [UIBarButtonItem]()
+        for s in itemSettings {
+            let btn = UIButton()
+            guard let imageName = s["imageName"] else{
+                continue
+            }
+            let image = UIImage(named: imageName)
+            let imageHL = UIImage(named: imageName + "_highlighted")
+            btn.setImage(image, forState: .Normal)
+            btn.setImage(imageHL, forState: .Highlighted)
+            
+            btn.sizeToFit()
+            //追加按钮
+            items.append(UIBarButtonItem(customView: btn))
+            
+            //追加弹簧
+            items.append(UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil))
+            
+        }
+        //删除末位弹簧
+        items.removeLast()
+        
+        toolbar.items = items
+        
+    }
     /**
      设置导航栏
      */
