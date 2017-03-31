@@ -75,6 +75,7 @@
 		CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE808471E1DE762008CE0E5 /* STRefreshView.xib */; };
 		CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */; };
 		CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */; };
+		CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882571E8E444600FAA056 /* WBComposeTextView.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
 		CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */; };
@@ -170,6 +171,7 @@
 		CEE808471E1DE762008CE0E5 /* STRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRefreshView.xib; sourceTree = "<group>"; };
 		CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SThumRefreshView.xib; sourceTree = "<group>"; };
 		CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
+		CEF882571E8E444600FAA056 /* WBComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTextView.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
 		CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusNormalCell.xib; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		CE0718C71E1F702C004CD0E1 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
+				CEF882561E8E441E00FAA056 /* View */,
 				CE0718C81E1F702C004CD0E1 /* ComposeType */,
 				CE6062D41E27690200E53708 /* WBComposeViewController.swift */,
 				CE0AE1CF1E8DEDD80036A1B6 /* WBComposeViewController.xib */,
@@ -524,6 +527,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CEF882561E8E441E00FAA056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEF882571E8E444600FAA056 /* WBComposeTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CEFFF93C1E0906EA00842467 /* StatusCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +692,7 @@
 				CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */,
 				CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */,
 				CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */,
+				CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
 				CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */,
