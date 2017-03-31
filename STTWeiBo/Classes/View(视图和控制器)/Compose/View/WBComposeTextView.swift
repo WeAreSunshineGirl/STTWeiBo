@@ -32,7 +32,6 @@ class WBComposeTextView: UITextView {
     }
 }
 
-
 private extension WBComposeTextView{
     
     func setupUI(){

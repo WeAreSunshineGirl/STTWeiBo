@@ -96,7 +96,15 @@ class WBComposeViewController: UIViewController {
     }
 }
 
-
+extension WBComposeViewController:UITextViewDelegate{
+    /**
+     文本视图文字变化
+    */
+    func textViewDidChange(textView: UITextView) {
+        
+        sendButton.enabled = textView.hasText()
+    }
+}
 private extension WBComposeViewController{
     
     func setupUI() {
