@@ -44,9 +44,15 @@ class WBComposeViewController: UIViewController {
          4 发送通知的对象 如果是nil 监听所有的对象
          */
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyBoardChanged), name: UIKeyboardWillChangeFrameNotification, object: nil)
+        
 
     }
  
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        textView.resignFirstResponder()
+    }
     //MARK: 键盘监听方法
     @objc func keyBoardChanged(n:NSNotification){
         print(n)
