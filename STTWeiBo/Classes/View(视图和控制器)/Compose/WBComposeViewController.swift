@@ -9,8 +9,16 @@
 import UIKit
 
 /// 撰写微博控制器
+/*
+ 加载视图控制器的时候 如果XIB 和控制器同名 默认的构造函数 会优先加载 XIB
+ 
+ */
 class WBComposeViewController: UIViewController {
-
+    
+    /// 文本编辑视图
+    @IBOutlet weak var textView: UITextView!
+    /// 底部工具栏
+    @IBOutlet weak var toolbar: UIToolbar!
     override func viewDidLoad() {
         super.viewDidLoad()
         

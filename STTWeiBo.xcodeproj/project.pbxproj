@@ -46,6 +46,7 @@
 		CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843B91DEFCC8200BD8168 /* UIView+CZAddition.m */; };
 		CE0843C71DEFCC8200BD8168 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */; };
 		CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */; };
+		CE0AE1D01E8DEDD80036A1B6 /* WBComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0AE1CF1E8DEDD80036A1B6 /* WBComposeViewController.xib */; };
 		CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */; };
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
 		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
@@ -140,6 +141,7 @@
 		CE0843C81DEFCC8E00BD8168 /* UIColor+Backcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Backcolor.h"; sourceTree = "<group>"; };
 		CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Backcolor.m"; sourceTree = "<group>"; };
 		CE0843CC1DEFCDA900BD8168 /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
+		CE0AE1CF1E8DEDD80036A1B6 /* WBComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeViewController.xib; sourceTree = "<group>"; };
 		CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				CE0718C81E1F702C004CD0E1 /* ComposeType */,
 				CE6062D41E27690200E53708 /* WBComposeViewController.swift */,
+				CE0AE1CF1E8DEDD80036A1B6 /* WBComposeViewController.xib */,
 			);
 			path = Compose;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */,
 				CE0718D01E1F850B004CD0E1 /* WBComposeTypeButton.xib in Resources */,
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
+				CE0AE1D01E8DEDD80036A1B6 /* WBComposeViewController.xib in Resources */,
 				CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */,
 				CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */,
 				CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */,
