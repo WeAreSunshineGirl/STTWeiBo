@@ -79,21 +79,37 @@ extension WBNetworkManager{
     /**
      发布微博
      
-     - parameter text:       <#text description#>
-     - parameter completion: <#completion description#>
+     - parameter text:       要发布的文本
+     - parameter iamge:       要上传的图像  为nil 时 发布纯文本
+     - parameter completion: 完成回调
      */
-    func postStatus(text:String,completion:(result:[String:AnyObject]?,isSuccess:Bool)->())->(){
+    func postStatus(text:String,image:UIImage?,completion:(result:[String:AnyObject]?,isSuccess:Bool)->())->(){
         
         // 1 url
-        let urlString = "https://api.weibo.com/2/statuses/update.json"
+        let urlString:String
+        // 根据是否有图像  选择不同的接口地址
+        if image == nil {
+            urlString = "https://api.weibo.com/2/statuses/update.json"
+        }else{
+            urlString =  "https://upload.api.weibo.com/2/statuses/upload.json"
+        }
         
         //2 参数字典
         let params = ["status":text]
-        // 3 发起网络请求
-        tokenRequest(.POST, URLString: urlString, parameters: params) { (json, isSuccess) in
-            
-            completion(result: json as? [String:AnyObject], isSuccess: isSuccess)
+        
+        // 3 如果图像不为空 需要设置 name 和 data
+        var name:String?
+        var data:NSData?
+        
+        if image != nil {
+            name = "pic"
+            data = UIImagePNGRepresentation(image!)
         }
+        // 3 发起网络请求
+        tokenRequest(.POST, URLString: urlString, parameters: params, name: name, data: data) { (json, isSuccess) in
+              completion(result: json as? [String:AnyObject], isSuccess: isSuccess)
+        }
+        
     }
     
     

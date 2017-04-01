@@ -96,7 +96,9 @@ class WBComposeViewController: UIViewController {
             return
         }
         // 2 发布微博
-        WBNetworkManager.shared.postStatus(text) { (result, isSuccess) in
+        //FIXME:临时测试发带图片的微博
+        let image:UIImage? = nil// UIImage(named: "1")
+        WBNetworkManager.shared.postStatus(text,image: image) { (result, isSuccess) in
             
             print(result)
             //修改指示器样式
