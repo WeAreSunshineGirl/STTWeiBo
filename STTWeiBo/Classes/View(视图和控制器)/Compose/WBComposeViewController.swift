@@ -89,6 +89,18 @@ class WBComposeViewController: UIViewController {
     @IBAction func postStatus() {
         
         print("发布微博")
+        
+        // 1 获取微博文字
+        guard let text = textView.text else{
+            return
+        }
+        // 2 发布微博
+        WBNetworkManager.shared.postStatus(text) { (result, isSuccess) in
+            
+            print(result)
+        }
+        
+        
     }
     ///关闭按钮方法
      @objc private func back(){
