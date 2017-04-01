@@ -32,6 +32,9 @@
                 </textView>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1Z-4t-ZgW">
                     <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HNV-c0-SBc"/>
+                    </constraints>
                     <items/>
                 </toolbar>
             </subviews>
@@ -46,7 +49,7 @@
                 <constraint firstAttribute="bottom" secondItem="s1Z-4t-ZgW" secondAttribute="bottom" id="zE8-6L-IBq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="378.5" y="130.5"/>
+            <point key="canvasLocation" x="259.5" y="124.5"/>
         </view>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E69-YX-JrJ">
             <rect key="frame" x="0.0" y="0.0" width="44" height="34"/>
@@ -60,7 +63,7 @@
             <connections>
                 <action selector="postStatus" destination="-1" eventType="touchUpInside" id="NN1-9h-FVb"/>
             </connections>
-            <point key="canvasLocation" x="-96" y="457"/>
+            <point key="canvasLocation" x="-94" y="530"/>
         </button>
         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="awg-v9-sWL">
             <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
@@ -109,7 +112,7 @@ Cg
                 </fragment>
             </attributedString>
             <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="23" y="461.5"/>
+            <point key="canvasLocation" x="24" y="534.5"/>
         </label>
     </objects>
     <resources>

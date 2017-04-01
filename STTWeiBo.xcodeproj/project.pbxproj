@@ -64,6 +64,8 @@
 		CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */; };
 		CE1F7BFE1E14AB03000D8D23 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = CE1F7BFD1E14AB03000D8D23 /* demo.json */; };
 		CE20E04D1E0CFDF500ED3D2A /* WBStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20E04C1E0CFDF500ED3D2A /* WBStatusPictureView.swift */; };
+		CE215B341E8F98CE002BC01A /* WBComposeVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE215B321E8F98CE002BC01A /* WBComposeVController.swift */; };
+		CE215B351E8F98CE002BC01A /* WBComposeVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE215B331E8F98CE002BC01A /* WBComposeVController.xib */; };
 		CE2C16EF1E1B8BBD00964736 /* STRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */; };
 		CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2D14BF1E120E5E004F974D /* WBStatusRetweetedCell.xib */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
@@ -159,6 +161,8 @@
 		CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		CE1F7BFD1E14AB03000D8D23 /* demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
 		CE20E04C1E0CFDF500ED3D2A /* WBStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPictureView.swift; sourceTree = "<group>"; };
+		CE215B321E8F98CE002BC01A /* WBComposeVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WBComposeVController.swift; path = View/WBComposeVController.swift; sourceTree = "<group>"; };
+		CE215B331E8F98CE002BC01A /* WBComposeVController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WBComposeVController.xib; path = View/WBComposeVController.xib; sourceTree = "<group>"; };
 		CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRefreshControl.swift; sourceTree = "<group>"; };
 		CE2D14BF1E120E5E004F974D /* WBStatusRetweetedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusRetweetedCell.xib; sourceTree = "<group>"; };
 		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 		CE0718C71E1F702C004CD0E1 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
+				CE215B321E8F98CE002BC01A /* WBComposeVController.swift */,
+				CE215B331E8F98CE002BC01A /* WBComposeVController.xib */,
 				CEF882561E8E441E00FAA056 /* View */,
 				CE0718C81E1F702C004CD0E1 /* ComposeType */,
 				CE6062D41E27690200E53708 /* WBComposeViewController.swift */,
@@ -624,6 +630,7 @@
 				CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */,
 				CE1F7BFE1E14AB03000D8D23 /* demo.json in Resources */,
 				CE0843761DEFC43D00BD8168 /* Assets.xcassets in Resources */,
+				CE215B351E8F98CE002BC01A /* WBComposeVController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +719,7 @@
 				CE0843C21DEFCC8200BD8168 /* UIButton+CZAddition.m in Sources */,
 				CE111F7C1E0BB01F00CA5061 /* UIImageView+WebImage.swift in Sources */,
 				CEFFF9441E09147700842467 /* WBUser.swift in Sources */,
+				CE215B341E8F98CE002BC01A /* WBComposeVController.swift in Sources */,
 				CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */,
 				CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */,
 				CE0843C51DEFCC8200BD8168 /* UIScreen+CZAddition.m in Sources */,

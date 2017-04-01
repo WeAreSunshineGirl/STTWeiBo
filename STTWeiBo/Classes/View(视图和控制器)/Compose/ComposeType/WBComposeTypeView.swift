@@ -19,8 +19,8 @@ class WBComposeTypeView: UIView {
     //返回前一页按钮
     @IBOutlet weak var returnButton: UIButton!
     
-    private let buttonInfos = [["imageName":"tabbar_compose_idea","title":"文字","clsName":"WBComposeViewController"],
-                               ["imageName":"tabbar_compose_photo","title":"照片/视频"],
+    private let buttonInfos = [["imageName":"tabbar_compose_idea","title":"文字","clsName":"WBComposeVController"],
+                               ["imageName":"tabbar_compose_photo","title":"照片/视频",],
                                ["imageName":"tabbar_compose_weibo","title":"长微博"],
                                ["imageName":"tabbar_compose_lbs","title":"签到"],
                                ["imageName":"tabbar_compose_review","title":"点评"],

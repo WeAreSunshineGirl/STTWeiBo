@@ -17,7 +17,8 @@ import SVProgressHUD
 class WBComposeViewController: UIViewController {
     
     /// 文本编辑视图
-    @IBOutlet weak var textView: UITextView!
+//    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textView: WBComposeTextView!
     /// 底部工具栏
     @IBOutlet weak var toolbar: UIToolbar!
     
@@ -128,9 +129,9 @@ class WBComposeViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-//    deinit{
-//        NSNotificationCenter.defaultCenter().removeObserver(self)
-//    }
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
     /**
      切换表情键盘
      */
