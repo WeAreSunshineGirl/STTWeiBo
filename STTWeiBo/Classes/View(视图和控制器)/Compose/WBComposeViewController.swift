@@ -128,8 +128,14 @@ class WBComposeViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    deinit{
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+//    deinit{
+//        NSNotificationCenter.defaultCenter().removeObserver(self)
+//    }
+    /**
+     切换表情键盘
+     */
+    @objc private func emoticonKeyboard(){
+        
     }
 }
 
@@ -172,7 +178,7 @@ private extension WBComposeViewController{
         let itemSettings = [["imageName":"compose_toolbar_picture"],
             ["imageName":"compose_mentionbutton_background"],
             ["imageName":"compose_trendbutton_background"],
-            ["imageName":"compose_emoticonbutton_background"],
+            ["imageName":"compose_emoticonbutton_background","actionName":"emoticonKeyboard"],
             ["imageName":"compose_add_background"]]
         
         //遍历数组
@@ -188,6 +194,13 @@ private extension WBComposeViewController{
             btn.setImage(imageHL, forState: .Highlighted)
             
             btn.sizeToFit()
+            
+            //判断actionName
+            if let actionName = s["actionName"]{
+                //给按钮添加此方法
+                btn.addTarget(self, action: Selector(actionName), forControlEvents: .TouchUpInside)
+            }
+            
             //追加按钮
             items.append(UIBarButtonItem(customView: btn))
             

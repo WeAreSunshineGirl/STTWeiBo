@@ -67,7 +67,6 @@
 		CE2C16EF1E1B8BBD00964736 /* STRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */; };
 		CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2D14BF1E120E5E004F974D /* WBStatusRetweetedCell.xib */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
-		CE6062D51E27690200E53708 /* WBComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6062D41E27690200E53708 /* WBComposeViewController.swift */; };
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
@@ -697,7 +696,6 @@
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
 				CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */,
 				CE08439B1DEFCAF000BD8168 /* WBDiscoverViewController.swift in Sources */,
-				CE6062D51E27690200E53708 /* WBComposeViewController.swift in Sources */,
 				CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */,
 				CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */,
 				CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */,
