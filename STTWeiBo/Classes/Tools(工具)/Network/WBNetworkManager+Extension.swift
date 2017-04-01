@@ -95,6 +95,9 @@ extension WBNetworkManager{
             completion(result: json as? [String:AnyObject], isSuccess: isSuccess)
         }
     }
+    
+    
+    
 }
 // MARK: - 用户信息
 extension WBNetworkManager{

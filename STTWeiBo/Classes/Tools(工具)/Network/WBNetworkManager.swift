@@ -94,6 +94,38 @@ class WBNetworkManager: AFHTTPSessionManager {
         
     }
     
+    /**
+     封装 AFN 的 上传文件方法
+     必须是POST 方法 GET只能获取参数
+     
+     - parameter urlString:  urlString
+     - parameter parameters: 参数字典
+     - parameter name:  接收上传数据的服务器字段（name - 要咨询公司的后台）'pic'
+     - parameter data:       要上传二进制数据
+     - parameter completion: 完成回调
+     */
+    func upload(urlString:String,parameters:[String:AnyObject]?,name:String,data:NSData,completion:(json:AnyObject?,isSuccess:Bool)->()){
+        
+        //调用AFN的POST方法
+        POST(urlString, parameters: parameters, constructingBodyWithBlock: { (formData) in
+            //FIXME:创建 formData
+            
+            }, progress: nil, success: { (_, json) in
+                
+                completion(json: json, isSuccess: true)
+                
+            }) { (task, error) in
+                if (task?.response as? NSHTTPURLResponse)?.statusCode == 403{
+                    
+                    print("token 过期了")
+                    // 发送通知，提示用户再次登录（本方法不知道被谁调用 谁接收到通知 谁处理）
+                    NSNotificationCenter.defaultCenter().postNotificationName(WBUserShouldLoginNotification, object: "bad token")
+                }
+                //error 通常比较吓人 例如编号：XXXX 错误原因一堆英文
+                print("网络请求错误\(error)")
+                completion(json: nil, isSuccess: false)
+        }
+    }
     
     
     /**
