@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 /// 撰写微博控制器
 /*
@@ -98,6 +99,23 @@ class WBComposeViewController: UIViewController {
         WBNetworkManager.shared.postStatus(text) { (result, isSuccess) in
             
             print(result)
+            //修改指示器样式
+            SVProgressHUD.setDefaultStyle(.Dark)
+            let message = isSuccess ? "发布成功" : "网络不给力"
+            SVProgressHUD.showInfoWithStatus(message)
+            
+            //如果成功 延迟一段时间关闭当前窗口
+            //            dispatch_time(DISPATCH_TIME_NOW, Int64(1 * NSEC_PER_SEC)
+            if isSuccess{
+                let when = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * NSEC_PER_SEC))
+                dispatch_after(when, dispatch_get_main_queue(), {
+                    
+                    //恢复样式
+                    SVProgressHUD.setDefaultStyle(.Light)
+                    self.back()
+                })
+            }
+        
         }
         
         
