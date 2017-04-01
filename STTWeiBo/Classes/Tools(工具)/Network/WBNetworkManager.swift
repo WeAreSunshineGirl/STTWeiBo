@@ -59,11 +59,18 @@ class WBNetworkManager: AFHTTPSessionManager {
         return userAccount.access_token != nil
     }
     
-    
+    //MARK:专门负责拼接 token 的网络请求方法
     /**
      专门负责拼接 token 的网络请求方法
+     
+     - parameter method:     GET/POST
+     - parameter URLString:  URLString
+     - parameter parameters: 参数字典
+     - parameter name:       上传文件使用的字段名 默认为 nil 就不是上传文件
+     - parameter data:       上传文件的二进制数据 默认为 nil 就不是上传文件
+     - parameter completion: 完成回调
      */
-    func tokenRequest(method:WBHTTPMethod = .GET,URLString: String,parameters:[String:AnyObject]?,completion:(json:AnyObject?,isSuccess:Bool)->()) {
+    func tokenRequest(method:WBHTTPMethod = .GET,URLString: String,parameters:[String:AnyObject]?,name:String? = nil ,data:NSData? = nil,completion:(json:AnyObject?,isSuccess:Bool)->()) {
         
         //处理Token字典
         // 0判断 token 是否 为nil  为 nil时 直接返回 程序执行过程中一般Token不会为nil
@@ -88,12 +95,18 @@ class WBNetworkManager: AFHTTPSessionManager {
         // 2设置参数字典 代码在此处 字典一定有值
         parameters!["access_token"] = token
         
-        //调用 request 发起真正的网络请求方法
-//       request(URLString: URLString, parameters: parameters, completion: completion)//此处是默认的 GET 请求方法
-        request(method, URLString: URLString, parameters: parameters, completion: completion)
+        // 3 判断 name 和 data
+        if let name = name,data = data {
+            upload(URLString, parameters: parameters, name: name, data: data, completion: completion)
+        }else{
+            //调用 request 发起真正的网络请求方法
+            //       request(URLString: URLString, parameters: parameters, completion: completion)//此处是默认的 GET 请求方法
+            request(method, URLString: URLString, parameters: parameters, completion: completion)
+        }
         
     }
-    
+    //MARK:封装AFN 方法
+    //MARK: 封装 AFN 的 上传文件方法
     /**
      封装 AFN 的 上传文件方法
      必须是POST 方法 GET只能获取参数
@@ -137,7 +150,7 @@ class WBNetworkManager: AFHTTPSessionManager {
         }
     }
     
-    
+    //MARK:函数封装 AFN 的 GET  / POST 请求
     /**
      使用一个函数封装 AFN 的 GET  / POST 请求
      
