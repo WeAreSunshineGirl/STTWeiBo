@@ -53,10 +53,29 @@ private extension STEmoticonToolbar{
             btn.setTitleColor(UIColor.darkGrayColor(), forState: .Highlighted)
             btn.setTitleColor(UIColor.darkGrayColor(), forState: .Selected)
             
-            btn.backgroundColor = UIColor.blueColor()
+        
+            // 3 设置按钮图片
+            let imageName = "common_emotion_table_\(p.bgImageName ?? "")_normal"
+            let imageNameHL = "common_emotion_table_\(p.bgImageName ?? "")_selected"
+            
+            
+            var image = UIImage(named: imageName, inBundle: manager.bundle, compatibleWithTraitCollection: nil)
+            var imageHL = UIImage(named: imageNameHL, inBundle: manager.bundle, compatibleWithTraitCollection: nil)
+
+            //拉伸图像
+            let size = image?.size ?? CGSize()
+            
+            let inset = UIEdgeInsetsMake(size.height * 0.5, size.width * 0.5, size.height * 0.5, size.width * 0.5)
+            image = image?.resizableImageWithCapInsets(inset)
+            
+            imageHL = imageHL?.resizableImageWithCapInsets(inset)
+            
+            btn.setBackgroundImage(image, forState: .Normal)
+            btn.setBackgroundImage(imageHL, forState: .Selected)
+            btn.setBackgroundImage(imageHL, forState: .Highlighted)
             
             btn.sizeToFit()
-            // 3  添加按钮
+            // 4  添加按钮
             addSubview(btn)
         }
     }
