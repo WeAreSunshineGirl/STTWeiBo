@@ -68,6 +68,7 @@
 		CE215B351E8F98CE002BC01A /* WBComposeVController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE215B331E8F98CE002BC01A /* WBComposeVController.xib */; };
 		CE2C16EF1E1B8BBD00964736 /* STRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */; };
 		CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2D14BF1E120E5E004F974D /* WBStatusRetweetedCell.xib */; };
+		CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6062D41E27690200E53708 /* WBComposeViewController.swift */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
@@ -243,8 +244,7 @@
 		CE0718C71E1F702C004CD0E1 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
-				CE215B321E8F98CE002BC01A /* WBComposeVController.swift */,
-				CE215B331E8F98CE002BC01A /* WBComposeVController.xib */,
+				CE3785621E94814E00C64FFD /* BackCompose */,
 				CEF882561E8E441E00FAA056 /* View */,
 				CE0718C81E1F702C004CD0E1 /* ComposeType */,
 				CE6062D41E27690200E53708 /* WBComposeViewController.swift */,
@@ -465,6 +465,15 @@
 				CE0718C41E1F4211004CD0E1 /* STMeituanRefreshView.xib */,
 			);
 			path = STRefreshControl;
+			sourceTree = "<group>";
+		};
+		CE3785621E94814E00C64FFD /* BackCompose */ = {
+			isa = PBXGroup;
+			children = (
+				CE215B331E8F98CE002BC01A /* WBComposeVController.xib */,
+				CE215B321E8F98CE002BC01A /* WBComposeVController.swift */,
+			);
+			name = BackCompose;
 			sourceTree = "<group>";
 		};
 		CE3AE2E61DF159960082A19E /* 主控制器 */ = {
@@ -742,6 +751,7 @@
 				CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */,
 				CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */,
 				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
+				CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */,
 				CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */,
 				CEFFF9461E091BB400842467 /* WBStatusViewModel.swift in Sources */,
 				CE111F7E1E0BBF1300CA5061 /* WBStatusToolBar.swift in Sources */,

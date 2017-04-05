@@ -123,6 +123,21 @@ class WBComposeViewController: UIViewController {
         
         
     }
+    //切换表情键盘
+    @objc private func emoticonKeyboard(){
+        //textView.inputView 就是系统的输入视图
+        //如果使用系统默认的键盘 输入视图为 nil
+        
+        //1>测试键盘视图 视图的宽度可以随便 就是屏幕的宽度
+        let keyboardView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 253))
+        keyboardView.backgroundColor = UIColor.blueColor()
+        // 2>设置键盘视图
+        textView.inputView = (textView.inputView == nil) ? keyboardView : nil
+        
+        // 3>刷新键盘视图
+        textView.reloadInputViews()
+    }
+
     ///关闭按钮方法
      @objc private func back(){
         
@@ -132,12 +147,7 @@ class WBComposeViewController: UIViewController {
     deinit{
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
-    /**
-     切换表情键盘
-     */
-    @objc private func emoticonKeyboard(){
-        
-    }
+
 }
 
 

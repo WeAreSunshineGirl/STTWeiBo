@@ -49,7 +49,7 @@
                 <constraint firstAttribute="bottom" secondItem="s1Z-4t-ZgW" secondAttribute="bottom" id="zE8-6L-IBq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="259.5" y="124.5"/>
+            <point key="canvasLocation" x="156.5" y="116.5"/>
         </view>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E69-YX-JrJ">
             <rect key="frame" x="0.0" y="0.0" width="44" height="34"/>
