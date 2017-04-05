@@ -18,6 +18,16 @@ class STEmoticonManager {
     /// 表情包的懒加载数组
     lazy var packages = [STEmoticonPackage]()
     
+    /// 表情素材的 bundle
+    lazy var bundle:NSBundle = {
+        
+        let path = NSBundle.mainBundle().pathForResource("EmotionIcons.bundle", ofType: nil)
+        
+        let  bundle = NSBundle(path: path!)
+        
+        return bundle!
+    }()
+    
     //构造函数 如果在init之前增加 private 修饰符 可以要求调用者必须通过 shared 访问对象
     //OC 要重写 allocWithZone方法 把单例锁住
     private init(){
