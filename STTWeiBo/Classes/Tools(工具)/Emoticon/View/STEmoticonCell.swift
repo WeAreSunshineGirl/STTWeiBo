@@ -24,6 +24,8 @@ class STEmoticonCell: UICollectionViewCell {
             for v in contentView.subviews {
                 v.hidden = true
             }
+            //显示删除按钮
+            contentView.subviews.last?.hidden = false
             
             // 2 遍历表情模型数组 设置按钮图像
             for (i,em) in (emoticons ?? []).enumerate() {
@@ -31,10 +33,10 @@ class STEmoticonCell: UICollectionViewCell {
                 // 1 取出按钮
                 if let btn = contentView.subviews[i] as? UIButton{
                     
-                    //设置图像
+                    //设置图像 - 如果图像为nil 会清空图像 避免复用
                     btn.setImage(em.image, forState: .Normal)
                     
-                    //设置emoji 的字符串
+                    //设置emoji 的字符串 - 如果 emoji为 nil 会清空title 避免复用
                     btn.setTitle(em.emoji, forState: .Normal)
                     
                     btn.hidden = false
@@ -101,6 +103,14 @@ private extension STEmoticonCell{
             // 设置按钮的字体大小  lineHeight 基本上和图片的大小差不多
             btn.titleLabel?.font = UIFont.systemFontOfSize(32)
         }
+        
+        //取出 末尾的 删除按钮
+        let removeButton = contentView.subviews.last as! UIButton
+        //设置图像
+        let imageHL = UIImage(named: "compose_emotion_delete_highlighted", inBundle: STEmoticonManager.shared.bundle, compatibleWithTraitCollection: nil)
+          let image = UIImage(named: "compose_emotion_delete", inBundle: STEmoticonManager.shared.bundle, compatibleWithTraitCollection: nil)
+        removeButton.setImage(image, forState: .Normal)
+        removeButton.setImage(imageHL, forState: .Highlighted)
         
     }
 }
