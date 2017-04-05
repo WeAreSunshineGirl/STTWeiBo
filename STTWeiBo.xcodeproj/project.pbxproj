@@ -70,9 +70,6 @@
 		CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2D14BF1E120E5E004F974D /* WBStatusRetweetedCell.xib */; };
 		CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6062D41E27690200E53708 /* WBComposeViewController.swift */; };
 		CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */; };
-		CE472FA91E949905000F7966 /* STEmoticonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE472FA61E949905000F7966 /* STEmoticonInputView.swift */; };
-		CE472FAA1E949905000F7966 /* STEmoticonInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE472FA71E949905000F7966 /* STEmoticonInputView.xib */; };
-		CE472FAB1E949905000F7966 /* STEmoticonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE472FA81E949905000F7966 /* STEmoticonToolbar.swift */; };
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
@@ -170,9 +167,6 @@
 		CE2C16EE1E1B8BBD00964736 /* STRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRefreshControl.swift; sourceTree = "<group>"; };
 		CE2D14BF1E120E5E004F974D /* WBStatusRetweetedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusRetweetedCell.xib; sourceTree = "<group>"; };
 		CE4315AA1DF6637E005F7199 /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
-		CE472FA61E949905000F7966 /* STEmoticonInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonInputView.swift; sourceTree = "<group>"; };
-		CE472FA71E949905000F7966 /* STEmoticonInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STEmoticonInputView.xib; sourceTree = "<group>"; };
-		CE472FA81E949905000F7966 /* STEmoticonToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonToolbar.swift; sourceTree = "<group>"; };
 		CE6062D41E27690200E53708 /* WBComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeViewController.swift; sourceTree = "<group>"; };
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
 		CE8454CB1DF008E40062478F /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
@@ -223,7 +217,6 @@
 		CE04E12E1E8CA29D00FB0E9C /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
-				CE472FA51E949905000F7966 /* View */,
 				CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */,
 				CE04E1301E8CA29D00FB0E9C /* Model */,
 				CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */,
@@ -519,16 +512,6 @@
 			path = VisitorView;
 			sourceTree = "<group>";
 		};
-		CE472FA51E949905000F7966 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CE472FA61E949905000F7966 /* STEmoticonInputView.swift */,
-				CE472FA71E949905000F7966 /* STEmoticonInputView.xib */,
-				CE472FA81E949905000F7966 /* STEmoticonToolbar.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		CE8454C51DEFF8A70062478F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -652,7 +635,6 @@
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
 				CE0AE1D01E8DEDD80036A1B6 /* WBComposeViewController.xib in Resources */,
 				CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */,
-				CE472FAA1E949905000F7966 /* STEmoticonInputView.xib in Resources */,
 				CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */,
 				CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */,
 				CE1F7BFE1E14AB03000D8D23 /* demo.json in Resources */,
@@ -724,7 +706,6 @@
 				CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */,
 				CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */,
 				CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */,
-				CE472FA91E949905000F7966 /* STEmoticonInputView.swift in Sources */,
 				CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */,
 				CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
@@ -768,7 +749,6 @@
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
 				CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */,
-				CE472FAB1E949905000F7966 /* STEmoticonToolbar.swift in Sources */,
 				CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */,
 				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
 				CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */,

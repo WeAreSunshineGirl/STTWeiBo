@@ -33,13 +33,50 @@ class STEmoticonPackage: NSObject {
             //设置表情模型数组
             emoticons += models
 //            print(models)
+//            print("------- \(emoticons)")
+//            print("111111 \(emoticons.count)")
         }
-            
+        
     }
     
+    /// 表情页面的数量
+    var numberOfPages :Int{
+        return (emoticons.count-1) / 20 + 1
+    }
+    
+  
     ///懒加载的表情模型的空数组
     /// 使用懒加载可以避免后续的解包
     lazy var emoticons = [STEmoticon]()
+    
+    /**
+     从懒加载的表情包中 按照 page 截取最多 20 个表情模型的数组
+     - parameter page: 页数
+     - returns: 返回的表情模型数组
+     例如 有 26个表情
+     page= 0  返回0-19个模型
+     page=1   返回20-25个模型
+     */
+    func emoticon(page:Int)->[STEmoticon]{
+        
+        //每页的数量
+        let count = 20
+        let location = page * count
+        var length = count
+        
+        //判断数组是否越界
+        if location + length > emoticons.count {
+            
+            length = emoticons.count - location
+        }
+        
+        let range = NSRange(location: location,length: length)
+        //截取数组的子数组
+        let subArray = (emoticons as NSArray).subarrayWithRange(range)
+        
+        return subArray as! [STEmoticon]
+    }
+    
     
     override var description: String{
         return yy_modelDescription()
