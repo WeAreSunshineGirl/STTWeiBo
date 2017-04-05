@@ -31,7 +31,11 @@ class STEmoticonCell: UICollectionViewCell {
                 // 1 取出按钮
                 if let btn = contentView.subviews[i] as? UIButton{
                     
+                    //设置图像
                     btn.setImage(em.image, forState: .Normal)
+                    
+                    //设置emoji 的字符串
+                    btn.setTitle(em.emoji, forState: .Normal)
                     
                     btn.hidden = false
                 }
@@ -90,9 +94,12 @@ private extension STEmoticonCell{
             
             btn.frame = CGRect(x: x, y: y, width: w, height: h)
             
-            btn.backgroundColor = UIColor.redColor()
+//            btn.backgroundColor = UIColor.redColor()
             
             contentView.addSubview(btn)
+            
+            // 设置按钮的字体大小  lineHeight 基本上和图片的大小差不多
+            btn.titleLabel?.font = UIFont.systemFontOfSize(32)
         }
         
     }

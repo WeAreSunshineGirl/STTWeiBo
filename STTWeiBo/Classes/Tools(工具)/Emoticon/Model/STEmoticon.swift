@@ -19,7 +19,24 @@ class STEmoticon: NSObject {
     /// 表情图片名称 用于本地图文混排
     var png:String?
     /// emoji 的十六进制编码
-    var code:String?
+    var code:String?{
+        didSet{
+            guard let code = code else{
+                return
+            }
+             //实例化字符扫描
+            let scanner = NSScanner(string: code)
+            //从 code 中扫描中十六进制的数值
+            var result:UInt32 = 0
+            
+            scanner.scanHexInt(&result)
+            
+            let c = Character(UnicodeScalar(result))
+            emoji = String(c)
+        }
+    }
+    /// emoji的字符串
+    var emoji:String?
     
     /// 表情模型所在目录  方便获取图像
     var directory:String?
