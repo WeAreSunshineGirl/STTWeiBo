@@ -66,7 +66,12 @@ class STEmoticon: NSObject {
             return NSAttributedString(string: "")
         }
         // 2 创建文本附件
-        let attach = NSTextAttachment()
+//        let attach = NSTextAttachment()
+        let attach = STEmoticonAttachment()
+        
+        //记录属性文本文字
+        attach.chs = chs
+        
         attach.image = image
         let height = font.lineHeight
         attach.bounds = CGRect(x: 0, y: -4, width: height, height: height)
