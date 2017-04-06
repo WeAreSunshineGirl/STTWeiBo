@@ -71,8 +71,13 @@ class STEmoticon: NSObject {
         let height = font.lineHeight
         attach.bounds = CGRect(x: 0, y: -4, width: height, height: height)
         
-        //直接返回当前表情模型对应的属性文本
-        return NSAttributedString(attachment: attach)
+        // 3直接返回当前表情模型对应的属性文本
+        let attrStrM = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attach))
+        //设置字体属性
+        attrStrM.addAttributes([NSFontAttributeName:font], range: NSRange(location: 0, length: 1))
+        
+        // 4返回属性文本
+        return attrStrM
     }
     override var description: String{
         
