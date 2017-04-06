@@ -16,7 +16,8 @@ import FMDB
     FMDB - 队列
  2 创建数据表
  3 增删改查
- 
+  提示：数据库开发 程序代码几乎都是一致的 区别在SQL
+ 开发数据库功能的时候 首先一定要在 navicat 中测试SQL的正确性
  */
 class STSQLiteManager{
     
@@ -44,6 +45,35 @@ class STSQLiteManager{
     
 }
 
+
+// MARK: - 微博数据操作
+extension STSQLiteManager{
+    
+    /*
+     思考：从网络加载结束后 返回的是微博的 ‘字典数组’ 每一个字典对应一个完整的微博记录
+     -完整的微博记录 包含微博的代号
+     -微博记录中 没有 ’当前登录的用户代号‘
+     */
+    /**
+     新增或者修改微博数据 微博数据在刷新的时候 可能会出现重叠
+     - parameter userId: 当前登录用户的 Id
+     - parameter array:  从网络获取的 ‘字典的数组’
+     */
+    func updateStatus(userId:String,array:[[String:AnyObject]]){
+        
+        // 1 准备 SQL
+        /*
+         statusId 要保存的微博代号
+         userId 当前登录用户的 id
+         status 完整微博字典的 json 二进制数据
+         */
+        let sql = "INSERT INTO T_Status (statusId, userId, status) VALUES (?,?,?);"
+        
+        // 2 执行SQL
+    }
+    
+    
+}
 // MARK: - 创建数据表以及其他私有方法
 private extension STSQLiteManager{
     
@@ -60,6 +90,9 @@ private extension STSQLiteManager{
       // 2 执行 SQL - FMDB 的内部队列 串行队列，同步执行
         //可以保证同一时间，只有一个任务操作数据库， 从而保证数据库的读写安全
         queue.inDatabase { (db) in
+            
+            //只有在创表的时候 使用执行多条语句 可以一次创建多个数据表
+            //在执行增删改查的时候 一定不要使用 Statements 方法 否则有可能会被注入
             if  db?.executeStatements(sql) == true{
                 
                 print("创表成功")//先执行
