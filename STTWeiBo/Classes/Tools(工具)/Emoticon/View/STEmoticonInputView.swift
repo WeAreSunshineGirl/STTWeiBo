@@ -56,7 +56,17 @@ extension STEmoticonInputView:UICollectionViewDataSource{
         // 2 设置 cell - 传递对应页面的表情数组
         cell.emoticons = STEmoticonManager.shared.packages[indexPath.section].emoticon(indexPath.item)
         
+        
+        // 设置代理
+        cell.delegate = self
+        
         // 3 返回
         return cell
+    }
+}
+// MARK: - STEmoticonCellDelegate
+extension STEmoticonInputView:STEmoticonCellDelegate{
+    func emoticonCellDidSelectedEmoticon(cell: STEmoticonCell, em: STEmoticon?) {
+        print(em)
     }
 }

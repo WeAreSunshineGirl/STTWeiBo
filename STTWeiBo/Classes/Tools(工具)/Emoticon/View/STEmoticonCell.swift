@@ -95,7 +95,7 @@ class STEmoticonCell: UICollectionViewCell {
         }
         
         // 3 em 要么是选中的模型 如果为 nil 对应的是删除按钮
-        print(em)
+//        print(em)
         // 通知代理工作
         delegate?.emoticonCellDidSelectedEmoticon(self, em: em)
         
