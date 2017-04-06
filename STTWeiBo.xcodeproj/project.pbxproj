@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0900710F40F584B72CF5A7BB /* Pods_STTWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */; };
-		CE04E1341E8CA29D00FB0E9C /* EmotionIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */; };
-		CE04E1351E8CA29D00FB0E9C /* STEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */; };
-		CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */; };
-		CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */; };
 		CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E1591E8CE56800FB0E9C /* FFLabel.swift */; };
 		CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04E15B1E8CF03300FB0E9C /* WBWebViewController.swift */; };
 		CE0718C51E1F4211004CD0E1 /* STMeiTuanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */; };
@@ -73,6 +69,17 @@
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
+		CEDC2A301E95ED4900CF5837 /* EmotionIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */; };
+		CEDC2A311E95ED4900CF5837 /* STEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */; };
+		CEDC2A321E95ED4900CF5837 /* STEmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */; };
+		CEDC2A331E95ED4900CF5837 /* STEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A271E95ED4900CF5837 /* STEmoticonPackage.swift */; };
+		CEDC2A341E95ED4900CF5837 /* STEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A281E95ED4900CF5837 /* STEmoticonManager.swift */; };
+		CEDC2A351E95ED4900CF5837 /* STEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A2A1E95ED4900CF5837 /* STEmoticonCell.swift */; };
+		CEDC2A361E95ED4900CF5837 /* STEmoticonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2A2B1E95ED4900CF5837 /* STEmoticonCell.xib */; };
+		CEDC2A371E95ED4900CF5837 /* STEmoticonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A2C1E95ED4900CF5837 /* STEmoticonInputView.swift */; };
+		CEDC2A381E95ED4900CF5837 /* STEmoticonInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2A2D1E95ED4900CF5837 /* STEmoticonInputView.xib */; };
+		CEDC2A391E95ED4900CF5837 /* STEmoticonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A2E1E95ED4900CF5837 /* STEmoticonLayout.swift */; };
+		CEDC2A3A1E95ED4900CF5837 /* STEmoticonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A2F1E95ED4900CF5837 /* STEmoticonToolbar.swift */; };
 		CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE808461E1DE762008CE0E5 /* STRefreshView.swift */; };
 		CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE808471E1DE762008CE0E5 /* STRefreshView.xib */; };
 		CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */; };
@@ -89,10 +96,6 @@
 		3664F7D1121B599462CF78D3 /* Pods-STTWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		39DCCF117E8BCE01A84DE0D8 /* Pods-STTWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STTWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STTWeiBo/Pods-STTWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
 		55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STTWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionIcons.bundle; sourceTree = "<group>"; };
-		CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticon.swift; sourceTree = "<group>"; };
-		CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonPackage.swift; sourceTree = "<group>"; };
-		CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonManager.swift; sourceTree = "<group>"; };
 		CE04E1591E8CE56800FB0E9C /* FFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLabel.swift; sourceTree = "<group>"; };
 		CE04E15B1E8CF03300FB0E9C /* WBWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBWebViewController.swift; sourceTree = "<group>"; };
 		CE0718C31E1F4211004CD0E1 /* STMeiTuanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STMeiTuanRefreshView.swift; sourceTree = "<group>"; };
@@ -171,6 +174,17 @@
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
 		CE8454CB1DF008E40062478F /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionIcons.bundle; sourceTree = "<group>"; };
+		CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticon.swift; sourceTree = "<group>"; };
+		CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonAttachment.swift; sourceTree = "<group>"; };
+		CEDC2A271E95ED4900CF5837 /* STEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonPackage.swift; sourceTree = "<group>"; };
+		CEDC2A281E95ED4900CF5837 /* STEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonManager.swift; sourceTree = "<group>"; };
+		CEDC2A2A1E95ED4900CF5837 /* STEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonCell.swift; sourceTree = "<group>"; };
+		CEDC2A2B1E95ED4900CF5837 /* STEmoticonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STEmoticonCell.xib; sourceTree = "<group>"; };
+		CEDC2A2C1E95ED4900CF5837 /* STEmoticonInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonInputView.swift; sourceTree = "<group>"; };
+		CEDC2A2D1E95ED4900CF5837 /* STEmoticonInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STEmoticonInputView.xib; sourceTree = "<group>"; };
+		CEDC2A2E1E95ED4900CF5837 /* STEmoticonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonLayout.swift; sourceTree = "<group>"; };
+		CEDC2A2F1E95ED4900CF5837 /* STEmoticonToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonToolbar.swift; sourceTree = "<group>"; };
 		CEE808461E1DE762008CE0E5 /* STRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRefreshView.swift; sourceTree = "<group>"; };
 		CEE808471E1DE762008CE0E5 /* STRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRefreshView.xib; sourceTree = "<group>"; };
 		CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SThumRefreshView.xib; sourceTree = "<group>"; };
@@ -212,25 +226,6 @@
 				55E5156D6C093E6194A5A260 /* Pods_STTWeiBo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE04E12E1E8CA29D00FB0E9C /* Emoticon */ = {
-			isa = PBXGroup;
-			children = (
-				CE04E1331E8CA29D00FB0E9C /* STEmoticonManager.swift */,
-				CE04E1301E8CA29D00FB0E9C /* Model */,
-				CE04E12F1E8CA29D00FB0E9C /* EmotionIcons.bundle */,
-			);
-			path = Emoticon;
-			sourceTree = "<group>";
-		};
-		CE04E1301E8CA29D00FB0E9C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CE04E1311E8CA29D00FB0E9C /* STEmoticon.swift */,
-				CE04E1321E8CA29D00FB0E9C /* STEmoticonPackage.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		CE04E1581E8CE56800FB0E9C /* FFLabel */ = {
@@ -320,8 +315,8 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC2A221E95ED4900CF5837 /* Emoticon */,
 				CE04E1581E8CE56800FB0E9C /* FFLabel */,
-				CE04E12E1E8CA29D00FB0E9C /* Emoticon */,
 				CE2C16EB1E1B8B2000964736 /* STRefreshControl */,
 				CE15262D1DF949BF00149510 /* Network */,
 				CE8454C51DEFF8A70062478F /* Extensions */,
@@ -541,6 +536,40 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CEDC2A221E95ED4900CF5837 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */,
+				CEDC2A241E95ED4900CF5837 /* Model */,
+				CEDC2A281E95ED4900CF5837 /* STEmoticonManager.swift */,
+				CEDC2A291E95ED4900CF5837 /* View */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		CEDC2A241E95ED4900CF5837 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */,
+				CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */,
+				CEDC2A271E95ED4900CF5837 /* STEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEDC2A291E95ED4900CF5837 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2A2A1E95ED4900CF5837 /* STEmoticonCell.swift */,
+				CEDC2A2B1E95ED4900CF5837 /* STEmoticonCell.xib */,
+				CEDC2A2C1E95ED4900CF5837 /* STEmoticonInputView.swift */,
+				CEDC2A2D1E95ED4900CF5837 /* STEmoticonInputView.xib */,
+				CEDC2A2E1E95ED4900CF5837 /* STEmoticonLayout.swift */,
+				CEDC2A2F1E95ED4900CF5837 /* STEmoticonToolbar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CEF882561E8E441E00FAA056 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,13 +653,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1B9C531DFE75FD0085E831 /* main.json in Resources */,
+				CEDC2A381E95ED4900CF5837 /* STEmoticonInputView.xib in Resources */,
+				CEDC2A301E95ED4900CF5837 /* EmotionIcons.bundle in Resources */,
 				CE0843A11DEFCBD500BD8168 /* 2@3x.png in Resources */,
 				CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */,
-				CE04E1341E8CA29D00FB0E9C /* EmotionIcons.bundle in Resources */,
 				CE1887361E07844300420C0B /* WBNewFeatureView.xib in Resources */,
 				CE0718CC1E1F77D9004CD0E1 /* WBComposeTypeView.xib in Resources */,
 				CE1887341E07841A00420C0B /* WBWelcomeView.xib in Resources */,
 				CE0718C61E1F4211004CD0E1 /* STMeituanRefreshView.xib in Resources */,
+				CEDC2A361E95ED4900CF5837 /* STEmoticonCell.xib in Resources */,
 				CE0718D01E1F850B004CD0E1 /* WBComposeTypeButton.xib in Resources */,
 				CE08439D1DEFCB6500BD8168 /* Launch Screen.storyboard in Resources */,
 				CE0AE1D01E8DEDD80036A1B6 /* WBComposeViewController.xib in Resources */,
@@ -700,11 +731,15 @@
 			files = (
 				CE0843C31DEFCC8200BD8168 /* UIColor+CZAddition.m in Sources */,
 				CE0718CE1E1F84FB004CD0E1 /* WBComposeTypeButton.swift in Sources */,
+				CEDC2A3A1E95ED4900CF5837 /* STEmoticonToolbar.swift in Sources */,
+				CEDC2A311E95ED4900CF5837 /* STEmoticon.swift in Sources */,
 				CE15262F1DF94A0800149510 /* WBNetworkManager.swift in Sources */,
 				CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */,
 				CE1B26201E02260B0044B55C /* WBUserAccount.swift in Sources */,
 				CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */,
 				CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */,
+				CEDC2A371E95ED4900CF5837 /* STEmoticonInputView.swift in Sources */,
+				CEDC2A351E95ED4900CF5837 /* STEmoticonCell.swift in Sources */,
 				CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */,
 				CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */,
 				CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */,
@@ -714,7 +749,6 @@
 				CE08439B1DEFCAF000BD8168 /* WBDiscoverViewController.swift in Sources */,
 				CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */,
 				CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */,
-				CE04E1361E8CA29D00FB0E9C /* STEmoticonPackage.swift in Sources */,
 				CE0843C41DEFCC8200BD8168 /* UILabel+CZAddition.m in Sources */,
 				CE0843BD1DEFCC8200BD8168 /* NSAttributedString+CZAdditon.m in Sources */,
 				CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */,
@@ -722,6 +756,7 @@
 				CE0843BF1DEFCC8200BD8168 /* NSString+CZBase64.m in Sources */,
 				CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */,
 				CE0843931DEFCA9800BD8168 /* WBBaseViewController.swift in Sources */,
+				CEDC2A341E95ED4900CF5837 /* STEmoticonManager.swift in Sources */,
 				CE08438F1DEFCA6100BD8168 /* WBMainViewController.swift in Sources */,
 				CE2C16EF1E1B8BBD00964736 /* STRefreshControl.swift in Sources */,
 				CE0843951DEFCAD100BD8168 /* WBHomeViewController.swift in Sources */,
@@ -729,7 +764,6 @@
 				CE111F7C1E0BB01F00CA5061 /* UIImageView+WebImage.swift in Sources */,
 				CEFFF9441E09147700842467 /* WBUser.swift in Sources */,
 				CE215B341E8F98CE002BC01A /* WBComposeVController.swift in Sources */,
-				CE04E1371E8CA29D00FB0E9C /* STEmoticonManager.swift in Sources */,
 				CE4315AB1DF6637E005F7199 /* WBVisitorView.swift in Sources */,
 				CE0843C51DEFCC8200BD8168 /* UIScreen+CZAddition.m in Sources */,
 				CE08436F1DEFC43D00BD8168 /* AppDelegate.swift in Sources */,
@@ -743,17 +777,19 @@
 				CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */,
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
 				CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */,
+				CEDC2A391E95ED4900CF5837 /* STEmoticonLayout.swift in Sources */,
 				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
-				CE04E1351E8CA29D00FB0E9C /* STEmoticon.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
 				CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */,
 				CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */,
 				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
+				CEDC2A321E95ED4900CF5837 /* STEmoticonAttachment.swift in Sources */,
 				CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */,
 				CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */,
 				CEFFF9461E091BB400842467 /* WBStatusViewModel.swift in Sources */,
+				CEDC2A331E95ED4900CF5837 /* STEmoticonPackage.swift in Sources */,
 				CE111F7E1E0BBF1300CA5061 /* WBStatusToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
