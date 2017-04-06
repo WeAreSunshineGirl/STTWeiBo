@@ -16,11 +16,18 @@ class STEmoticonInputView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
 
     @IBOutlet weak var toolbar: UIView!
-    //加载并且返回输入视图
-    class func inputView()->STEmoticonInputView{
+    
+    //选中表情回调闭包属性  成员变量
+    private var selectedEmoticonCallBack:((emoticon:STEmoticon?)->())?
+    
+    //加载并且返回输入视图   类方法
+    class func inputView(selectedEmoticon:(emoticon:STEmoticon?)->())->STEmoticonInputView{
         
         let nib = UINib(nibName: "STEmoticonInputView", bundle: nil)
         let v = nib.instantiateWithOwner(nil, options: nil)[0] as! STEmoticonInputView
+        
+        //记录闭包
+        v.selectedEmoticonCallBack = selectedEmoticon
         
         return v
     }
@@ -57,7 +64,7 @@ extension STEmoticonInputView:UICollectionViewDataSource{
         cell.emoticons = STEmoticonManager.shared.packages[indexPath.section].emoticon(indexPath.item)
         
         
-        // 设置代理
+        // 设置代理- cell 不适合用闭包
         cell.delegate = self
         
         // 3 返回
@@ -67,6 +74,9 @@ extension STEmoticonInputView:UICollectionViewDataSource{
 // MARK: - STEmoticonCellDelegate
 extension STEmoticonInputView:STEmoticonCellDelegate{
     func emoticonCellDidSelectedEmoticon(cell: STEmoticonCell, em: STEmoticon?) {
-        print(em)
+//        print(em)
+        
+        //执行闭包 回调选中的表情
+        selectedEmoticonCallBack?(emoticon: em)
     }
 }
