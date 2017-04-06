@@ -8,12 +8,29 @@
 
 import UIKit
 
+/**
+ *  表情 cell 的协议
+ */
+@objc protocol STEmoticonCellDelegate:NSObjectProtocol{
+    
+    /**
+     表情 cell 选中表情模型
+     
+     - parameter em: 表情模型 /nil 表示删除
+     */
+    func emoticonCellDidSelectedEmoticon(cell:STEmoticonCell,em:STEmoticon?)
+}
+
+
 //表情的页面cell
 //每一个cell 就是和 collectionView 一样大小
 //每一个cell 中用九宫格的算法 自行添加 20个表情
 //最后一个位置放置删除按钮
 class STEmoticonCell: UICollectionViewCell {
 
+    /// 代理
+    weak var delegate:STEmoticonCellDelegate?
+    
     /// 当前页面的表情模型数组 ‘最多’ 20 个
     var emoticons:[STEmoticon]?{
         
@@ -77,8 +94,10 @@ class STEmoticonCell: UICollectionViewCell {
             em = emoticons?[tag]
         }
         
-        // 3 em 要么是选中的按钮 如果为 nil 对应的是删除按钮
+        // 3 em 要么是选中的模型 如果为 nil 对应的是删除按钮
         print(em)
+        // 通知代理工作
+        delegate?.emoticonCellDidSelectedEmoticon(self, em: em)
         
     }
     
