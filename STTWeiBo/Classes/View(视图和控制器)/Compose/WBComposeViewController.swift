@@ -100,10 +100,11 @@ class WBComposeViewController: UIViewController {
         
         print("发布微博")
         
-        // 1 获取微博文字
-        guard let text = textView.text else{
-            return
-        }
+        // 1 获取发送给服务器的表情微博文字
+//        guard let text = textView.text else{
+//            return
+//        }
+        let text = textView.emoticonText
         // 2 发布微博
         //FIXME:临时测试发带图片的微博
         let image:UIImage? = nil// UIImage(named: "1")
