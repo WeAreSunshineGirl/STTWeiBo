@@ -58,6 +58,30 @@ class STEmoticonCell: UICollectionViewCell {
     }
     
     
+    //MARK: -监听方法
+    /**
+     选中表情按钮
+     
+     - parameter button: 选中的按钮
+     */
+    @objc private func selectedEmoticonButton(button:UIButton){
+        
+        
+        // 1 取 tag 0-20  20对应的是删除按钮
+        let  tag = button.tag
+        
+        // 2 根据 tag 判断是否是删除按钮  如果不是删除按钮  取得表情
+        var em:STEmoticon?
+        if tag < emoticons?.count{
+            
+            em = emoticons?[tag]
+        }
+        
+        // 3 em 要么是选中的按钮 如果为 nil 对应的是删除按钮
+        print(em)
+        
+    }
+    
 //    override func awakeFromNib() {//xib   没有用nib注册 不会调用
 //
 //        setupUI()
@@ -102,6 +126,11 @@ private extension STEmoticonCell{
             
             // 设置按钮的字体大小  lineHeight 基本上和图片的大小差不多
             btn.titleLabel?.font = UIFont.systemFontOfSize(32)
+            
+            //设置按钮的tag
+            btn.tag = i
+            //添加监听方法
+            btn.addTarget(self, action: #selector(selectedEmoticonButton), forControlEvents: .TouchUpInside)
         }
         
         //取出 末尾的 删除按钮
