@@ -69,7 +69,28 @@ extension STSQLiteManager{
          */
         let sql = "INSERT INTO T_Status (statusId, userId, status) VALUES (?,?,?);"
         
-        // 2 执行SQL
+        // 2 执行SQL  inTransaction多条插入
+        queue.inTransaction { (db, rollback) in
+            
+            //遍历数组 逐条插入微博数据
+            for dict in array{
+                
+                //从字典获取微博代号/将字典序列化成二进制数据
+                guard let statusId = dict["idStr"] as? String ,jsonData = try? NSJSONSerialization.dataWithJSONObject(dict, options: [])else{
+                    
+                    continue
+                }
+                
+                //执行SQL
+                if  db.executeUpdate(sql, withArgumentsInArray: [statusId,userId,jsonData]) == false{
+                    
+                    //FIXME:
+                    //需要回滚
+                    break
+                }
+                
+            }
+        }
     }
     
     
