@@ -12,7 +12,6 @@ import SVProgressHUD
 /// 撰写微博控制器
 /*
  加载视图控制器的时候 如果XIB 和控制器同名 默认的构造函数 会优先加载 XIB
- 
  */
 class WBComposeViewController: UIViewController {
     
@@ -26,6 +25,15 @@ class WBComposeViewController: UIViewController {
     @IBOutlet var sendButton: UIButton!
     /// 工具栏底部约束
     @IBOutlet weak var toolBarBottomConstraint: NSLayoutConstraint!
+    
+    
+    //表情输入视图
+    lazy var emoticonView:STEmoticonInputView = STEmoticonInputView.inputView {[weak self] (emoticon) in
+        print(emoticon)
+        self?.textView.insertEmoticon(emoticon)
+    }
+
+    
     /// 标题标签 - 换行的 热键 option(Alt)+回车
     //逐行选中文本并且设置属性
     //如果想要调整行间距 可以增加一个空行 设置空行的字体 lineHeight
@@ -129,10 +137,12 @@ class WBComposeViewController: UIViewController {
         //如果使用系统默认的键盘 输入视图为 nil
         
         //1>测试键盘视图 视图的宽度可以随便 就是屏幕的宽度
-        let keyboardView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 253))
-        keyboardView.backgroundColor = UIColor.blueColor()
+//        let keyboardView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 253))
+//        keyboardView.backgroundColor = UIColor.blueColor()
         // 2>设置键盘视图
-        textView.inputView = (textView.inputView == nil) ? keyboardView : nil
+//        textView.inputView = (textView.inputView == nil) ? keyboardView : nil
+        textView.inputView = (textView.inputView == nil) ? emoticonView : nil
+
         
         // 3>刷新键盘视图
         textView.reloadInputViews()

@@ -20,8 +20,7 @@ class WBComposeTextView: UITextView {
     }
     
     //MARK: - 监听方法
-    @objc private func textChange(n:NSNotification){
-        print(n)
+    @objc private func textChange(){
         //如果有文本 不显示占位标签 否则 显示
         placeholderLabel.hidden = self.hasText()
         
@@ -37,6 +36,67 @@ class WBComposeTextView: UITextView {
 //        print("哈哈")
 //    }
 //}
+
+// MARK: - 表情键盘专属方法
+extension WBComposeTextView{
+    
+    /**
+     向文本视图插入表情符号【图文混排】
+     
+     - parameter em: 选中的表情符号 nil 表示删除
+     */
+    func insertEmoticon(em:STEmoticon?){
+        
+        // 1  em ==nil 是删除按钮
+        guard let em = em else{
+            
+            //em 为nil 时 删除文本
+            deleteBackward()
+            
+            return
+        }
+        // 2 emoji 是字符串
+        if let emoji = em.emoji,textRange = selectedTextRange {
+            
+            //UITextRange 仅用在此处
+            replaceRange(textRange, withText: emoji)
+            return
+        }
+        
+        //代码执行到此 都是图片表情
+        
+        //0 获取表情中的图像属性文本
+        //所有的排版系统中 几乎都有一个共同的特点 插入字符的显示 跟随前一个字符的属性 但是本身没有 ‘属性’
+        let imageText = em.imageText(font!)
+        
+        /*  写在 imageText(textView.font!)此方法中
+         //        let imageText = NSMutableAttributedString(attributedString: em.imageText(textView.font!))
+         //设置图像文字的属性
+         //        imageText.addAttributes([NSFontAttributeName:textView.font!], range: NSRange(location: 0, length: 1))
+         */
+        
+        // 1> 获取当前 textView的属性文本 =》 可变的
+        let attrStrM = NSMutableAttributedString(attributedString: attributedText)
+        // 2> 将图像的属性文本插入到当前的光标位置
+        attrStrM.replaceCharactersInRange(selectedRange, withAttributedString: imageText)
+        
+        // 3>重新设置属性文本
+        //  记录光标位置
+        let range = selectedRange
+        //设置文本
+        attributedText = attrStrM
+        
+        //恢复光标位置 length是选中字符的长度 插入文本之后 应该为 0
+        selectedRange = NSRange(location: range.location + 1, length: 0)
+        
+        //  4 让代理执行文本变化方法  在需要的时候 通知代理执行协议方法
+        delegate?.textViewDidChange?(self)
+        
+        // 5 执行当前对象的文本变化方法
+        textChange()
+    }
+
+}
 
 private extension WBComposeTextView{
     
