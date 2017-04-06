@@ -99,7 +99,49 @@ extension STSQLiteManager{
     
 }
 // MARK: - 创建数据表以及其他私有方法
-private extension STSQLiteManager{
+extension STSQLiteManager{
+    /**
+     执行一个SQL 返回字典的数组
+     
+     - parameter sql: sql
+     
+     - returns: 字典的数组
+     */
+    func execRecordSet(sql:String)->[[String:AnyObject]]{
+        
+        /// 结果数组
+        var result = [[String:AnyObject]]()
+        
+        //执行SQL - 查询数据 不会修改数据 所以不需要开启事务
+        //事务的目的 是为了保证数据的有效性 一旦失败 回滚到初始状态
+        queue.inDatabase { (db) in
+            
+            guard let rs =  db.executeQuery(sql, withArgumentsInArray: [])else{
+                return
+            }
+            
+            //逐行遍历结果集合
+            while rs.next(){
+                
+                // 1 列数
+                let colCount = rs.columnCount()
+                
+                // 2 遍历所有列
+                for col in 0..<colCount{
+                    
+                    // 3 列名 - key  值 - value
+                    guard  let name = rs.columnNameForIndex(col),value = rs.objectForColumnIndex(col)
+                        else{
+                        continue
+                    }
+//                    print("\(name)----\(value)")
+                    // 4 追加结果
+                    result.append([name:value])
+                }
+            }
+        }
+        return result
+    }
     
     /**
      创建数据表
