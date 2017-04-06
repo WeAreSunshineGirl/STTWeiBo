@@ -154,9 +154,11 @@ private extension STEmoticonCell{
         
         //取出 末尾的 删除按钮
         let removeButton = contentView.subviews.last as! UIButton
+        
         //设置图像
         let imageHL = UIImage(named: "compose_emotion_delete_highlighted", inBundle: STEmoticonManager.shared.bundle, compatibleWithTraitCollection: nil)
           let image = UIImage(named: "compose_emotion_delete", inBundle: STEmoticonManager.shared.bundle, compatibleWithTraitCollection: nil)
+        
         removeButton.setImage(image, forState: .Normal)
         removeButton.setImage(imageHL, forState: .Highlighted)
         

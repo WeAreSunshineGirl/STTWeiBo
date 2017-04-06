@@ -80,6 +80,7 @@
 		CEDC2A381E95ED4900CF5837 /* STEmoticonInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2A2D1E95ED4900CF5837 /* STEmoticonInputView.xib */; };
 		CEDC2A391E95ED4900CF5837 /* STEmoticonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A2E1E95ED4900CF5837 /* STEmoticonLayout.swift */; };
 		CEDC2A3A1E95ED4900CF5837 /* STEmoticonToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A2F1E95ED4900CF5837 /* STEmoticonToolbar.swift */; };
+		CEDC2A3F1E96220B00CF5837 /* STSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A3E1E96220B00CF5837 /* STSQLiteManager.swift */; };
 		CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE808461E1DE762008CE0E5 /* STRefreshView.swift */; };
 		CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE808471E1DE762008CE0E5 /* STRefreshView.xib */; };
 		CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */; };
@@ -185,6 +186,7 @@
 		CEDC2A2D1E95ED4900CF5837 /* STEmoticonInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STEmoticonInputView.xib; sourceTree = "<group>"; };
 		CEDC2A2E1E95ED4900CF5837 /* STEmoticonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonLayout.swift; sourceTree = "<group>"; };
 		CEDC2A2F1E95ED4900CF5837 /* STEmoticonToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonToolbar.swift; sourceTree = "<group>"; };
+		CEDC2A3E1E96220B00CF5837 /* STSQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSQLiteManager.swift; sourceTree = "<group>"; };
 		CEE808461E1DE762008CE0E5 /* STRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STRefreshView.swift; sourceTree = "<group>"; };
 		CEE808471E1DE762008CE0E5 /* STRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRefreshView.xib; sourceTree = "<group>"; };
 		CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SThumRefreshView.xib; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC2A3B1E9621BA00CF5837 /* SQLite */,
 				CEDC2A221E95ED4900CF5837 /* Emoticon */,
 				CE04E1581E8CE56800FB0E9C /* FFLabel */,
 				CE2C16EB1E1B8B2000964736 /* STRefreshControl */,
@@ -570,6 +573,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CEDC2A3B1E9621BA00CF5837 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2A3E1E96220B00CF5837 /* STSQLiteManager.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
 		CEF882561E8E441E00FAA056 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,6 +795,7 @@
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
 				CE1887301E07736800420C0B /* WBWelcomeView.swift in Sources */,
 				CEE808481E1DE762008CE0E5 /* STRefreshView.swift in Sources */,
+				CEDC2A3F1E96220B00CF5837 /* STSQLiteManager.swift in Sources */,
 				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
 				CEDC2A321E95ED4900CF5837 /* STEmoticonAttachment.swift in Sources */,
 				CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */,
