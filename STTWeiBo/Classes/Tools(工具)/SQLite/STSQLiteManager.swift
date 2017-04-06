@@ -84,8 +84,11 @@ extension STSQLiteManager{
                 //执行SQL
                 if  db.executeUpdate(sql, withArgumentsInArray: [statusId,userId,jsonData]) == false{
                     
-                    //FIXME:
-                    //需要回滚
+                    //需要回滚  //OC中 *rollback = YES
+                    //Swift 1.x 2.x => rollback.memory = true  3.X rollback.pointee = true
+                    
+                    rollback.memory = true
+                    
                     break
                 }
                 
