@@ -60,6 +60,25 @@ extension STSQLiteManager{
      */
     func loadStatus(userId:String,since_id:Int64 = 0,max_id:Int64 = 0)->[[String:AnyObject]]{
         
+        // 1 准备SQL
+        var sql = "SELECT statusId,userId,status\n"
+        sql += "FROM T_Status WHERE userId = \(userId)\n"
+        
+        //上拉/下拉 都是 针对同一个 id 进行判断
+        if since_id > 0 {
+            //下拉
+            sql += "AND statusId > \(since_id)\n"
+        }else if max_id > 0{
+            sql += "AND statusId < \(max_id)\n"
+        }
+        
+        sql +=  "ORDER BY statusId DESC LIMIT 20;"
+        
+        //拼接SQL 结束后 一定一定要测试
+        print(sql)
+
+        // 2 执行SQL
+        
         
         return []
     }
