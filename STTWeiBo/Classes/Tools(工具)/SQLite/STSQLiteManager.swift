@@ -61,15 +61,15 @@ extension STSQLiteManager{
     func loadStatus(userId:String,since_id:Int64 = 0,max_id:Int64 = 0)->[[String:AnyObject]]{
         
         // 1 准备SQL
-        var sql = "SELECT statusId,userId,status\n"
-        sql += "FROM T_Status WHERE userId = \(userId)\n"
+        var sql = "SELECT statusId,userId,status FROM T_Status \n"
+        sql += " WHERE userId = \(userId) \n"
         
         //上拉/下拉 都是 针对同一个 id 进行判断
         if since_id > 0 {
             //下拉
-            sql += "AND statusId > \(since_id)\n"
+            sql += "AND statusId > \(since_id) \n"
         }else if max_id > 0{
-            sql += "AND statusId < \(max_id)\n"
+            sql += "AND statusId < \(max_id) \n"
         }
         
         sql +=  "ORDER BY statusId DESC LIMIT 20;"
@@ -126,7 +126,7 @@ extension STSQLiteManager{
             for dict in array{
                 
                 //从字典获取微博代号/将字典序列化成二进制数据
-                guard let statusId = dict["idStr"] as? String ,jsonData = try? NSJSONSerialization.dataWithJSONObject(dict, options: [])else{
+                guard let statusId = dict["idstr"] as? String ,jsonData = try? NSJSONSerialization.dataWithJSONObject(dict, options: [])else{
                     
                     continue
                 }

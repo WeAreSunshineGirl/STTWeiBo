@@ -16,6 +16,7 @@ class WBStatusListDAL {
     /**
      从本地数据库 或者 网络加载数据
      
+     提示：参数之所以参照网络接口 就是为了保证对原有代码的最小化调整
      - parameter since_id:   下拉刷新 id
      - parameter max_id:     上拉刷新 id
      - parameter completion: 完成回调（微博的字典数组 是否成功）

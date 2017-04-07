@@ -56,7 +56,22 @@ class WBStatusListViewModel {
         //上拉刷新 取出数组中最后一条微博的id
         let max_id = !pullup ? 0 : (statusList.last?.status.id ?? 0)
         
-        WBNetworkManager.shared.statusList(since_id,max_id: max_id) { (list, isSuccess) in
+        
+        
+        // ===== 让数据访问层加载数据
+        WBStatusListDAL.loadStatus(since_id, max_id: max_id) { (list, isSuccess) in
+      
+            
+            
+//      ========== 让数据访问层加载数据  注释之前的网络请求  其实在网络访问层方法中使用了此方法
+            
+//        }
+//        
+//        //发起网络请求 加载微博数据[字典的数组]
+//        WBNetworkManager.shared.statusList(since_id,max_id: max_id) { (list, isSuccess) in
+//            
+            
+            
 //            print(list) //list 是一个字典数组
             
             // 0 判断网络请求失败 直接返回
