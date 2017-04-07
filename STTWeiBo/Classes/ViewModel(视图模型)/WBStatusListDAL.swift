@@ -22,11 +22,40 @@ class WBStatusListDAL {
      */
     class func loadStatus(since_id:Int64 = 0,max_id:Int64 = 0,completion:(list:[[String:AnyObject]]?,isSuccess:Bool)->()){
         
-        // 1 检查本地数据 如果有 直接返回
+        // 0 获取用户代号
+        guard  let userId = WBNetworkManager.shared.userAccount.uid else{
+            return
+        }
         
+        // 1 检查本地数据 如果有 直接返回
+       let array =  STSQLiteManager.shared.loadStatus(userId, since_id: since_id, max_id: max_id)
+        //判断数组的数量 没有数据返回的是没有数据的空数组[]
+        if array.count > 0 {
+            
+            completion(list: array, isSuccess: true)
+            
+            return
+        }
         // 2 加载网络数据
-        // 3 加载完成之后 将网络数据[字典数组] 写入数据库
-        // 4 返回网络数据
+        WBNetworkManager.shared.statusList(since_id, max_id: max_id) { (list, isSuccess) in
+            
+            //判断网络请求是否成功
+            if !isSuccess {
+                completion(list: nil, isSuccess: false)
+                return
+            }
+            
+            //判断数据
+            guard let list = list else{
+                completion(list: nil, isSuccess: isSuccess)
+                return
+            }
+            // 3 加载完成之后 将网络数据[字典数组]  同步写入数据库
+            STSQLiteManager.shared.updateStatus(userId, array: list)
+            // 4 返回网络数据
+            completion(list: list, isSuccess: isSuccess)
+        }
+       
     }
     
 }
