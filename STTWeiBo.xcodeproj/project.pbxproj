@@ -87,6 +87,7 @@
 		CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */; };
 		CEF780CC1E9737C50072BBA2 /* status.sql in Resources */ = {isa = PBXBuildFile; fileRef = CEF780CB1E9737C50072BBA2 /* status.sql */; };
 		CEF780CE1E973A000072BBA2 /* WBStatusListDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */; };
+		CEF780D01E97913A0072BBA2 /* NSDate+EXtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF780CF1E97913A0072BBA2 /* NSDate+EXtensions.swift */; };
 		CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882571E8E444600FAA056 /* WBComposeTextView.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
@@ -195,6 +196,7 @@
 		CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
 		CEF780CB1E9737C50072BBA2 /* status.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = status.sql; sourceTree = "<group>"; };
 		CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListDAL.swift; sourceTree = "<group>"; };
+		CEF780CF1E97913A0072BBA2 /* NSDate+EXtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EXtensions.swift"; sourceTree = "<group>"; };
 		CEF882571E8E444600FAA056 /* WBComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTextView.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 				CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */,
 				CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */,
 				CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */,
+				CEF780CF1E97913A0072BBA2 /* NSDate+EXtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
 				CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */,
+				CEF780D01E97913A0072BBA2 /* NSDate+EXtensions.swift in Sources */,
 				CE08439B1DEFCAF000BD8168 /* WBDiscoverViewController.swift in Sources */,
 				CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */,
 				CE1526311DF9575F00149510 /* WBNetworkManager+Extension.swift in Sources */,
