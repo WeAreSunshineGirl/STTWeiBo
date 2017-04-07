@@ -78,9 +78,24 @@ extension STSQLiteManager{
         print(sql)
 
         // 2 执行SQL
+        let array = execRecordSet(sql)
+        
+        // 3 遍历数组 将数组中的 status 反序列化 -》 字典数组
+        var result = [[String:AnyObject]]()
+        
+        for dict in array {
+            
+            //反序列化
+            guard let jsonData  = dict["status"] as? NSData,json = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: []) as? [String:AnyObject] else{
+                continue
+            }
+            
+            //追加到数组
+            result.append(json ?? [:])
+        }
         
         
-        return []
+        return result
     }
     
     
