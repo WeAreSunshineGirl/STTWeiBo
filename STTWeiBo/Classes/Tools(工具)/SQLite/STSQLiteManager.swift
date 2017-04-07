@@ -11,7 +11,7 @@ import Foundation
 import FMDB
 
 //最大的数据库缓存时间 以 s 为单位
-private let maxDBCacheTime:NSTimeInterval = -5 * 24 * 60 * 60
+private let maxDBCacheTime:NSTimeInterval = -60 //-5 * 24 * 60 * 60
 
 /// SQLite 管理器
 
@@ -57,13 +57,29 @@ class STSQLiteManager{
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     //清理数据缓存
+    //sqlite 数据库不断地增加数据 数据库文件的大小会不断的增加
+    //如果删除了数据 数据库的大小不会变小
+    //如果要变小 
+    // 1 将数据库文复制一个新的副本 status.db.old
+    // 2 新建一个空的数据库文件
+    // 3 自己编写 SQL 从old 中将所有的数据读出 写入新的数据库
     @objc private func clearDBCache(){
-        
-
         
         let dateString = NSDate.st_dateString(maxDBCacheTime)
         
                 print("清理缓存 \(dateString)")
+        // 1 准备SQL
+        let sql = "delete from T_Status where createTime < ?;"
+        
+        // 2 执行SQL
+        queue.inDatabase { (db) in
+            
+            if db.executeUpdate(sql, withArgumentsInArray: [dateString]) == true{
+                
+                print("删除了\(db.changes())条记录")
+            }
+            
+        }
         
     }
 }
