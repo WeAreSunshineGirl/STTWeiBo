@@ -86,6 +86,7 @@
 		CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */; };
 		CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */; };
 		CEF780CC1E9737C50072BBA2 /* status.sql in Resources */ = {isa = PBXBuildFile; fileRef = CEF780CB1E9737C50072BBA2 /* status.sql */; };
+		CEF780CE1E973A000072BBA2 /* WBStatusListDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */; };
 		CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882571E8E444600FAA056 /* WBComposeTextView.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
@@ -193,6 +194,7 @@
 		CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SThumRefreshView.xib; sourceTree = "<group>"; };
 		CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
 		CEF780CB1E9737C50072BBA2 /* status.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = status.sql; sourceTree = "<group>"; };
+		CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListDAL.swift; sourceTree = "<group>"; };
 		CEF882571E8E444600FAA056 /* WBComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTextView.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 			children = (
 				CEFFF9451E091BB400842467 /* WBStatusViewModel.swift */,
 				CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */,
+				CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */,
 			);
 			path = "ViewModel(视图模型)";
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 				CEDC2A3F1E96220B00CF5837 /* STSQLiteManager.swift in Sources */,
 				CE1887321E0773AA00420C0B /* WBNewFeatureView.swift in Sources */,
 				CEDC2A321E95ED4900CF5837 /* STEmoticonAttachment.swift in Sources */,
+				CEF780CE1E973A000072BBA2 /* WBStatusListDAL.swift in Sources */,
 				CE3785611E9480DE00C64FFD /* WBComposeViewController.swift in Sources */,
 				CE0743181DFFCC7B002E5AA3 /* WBCommon.swift in Sources */,
 				CEFFF9461E091BB400842467 /* WBStatusViewModel.swift in Sources */,
