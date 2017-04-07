@@ -41,8 +41,23 @@ class STSQLiteManager{
         
         //打开数据库
         createTable()
+        
+        
+        //注册通知 - 监听应用程序进入后台
+        //模仿 SDWebImage
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(clearDBCache), name: UIApplicationDidEnterBackgroundNotification, object: nil)
     }
     
+    //注销通知
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    //清理数据缓存
+    @objc private func clearDBCache(){
+        
+        print("清理缓存")
+        
+    }
 }
 
 
