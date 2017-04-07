@@ -49,6 +49,22 @@ class STSQLiteManager{
 // MARK: - 微博数据操作
 extension STSQLiteManager{
     
+    /**
+     从数据库加载微博数据数组
+     
+     - parameter userId:   当前登录的用户账号
+     - parameter since_id: 返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0
+     - parameter max_id:   返回ID小于max_id的微博，默认为0
+     
+     - returns: 返回微博的字典数组，将数据库中 status 字段 对应的二进制数据反序列化 生成字典
+     */
+    func loadStatus(userId:String,since_id:Int64 = 0,max_id:Int64 = 0)->[[String:AnyObject]]{
+        
+        
+        return []
+    }
+    
+    
     /*
      思考：从网络加载结束后 返回的是微博的 ‘字典数组’ 每一个字典对应一个完整的微博记录
      -完整的微博记录 包含微博的代号
@@ -67,7 +83,7 @@ extension STSQLiteManager{
          userId 当前登录用户的 id
          status 完整微博字典的 json 二进制数据
          */
-        let sql = "INSERT INTO T_Status (statusId, userId, status) VALUES (?,?,?);"
+        let sql = "INSERT OR REPLACE INTO T_Status (statusId, userId, status) VALUES (?,?,?);"
         
         // 2 执行SQL  inTransaction多条插入
         queue.inTransaction { (db, rollback) in
