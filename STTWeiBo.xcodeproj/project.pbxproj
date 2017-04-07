@@ -85,6 +85,7 @@
 		CEE808491E1DE762008CE0E5 /* STRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE808471E1DE762008CE0E5 /* STRefreshView.xib */; };
 		CEE8084F1E1E2B5F008CE0E5 /* SThumRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */; };
 		CEED8B8F1E10C18100F82488 /* WBStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */; };
+		CEF780CC1E9737C50072BBA2 /* status.sql in Resources */ = {isa = PBXBuildFile; fileRef = CEF780CB1E9737C50072BBA2 /* status.sql */; };
 		CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882571E8E444600FAA056 /* WBComposeTextView.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
@@ -191,6 +192,7 @@
 		CEE808471E1DE762008CE0E5 /* STRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRefreshView.xib; sourceTree = "<group>"; };
 		CEE8084E1E1E2B5F008CE0E5 /* SThumRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SThumRefreshView.xib; sourceTree = "<group>"; };
 		CEED8B8E1E10C18100F82488 /* WBStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusPicture.swift; sourceTree = "<group>"; };
+		CEF780CB1E9737C50072BBA2 /* status.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = status.sql; sourceTree = "<group>"; };
 		CEF882571E8E444600FAA056 /* WBComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTextView.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
@@ -317,11 +319,11 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CE15262D1DF949BF00149510 /* Network(网络) */,
 				CEDC2A3B1E9621BA00CF5837 /* SQLite */,
 				CEDC2A221E95ED4900CF5837 /* Emoticon */,
 				CE04E1581E8CE56800FB0E9C /* FFLabel */,
 				CE2C16EB1E1B8B2000964736 /* STRefreshControl */,
-				CE15262D1DF949BF00149510 /* Network */,
 				CE8454C51DEFF8A70062478F /* Extensions */,
 				CE0843C81DEFCC8E00BD8168 /* UIColor+Backcolor.h */,
 				CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */,
@@ -431,13 +433,14 @@
 			path = TitleButton;
 			sourceTree = "<group>";
 		};
-		CE15262D1DF949BF00149510 /* Network */ = {
+		CE15262D1DF949BF00149510 /* Network(网络) */ = {
 			isa = PBXGroup;
 			children = (
 				CEDBC9631E01362700A09F82 /* Model */,
 				CE15262E1DF94A0800149510 /* WBNetworkManager.swift */,
 				CE1526301DF9575F00149510 /* WBNetworkManager+Extension.swift */,
 			);
+			name = "Network(网络)";
 			path = Network;
 			sourceTree = "<group>";
 		};
@@ -576,6 +579,7 @@
 		CEDC2A3B1E9621BA00CF5837 /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
+				CEF780CB1E9737C50072BBA2 /* status.sql */,
 				CEDC2A3E1E96220B00CF5837 /* STSQLiteManager.swift */,
 			);
 			path = SQLite;
@@ -667,6 +671,7 @@
 				CEDC2A381E95ED4900CF5837 /* STEmoticonInputView.xib in Resources */,
 				CEDC2A301E95ED4900CF5837 /* EmotionIcons.bundle in Resources */,
 				CE0843A11DEFCBD500BD8168 /* 2@3x.png in Resources */,
+				CEF780CC1E9737C50072BBA2 /* status.sql in Resources */,
 				CE2D14C01E120E5E004F974D /* WBStatusRetweetedCell.xib in Resources */,
 				CE1887361E07844300420C0B /* WBNewFeatureView.xib in Resources */,
 				CE0718CC1E1F77D9004CD0E1 /* WBComposeTypeView.xib in Resources */,
