@@ -54,6 +54,8 @@ extension STEmoticonInputView:STEmoticonToolbarDelegate{
         
         collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .Left, animated: true)
         
+        //设置分组按钮的选中状态
+        toolbar.selectedIndex = index
     }
 }
 

@@ -24,6 +24,20 @@ class STEmoticonToolbar: UIView {
 
     weak var delegate:STEmoticonToolbarDelegate?
     
+    var selectedIndex:Int = 0{
+        didSet{
+            
+            // 1 取消所有的选中状态
+            for btn in subviews as! [UIButton] {
+                
+                btn.selected = false
+            }
+            
+            // 2 设置index 对应的选中状态
+            (subviews[selectedIndex] as! UIButton).selected = true
+        }
+    }
+    
     override func awakeFromNib() {
         
         setupUI()
