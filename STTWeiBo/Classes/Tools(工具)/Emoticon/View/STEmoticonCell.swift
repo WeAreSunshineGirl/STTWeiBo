@@ -143,10 +143,14 @@ class STEmoticonCell: UICollectionViewCell {
         
         // 2> 获取触摸位置对应的按钮
         guard let button = buttonWithLocation(location) else{
+            
+            tipView.hidden = true
+            
              return
         }
         
         // 3> 处理手势状态
+    // 在处理手势细节的时候 不要视图一下把所有状态都处理完毕
         switch gesture.state {
         case .Began,.Changed:
             
@@ -163,6 +167,14 @@ class STEmoticonCell: UICollectionViewCell {
                 
                 tipView.emoticon = emoticons?[button.tag]
             }
+            
+        case .Ended:
+            tipView.hidden = true
+            //执行选中按钮的函数
+            selectedEmoticonButton(button)
+            
+        case .Cancelled ,.Failed:
+            tipView.hidden = true
         default:
             break
         }
