@@ -142,7 +142,24 @@ class STEmoticonCell: UICollectionViewCell {
         let location = gesture.locationInView(self)
         
         // 2> 获取触摸位置对应的按钮
-        let button = buttonWithLocation(location)
+        guard let button = buttonWithLocation(location) else{
+             return
+        }
+        
+        // 3> 处理手势状态
+        switch gesture.state {
+        case .Began,.Changed:
+            
+            tipView.hidden = false
+            
+            //坐标系的转换- 将按钮参照 cell 的坐标系 转换到 window 的坐标位置
+            let center = self.convertPoint(button.center, toView: window)
+            
+            //设置提示视图的位置
+            tipView.center = center
+        default:
+            break
+        }
         print(button)
         
     }
