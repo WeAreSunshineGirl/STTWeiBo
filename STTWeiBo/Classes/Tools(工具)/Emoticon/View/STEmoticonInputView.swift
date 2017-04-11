@@ -73,10 +73,24 @@ extension STEmoticonInputView:UICollectionViewDataSource{
 }
 // MARK: - STEmoticonCellDelegate
 extension STEmoticonInputView:STEmoticonCellDelegate{
+    
+    /**
+     选中的表情回调
+     
+     - parameter cell: 分页cell
+     - parameter em:   选中的表情 删除键为 nil
+     */
     func emoticonCellDidSelectedEmoticon(cell: STEmoticonCell, em: STEmoticon?) {
 //        print(em)
         
         //执行闭包 回调选中的表情
         selectedEmoticonCallBack?(emoticon: em)
+        
+        //添加最近使用的表情
+        guard let em = em else{
+            return
+        }
+        
+        STEmoticonManager.shared.recentEmoticon(em)
     }
 }

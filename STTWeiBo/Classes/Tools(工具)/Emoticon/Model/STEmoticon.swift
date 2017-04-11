@@ -35,6 +35,10 @@ class STEmoticon: NSObject {
             emoji = String(c)
         }
     }
+    
+    /// 表情使用次数
+    var times:Int = 0
+    
     /// emoji的字符串
     var emoji:String?
     

@@ -15,7 +15,7 @@ class STEmoticonManager {
     /// 表情管理器的单例
     static let shared = STEmoticonManager()
     
-    /// 表情包的懒加载数组
+    /// 表情包的懒加载数组   - 第一个数组是最近表情 加载之后 表情数组为空
     lazy var packages = [STEmoticonPackage]()
     
     /// 表情素材的 bundle
@@ -32,6 +32,33 @@ class STEmoticonManager {
     //OC 要重写 allocWithZone方法 把单例锁住
     private init(){
         loadPackages()
+    }
+    
+    
+    func recentEmoticon(em:STEmoticon){
+        
+        // 1 增加表情的使用次数
+        em.times += 1
+        
+        // 2 判断是否已经记录该表情 如果没有记录 添加该表情
+        if !packages[0].emoticons.contains(em) {
+            
+            packages[0].emoticons.append(em)
+        }
+        
+        // 3 根据使用次数排序 使用次数高的排序靠前
+        packages[0].emoticons.sortInPlace { (em1, em2) -> Bool in
+            
+            return em1.times > em2.times
+        }
+        
+        // 4 判断表情数组是否超出 20 如果超出 删除末尾的表情
+        
+        if packages[0].emoticons.count > 20 {
+            
+             packages[0].emoticons.removeRange(20..<packages[0].emoticons.count)
+        }
+       
     }
 }
 
