@@ -48,6 +48,12 @@ class STEmoticonInputView: UIView {
 extension STEmoticonInputView:STEmoticonToolbarDelegate{
     func emoticonToolbarDidSelectedItemIndex(toolbar: STEmoticonToolbar, index: Int) {
         
+        // 让collectionView 发生滚动 -》每一个分组的第0页
+        
+        let indexPath = NSIndexPath(forItem: 0, inSection: index)
+        
+        collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .Left, animated: true)
+        
     }
 }
 
