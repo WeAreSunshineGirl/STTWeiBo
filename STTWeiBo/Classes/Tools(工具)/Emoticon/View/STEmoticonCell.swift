@@ -106,6 +106,16 @@ class STEmoticonCell: UICollectionViewCell {
 //        setupUI()
 //    }
 
+    /**
+     长按手势识别
+     可以保证一个对象监听两种点击手势 而且不需要考虑解决手势冲突
+     - parameter gesture: <#gesture description#>
+     */
+    @objc private func longGesture(gesture:UILongPressGestureRecognizer){
+        
+    }
+    
+    
 }
 
 // MARK: - 设置界面
@@ -161,6 +171,13 @@ private extension STEmoticonCell{
         
         removeButton.setImage(image, forState: .Normal)
         removeButton.setImage(imageHL, forState: .Highlighted)
+        
+        //添加长按手势
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longGesture))
+        
+        longPress.minimumPressDuration = 0.1
+        addGestureRecognizer(longPress)
+        
         
     }
 }
