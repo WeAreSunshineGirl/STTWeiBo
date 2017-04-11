@@ -62,6 +62,47 @@ extension STEmoticonInputView:STEmoticonToolbarDelegate{
     }
 }
 
+// MARK: - UICollectionViewDelegate
+extension STEmoticonInputView:UICollectionViewDelegate{
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        // 1 获取中心点
+        var center = scrollView.center
+        center.x += scrollView.contentOffset.x
+        
+        // 2 获取当前显示的 cell 的indexPath
+        let paths = collectionView.indexPathsForVisibleItems()
+        
+        // 3 判断中心点在哪一个 indexPath 上 在哪一个页面上
+        var targetIndexPath:NSIndexPath?
+        for indexPath in paths {
+            
+            //1>根据indexPath 获得cell
+            let cell = collectionView.cellForItemAtIndexPath(indexPath)
+            
+            //2>判断中心点位置
+            if cell?.frame.contains(center) == true {
+                
+                targetIndexPath = indexPath
+                break
+            }
+        
+        }
+        
+       guard let target = targetIndexPath else {
+            return
+        }
+        //4 判断是否找到 目标的 indexpath
+        //indexpath.section =》对应的就是分组
+        toolbar.selectedIndex = target.section
+        
+    }
+}
+
+
+
+// MARK: - UICollectionViewDataSource
 extension STEmoticonInputView:UICollectionViewDataSource{
     
     //分组数量 - 返回表情包的数量
