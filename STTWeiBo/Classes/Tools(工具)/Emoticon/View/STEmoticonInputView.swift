@@ -91,6 +91,19 @@ extension STEmoticonInputView:STEmoticonCellDelegate{
             return
         }
         
+        //如果当前collectionView 就是最近的分组 不添加最近使用的表情
+        let indexPath = collectionView.indexPathsForVisibleItems()[0]
+        if indexPath.section == 0 {
+            return
+        }
+        
+        
         STEmoticonManager.shared.recentEmoticon(em)
+        
+        //刷新数据 - 第0组
+        let indexSet = NSMutableIndexSet()
+        indexSet.addIndex(0)
+       
+        collectionView.reloadSections(indexSet)
     }
 }

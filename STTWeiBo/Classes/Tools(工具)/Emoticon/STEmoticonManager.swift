@@ -47,13 +47,14 @@ class STEmoticonManager {
         }
         
         // 3 根据使用次数排序 使用次数高的排序靠前
-        packages[0].emoticons.sortInPlace { (em1, em2) -> Bool in
-            
-            return em1.times > em2.times
-        }
+//        packages[0].emoticons.sortInPlace { (em1, em2) -> Bool in
+//            
+//            return em1.times > em2.times
+//        }
+        //在swift中 如果闭包中只有一个 return 参数可以省略 参数名用 $0....替代
+        packages[0].emoticons.sortInPlace { $0.times > $1.times}
         
         // 4 判断表情数组是否超出 20 如果超出 删除末尾的表情
-        
         if packages[0].emoticons.count > 20 {
             
              packages[0].emoticons.removeRange(20..<packages[0].emoticons.count)
