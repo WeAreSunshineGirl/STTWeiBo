@@ -8,9 +8,22 @@
 
 import UIKit
 
+@objc protocol STEmoticonToolbarDelegate:NSObjectProtocol {
+    
+    /**
+     表情工具栏选中分组项索引
+     
+     - parameter toolbar: 工具栏
+     - parameter index:   索引
+     */
+    func emoticonToolbarDidSelectedItemIndex(toolbar:STEmoticonToolbar,index:Int)
+}
+
 /// 表情键盘底部工具栏
 class STEmoticonToolbar: UIView {
 
+    weak var delegate:STEmoticonToolbarDelegate?
+    
     override func awakeFromNib() {
         
         setupUI()
@@ -34,6 +47,8 @@ class STEmoticonToolbar: UIView {
     //点击分组项按钮
     @objc private func clickItem(button:UIButton){
         
+        // 通知代理执行协议方法
+        delegate?.emoticonToolbarDidSelectedItemIndex(self, index: button.tag)
         
     }
 }

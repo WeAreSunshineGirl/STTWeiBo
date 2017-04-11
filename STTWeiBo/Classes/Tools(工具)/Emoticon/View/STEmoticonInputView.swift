@@ -15,7 +15,7 @@ private let cellId = "cellId"
 class STEmoticonInputView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
 
-    @IBOutlet weak var toolbar: UIView!
+    @IBOutlet weak var toolbar: STEmoticonToolbar!
     
     //选中表情回调闭包属性  成员变量
     private var selectedEmoticonCallBack:((emoticon:STEmoticon?)->())?
@@ -38,9 +38,18 @@ class STEmoticonInputView: UIView {
         //注册可重用cell
         collectionView.registerClass(STEmoticonCell.self, forCellWithReuseIdentifier: cellId)
 //        collectionView.registerNib(UINib(nibName: "STEmoticonCell",bundle: nil), forCellWithReuseIdentifier: cellId)
+        
+        //设置工具栏代理
+        toolbar.delegate = self
     }
 }
 
+
+extension STEmoticonInputView:STEmoticonToolbarDelegate{
+    func emoticonToolbarDidSelectedItemIndex(toolbar: STEmoticonToolbar, index: Int) {
+        
+    }
+}
 
 extension STEmoticonInputView:UICollectionViewDataSource{
     
