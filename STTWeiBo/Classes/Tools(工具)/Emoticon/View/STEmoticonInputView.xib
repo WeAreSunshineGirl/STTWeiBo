@@ -7,13 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="tf4-F7-u3M" customClass="STEmoticonInputView" customModule="表情键盘" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="tf4-F7-u3M" customClass="STEmoticonInputView" customModule="STTWeiBo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IeR-1e-vAX">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ho4-5H-Hpd" customClass="STEmoticonLayout" customModule="表情键盘" customModuleProvider="target">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ho4-5H-Hpd" customClass="STEmoticonLayout" customModule="STTWeiBo" customModuleProvider="target">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -23,7 +23,7 @@
                         <outlet property="dataSource" destination="tf4-F7-u3M" id="KLl-Nv-q5L"/>
                     </connections>
                 </collectionView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uw3-Y2-aAs" userLabel="底部工具栏" customClass="STEmoticonToolbar" customModule="表情键盘" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uw3-Y2-aAs" userLabel="底部工具栏" customClass="STEmoticonToolbar" customModule="STTWeiBo" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="213" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>

@@ -29,6 +29,13 @@ class STEmoticonToolbar: UIView {
             btn.frame = rect.offsetBy(dx: CGFloat(i)*w, dy: 0)
         }
     }
+    
+    //MARK:监听方法
+    //点击分组项按钮
+    @objc private func clickItem(button:UIButton){
+        
+        
+    }
 }
 
 
@@ -40,7 +47,7 @@ private extension STEmoticonToolbar{
         let manager = STEmoticonManager.shared
         
         //从表情包分组名称 - 设置按钮
-        for p in manager.packages {
+        for (i,p) in manager.packages.enumerate() {
             
             // 1 实例化按钮
             let btn = UIButton()
@@ -77,6 +84,15 @@ private extension STEmoticonToolbar{
             btn.sizeToFit()
             // 4  添加按钮
             addSubview(btn)
+            
+            // 5 设置按钮的 tag
+            btn.tag = i
+            
+            // 6 添加按钮的监听方法
+            btn.addTarget(self, action: #selector(clickItem), forControlEvents: .TouchUpInside)
         }
+        
+        //默认选中第0个按钮
+        (subviews[0] as! UIButton).selected = true
     }
 }
