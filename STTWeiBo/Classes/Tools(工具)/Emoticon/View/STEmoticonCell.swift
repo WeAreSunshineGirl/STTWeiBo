@@ -78,6 +78,23 @@ class STEmoticonCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //当试图从界面上删除 同样会调用此方法 newWindow = nil
+    override func willMoveToWindow(newWindow: UIWindow?) {
+        
+        super.willMoveToWindow(newWindow)
+        
+        guard let w = newWindow else{
+            return
+        }
+        
+        //将提示视图添加到窗口上
+        //提示：iOS6.0之前 很多程序员都喜欢把控件往窗口添加
+        //在现在开发 如果有地方 就不要用窗口
+        w.addSubview(tipView)
+        
+        
+        
+    }
     
     //MARK: -监听方法
     /**
