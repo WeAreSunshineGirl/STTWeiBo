@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import pop
 /// 表情选择提示视图
 class STEmoticonTipView: UIImageView {
 
@@ -29,8 +29,16 @@ class STEmoticonTipView: UIImageView {
             tipButton.setTitle(emoticon?.emoji, forState: .Normal)
             tipButton.setImage(emoticon?.image, forState: .Normal)
             
-            //表情的动画
+            //表情的动画 弹力动画的结束时间是根据速度自动计算的 不需要也不指定 duration
+            let anim:POPSpringAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPositionY)
+           
+            anim.fromValue = 30
+            anim.toValue = 8
             
+            anim.springSpeed = 20
+            anim.springBounciness = 20
+            
+            tipButton.layer.pop_addAnimation(anim, forKey: nil)
             print("设置表情....")
         }
     }
