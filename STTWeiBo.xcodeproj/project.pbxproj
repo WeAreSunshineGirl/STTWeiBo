@@ -89,6 +89,7 @@
 		CEF780CE1E973A000072BBA2 /* WBStatusListDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */; };
 		CEF780D01E97913A0072BBA2 /* NSDate+EXtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF780CF1E97913A0072BBA2 /* NSDate+EXtensions.swift */; };
 		CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF882571E8E444600FAA056 /* WBComposeTextView.swift */; };
+		CEF93D0D1E9C6BFE00394AC2 /* STEmoticonTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF93D0C1E9C6BFE00394AC2 /* STEmoticonTipView.swift */; };
 		CEFFF93B1E09033900842467 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */; };
 		CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFF93D1E09071300842467 /* WBStatusCell.swift */; };
 		CEFFF9421E09075E00842467 /* WBStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */; };
@@ -198,6 +199,7 @@
 		CEF780CD1E973A000072BBA2 /* WBStatusListDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListDAL.swift; sourceTree = "<group>"; };
 		CEF780CF1E97913A0072BBA2 /* NSDate+EXtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EXtensions.swift"; sourceTree = "<group>"; };
 		CEF882571E8E444600FAA056 /* WBComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBComposeTextView.swift; sourceTree = "<group>"; };
+		CEF93D0C1E9C6BFE00394AC2 /* STEmoticonTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonTipView.swift; sourceTree = "<group>"; };
 		CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEFFF93D1E09071300842467 /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
 		CEFFF9411E09075E00842467 /* WBStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBStatusNormalCell.xib; sourceTree = "<group>"; };
@@ -578,6 +580,7 @@
 				CEDC2A2D1E95ED4900CF5837 /* STEmoticonInputView.xib */,
 				CEDC2A2E1E95ED4900CF5837 /* STEmoticonLayout.swift */,
 				CEDC2A2F1E95ED4900CF5837 /* STEmoticonToolbar.swift */,
+				CEF93D0C1E9C6BFE00394AC2 /* STEmoticonTipView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -752,6 +755,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0843C31DEFCC8200BD8168 /* UIColor+CZAddition.m in Sources */,
+				CEF93D0D1E9C6BFE00394AC2 /* STEmoticonTipView.swift in Sources */,
 				CE0718CE1E1F84FB004CD0E1 /* WBComposeTypeButton.swift in Sources */,
 				CEDC2A3A1E95ED4900CF5837 /* STEmoticonToolbar.swift in Sources */,
 				CEDC2A311E95ED4900CF5837 /* STEmoticon.swift in Sources */,

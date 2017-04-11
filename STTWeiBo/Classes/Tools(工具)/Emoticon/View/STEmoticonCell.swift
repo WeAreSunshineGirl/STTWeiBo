@@ -64,6 +64,10 @@ class STEmoticonCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
     
+    
+    private lazy var tipView:STEmoticonTipView = STEmoticonTipView()
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -113,6 +117,8 @@ class STEmoticonCell: UICollectionViewCell {
      */
     @objc private func longGesture(gesture:UILongPressGestureRecognizer){
         
+        //测试添加提示视图
+//        addSubview(tipView)
     }
     
     
