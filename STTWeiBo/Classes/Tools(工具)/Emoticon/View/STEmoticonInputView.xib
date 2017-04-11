@@ -21,8 +21,14 @@
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="tf4-F7-u3M" id="KLl-Nv-q5L"/>
+                        <outlet property="delegate" destination="tf4-F7-u3M" id="fz1-Yp-Fhh"/>
                     </connections>
                 </collectionView>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-Eh-YZw">
+                    <rect key="frame" x="160" y="184" width="55" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.98823529409999999" green="0.24313725489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.16732671020000001" green="0.80286731020000002" blue="0.32261406139999999" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uw3-Y2-aAs" userLabel="底部工具栏" customClass="STEmoticonToolbar" customModule="STTWeiBo" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="213" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,6 +44,8 @@
                 <constraint firstAttribute="bottom" secondItem="uw3-Y2-aAs" secondAttribute="bottom" id="RVi-1Y-d1Z"/>
                 <constraint firstItem="IeR-1e-vAX" firstAttribute="top" secondItem="tf4-F7-u3M" secondAttribute="top" id="SDM-Lo-Kfq"/>
                 <constraint firstItem="uw3-Y2-aAs" firstAttribute="top" secondItem="IeR-1e-vAX" secondAttribute="bottom" id="VnQ-Qu-eHV"/>
+                <constraint firstItem="uw3-Y2-aAs" firstAttribute="top" secondItem="WI0-Eh-YZw" secondAttribute="bottom" constant="-8" id="cLY-Hi-Cog"/>
+                <constraint firstItem="WI0-Eh-YZw" firstAttribute="centerX" secondItem="tf4-F7-u3M" secondAttribute="centerX" id="lev-il-z4O"/>
                 <constraint firstItem="IeR-1e-vAX" firstAttribute="leading" secondItem="tf4-F7-u3M" secondAttribute="leading" id="pjI-pf-uLp"/>
                 <constraint firstItem="uw3-Y2-aAs" firstAttribute="leading" secondItem="tf4-F7-u3M" secondAttribute="leading" id="qAl-gO-NKl"/>
             </constraints>
@@ -45,6 +53,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="collectionView" destination="IeR-1e-vAX" id="geQ-cK-g9l"/>
+                <outlet property="pageControl" destination="WI0-Eh-YZw" id="3sq-0X-MSL"/>
                 <outlet property="toolbar" destination="uw3-Y2-aAs" id="Ovw-5N-AIF"/>
             </connections>
             <point key="canvasLocation" x="289.5" y="131.5"/>

@@ -15,8 +15,11 @@ private let cellId = "cellId"
 class STEmoticonInputView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
 
+    //工具栏
     @IBOutlet weak var toolbar: STEmoticonToolbar!
     
+    //分页控件
+    @IBOutlet weak var pageControl: UIPageControl!
     //选中表情回调闭包属性  成员变量
     private var selectedEmoticonCallBack:((emoticon:STEmoticon?)->())?
     
