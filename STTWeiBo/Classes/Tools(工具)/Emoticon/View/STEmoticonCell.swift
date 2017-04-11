@@ -92,6 +92,7 @@ class STEmoticonCell: UICollectionViewCell {
         //在现在开发 如果有地方 就不要用窗口
         w.addSubview(tipView)
         
+        tipView.hidden = true
         
         
     }
@@ -136,9 +137,28 @@ class STEmoticonCell: UICollectionViewCell {
         
         //测试添加提示视图
 //        addSubview(tipView)
+        
+        // 1> 获取触摸的位置
+        let location = gesture.locationInView(self)
+        
+        // 2> 获取触摸位置对应的按钮
+        let button = buttonWithLocation(location)
+        print(button)
+        
     }
     
-    
+    private func buttonWithLocation(location:CGPoint)->UIButton?{
+        
+        //遍历 contentView 所有子视图 如果可见 同时在 location 确认是按钮
+        for btn in contentView.subviews as! [UIButton] {
+            
+            //删除按钮同样需要处理
+            if btn.frame.contains(location) && !btn.hidden && btn != contentView.subviews.last {
+                return btn
+            }
+        }
+        return nil
+    }
 }
 
 // MARK: - 设置界面
