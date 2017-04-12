@@ -17,6 +17,34 @@ let WBUserShouldLoginNotification = "WBUserShouldLoginNotification"
 let WBUserLoginSuccessNotification = "WBUserLoginSuccessNotification"
 
 
+
+//MARK:照片浏览通知定义
+/*
+ selectedIndex 选中照片索引
+ urls 照片浏览 url 字符串数组
+ parentImageVIews 父视图的图像视图数组 用户展现和解除专场动画参照
+ 
+ */
+//微博cel浏览照片通知
+let WBStatusCellBrowserPhotoNotification = "WBStatusCellBrowserPhotoNotification"
+
+//选中索引 Key
+let WBStatusCellBrowserPhotoSelectedIndexKey = "WBStatusCellBrowserPhotoSelectedIndexKey"
+// 照片浏览 URL 字符串KEy
+let WBStatusCellBrowserPhotoURLsKey = "WBStatusCellBrowserPhotoURLsKey"
+//父视图的图像数组
+let WBStatusCellBrowserPhotoImageViews = "WBStatusCellBrowserPhotoImageViews"
+
+
+
+
+
+
+
+
+
+
+
 //MARK: 应用程序信息
 
 /// 应用程序 ID
