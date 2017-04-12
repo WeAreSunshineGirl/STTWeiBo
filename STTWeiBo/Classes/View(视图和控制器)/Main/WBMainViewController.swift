@@ -111,6 +111,10 @@ class WBMainViewController: UITabBarController {
             
             let nav = UINavigationController(rootViewController: vc)
             
+            //让导航控制器强行更新约束 - 会直接更新所有子视图的约束
+            //提示 开发中如果发现不希望的布局约束 和 动画混在一起 应该向前寻找 强行更新约束
+            nav.view.layoutIfNeeded()
+            
             self.presentViewController(nav, animated: true, completion: {
                 
                 v?.removeFromSuperview()

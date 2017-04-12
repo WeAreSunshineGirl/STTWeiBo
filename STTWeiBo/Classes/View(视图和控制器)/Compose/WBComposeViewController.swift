@@ -43,6 +43,9 @@ class WBComposeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //强行更新约束
+//        view.layoutIfNeeded()
+        
 //        view.backgroundColor = UIColor.cz_randomColor()
        setupUI()
         
