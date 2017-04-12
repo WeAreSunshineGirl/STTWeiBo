@@ -43,6 +43,10 @@
 		CE0843C71DEFCC8200BD8168 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */; };
 		CE0843CA1DEFCC8E00BD8168 /* UIColor+Backcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */; };
 		CE0AE1D01E8DEDD80036A1B6 /* WBComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0AE1CF1E8DEDD80036A1B6 /* WBComposeViewController.xib */; };
+		CE0AED301E9E0BD80039E429 /* PhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2C1E9E0BD80039E429 /* PhotoBrowserAnimator.swift */; };
+		CE0AED311E9E0BD80039E429 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2D1E9E0BD80039E429 /* PhotoBrowserCell.swift */; };
+		CE0AED321E9E0BD80039E429 /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2E1E9E0BD80039E429 /* PhotoBrowserViewController.swift */; };
+		CE0AED331E9E0BD80039E429 /* ProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2F1E9E0BD80039E429 /* ProgressImageView.swift */; };
 		CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */; };
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
 		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
@@ -153,6 +157,10 @@
 		CE0843C91DEFCC8E00BD8168 /* UIColor+Backcolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Backcolor.m"; sourceTree = "<group>"; };
 		CE0843CC1DEFCDA900BD8168 /* WeiBo-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo-Bridge.h"; sourceTree = "<group>"; };
 		CE0AE1CF1E8DEDD80036A1B6 /* WBComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBComposeViewController.xib; sourceTree = "<group>"; };
+		CE0AED2C1E9E0BD80039E429 /* PhotoBrowserAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserAnimator.swift; sourceTree = "<group>"; };
+		CE0AED2D1E9E0BD80039E429 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
+		CE0AED2E1E9E0BD80039E429 /* PhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		CE0AED2F1E9E0BD80039E429 /* ProgressImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressImageView.swift; sourceTree = "<group>"; };
 		CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
@@ -325,6 +333,7 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CE0AED2B1E9E0BD80039E429 /* PhotoBrowser */,
 				CE15262D1DF949BF00149510 /* Network(网络) */,
 				CEDC2A3B1E9621BA00CF5837 /* SQLite */,
 				CEDC2A221E95ED4900CF5837 /* Emoticon */,
@@ -429,6 +438,17 @@
 				CE0843BB1DEFCC8200BD8168 /* UIViewController+CZAddition.m */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		CE0AED2B1E9E0BD80039E429 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CE0AED2C1E9E0BD80039E429 /* PhotoBrowserAnimator.swift */,
+				CE0AED2D1E9E0BD80039E429 /* PhotoBrowserCell.swift */,
+				CE0AED2E1E9E0BD80039E429 /* PhotoBrowserViewController.swift */,
+				CE0AED2F1E9E0BD80039E429 /* ProgressImageView.swift */,
+			);
+			path = PhotoBrowser;
 			sourceTree = "<group>";
 		};
 		CE0DF92F1E03CF40003F47BB /* TitleButton */ = {
@@ -769,9 +789,12 @@
 				CE04E15C1E8CF03300FB0E9C /* WBWebViewController.swift in Sources */,
 				CE0718CA1E1F71AB004CD0E1 /* WBComposeTypeView.swift in Sources */,
 				CEF882581E8E444600FAA056 /* WBComposeTextView.swift in Sources */,
+				CE0AED311E9E0BD80039E429 /* PhotoBrowserCell.swift in Sources */,
 				CE0843BC1DEFCC8200BD8168 /* NSArray+Log.m in Sources */,
+				CE0AED331E9E0BD80039E429 /* ProgressImageView.swift in Sources */,
 				CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */,
 				CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */,
+				CE0AED301E9E0BD80039E429 /* PhotoBrowserAnimator.swift in Sources */,
 				CEF780D01E97913A0072BBA2 /* NSDate+EXtensions.swift in Sources */,
 				CE08439B1DEFCAF000BD8168 /* WBDiscoverViewController.swift in Sources */,
 				CEFFF93E1E09071300842467 /* WBStatusCell.swift in Sources */,
@@ -806,6 +829,7 @@
 				CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */,
 				CEDC2A391E95ED4900CF5837 /* STEmoticonLayout.swift in Sources */,
 				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
+				CE0AED321E9E0BD80039E429 /* PhotoBrowserViewController.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,

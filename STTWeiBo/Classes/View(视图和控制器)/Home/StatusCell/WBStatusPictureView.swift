@@ -88,6 +88,9 @@ class WBStatusPictureView: UIView {
         setupUI()
     }
     
+    @objc private func tapImageView(tap:UITapGestureRecognizer){
+        
+    }
 }
 
 // MARK: - 设置界面
@@ -125,6 +128,19 @@ extension WBStatusPictureView{
             iv.frame = rect.offsetBy(dx:xOffset , dy: yOffset)
             
             addSubview(iv)
+            
+            
+            
+            //让imageView能够用户交互
+            iv.userInteractionEnabled = true
+            
+            //添加点击手势
+            let tap = UITapGestureRecognizer(target: self, action: #selector(tapImageView))
+            iv.addGestureRecognizer(tap)
+            
+            //设置tag 
+            iv.tag = i
+            
         }
     }
 }
