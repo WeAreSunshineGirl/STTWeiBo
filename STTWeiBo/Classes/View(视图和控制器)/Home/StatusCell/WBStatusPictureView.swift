@@ -94,7 +94,26 @@ class WBStatusPictureView: UIView {
         guard let iv = tap.view ,let picURLs = viewModel?.picURLs else{
             return
         }
-        print(picURLs.count)
+//        print(picURLs.count)
+        
+        var selectedIndex = iv.tag
+        
+        //针对四张图像处理
+        if picURLs.count == 4 && selectedIndex > 1 {
+            selectedIndex -= 1
+        }
+        let urls = (picURLs as NSArray).valueForKey("thumbnail_pic") as! [String]
+        
+        //处理可见的图像视图数组
+        var imageViewList = [UIImageView]()
+        
+        for iv in subviews as! [UIImageView] {
+            
+            if !iv.hidden {
+                imageViewList.append(iv)
+            }
+        }
+        print(selectedIndex)
     }
 }
 
