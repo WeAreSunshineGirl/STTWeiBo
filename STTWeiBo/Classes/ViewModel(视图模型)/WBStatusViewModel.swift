@@ -202,7 +202,7 @@ class WBStatusViewModel:CustomStringConvertible {
         
         if size.width > maxWidth {
             //设置最大宽度
-            size.width = maxWidth
+            size.width = 200
             
             //等比例调整高度
             size.height = size.width * image.size.height / image.size.width
@@ -214,6 +214,11 @@ class WBStatusViewModel:CustomStringConvertible {
             size.width = minWidth
             //要特殊处理高度 否则高度太大 会影响用户体验
             size.height = size.width * image.size.height / image.size.width / 4
+        }
+        //过高图片处理 图片填充模式 就是scaleToFill 高度减小会自动裁切
+        if size.height > 200 {
+            
+            size.height = 200
         }
         
         // 特例 有些图像 本身就是很窄 很长 -> 定义一个 minHeight 思路同上
