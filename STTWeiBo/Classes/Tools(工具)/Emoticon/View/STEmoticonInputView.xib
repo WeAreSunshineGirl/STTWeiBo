@@ -24,7 +24,7 @@
                         <outlet property="delegate" destination="tf4-F7-u3M" id="fz1-Yp-Fhh"/>
                     </connections>
                 </collectionView>
-                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-Eh-YZw">
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-Eh-YZw">
                     <rect key="frame" x="160" y="184" width="55" height="37"/>
                     <color key="pageIndicatorTintColor" red="0.98823529409999999" green="0.24313725489999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="currentPageIndicatorTintColor" red="0.16732671020000001" green="0.80286731020000002" blue="0.32261406139999999" alpha="1" colorSpace="calibratedRGB"/>

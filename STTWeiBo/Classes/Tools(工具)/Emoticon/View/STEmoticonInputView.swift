@@ -93,10 +93,15 @@ extension STEmoticonInputView:UICollectionViewDelegate{
        guard let target = targetIndexPath else {
             return
         }
+        
         //4 判断是否找到 目标的 indexpath
         //indexpath.section =》对应的就是分组
         toolbar.selectedIndex = target.section
         
+        // 5 设置分页控件
+        // 1> 总页数 不同的分组 页数不一样
+        pageControl.numberOfPages = collectionView.numberOfItemsInSection(target.section)
+        pageControl.currentPage = target.item
     }
 }
 
