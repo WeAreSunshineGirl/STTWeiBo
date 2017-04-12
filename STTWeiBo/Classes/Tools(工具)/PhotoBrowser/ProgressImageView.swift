@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 /// 带进度的图像视图
 /// 面试题：如果在 UIImageView 的 drawRect 中绘图会怎样？不会执行 drawRect 函数
 class ProgressImageView: UIImageView {

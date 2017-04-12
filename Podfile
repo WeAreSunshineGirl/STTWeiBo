@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'STTWeiBo' do
 
@@ -12,6 +12,6 @@ pod "YYModel"
 pod "FMDB"
 pod "SVProgressHUD"
 pod "pop"
-
+pod 'SnapKit', '~> 0.19.1'
 
 end

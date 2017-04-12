@@ -47,6 +47,7 @@
 		CE0AED311E9E0BD80039E429 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2D1E9E0BD80039E429 /* PhotoBrowserCell.swift */; };
 		CE0AED321E9E0BD80039E429 /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2E1E9E0BD80039E429 /* PhotoBrowserViewController.swift */; };
 		CE0AED331E9E0BD80039E429 /* ProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED2F1E9E0BD80039E429 /* ProgressImageView.swift */; };
+		CE0AED351E9E0E760039E429 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AED341E9E0E760039E429 /* UIButton+Extensions.swift */; };
 		CE0BCE5F1DFA5147002FC7F7 /* WBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */; };
 		CE0BCE611DFA5419002FC7F7 /* WBStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */; };
 		CE0DF9311E03CF5D003F47BB /* WBTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */; };
@@ -161,6 +162,7 @@
 		CE0AED2D1E9E0BD80039E429 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
 		CE0AED2E1E9E0BD80039E429 /* PhotoBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewController.swift; sourceTree = "<group>"; };
 		CE0AED2F1E9E0BD80039E429 /* ProgressImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressImageView.swift; sourceTree = "<group>"; };
+		CE0AED341E9E0E760039E429 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		CE0BCE5E1DFA5147002FC7F7 /* WBStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatus.swift; sourceTree = "<group>"; };
 		CE0BCE601DFA5419002FC7F7 /* WBStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusListViewModel.swift; sourceTree = "<group>"; };
 		CE0DF9301E03CF5D003F47BB /* WBTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBTitleButton.swift; sourceTree = "<group>"; };
@@ -543,6 +545,7 @@
 		CE8454C51DEFF8A70062478F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE0AED341E9E0E760039E429 /* UIButton+Extensions.swift */,
 				CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */,
 				CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */,
 				CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */,
@@ -828,6 +831,7 @@
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
 				CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */,
 				CEDC2A391E95ED4900CF5837 /* STEmoticonLayout.swift in Sources */,
+				CE0AED351E9E0E760039E429 /* UIButton+Extensions.swift in Sources */,
 				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
 				CE0AED321E9E0BD80039E429 /* PhotoBrowserViewController.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,

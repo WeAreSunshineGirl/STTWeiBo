@@ -89,7 +89,12 @@ class WBStatusPictureView: UIView {
     }
     
     @objc private func tapImageView(tap:UITapGestureRecognizer){
+        print("点击了。。。。。")
         
+        guard let iv = tap.view ,let picURLs = viewModel?.picURLs else{
+            return
+        }
+        print(picURLs.count)
     }
 }
 

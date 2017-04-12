@@ -85,9 +85,9 @@ class PhotoBrowserViewController: UIViewController {
     // MARK: - 懒加载控件
     lazy var collectionView: UICollectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: PhotoBrowserViewLayout())
     /// 关闭按钮
-    private lazy var closeButton: UIButton = UIButton(title: "关闭", fontSize: 14, color: UIColor.whiteColor(), imageName: nil, backColor: UIColor.darkGrayColor())
+    private lazy var closeButton: UIButton = UIButton(title: "关闭", fontSize: 14, color: UIColor.whiteColor(), imageName: "", backColor: UIColor.darkGrayColor())
     /// 保存按钮
-    private lazy var saveButton: UIButton = UIButton(title: "保存", fontSize: 14, color: UIColor.whiteColor(), imageName: nil, backColor: UIColor.darkGrayColor())
+    private lazy var saveButton: UIButton = UIButton(title: "保存", fontSize: 14, color: UIColor.whiteColor(), imageName: "", backColor: UIColor.darkGrayColor())
     
     // MARK: - 自定义流水布局
     private class PhotoBrowserViewLayout: UICollectionViewFlowLayout {
@@ -132,8 +132,8 @@ private extension PhotoBrowserViewController {
         }
         
         // 3. 监听方法
-        closeButton.addTarget(self, action: "close", forControlEvents: .TouchUpInside)
-        saveButton.addTarget(self, action: "save", forControlEvents: .TouchUpInside)
+        closeButton.addTarget(self, action: #selector(PhotoBrowserViewController.close), forControlEvents: .TouchUpInside)
+        saveButton.addTarget(self, action: #selector(PhotoBrowserViewController.save), forControlEvents: .TouchUpInside)
         
         // 4. 准备控件
         prepareCollectionView()
