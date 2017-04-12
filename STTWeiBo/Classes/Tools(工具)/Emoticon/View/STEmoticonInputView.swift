@@ -44,6 +44,21 @@ class STEmoticonInputView: UIView {
         
         //设置工具栏代理
         toolbar.delegate = self
+        
+        
+        //2> 设置分页控件的图片
+        let bundle = STEmoticonManager.shared.bundle
+        
+        guard let normalImage = UIImage(named: "compose_keyboard_dot_normal", inBundle: bundle, compatibleWithTraitCollection: nil),selectedImage = UIImage(named: "compose_keyboard_dot_selected", inBundle: bundle, compatibleWithTraitCollection: nil)else{
+            return
+        }
+        //使用填充图片设置颜色
+        //控制台  po UIPageControl.cz_ivarsList()
+        //        pageControl.pageIndicatorTintColor = UIColor(patternImage: normalImage)
+        //        pageControl.currentPageIndicatorTintColor = UIColor(patternImage: selectedImage)
+        //使用 KVC 设置私有成员属性
+        pageControl .setValue(normalImage, forKey: "_pageImage")
+        pageControl .setValue(selectedImage, forKey: "_currentPageImage")
     }
 }
 
@@ -102,6 +117,11 @@ extension STEmoticonInputView:UICollectionViewDelegate{
         // 1> 总页数 不同的分组 页数不一样
         pageControl.numberOfPages = collectionView.numberOfItemsInSection(target.section)
         pageControl.currentPage = target.item
+        
+//        compose_keyboard_dot_normal@2x
+        
+      
+        
     }
 }
 
