@@ -22,6 +22,8 @@ class WBHomeViewController: WBBaseViewController {
     /// 列表视图模型
     private lazy var listViewModel = WBStatusListViewModel()
     
+    /// 照片查看转场动画代理
+    private lazy var photoBrowserAnimator: PhotoBrowserAnimator = PhotoBrowserAnimator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,7 @@ class WBHomeViewController: WBBaseViewController {
     @objc private func browserPhoto(n:NSNotification){
         
         // 1 从通知 userInfo 提取参数
-        guard let selectedIndex = n.userInfo?[WBStatusCellBrowserPhotoSelectedIndexKey] as? Int,urls = n.userInfo?[WBStatusCellBrowserPhotoURLsKey] as? [String],imageViewList = n.userInfo?[WBStatusCellBrowserPhotoImageViewsKey] as? [UIImageView] else{
+        guard let selectedIndex = n.userInfo?[WBStatusCellBrowserPhotoSelectedIndexKey] as? Int,urls = n.userInfo?[WBStatusCellBrowserPhotoURLsKey] as? [String],imageViewList = n.userInfo?[WBStatusCellBrowserPhotoImageViewsKey] as? [UIImageView] ,cell = n.object as? PhotoBrowserPresentDelegate else{
             return
         }
         
@@ -44,9 +46,16 @@ class WBHomeViewController: WBBaseViewController {
             uurls.append(NSURL(string: str)!)
         }
         var indexP = NSIndexPath(forItem: selectedIndex, inSection: 0)
+        
         // 2 展现 照片浏览控制器
         let vc = PhotoBrowserViewController(urls: uurls, indexPath: indexP)
         
+        // 1. 设置modal的类型是自定义类型 Transition(转场)
+        vc.modalPresentationStyle = UIModalPresentationStyle.Custom
+        // 2. 设置动画代理
+        vc.transitioningDelegate = photoBrowserAnimator
+        // 3. 设置 animator 的代理参数
+        photoBrowserAnimator.setDelegateParams(cell, indexPath: indexP, dismissDelegate: vc)
 
         presentViewController(vc, animated: true, completion: nil)
     }

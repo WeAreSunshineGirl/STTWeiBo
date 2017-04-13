@@ -122,7 +122,91 @@ class WBStatusPictureView: UIView {
 
 // MARK: - 照片查看器的展现协议
 
+extension WBStatusPictureView:PhotoBrowserPresentDelegate{
+    /// 指定 indexPath 对应的 imageView，用来做动画效果
+    func imageViewForPresent(indexPath: NSIndexPath) -> UIImageView{
+        let iv = UIImageView()
 
+        // 1. 设置内容填充模式
+        iv.contentMode = .ScaleAspectFill
+        iv.clipsToBounds = true
+
+
+        // 2. 设置图像（缩略图的缓存）- SDWebImage 如果已经存在本地缓存，不会发起网络请求
+        //        if let url = viewModle?.thumbnailUrls?[indexPath.item] {
+        //            iv.sd_setImageWithURL(url)
+        //        }
+        
+        if  let url = viewModel?.picURLs![indexPath.item].thumbnail_pic{
+            iv.sd_setImageWithURL(NSURL(string: url))
+        }
+        
+        
+        return iv
+    }
+    
+    /// 动画转场的起始位置
+    func photoBrowserPresentFromRect(indexPath: NSIndexPath) -> CGRect{
+        // 1. 根据 indexPath 获得当前用户选择的 cell
+        
+        let cell = subviews[indexPath.item] as! UIImageView
+//==============================================================================================
+        // 2. 通过 cell 知道 cell 对应在屏幕上的准确位置
+        // 在不同视图之间的 `坐标系的转换` self. 是 cell 都父视图
+        // 由 collectionView 将 cell 的 frame 位置转换的 keyWindow 对应的 frame 位置
+        let rect = self.convertRect(cell.frame, toCoordinateSpace: UIApplication.sharedApplication().keyWindow!)
+        
+        // 测试转换 rect 的位置
+        //        let v = UIView(frame: rect)
+        //        v.backgroundColor = UIColor.redColor()
+        // 再次测试
+        //        let v = imageViewForPresent(indexPath)
+        //        v.frame = rect
+        //
+        //        UIApplication.sharedApplication().keyWindow?.addSubview(v)
+        
+        return rect
+    }
+    
+    /// 动画转场的目标位置
+    func photoBrowserPresentToRect(indexPath: NSIndexPath) -> CGRect{
+        // 根据缩略图的大小，等比例计算目标位置
+        
+//        guard let key = viewModle?.thumbnailUrls?[indexPath.item].absoluteString else {
+//            return CGRectZero
+//        }
+        
+        guard let str = viewModel?.picURLs![indexPath.item].thumbnail_pic, key = NSURL(string:str)?.absoluteString else {
+            return CGRectZero
+        }
+        
+        // 从 sdwebImage 获取本地缓存图片
+        guard let image = SDWebImageManager.sharedManager().imageCache.imageFromDiskCacheForKey(key) else {
+            return CGRectZero
+        }
+        
+        // 根据图像大小，计算全屏的大小
+        let w = UIScreen.mainScreen().bounds.width
+        let h = image.size.height * w / image.size.width
+        
+        // 对高度进行额外处理
+        let screenHeight = UIScreen.mainScreen().bounds.height
+        var y: CGFloat = 0
+        if h < screenHeight {       // 图片短，垂直居中显示
+            y = (screenHeight - h) * 0.5
+        }
+        
+        let rect = CGRect(x: 0, y: y, width: w, height: h)
+        
+        // 测试位置
+        //        let v = imageViewForPresent(indexPath)
+        //        v.frame = rect
+        //
+        //        UIApplication.sharedApplication().keyWindow?.addSubview(v)
+        
+        return rect
+    }
+}
 
 
 // MARK: - 设置界面
