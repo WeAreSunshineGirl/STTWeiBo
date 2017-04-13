@@ -148,8 +148,23 @@ extension WBStatusPictureView:PhotoBrowserPresentDelegate{
     /// 动画转场的起始位置
     func photoBrowserPresentFromRect(indexPath: NSIndexPath) -> CGRect{
         // 1. 根据 indexPath 获得当前用户选择的 cell
+        //        let cell = self.cellForItemAtIndexPath(indexPath)!
         
-        let cell = subviews[indexPath.item] as! UIImageView
+        //==============================================================================
+        //===========================   为了 适合打开新浪微博 图片浏览器  针对四张图片做了处理
+        var indeP:Int
+        var cell:UIImageView
+        var indexP:NSIndexPath
+        if viewModel?.picURLs?.count == 4 && indexPath.item > 1 {
+            indeP = indexPath.item + 1
+            indexP = NSIndexPath(forItem: indeP, inSection: 0)
+            cell = subviews[indexP.item] as! UIImageView
+            
+        }else{
+            cell = subviews[indexPath.item] as! UIImageView
+        }
+
+//        let cell = subviews[indexPath.item] as! UIImageView
 //==============================================================================================
         // 2. 通过 cell 知道 cell 对应在屏幕上的准确位置
         // 在不同视图之间的 `坐标系的转换` self. 是 cell 都父视图
