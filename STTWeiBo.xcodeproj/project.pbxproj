@@ -74,6 +74,7 @@
 		CE8454C91DEFF93A0062478F /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */; };
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
+		CEB3B0881E9F5FFA00C4B6DD /* UILable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3B0871E9F5FFA00C4B6DD /* UILable+Extensions.swift */; };
 		CEDC2A301E95ED4900CF5837 /* EmotionIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */; };
 		CEDC2A311E95ED4900CF5837 /* STEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */; };
 		CEDC2A321E95ED4900CF5837 /* STEmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */; };
@@ -189,6 +190,7 @@
 		CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extensions.swift"; sourceTree = "<group>"; };
 		CE8454CB1DF008E40062478F /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
+		CEB3B0871E9F5FFA00C4B6DD /* UILable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionIcons.bundle; sourceTree = "<group>"; };
 		CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticon.swift; sourceTree = "<group>"; };
 		CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonAttachment.swift; sourceTree = "<group>"; };
@@ -549,6 +551,7 @@
 				CE8454C81DEFF93A0062478F /* NSBundle+Extensions.swift */,
 				CE1C8DC41E28BC51005FC417 /* String+Extensions.swift */,
 				CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */,
+				CEB3B0871E9F5FFA00C4B6DD /* UILable+Extensions.swift */,
 				CEFFF93A1E09033900842467 /* UIImage+Extensions.swift */,
 				CE111F7B1E0BB01F00CA5061 /* UIImageView+WebImage.swift */,
 				CEF780CF1E97913A0072BBA2 /* NSDate+EXtensions.swift */,
@@ -829,6 +832,7 @@
 				CE0843911DEFCA8300BD8168 /* WBNavigationController.swift in Sources */,
 				CE07431B1DFFCF7D002E5AA3 /* WBOAuthViewController.swift in Sources */,
 				CE0843C11DEFCC8200BD8168 /* NSString+CZPath.m in Sources */,
+				CEB3B0881E9F5FFA00C4B6DD /* UILable+Extensions.swift in Sources */,
 				CE04E15A1E8CE56800FB0E9C /* FFLabel.swift in Sources */,
 				CEDC2A391E95ED4900CF5837 /* STEmoticonLayout.swift in Sources */,
 				CE0AED351E9E0E760039E429 /* UIButton+Extensions.swift in Sources */,
