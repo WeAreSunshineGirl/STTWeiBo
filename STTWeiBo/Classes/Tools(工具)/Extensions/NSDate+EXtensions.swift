@@ -26,4 +26,23 @@ extension NSDate{
         
         return dateFormatter.stringFromDate(date)
     }
+    
+    /**
+     将新浪格式的字符串转换成日期
+     
+     - parameter string: Thu Apr 13 13:41:41 +0800 2017
+     
+     - returns: 日期
+     */
+    static func st_sinaDate(string:String)->NSDate?{
+        
+        // 1 设置日期格式
+        dateFormatter.locale = NSLocale(localeIdentifier: "en")
+
+        dateFormatter.dateFormat = "EEE MMM dd HH:mm:ss zzz yyyy"
+        
+        //2 转换并且返回日期
+        return dateFormatter.dateFromString(string)
+        
+    }
 }

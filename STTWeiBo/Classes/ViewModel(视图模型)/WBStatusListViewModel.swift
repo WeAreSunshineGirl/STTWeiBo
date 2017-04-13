@@ -122,6 +122,8 @@ class WBStatusListViewModel {
                 self.statusList = array + self.statusList
             }
             
+//            print(self.statusList)
+            
             //3 判断上拉刷新的数据量
             if pullup && array.count == 0{
                 

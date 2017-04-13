@@ -86,6 +86,9 @@ class WBStatusCell: UITableViewCell {
 //            sourceLabel.text = viewModel?.sourceStr
             sourceLabel.text = viewModel?.status.source
             
+            //设置时间
+            timeLabel.text = viewModel?.status.createDate?.description
+            
         }
         
     }
@@ -96,7 +99,7 @@ class WBStatusCell: UITableViewCell {
     /// 会员图标
     @IBOutlet weak var memberIconView: UIImageView!
     /// 时间
-    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!   //服务器获取的是  created_at = "Thu Apr 13 13:41:41 +0800 2017";  新浪微博特有的时间格式
    /// 来源
     @IBOutlet weak var sourceLabel: UILabel!
        /// 认证图标

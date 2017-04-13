@@ -22,7 +22,14 @@ class WBStatus: NSObject {
     var text:String?
     
     /// 微博创建时间字符串
-    var created_at:String?
+    var created_at:String?{
+        didSet{
+            createDate = NSDate.st_sinaDate(created_at ?? "")
+        }
+    }
+    
+    /// 微博创建日期
+    var createDate:NSDate?
     
     /// 微博来源 - 发布微博使用的客户端
     var source:String?{
