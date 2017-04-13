@@ -8,7 +8,7 @@
 
 import UIKit
 import SVProgressHUD
-
+import SnapKit
 /// 撰写微博控制器
 /*
  加载视图控制器的时候 如果XIB 和控制器同名 默认的构造函数 会优先加载 XIB
@@ -25,6 +25,10 @@ class WBComposeViewController: UIViewController {
     @IBOutlet var sendButton: UIButton!
     /// 工具栏底部约束
     @IBOutlet weak var toolBarBottomConstraint: NSLayoutConstraint!
+    
+    
+    //照片选择控制器
+    private lazy var picturePickerController = PicturePickerController()
     
     
     //表情输入视图
@@ -64,11 +68,15 @@ class WBComposeViewController: UIViewController {
         super.viewWillAppear(animated)
         
         //激活键盘
-        textView.becomeFirstResponder()
+//        textView.becomeFirstResponder()
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
+        // 激活键盘 - 如果已经存在照片控制器视图，不再激活键盘
+        if picturePickerController.view.frame.height == 0 {
+            textView.becomeFirstResponder()
+        }
+
         textView.delegate = self
     }
     override func viewWillDisappear(animated: Bool) {
@@ -79,6 +87,8 @@ class WBComposeViewController: UIViewController {
     }
     //MARK: 键盘监听方法
     @objc func keyBoardChanged(n:NSNotification){
+        
+//        textView.becomeFirstResponder()
         print(n)
         
         // 1 目标 rect
@@ -92,7 +102,9 @@ class WBComposeViewController: UIViewController {
         toolBarBottomConstraint.constant = offset
         
         // 4 动画更新约束
-        UIView.animateWithDuration(duration) { 
+        UIView.animateWithDuration(duration) {
+//            self.textView.resignFirstResponder()
+
             self.view.layoutIfNeeded()
         }
     }
@@ -110,7 +122,8 @@ class WBComposeViewController: UIViewController {
         let text = textView.emoticonText
         // 2 发布微博
         //FIXME:临时测试发带图片的微博
-        let image:UIImage? = nil// UIImage(named: "1")
+//        let image:UIImage? = nil// UIImage(named: "1")
+         let image = picturePickerController.pictures.last
         WBNetworkManager.shared.postStatus(text,image: image) { (result, isSuccess) in
             
             print(result)
@@ -154,6 +167,35 @@ class WBComposeViewController: UIViewController {
 
     @objc private func selectPicture(){
         print("=======点击图片按钮")
+        print("选择照片 \(picturePickerController.view.frame)")
+        
+        // 退掉键盘
+        textView.resignFirstResponder()
+        
+        // 0. 判断如果已经更新了约束，不再执行后续代码
+        if picturePickerController.view.frame.height > 0 {
+              textView.resignFirstResponder()
+            return
+        }
+
+        // 1. 修改照片选择控制器视图的约束
+        picturePickerController.view.snp_updateConstraints {[weak self] (make) -> Void in
+            make.height.equalTo((self?.view.frame.height)! * 0.6)
+        }
+        
+        print("-----选择照片 \(picturePickerController.view.frame)")
+//        // 2. 修改文本视图的约束 - 重建约束 - 会将之前`textView`的所有的约束删除
+//        textView.snp_remakeConstraints { (make) -> Void in
+//            make.top.equalTo(self.snp_topLayoutGuideBottom)
+//            make.left.equalTo(view.snp_left)
+//            make.right.equalTo(view.snp_right)
+//            make.bottom.equalTo(picturePickerController.view.snp_top)
+//        }
+        
+        // 3. 动画更新约束
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.view.layoutIfNeeded()
+        }
     }
     
     ///关闭按钮方法ç
@@ -198,8 +240,25 @@ private extension WBComposeViewController{
         view.backgroundColor = UIColor.whiteColor()
         setupNavigationBar()
         setupToolBar()
+        
+        preparePicturePicker()
     }
-    
+    //准备照片控制器
+    private func preparePicturePicker(){
+        
+        // 1 添加子视图
+        addChildViewController(picturePickerController)
+        
+        // 2 添加视图
+        view.insertSubview(picturePickerController.view, belowSubview:toolbar)
+        // 3 自动布局
+        picturePickerController.view.snp_makeConstraints { (make) in
+            make.bottom.equalTo(view.snp_bottom)
+            make.left.equalTo(view.snp_left)
+            make.right.equalTo(view.snp_right)
+            make.height.equalTo(0)
+        }
+    }
     /**
      设置工具栏
      */

@@ -77,6 +77,7 @@ extension PicturePickerController {
         // 设置代理
         cell.pictureDelegate = self
         
+        
         return cell
     }
 }
@@ -228,8 +229,8 @@ private class PicturePickerCell: UICollectionViewCell {
         }
         
         // 3. 监听方法
-        addButton.addTarget(self, action: "addPicture", forControlEvents: .TouchUpInside)
-        removeButton.addTarget(self, action: "removePicture", forControlEvents: .TouchUpInside)
+        addButton.addTarget(self, action: #selector(PicturePickerCell.addPicture), forControlEvents: .TouchUpInside)
+        removeButton.addTarget(self, action: #selector(PicturePickerCell.removePicture), forControlEvents: .TouchUpInside)
         
         // 4. 设置填充模式
         addButton.imageView?.contentMode = .ScaleAspectFill

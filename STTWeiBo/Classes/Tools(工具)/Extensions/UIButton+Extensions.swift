@@ -28,17 +28,18 @@ extension UIButton{
         setTitleColor(highlightedColor, forState: .Highlighted)
         sizeToFit()
     }
-    convenience init(imageName: String, backImageName: String)
+    convenience init(imageName: String, backImageName: String?)
     {
         self.init()
         
         // 1.设置背景图片
-        setBackgroundImage(UIImage(named: imageName), forState: UIControlState.Normal)
-        setBackgroundImage(UIImage(named: imageName + "_highlighted"), forState: UIControlState.Highlighted)
-        
+        if let backImageName = backImageName {
+        setBackgroundImage(UIImage(named: backImageName), forState: UIControlState.Normal)
+        setBackgroundImage(UIImage(named: backImageName + "_highlighted"), forState: UIControlState.Highlighted)
+        }
         // 2.设置普通图片
-        setImage(UIImage(named:backImageName), forState: UIControlState.Normal)
-        setImage(UIImage(named: backImageName + "_highlighted"), forState: UIControlState.Highlighted)
+        setImage(UIImage(named:imageName), forState: UIControlState.Normal)
+        setImage(UIImage(named: imageName + "_highlighted"), forState: UIControlState.Highlighted)
         
         sizeToFit()
     }
@@ -78,5 +79,7 @@ extension UIButton{
         
         sizeToFit()
     }
+    
+    
 
 }
