@@ -152,7 +152,11 @@ class WBComposeViewController: UIViewController {
         textView.reloadInputViews()
     }
 
-    ///关闭按钮方法
+    @objc private func selectPicture(){
+        print("=======点击图片按钮")
+    }
+    
+    ///关闭按钮方法ç
      @objc private func back(){
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -200,7 +204,7 @@ private extension WBComposeViewController{
      设置工具栏
      */
     func setupToolBar(){
-        let itemSettings = [["imageName":"compose_toolbar_picture"],
+        let itemSettings = [["imageName":"compose_toolbar_picture","actionName": "selectPicture"],
             ["imageName":"compose_mentionbutton_background"],
             ["imageName":"compose_trendbutton_background"],
             ["imageName":"compose_emoticonbutton_background","actionName":"emoticonKeyboard"],

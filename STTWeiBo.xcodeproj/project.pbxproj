@@ -75,6 +75,7 @@
 		CE8454CC1DF008E40062478F /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CB1DF008E40062478F /* WBDemoViewController.swift */; };
 		CE8454CE1DF015350062478F /* UIBarButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */; };
 		CEB3B0881E9F5FFA00C4B6DD /* UILable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3B0871E9F5FFA00C4B6DD /* UILable+Extensions.swift */; };
+		CEB3B08B1E9F68AB00C4B6DD /* PicturePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3B08A1E9F68AB00C4B6DD /* PicturePickerController.swift */; };
 		CEDC2A301E95ED4900CF5837 /* EmotionIcons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */; };
 		CEDC2A311E95ED4900CF5837 /* STEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */; };
 		CEDC2A321E95ED4900CF5837 /* STEmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */; };
@@ -191,6 +192,7 @@
 		CE8454CB1DF008E40062478F /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		CE8454CD1DF015350062478F /* UIBarButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extensions.swift"; sourceTree = "<group>"; };
 		CEB3B0871E9F5FFA00C4B6DD /* UILable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extensions.swift"; sourceTree = "<group>"; };
+		CEB3B08A1E9F68AB00C4B6DD /* PicturePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturePickerController.swift; sourceTree = "<group>"; };
 		CEDC2A231E95ED4900CF5837 /* EmotionIcons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmotionIcons.bundle; sourceTree = "<group>"; };
 		CEDC2A251E95ED4900CF5837 /* STEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticon.swift; sourceTree = "<group>"; };
 		CEDC2A261E95ED4900CF5837 /* STEmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEmoticonAttachment.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		CE0843861DEFCA2800BD8168 /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3B0891E9F68AB00C4B6DD /* PicturePicker */,
 				CE0AED2B1E9E0BD80039E429 /* PhotoBrowser */,
 				CE15262D1DF949BF00149510 /* Network(网络) */,
 				CEDC2A3B1E9621BA00CF5837 /* SQLite */,
@@ -565,6 +568,14 @@
 				CE8454CB1DF008E40062478F /* WBDemoViewController.swift */,
 			);
 			path = "测试";
+			sourceTree = "<group>";
+		};
+		CEB3B0891E9F68AB00C4B6DD /* PicturePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3B08A1E9F68AB00C4B6DD /* PicturePickerController.swift */,
+			);
+			path = PicturePicker;
 			sourceTree = "<group>";
 		};
 		CEDBC9631E01362700A09F82 /* Model */ = {
@@ -838,6 +849,7 @@
 				CE0AED351E9E0E760039E429 /* UIButton+Extensions.swift in Sources */,
 				CE1C8DC51E28BC51005FC417 /* String+Extensions.swift in Sources */,
 				CE0AED321E9E0BD80039E429 /* PhotoBrowserViewController.swift in Sources */,
+				CEB3B08B1E9F68AB00C4B6DD /* PicturePickerController.swift in Sources */,
 				CE0843C61DEFCC8200BD8168 /* UIView+CZAddition.m in Sources */,
 				CE0843C01DEFCC8200BD8168 /* NSString+CZHash.m in Sources */,
 				CE0843971DEFCADB00BD8168 /* WBMessageViewController.swift in Sources */,
