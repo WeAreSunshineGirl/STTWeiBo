@@ -46,7 +46,7 @@ class WBHomeViewController: WBBaseViewController {
         var indexP = NSIndexPath(forItem: selectedIndex, inSection: 0)
         // 2 展现 照片浏览控制器
         let vc = PhotoBrowserViewController(urls: uurls, indexPath: indexP)
-
+        
 
         presentViewController(vc, animated: true, completion: nil)
     }
