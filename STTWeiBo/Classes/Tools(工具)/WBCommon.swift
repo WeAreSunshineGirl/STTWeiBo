@@ -33,7 +33,7 @@ let WBStatusCellBrowserPhotoSelectedIndexKey = "WBStatusCellBrowserPhotoSelected
 // 照片浏览 URL 字符串KEy
 let WBStatusCellBrowserPhotoURLsKey = "WBStatusCellBrowserPhotoURLsKey"
 //父视图的图像数组
-let WBStatusCellBrowserPhotoImageViews = "WBStatusCellBrowserPhotoImageViews"
+let WBStatusCellBrowserPhotoImageViewsKey = "WBStatusCellBrowserPhotoImageViewsKey"
 
 
 

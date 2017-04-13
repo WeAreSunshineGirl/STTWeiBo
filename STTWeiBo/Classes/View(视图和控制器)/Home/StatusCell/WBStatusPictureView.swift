@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class WBStatusPictureView: UIView {
     
     
@@ -114,8 +114,16 @@ class WBStatusPictureView: UIView {
             }
         }
         print(selectedIndex)
+        // 发送通知
+        NSNotificationCenter.defaultCenter().postNotificationName(WBStatusCellBrowserPhotoNotification, object: self, userInfo: [WBStatusCellBrowserPhotoURLsKey:urls,WBStatusCellBrowserPhotoSelectedIndexKey:selectedIndex,WBStatusCellBrowserPhotoImageViewsKey:imageViewList])
     }
 }
+
+
+// MARK: - 照片查看器的展现协议
+
+
+
 
 // MARK: - 设置界面
 extension WBStatusPictureView{
