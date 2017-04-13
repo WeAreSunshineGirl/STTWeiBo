@@ -17,11 +17,16 @@ class WBStatusPicture: NSObject {
 //            http://wx2.sinaimg.cn/thumbnail/cc4db942ly1fejof9ygdij20m80citcz.jpg
 //            print(thumbnail_pic)
             
+            
+            //设置中等尺寸图片
+            bmiddlePic =  thumbnail_pic?.stringByReplacingOccurrencesOfString("/thumbnail/", withString: "/wap360/")
             //更改缩略图地址  更清晰点
             thumbnail_pic = thumbnail_pic?.stringByReplacingOccurrencesOfString("/thumbnail/", withString: "/wap360/")
         }
     }
     
+    /// 中等尺寸图片
+    var bmiddlePic:String?
     
     override var description: String{
         

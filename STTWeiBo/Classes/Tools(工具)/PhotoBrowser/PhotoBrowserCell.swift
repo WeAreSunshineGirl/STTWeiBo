@@ -159,7 +159,10 @@ class PhotoBrowserCell: UICollectionViewCell {
         var urlString = url.absoluteString
         
         // 2. 替换单词
-        urlString = urlString.stringByReplacingOccurrencesOfString("/thumbnail/", withString: "/bmiddle/")
+//        urlString = urlString.stringByReplacingOccurrencesOfString("/thumbnail/", withString: "/bmiddle/")
+        //===========================  因为之前为了获取清晰图片 将wap360替换thumbnail    现在将bmiddle替换wap360
+        urlString = urlString.stringByReplacingOccurrencesOfString("/wap360/", withString: "/bmiddle/")
+         //===========================
         
         return NSURL(string: urlString)!
     }
