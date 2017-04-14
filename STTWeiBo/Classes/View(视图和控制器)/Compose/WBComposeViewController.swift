@@ -232,6 +232,12 @@ extension WBComposeViewController:UITextViewDelegate{
         
         sendButton.enabled = textView.hasText()
     }
+    
+}
+extension WBComposeViewController:UIScrollViewDelegate{
+//    func scrollViewDidScroll(scrollView: UIScrollView) {
+//        
+//    }
 }
 private extension WBComposeViewController{
     
